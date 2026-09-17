@@ -1,0 +1,93 @@
+{
+  "canvas": {
+    "width": 941,
+    "height": 1672
+  },
+  "layers": [
+    {
+      "id": "forge",
+      "file": "forge.png",
+      "x": 0,
+      "y": 260,
+      "width": 311,
+      "height": 727,
+      "foot": 900,
+      "character": false
+    },
+    {
+      "id": "bench",
+      "file": "bench.png",
+      "x": 648,
+      "y": 320,
+      "width": 293,
+      "height": 664,
+      "foot": 950,
+      "character": false
+    },
+    {
+      "id": "table",
+      "file": "table.png",
+      "x": 310,
+      "y": 808,
+      "width": 463,
+      "height": 282,
+      "foot": 1080,
+      "character": false
+    },
+    {
+      "id": "left-front",
+      "file": "left-front.png",
+      "x": 0,
+      "y": 965,
+      "width": 286,
+      "height": 707,
+      "foot": 1600,
+      "character": false
+    },
+    {
+      "id": "right-front",
+      "file": "right-front.png",
+      "x": 626,
+      "y": 900,
+      "width": 315,
+      "height": 772,
+      "foot": 1580,
+      "character": false
+    },
+    {
+      "id": "mage",
+      "file": "mage.png",
+      "x": 420,
+      "y": 604,
+      "width": 176,
+      "height": 191,
+      "foot": 794.8484848484849,
+      "character": true
+    },
+    {
+      "id": "scout",
+      "file": "scout.png",
+      "x": 608,
+      "y": 516,
+      "width": 84,
+      "height": 104,
+      "foot": 620.3636363636364,
+      "character": true
+    },
+    {
+      "id": "warrior",
+      "file": "warrior.png",
+      "x": 315,
+      "y": 1145,
+      "width": 239,
+      "height": 308,
+      "foot": 1453,
+      "character": true
+    }
+  ],
+  "validation": {
+    "mismatchedPixels": 0,
+    "method": "decoded-pixel comparison of actual compositing, not original-file copy"
+  },
+  "limitations": "Polygon masks; occluded background is reconstructed. Small surrounding pixels near masks may require final contour cleanup for moving sprites."
+}
