@@ -72,7 +72,11 @@ class AndroidLauncher : AndroidApplication() {
             a = 8
             numSamples = 2
         }
-        val platform = Platform(saveStore = DataStoreSave(applicationContext), services = AndroidServices(applicationContext))
+        val platform = Platform(
+            saveStore = DataStoreSave(applicationContext),
+            services = AndroidServices(applicationContext),
+            version = BuildConfig.VERSION_NAME,
+        )
         initialize(MergeNyangGame(platform), config)
     }
 }

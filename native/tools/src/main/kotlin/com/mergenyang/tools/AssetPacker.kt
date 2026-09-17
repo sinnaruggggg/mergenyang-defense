@@ -59,11 +59,15 @@ fun main(args: Array<String>) {
     val uiFiles = File(ui, "ui").listFiles { f -> f.extension == "png" }!!.map { it to it.nameWithoutExtension }
     pack("ui", stage("ui", uiFiles), settings(1f, 4096, false))
 
+    val webAssets = File(art.parentFile, "game/assets")
+
     val iconFiles = File(ui, "icons").listFiles { f -> f.extension == "png" }!!.map { it to it.nameWithoutExtension }
-    pack("icons", stage("icons", iconFiles), settings(0.5f, 2048, true))
+    val iconsDir = stage("icons", iconFiles)
+    // 새 모루 원화 (타이틀·전투 좌하단). 투명 여백을 잘라 fit 박스가 그림에 맞도록 한다
+    trimCopy(File(webAssets, "title-empty-anvil.png"), File(iconsDir, "anvil.png"))
+    pack("icons", iconsDir, settings(0.5f, 2048, true))
 
     // items/item-weapon-1-twig.png → weapon-1, 9~16단계는 game/assets/items-extra
-    val webAssets = File(art.parentFile, "game/assets")
     val itemFiles = File(ui, "items").listFiles { f -> f.extension == "png" }!!.map { f ->
         val parts = f.nameWithoutExtension.removePrefix("item-").split("-")
         f to "${parts[0]}-${parts[1]}"
@@ -128,4 +132,27 @@ private fun makeLauncherIcons(ui: File, res: File) {
         javax.imageio.ImageIO.write(img, "png", File(dir, "ic_launcher.png"))
     }
     println("launcher icons → $res")
+}
+
+/** 투명 여백을 잘라 복사한다 (원본 캔버스가 커도 fit 박스에 꽉 차게) */
+private fun trimCopy(src: File, dst: File) {
+    require(src.isFile) { "원화 없음: $src" }
+    val img = javax.imageio.ImageIO.read(src)
+    var minX = img.width
+    var minY = img.height
+    var maxX = -1
+    var maxY = -1
+    for (y in 0 until img.height) for (x in 0 until img.width) {
+        if ((img.getRGB(x, y) ushr 24) > 8) {
+            if (x < minX) minX = x
+            if (x > maxX) maxX = x
+            if (y < minY) minY = y
+            if (y > maxY) maxY = y
+        }
+    }
+    if (maxX < 0) {
+        src.copyTo(dst, overwrite = true)
+        return
+    }
+    javax.imageio.ImageIO.write(img.getSubimage(minX, minY, maxX - minX + 1, maxY - minY + 1), "png", dst)
 }

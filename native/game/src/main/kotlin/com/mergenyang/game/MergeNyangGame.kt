@@ -72,6 +72,7 @@ class MergeNyangGame(val platform: Platform) : KtxGame<KtxScreen>(clearScreen = 
         save = SaveData.fromJson(platform.saveStore.load())
         progress = Progress(data, save)
         Gdx.input.setCatchKey(Input.Keys.BACK, true)
+        UpdateCheck.start(REPO, platform.version)
         platform.debugHook?.onCreate(this)
     }
 
@@ -225,6 +226,9 @@ class MergeNyangGame(val platform: Platform) : KtxGame<KtxScreen>(clearScreen = 
     }
 
     companion object {
+        /** 릴리즈 APK를 올리는 저장소 (새 버전 확인용) */
+        const val REPO = "sinnaruggggg/mergenyang-defense"
+
         private val FADE = Color.valueOf("2a160cff")
         private val LOADING_BG = Color.valueOf("f6e7cfff")
         private val LOADING_TRACK = Color.valueOf("e0c8a8ff")

@@ -59,3 +59,7 @@ D:/Android/Sdk/platform-tools/adb.exe -s emulator-5554 install -r apk/mergenyang
 ## 아직 연동하지 않은 것
 
 Google Play 결제, AdMob 광고, Play Games 로그인, Firebase, Nakama 서버(멀티·대전·온라인 랭킹), 인트로 영상, 출시 서명 키. 스토어 계정과 키가 준비되면 `android` 모듈의 `AndroidServices`와 서버 모듈에 붙입니다.
+
+## 새 버전 알림
+
+스토어를 거치지 않는 APK는 자동 갱신이 없습니다. 앱을 켜면 `UpdateCheck`가 GitHub Releases API로 최신 태그를 확인하고, 설치된 버전보다 높으면 로비에서 한 번 "새 버전이 나왔어요" 팝업을 띄워 릴리즈 페이지를 열어 줍니다. 저장소는 `MergeNyangGame.REPO`, 버전은 `Platform.version`(Android는 `BuildConfig.VERSION_NAME`, 데스크톱은 `dev`로 확인을 건너뜀)입니다. 릴리즈 APK는 모두 같은 키로 서명하므로 받은 APK를 그대로 설치하면 저장 데이터가 유지됩니다.

@@ -60,6 +60,8 @@ android {
         }
     }
 
+    buildFeatures { buildConfig = true }
+
     androidResources {
         // 아틀라스·폰트는 압축하지 않아야 로딩이 빠르다
         noCompress += listOf("png", "ttf", "atlas", "ogg", "wav")

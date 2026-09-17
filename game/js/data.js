@@ -114,6 +114,7 @@ function buildAssetMap() {
   m['lobby.ui.main-background']='assets/workshop-ui/main-background.png';
   m['lobby.ui.smith']='assets/workshop-ui/smith-game-waist-up.png';
   m['shop.merchant']='assets/shop-merchant.png';
+  m['title.empty-anvil']='assets/title-empty-anvil.png';
   ['forge','weapons','small-barrel','right-workbench','central-table','left-chest','right-armor'].forEach(id=>m['workshop.approved.'+id]=`assets/workshop-marked/${id}.png`);
   ['forge', 'bench', 'barrel', 'anvil', 'crates', 'lamp'].forEach(id => m[`workshop2.${id}`] = `assets/workshop-2p5d/${id}-grounded.png`);
   ['battle', 'shop', 'town', 'workshop'].forEach(b => m['bg.' + b] = PATH_UI + `backgrounds/${b}.png`);

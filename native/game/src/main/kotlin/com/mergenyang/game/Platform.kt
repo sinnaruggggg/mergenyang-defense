@@ -25,6 +25,8 @@ object OfflineServices : PlatformServices {
 class Platform(
     val saveStore: SaveStore,
     val services: PlatformServices = OfflineServices,
+    /** 설치된 앱 버전 (예: "0.2.1"). "dev"면 업데이트 확인을 하지 않는다 */
+    val version: String = "dev",
     /** 개발용 자동 스크린샷 등 추가 동작 */
     val debugHook: DebugHook? = null,
 )

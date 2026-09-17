@@ -8,6 +8,7 @@ import com.mergenyang.core.Mode
 import com.mergenyang.core.Waves
 import com.mergenyang.game.Chars
 import com.mergenyang.game.Gfx
+import com.mergenyang.game.UpdateCheck
 import com.mergenyang.game.MergeNyangGame
 import com.mergenyang.game.rnd
 import com.mergenyang.game.ui.DrawActor
@@ -58,13 +59,13 @@ class TitleScreen(game: MergeNyangGame) : MenuScreen(game, "workshop") {
             Chars.idle("healer", 870f, 1480f, 0.75f, time, phase = 1f)
             val cyc = time % 1.1f
             Chars.shadow(540f, 1505f, 320f)
+            Gfx.fit("icons/anvil", 660f, 1452f, 250f, 184f)
             Chars.catAttack("smith", if (cyc < 0.18f) 1 else 0, 520f, 1510f, 0.9f, sy = if (cyc < 0.1f) 0.95f else 1f)
-            Gfx.fit("icons/forge", 600f, 1440f, 260f, 190f)
             val a = 0.55f + 0.45f * sin(time * 4f)
             Gfx.panel(240f, 1620f, 600f, 120f)
             Gfx.text("터치하여 시작", 540f, 1680f, 50f, alpha = a)
             Gfx.text("고양이가 만들고, 고양이가 싸운다!", 540f, 1820f, 32f, Color.WHITE, outline = true)
-            Gfx.text("v0.2 · Android 네이티브", 540f, 1880f, 22f, Color.WHITE, outline = true)
+            Gfx.text(if (game.platform.version == "dev") "개발 빌드 · Android 네이티브" else "v${game.platform.version} · Android 네이티브", 540f, 1880f, 22f, Color.WHITE, outline = true)
         }, 0f, 0f, Gfx.W, Gfx.H)
         g.at(HitActor {
             game.audio.play("produce")
@@ -84,8 +85,21 @@ class LobbyScreen(game: MergeNyangGame) : MenuScreen(game, "lobby-room") {
     override fun onBack() = Unit
 
     override fun update(delta: Float) {
-        val cyc = time % 1.4f
-        if (cyc < lastCyc) fx.sparks(300f, 980f, SPARK, 8, -PI.toFloat() / 2, 2f)
+        // 사이드로드 APK는 자동 갱신이 없으므로 새 버전이 확인되면 한 번 알린다
+        if (!UpdateCheck.notified && UpdateCheck.latest != null && !popupOpen && !game.transitioning) {
+            UpdateCheck.notified = true
+            showPopup("update")
+        }
+        // 화덕에서 피어오르는 불티
+        if (rnd(0f, 1f) < 0.5f) fx.p {
+            x = rnd(58f, 155f); y = rnd(700f, 772f); vx = rnd(-25f, 25f); vy = rnd(-190f, -80f)
+            size = rnd(3f, 7f); color.set(if (rnd(0f, 1f) < 0.5f) EMBER else SPARK); life = rnd(0.8f, 1.8f); drag = 0.99f
+        }
+        val cyc = time % 1.6f
+        if (cyc < lastCyc) {
+            fx.sparks(106f, 702f, SPARK, 8, -PI.toFloat() / 2, 1.6f)   // 화덕 불꽃
+            fx.sparks(812f, 792f, SPARK, 5, -PI.toFloat() / 2, 2.4f)   // 달궈진 망치 머리
+        }
         lastCyc = cyc
     }
 

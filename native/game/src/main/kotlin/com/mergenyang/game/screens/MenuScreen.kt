@@ -36,6 +36,7 @@ abstract class MenuScreen(val game: MergeNyangGame, private val background: Stri
     protected val stage = Stage(Screens.viewport, game.batch)
     protected val root = Group()
     private val popupLayer = Group()
+    protected val popupOpen get() = popupLayer.hasChildren()
     var time = 0f
         protected set
     protected val data get() = game.data
@@ -213,6 +214,19 @@ abstract class MenuScreen(val game: MergeNyangGame, private val background: Stri
                     closePopup()
                 }.apply { disabled = save.gems < 30 }, 220f, 1060f, 640f, 130f)
                 p.at(NyButton("닫기", "cream", onClick = close), 340f, 1210f, 400f, 90f)
+            }
+            "update" -> {
+                val rel = com.mergenyang.game.UpdateCheck.latest
+                p.at(PanelActor("ui/panel-cream"), 140f, 620f, 800f, 660f)
+                p.at(ImgActor("icons/chest").apply { bob = 8f }, 460f, 670f, 160f, 160f)
+                p.at(TextActor("새 버전이 나왔어요!", 54f), 140f, 850f, 800f, 80f)
+                p.at(TextActor("v${game.platform.version} → v${rel?.version ?: "?"}", 36f, Gfx.color("2a9a5aff")), 140f, 935f, 800f, 60f)
+                p.at(TextActor("받은 APK를 그대로 설치하면 기록은 그대로예요", 26f, Gfx.SUB), 140f, 995f, 800f, 50f)
+                p.at(NyButton("받으러 가기", "yellow") {
+                    rel?.let { com.mergenyang.game.UpdateCheck.open(it.url) }
+                    closePopup()
+                }, 200f, 1070f, 340f, 120f)
+                p.at(NyButton("나중에", "cream", onClick = close), 560f, 1070f, 320f, 120f)
             }
             "upgraded" -> {
                 val (name, desc) = arg as Pair<*, *>

@@ -9,7 +9,7 @@ const IDLE_K = { warrior: 1, tank: 1, archer: 1, healer: 1, wizard: 1, smith: 1 
 // [[준비 배율, 가로 이동], [타격 배율, 가로 이동]] (512px 캔버스 기준)
 const ATK_FIT = {
   'cat-warrior': [[1.06, -32], [1.19, -20]], 'cat-tank': [[1.12, 4], [1.04, -16]], 'cat-archer': [[0.98, -8], [0.93, -8]],
-  'cat-healer': [[1.11, -4], [1.11, -4]], 'cat-wizard': [[1.08, 8], [1.04, 4]], 'cat-smith': [[0.95, -12], [0.96, 20]],
+  'cat-healer': [[1.11, -4], [1.11, -4]], 'cat-wizard': [[1.08, 8], [1.04, 4]], 'cat-smith': [[0.95, -12], [0.95, -12]],
 };
 const catView = id => ((CATS[id.replace('cat-', '')] || {}).view) || 1;
 function drawCatAttack(atkId, frame, x, y, S, o) {
@@ -1462,9 +1462,9 @@ class Battle {
   drawBottom(t) {
     // 대장장이
     img('ui.ground-shadow', 44, 1880, 233, 31);
+    imgFit('title.empty-anvil', 220, 1876, 168, 124);
     if (this.smithT > 0) drawCatAttack('cat-smith', this.smithT > 0.18 ? 0 : 1, 160, 1905, 0.58);
     else drawSprite(`anim.smith.idle-${Math.floor(t * 2) % 2}`, 160, 1905, 0.58);
-    imgFit('icon.forge', 200, 1850, 150, 110);
     // 생산 버튼
     const noEnergy = this.energy < 1;
     if (UI.button(329, 1726, 386, 162, '생산', { color: 'yellow', sub: '에너지 1', icon: 'icon.paw', size: 50, disabled: this.tutorial === 0 || this.tutorial === 1, pulse: this.tutorial === 2 || (!noEnergy && this.emptyCells().length > 20) })) this.produce();

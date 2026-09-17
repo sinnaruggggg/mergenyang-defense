@@ -104,9 +104,9 @@ const TitleScene = {
     idleCat('healer', 870, 1480, 0.75, t, { phase: 1 });
     const cyc = t % 1.1;
     img('ui.ground-shadow', 400, 1480, 320, 50, 0.8);
+    imgFit('title.empty-anvil', 660, 1452, 250, 184);
     if (cyc < 0.18) drawCatAttack('cat-smith', 1, 520, 1510, 0.9, { sy: cyc < 0.1 ? 0.95 : 1 });
     else drawCatAttack('cat-smith', 0, 520, 1510, 0.9);
-    imgFit('icon.forge', 600, 1440, 260, 190);
     FX.drawWorld();
     ctx.restore();
     const a = 0.55 + 0.45 * Math.sin(t * 4);

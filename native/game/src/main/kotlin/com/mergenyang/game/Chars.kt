@@ -37,9 +37,11 @@ object Chars {
              sx: Float = 1f, sy: Float = 1f, alpha: Float = 1f, flash: Float = 0f, flip: Boolean = false) {
         val frame = ((t * 5f + phase).toInt()) % 2
         val scale = s * viewScale(atkId.removePrefix("cat-"))
+        // 두 프레임의 그림이 같아 아틀라스에서 합쳐지므로, 통통 튀는 느낌은 코드에서 준다
+        val bob = if (frame == 1) 5f * scale else 0f
         val key = "chars/walk_${atkId}_$frame"
-        if (Gfx.assets.region(key) != null) Gfx.frame(key, x, feetY, scale, flip, sx, sy, alpha, flash)
-        else Gfx.frame("chars/atk_${atkId}_0", x, feetY, scale, flip, sx, sy, alpha, flash)
+        if (Gfx.assets.region(key) != null) Gfx.frame(key, x, feetY - bob, scale, flip, sx, sy, alpha, flash)
+        else Gfx.frame("chars/atk_${atkId}_0", x, feetY - bob, scale, flip, sx, sy, alpha, flash)
     }
 
     /** 몬스터·보스 프레임 (왼쪽을 바라봄) */
