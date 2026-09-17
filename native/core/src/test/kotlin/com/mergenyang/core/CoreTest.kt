@@ -12,20 +12,39 @@ class CoreTest {
     private val data = GameData.parse(File(System.getProperty("assetsDir"), "data/gamedata.json").readText())
     private val rules = Rules(data)
 
-    private fun board() = MergeBoard(data.balance.boardCols, data.balance.boardRows, Random(1))
+    private fun board() = MergeBoard(data.balance.boardCols, data.balance.boardRows, Random(1), data.balance.maxTier)
 
     @Test
     fun dataTableIsComplete() {
         assertEquals(5, data.cats.size)
         assertEquals(5, data.chapters.size)
         assertEquals(35, data.balance.boardCols * data.balance.boardRows)
-        Line.entries.forEach { assertEquals(8, data.line(it).names.size) }
+        Line.entries.forEach { assertEquals(data.balance.maxTier, data.line(it).names.size) }
+        Line.entries.forEach { assertEquals(data.balance.maxTier, data.line(it).files.size) }
         data.chapters.forEach { ch ->
             ch.enemies.forEach { data.enemy(it) }
             data.boss(ch.boss)
             ch.recommended.forEach { data.cat(it) }
         }
         data.worldBossOrder.forEach { assertTrue(data.boss(it).world) }
+    }
+
+    @Test
+    fun mergeCapFollowsWorkshopLevel() {
+        assertEquals(4, rules.maxMergeTier(1))
+        assertEquals(5, rules.maxMergeTier(2))
+        assertEquals(6, rules.maxMergeTier(4))
+        assertEquals(data.balance.maxTier, rules.maxMergeTier(999))
+        assertEquals(5 to 2, rules.nextMergeUnlock(1))
+        assertNull(rules.nextMergeUnlock(999))
+        val b = board()
+        b.mergeCap = 4
+        b[0].item = b.newItem(Line.weapon, 4)
+        b[1].item = b.newItem(Line.weapon, 4)
+        assertIs<DropResult.Locked>(b.drop(0, 1))
+        b.mergeCap = 5
+        assertIs<DropResult.Merged>(b.drop(0, 1))
+        assertEquals(5, b[1].item!!.tier)
     }
 
     @Test

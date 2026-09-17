@@ -3,52 +3,48 @@
   "errors": [],
   "start": [
     [
-      540,
-      710
+      487.778958554729,
+      803.4006376195537
     ],
     [
-      180,
-      830
+      694.3676939426142,
+      918.17215727949
     ]
   ],
   "live": {
     "positions": [
       [
-        480,
-        646.1078
+        653.6590860786397,
+        872.2635494155154
       ],
       [
-        524.8199999999996,
-        920
+        350.05313496280553,
+        984.6634612114774
       ]
     ],
-    "travel": 798.7122000000005
+    "travel": 829.0186249606423
   },
   "sim": {
     "simulatedSeconds": 120,
     "invalidFootPositions": 0,
     "depth": {
-      "anvil": {
+      "table": {
         "behind": true,
         "front": true
-      },
-      "bench": {
-        "behind": false,
-        "front": true
-      },
-      "barrel": {
-        "behind": true,
-        "front": false
       },
       "forge": {
         "behind": true,
         "front": true
       },
-      "crates": {
+      "right-front": {
         "behind": true,
         "front": false
+      },
+      "bench": {
+        "behind": true,
+        "front": true
       }
     },
-    "travel": 14419.075504285222
+    "travel": 14296.912336971609
   }
 }

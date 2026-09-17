@@ -11,9 +11,11 @@ const ATK_FIT = {
   'cat-warrior': [[1.06, -32], [1.19, -20]], 'cat-tank': [[1.12, 4], [1.04, -16]], 'cat-archer': [[0.98, -8], [0.93, -8]],
   'cat-healer': [[1.11, -4], [1.11, -4]], 'cat-wizard': [[1.08, 8], [1.04, 4]], 'cat-smith': [[0.95, -12], [0.96, 20]],
 };
+const catView = id => ((CATS[id.replace('cat-', '')] || {}).view) || 1;
 function drawCatAttack(atkId, frame, x, y, S, o) {
   const [k, dx] = (ATK_FIT[atkId] || [[1, 0], [1, 0]])[frame];
-  drawSprite(`atk.${atkId}.${frame}`, x + dx * S * (o && o.flip ? -1 : 1), y, S * k, o);
+  const v = catView(atkId);
+  drawSprite(`atk.${atkId}.${frame}`, x + dx * v * S * (o && o.flip ? -1 : 1), y, S * k * v, o);
 }
 // 보급 레일: 양 끝은 원본 그대로, 가운데 칸(원본 x 270~420)만 비율 유지하며 반복
 function drawRailImage(x, y, w, h) {
@@ -83,7 +85,7 @@ class Battle {
 
     const S = Save.data;
     const forge = id => Save.up('forge', id), smith = id => Save.up('smith', id);
-    this.energyMax = 40 + forge('energyMax') * 6;
+    this.energyMax = 20 + forge('energyMax') * 2;
     this.energy = this.energyMax;
     this.regenEvery = 2.6 - forge('energyRegen') * 0.16;
     this.regenT = 0;
@@ -95,6 +97,7 @@ class Battle {
     this.lineRates = { weapon: 35 + wr, armor: 30 + wr, consumable: 25 - wr, special: 10 - wr };
     this.feverDur = 8 + smith('fever');
     this.railSpeed = this.ch === 2 && this.mode === 'stage' ? 650 : 1500;
+    this.mergeCap = maxMergeTier(workshopLevel()); // 공방 레벨로 해금된 합성 상한
 
     this.board = Array.from({ length: 35 }, () => ({ item: null, frozen: 0 }));
     this.drag = null;
@@ -326,7 +329,7 @@ class Battle {
       Audio2.sfx('legend');
       FX.flash('#fff6c8', 0.9);
     }
-    if (it.tier < MAX_TIER) this.chainQueue.push({ cell: j, t: 0.24, depth: depth + 1, uid: it.uid });
+    if (it.tier < this.mergeCap) this.chainQueue.push({ cell: j, t: 0.24, depth: depth + 1, uid: it.uid });
     if (this.tutorial === 0) this.advanceTutorial();
   }
   // 같은 아이템 연결 그룹 (4방향)
@@ -348,7 +351,7 @@ class Battle {
     this.chainQueue = this.chainQueue.filter(c => c.t > 0);
     for (const c of ready) {
       const it = this.board[c.cell].item;
-      if (!it || it.uid !== c.uid || it.tier >= MAX_TIER || this.board[c.cell].frozen || (this.drag && this.drag.item === it)) continue;
+      if (!it || it.uid !== c.uid || it.tier >= this.mergeCap || this.board[c.cell].frozen || (this.drag && this.drag.item === it)) continue;
       const n = neighbors(c.cell).find(n => this.canUse(n) && (!this.drag || this.drag.from !== n) && this.board[n].item.kind === 'item' && this.board[n].item.line === it.line && this.board[n].item.tier === it.tier);
       if (n === undefined) continue;
       const from = cellCenter(n), to = cellCenter(c.cell);
@@ -770,6 +773,10 @@ class Battle {
     const a = d.item, b = tc.item;
     if (!b) {
       tc.item = a; this.board[from].item = null; a.pop = 0.2; Audio2.sfx('drop');
+    } else if (a.kind === 'item' && b.kind === 'item' && a.line === b.line && a.tier === b.tier && a.tier >= this.mergeCap && a.tier < MAX_TIER) {
+      const need = MERGE_UNLOCK[a.tier - FREE_MERGE_TIER];
+      Toast.show(need ? `공방 Lv.${need} 부터 ${a.tier + 1}단계 합성 가능` : '최고 단계예요!', '#ffd36b');
+      Audio2.sfx('full');
     } else if (a.kind === 'item' && b.kind === 'item' && a.line === b.line && a.tier === b.tier && a.tier < MAX_TIER) {
       this.board[from].item = null;
       // 5개 합성: 같은 아이템 5개 이상 연결 시 상위 2개
@@ -793,7 +800,7 @@ class Battle {
         const bc = cellCenter(bonus);
         FX.burst(bc.x, bc.y, LINE_COLOR[b.line], 20, 700, 12, 0.5);
         this.addFever(2);
-        if (bi.tier < MAX_TIER) this.chainQueue.push({ cell: bonus, t: 0.3, depth: 1, uid: bi.uid });
+        if (bi.tier < this.mergeCap) this.chainQueue.push({ cell: bonus, t: 0.3, depth: 1, uid: bi.uid });
       } else {
         this.mergeInto(a, j, false);
       }
@@ -1402,7 +1409,7 @@ class Battle {
       imgFit('ui.board-cell', r.x + r.w / 2, r.y + r.h / 2, r.w, r.h);
       if (i === hover && hover !== this.drag.from) {
         const b = c.item;
-        const good = b && b.kind === 'item' && b.line === this.drag.item.line && b.tier === this.drag.item.tier && b.tier < MAX_TIER && !c.frozen;
+        const good = b && b.kind === 'item' && b.line === this.drag.item.line && b.tier === this.drag.item.tier && b.tier < this.mergeCap && !c.frozen;
         if (good) img('ui.merge-glow', r.x - 30, r.y - 30, r.w + 60, r.h + 60, 0.6 + 0.3 * Math.sin(t * 12));
         else { ctx.save(); ctx.globalAlpha = 0.25; ctx.fillStyle = '#fff'; rrect(r.x + 6, r.y + 6, r.w - 12, r.h - 12, 18); ctx.fill(); ctx.restore(); }
       }
@@ -1416,7 +1423,7 @@ class Battle {
         } else {
           const pop = it.pop > 0 ? 1 + Math.sin((1 - it.pop / 0.4) * Math.PI) * 0.35 : 1;
           // 합성 가능한 짝 표시(드래그 중)
-          if (this.drag && this.drag.moved && it.kind === 'item' && it.line === this.drag.item.line && it.tier === this.drag.item.tier && it.tier < MAX_TIER) {
+          if (this.drag && this.drag.moved && it.kind === 'item' && it.line === this.drag.item.line && it.tier === this.drag.item.tier && it.tier < this.mergeCap) {
             ctx.save(); ctx.globalCompositeOperation = 'lighter'; ctx.globalAlpha = 0.25 + 0.2 * Math.sin(t * 8);
             ctx.fillStyle = LINE_COLOR[it.line]; rrect(r.x + 8, r.y + 8, r.w - 16, r.h - 16, 20); ctx.fill(); ctx.restore();
           }

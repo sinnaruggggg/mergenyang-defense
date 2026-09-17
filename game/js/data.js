@@ -30,7 +30,7 @@ const ITEM_VALUE = {
 
 const CATS = {
   warrior: { name: '전사냥이', role: '근접 딜러', atkId: 'cat-warrior', anim: 'warrior', hp: 130, atk: 13, cd: 0.55, range: 190, crit: 0.12, prefer: 'weapon', melee: true, desc: '빠른 공격 속도로 적을 베어요' },
-  tank: { name: '뚱냥이', role: '탱커', atkId: 'cat-tank', anim: 'tank', hp: 240, atk: 8, cd: 0.9, range: 180, crit: 0.05, def: 6, prefer: 'armor', melee: true, desc: '몬스터를 끌어모으고 방어구 효과 1.5배' },
+  tank: { view: 1.3, name: '뚱냥이', role: '탱커', atkId: 'cat-tank', anim: 'tank', hp: 240, atk: 8, cd: 0.9, range: 180, crit: 0.05, def: 6, prefer: 'armor', melee: true, desc: '몬스터를 끌어모으고 방어구 효과 1.5배' },
   archer: { name: '궁사냥이', role: '원거리 딜러', atkId: 'cat-archer', anim: 'archer', hp: 95, atk: 12, cd: 0.8, range: 720, crit: 0.32, prefer: 'weapon', desc: '후열에서 높은 치명타로 저격해요' },
   healer: { name: '성직냥이', role: '힐러', atkId: 'cat-healer', anim: 'healer', hp: 110, atk: 6, cd: 1.0, range: 680, crit: 0.05, prefer: 'consumable', heal: 14, desc: '소모품 효과를 아군 전체에 퍼뜨려요' },
   wizard: { name: '마법사냥이', role: '광역 딜러', atkId: 'cat-wizard', anim: 'wizard', hp: 95, atk: 11, cd: 1.35, range: 680, crit: 0.1, aoe: 190, magic: true, prefer: 'weapon', desc: '화염구로 여러 몬스터를 동시에 태워요' },
@@ -85,7 +85,7 @@ function recommendedCats(ch) {
 // 성장 항목
 const FORGE_UPGRADES = [
   { id: 'startTier', name: '생산 시작 단계', icon: 'icon.forge', max: 10, desc: l => `2단계 아이템 생산 확률 ${l * 8}%`, cost: l => 300 * Math.pow(1.7, l) },
-  { id: 'energyMax', name: '에너지 최대치', icon: 'icon.energy', max: 10, desc: l => `전투 시작 에너지 ${40 + l * 6}`, cost: l => 200 * Math.pow(1.6, l) },
+  { id: 'energyMax', name: '에너지 최대치', icon: 'icon.energy', max: 10, desc: l => `전투 시작 에너지 ${20 + l * 2}`, cost: l => 200 * Math.pow(1.6, l) },
   { id: 'energyRegen', name: '에너지 회복 속도', icon: 'icon.clock', max: 10, desc: l => `${(2.6 - l * 0.16).toFixed(2)}초마다 1 회복`, cost: l => 250 * Math.pow(1.65, l) },
   { id: 'autoMerge', name: '자동 생산', icon: 'icon.gear', max: 8, desc: l => l ? `${14 - l}초마다 무료 생산` : '대장장이 냥이가 스스로 생산', cost: l => 600 * Math.pow(1.8, l) },
 ];
@@ -94,6 +94,12 @@ const SMITH_UPGRADES = [
   { id: 'weaponRate', name: '좋은 라인 확률', icon: 'icon.sword', max: 5, desc: l => `무기·방어구 확률 +${l * 3}%`, cost: l => 400 * Math.pow(1.8, l) },
   { id: 'fever', name: '피버 지속 시간', icon: 'icon.star', max: 5, desc: l => `피버 ${8 + l}초`, cost: l => 500 * Math.pow(1.8, l) },
 ];
+// 합성 해금: 처음엔 4단계까지, 공방 레벨이 오를수록 한 단계씩
+const FREE_MERGE_TIER = 4;
+const MERGE_UNLOCK = [2, 4, 7, 10, 14, 18, 23, 28, 34, 40, 47, 54];
+const workshopLevel = () => 1 + [...FORGE_UPGRADES.map(u => Save.up('forge', u.id)), ...SMITH_UPGRADES.map(u => Save.up('smith', u.id))].reduce((a, b) => a + b, 0);
+const maxMergeTier = lvl => Math.min(MAX_TIER, FREE_MERGE_TIER + MERGE_UNLOCK.filter(v => v <= lvl).length);
+const nextMergeUnlock = lvl => { const t = maxMergeTier(lvl) + 1; return t > MAX_TIER ? null : { tier: t, level: MERGE_UNLOCK[t - FREE_MERGE_TIER - 1] }; };
 const catLevelCost = lv => Math.round(120 * Math.pow(1.32, lv - 1));
 const catMul = lv => 1 + (lv - 1) * 0.25;
 
@@ -102,6 +108,13 @@ function buildAssetMap() {
   const m = {};
   // 2.5D 대장간은 평면 배경과 전경 오브젝트를 분리한다.
   m['workshop2.bg'] = 'assets/workshop-2p5d/background.png';
+  ['background','forge','bench','table','left-front','right-front','mage','scout','warrior'].forEach(id => m['workshop.approved.' + id] = `assets/workshop-approved/${id}.png`);
+  m['workshop.approved.background']='assets/workshop-marked/background-live.png';
+  ['reward','level','gold','mint','adventure'].forEach(id=>m['lobby.ui.'+id]=`assets/workshop-ui/${id}.png`);
+  m['lobby.ui.main-background']='assets/workshop-ui/main-background.png';
+  m['lobby.ui.smith']='assets/workshop-ui/smith-game-waist-up.png';
+  m['shop.merchant']='assets/shop-merchant.png';
+  ['forge','weapons','small-barrel','right-workbench','central-table','left-chest','right-armor'].forEach(id=>m['workshop.approved.'+id]=`assets/workshop-marked/${id}.png`);
   ['forge', 'bench', 'barrel', 'anvil', 'crates', 'lamp'].forEach(id => m[`workshop2.${id}`] = `assets/workshop-2p5d/${id}-grounded.png`);
   ['battle', 'shop', 'town', 'workshop'].forEach(b => m['bg.' + b] = PATH_UI + `backgrounds/${b}.png`);
   ['board-cell', 'ground-shadow', 'healing-aura', 'merge-glow', 'panel-cream', 'panel-dark', 'panel-lavender', 'panel-mint', 'panel-peach',

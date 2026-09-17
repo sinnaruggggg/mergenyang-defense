@@ -1,0 +1,41 @@
+
+lobby.png
+size: 2048, 512
+format: RGBA8888
+filter: MipMapLinearLinear, Linear
+repeat: none
+adventure
+  rotate: false
+  xy: 870, 274
+  size: 866, 117
+  orig: 866, 117
+  offset: 0, 0
+  index: -1
+gold
+  rotate: false
+  xy: 2, 2
+  size: 427, 119
+  orig: 427, 119
+  offset: 0, 0
+  index: -1
+level
+  rotate: false
+  xy: 2, 125
+  size: 864, 127
+  orig: 864, 127
+  offset: 0, 0
+  index: -1
+mint
+  rotate: false
+  xy: 870, 151
+  size: 427, 119
+  orig: 427, 119
+  offset: 0, 0
+  index: -1
+reward
+  rotate: false
+  xy: 2, 256
+  size: 864, 135
+  orig: 864, 135
+  offset: 0, 0
+  index: -1

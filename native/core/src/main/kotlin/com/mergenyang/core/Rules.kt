@@ -7,6 +7,20 @@ import kotlin.math.roundToInt
 class Rules(val data: GameData) {
     private val b get() = data.balance
 
+    val maxTier: Int get() = b.maxTier
+
+    /** 공방 레벨로 해금된 최고 합성 단계 (기획: 처음 4단계, 레벨이 오를수록 한 단계씩) */
+    fun maxMergeTier(workshopLevel: Int): Int =
+        (b.freeMergeTier + b.mergeUnlockLevels.count { it <= workshopLevel }).coerceAtMost(b.maxTier)
+
+    /** 다음 단계를 열려면 필요한 공방 레벨 (더 열 것이 없으면 null) */
+    fun nextMergeUnlock(workshopLevel: Int): Pair<Int, Int>? {
+        val tier = maxMergeTier(workshopLevel) + 1
+        if (tier > b.maxTier) return null
+        val need = b.mergeUnlockLevels.getOrNull(tier - b.freeMergeTier - 1) ?: return null
+        return tier to need
+    }
+
     fun tierMul(tier: Int): Float = b.tierMul.pow(tier - 1)
 
     /** 무기=공격력, 방어구=방어력, 소모품=회복량, 특수=광역 피해 (스테이지 보정 전) */

@@ -1,7 +1,6 @@
 package com.mergenyang.game.battle
 
 import com.mergenyang.core.Line
-import com.mergenyang.core.MergeBoard
 import kotlin.math.min
 
 /**
@@ -35,7 +34,7 @@ class AutoPlayer(private val b: Battle) {
         for (a in cells) for (o in cells) {
             val ia = board[a].item!!
             val io = board[o].item!!
-            if (a != o && ia.sameAs(io) && ia.tier < MergeBoard.MAX_TIER) {
+            if (a != o && ia.sameAs(io) && ia.tier < b.mergeCap) {
                 drag(a, Layout.cellCx(o), Layout.cellCy(o))
                 return
             }

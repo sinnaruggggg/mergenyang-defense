@@ -1,0 +1,32 @@
+[
+  {
+    "id": "reward",
+    "width": 1440,
+    "height": 225,
+    "ratio": 6.4
+  },
+  {
+    "id": "level",
+    "width": 1440,
+    "height": 211,
+    "ratio": 6.8246445497630335
+  },
+  {
+    "id": "gold",
+    "width": 712,
+    "height": 198,
+    "ratio": 3.595959595959596
+  },
+  {
+    "id": "mint",
+    "width": 712,
+    "height": 198,
+    "ratio": 3.595959595959596
+  },
+  {
+    "id": "adventure",
+    "width": 1444,
+    "height": 195,
+    "ratio": 7.4051282051282055
+  }
+]

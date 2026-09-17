@@ -1,0 +1,10 @@
+{
+  "errors": [],
+  "actual": {
+    "background": "file:///D:/%EB%A8%B8%EC%A7%80%EB%83%A5%EB%94%94%ED%8E%9C%EC%8A%A4/game/assets/workshop-ui/main-background.png",
+    "walkers": 0
+  },
+  "growth": true,
+  "adventure": true,
+  "pass": true
+}

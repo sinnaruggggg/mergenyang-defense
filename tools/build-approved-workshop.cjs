@@ -30,6 +30,15 @@ function inside(x,y,p){let v=false;for(let i=0,j=p.length-1;i<p.length;j=i++){co
  // Characters own their pixels even when the furniture masks overlap them.
  for(let k=0;k<specs.length;k++)if(!specs[k].character)for(let j=0;j<specs.length;j++)if(specs[j].character)for(let n=0;n<masks[k].length;n++)if(masks[j][n])masks[k][n]=0;
  const base=Buffer.from(data),manifest=[];
+ // Expand the erased character area so fringe pixels cannot remain floating
+ // at a character's former position. Keep those source pixels as a separate
+ // reference-only edge layer for the exact assembly comparison.
+ const edge=Buffer.alloc(data.length);
+ for(let k=0;k<specs.length;k++)if(specs[k].character){
+  const m=masks[k],expanded=new Uint8Array(m.length);
+  for(let y=0;y<info.height;y++)for(let x=0;x<info.width;x++)if(m[y*info.width+x])for(let dy=-7;dy<=7;dy++)for(let dx=-7;dx<=7;dx++){const nx=x+dx,ny=y+dy;if(nx>=0&&ny>=0&&nx<info.width&&ny<info.height)expanded[ny*info.width+nx]=1;}
+  for(let n=0;n<m.length;n++)if(expanded[n]&&!m[n]){const off=n*4;data.copy(edge,off,off,off+4);filler.copy(base,off,off,off+4);}
+ }
  for(let k=0;k<specs.length;k++){
   const s=specs[k],mask=masks[k];let l=info.width,t=info.height,r=0,b=0;
   for(let y=0;y<info.height;y++)for(let x=0;x<info.width;x++)if(mask[y*info.width+x]){l=Math.min(l,x);r=Math.max(r,x);t=Math.min(t,y);b=Math.max(b,y);}
@@ -40,7 +49,8 @@ function inside(x,y,p){let v=false;for(let i=0,j=p.length-1;i<p.length;j=i++){co
  }
  await sharp(base,{raw:{width:info.width,height:info.height,channels:4}}).png().toFile(path.join(root,'background.png'));
  // Actually composite the extracted layers, then compare their decoded pixels.
- const assembled=await sharp(base,{raw:{width:info.width,height:info.height,channels:4}}).composite(manifest.map(s=>({input:path.join(root,s.file),left:s.x,top:s.y}))).png().toBuffer();
+ await sharp(edge,{raw:{width:info.width,height:info.height,channels:4}}).png().toFile(path.join(root,'reference-edge.png'));
+ const assembled=await sharp(base,{raw:{width:info.width,height:info.height,channels:4}}).composite([{input:path.join(root,'reference-edge.png'),left:0,top:0},...manifest.map(s=>({input:path.join(root,s.file),left:s.x,top:s.y}))]).png().toBuffer();
  await sharp(assembled).toFile(path.join(root,'reassembled.png'));
  const actual=await sharp(assembled).ensureAlpha().raw().toBuffer();let mismatchedPixels=0;for(let i=0;i<data.length;i+=4)if(!actual.subarray(i,i+4).equals(data.subarray(i,i+4)))mismatchedPixels++;
  const report={canvas:{width:info.width,height:info.height},layers:manifest,validation:{mismatchedPixels,method:'decoded-pixel comparison of actual compositing, not original-file copy'},limitations:'Polygon masks; occluded background is reconstructed. Small surrounding pixels near masks may require final contour cleanup for moving sprites.'};

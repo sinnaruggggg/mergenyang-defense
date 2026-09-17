@@ -1,230 +1,454 @@
 
 items.png
-size: 2048, 1024
+size: 4096, 1024
 format: RGBA8888
 filter: MipMapLinearLinear, Linear
 repeat: none
 armor-1
   rotate: false
-  xy: 191, 38
+  xy: 1246, 333
   size: 174, 169
   orig: 176, 171
   offset: 1, 1
   index: -1
+armor-10
+  rotate: false
+  xy: 2034, 633
+  size: 198, 168
+  orig: 222, 222
+  offset: 10, 26
+  index: -1
+armor-11
+  rotate: false
+  xy: 434, 230
+  size: 207, 186
+  orig: 222, 222
+  offset: 8, 12
+  index: -1
+armor-12
+  rotate: false
+  xy: 450, 610
+  size: 217, 188
+  orig: 222, 222
+  offset: 0, 10
+  index: -1
+armor-13
+  rotate: false
+  xy: 1120, 814
+  size: 216, 197
+  orig: 222, 222
+  offset: 6, 13
+  index: -1
+armor-14
+  rotate: false
+  xy: 224, 806
+  size: 222, 205
+  orig: 222, 222
+  offset: 0, 13
+  index: -1
+armor-15
+  rotate: false
+  xy: 671, 809
+  size: 219, 202
+  orig: 222, 222
+  offset: 3, 14
+  index: -1
+armor-16
+  rotate: false
+  xy: 839, 7
+  size: 196, 205
+  orig: 222, 222
+  offset: 19, 11
+  index: -1
 armor-2
   rotate: false
-  xy: 1866, 843
+  xy: 2995, 617
   size: 180, 174
   orig: 182, 176
   offset: 1, 1
   index: -1
 armor-3
   rotate: false
-  xy: 610, 409
+  xy: 3179, 618
   size: 177, 174
   orig: 179, 176
   offset: 1, 1
   index: -1
 armor-4
   rotate: false
-  xy: 369, 46
+  xy: 2806, 618
   size: 185, 173
   orig: 187, 175
   offset: 1, 1
   index: -1
 armor-5
   rotate: false
-  xy: 2, 402
+  xy: 441, 420
   size: 210, 186
   orig: 212, 188
   offset: 1, 1
   index: -1
 armor-6
   rotate: false
-  xy: 667, 829
+  xy: 425, 38
   size: 204, 188
   orig: 206, 190
   offset: 1, 1
   index: -1
 armor-7
   rotate: false
-  xy: 442, 826
+  xy: 1340, 820
   size: 221, 191
   orig: 223, 193
   offset: 1, 1
   index: -1
 armor-8
   rotate: false
-  xy: 2, 802
+  xy: 2, 796
   size: 218, 215
   orig: 220, 217
   offset: 1, 1
   index: -1
+armor-9
+  rotate: false
+  xy: 1073, 616
+  size: 169, 193
+  orig: 222, 222
+  offset: 21, 19
+  index: -1
 consumable-1
   rotate: false
-  xy: 426, 587
+  xy: 1246, 506
   size: 192, 108
   orig: 194, 110
   offset: 1, 1
   index: -1
+consumable-10
+  rotate: false
+  xy: 894, 813
+  size: 222, 198
+  orig: 222, 222
+  offset: 0, 0
+  index: -1
+consumable-11
+  rotate: false
+  xy: 224, 620
+  size: 222, 182
+  orig: 222, 222
+  offset: 0, 24
+  index: -1
+consumable-12
+  rotate: false
+  xy: 450, 802
+  size: 217, 209
+  orig: 222, 222
+  offset: 0, 0
+  index: -1
+consumable-13
+  rotate: false
+  xy: 222, 260
+  size: 208, 160
+  orig: 222, 222
+  offset: 14, 35
+  index: -1
+consumable-14
+  rotate: false
+  xy: 655, 416
+  size: 208, 188
+  orig: 222, 222
+  offset: 0, 24
+  index: -1
+consumable-15
+  rotate: false
+  xy: 633, 18
+  size: 202, 194
+  orig: 222, 222
+  offset: 9, 24
+  index: -1
+consumable-16
+  rotate: false
+  xy: 1565, 817
+  size: 216, 194
+  orig: 222, 222
+  offset: 1, 18
+  index: -1
 consumable-2
   rotate: false
-  xy: 442, 699
+  xy: 2, 2
   size: 195, 123
   orig: 197, 125
   offset: 1, 1
   index: -1
 consumable-3
   rotate: false
-  xy: 1476, 681
+  xy: 1597, 300
   size: 168, 144
   orig: 170, 146
   offset: 1, 1
   index: -1
 consumable-4
   rotate: false
-  xy: 1866, 706
+  xy: 1442, 488
   size: 178, 133
   orig: 180, 135
   offset: 1, 1
   index: -1
 consumable-5
   rotate: false
-  xy: 219, 485
+  xy: 1832, 475
   size: 196, 153
   orig: 198, 155
   offset: 1, 1
   index: -1
 consumable-6
   rotate: false
-  xy: 1669, 663
+  xy: 3360, 620
   size: 181, 169
   orig: 183, 171
   offset: 1, 1
   index: -1
 consumable-7
   rotate: false
-  xy: 744, 233
+  xy: 1624, 448
   size: 176, 172
   orig: 178, 174
   offset: 1, 1
   index: -1
 consumable-8
   rotate: false
-  xy: 191, 211
+  xy: 855, 216
   size: 174, 187
   orig: 176, 189
   offset: 1, 1
   index: -1
+consumable-9
+  rotate: false
+  xy: 215, 102
+  size: 206, 154
+  orig: 222, 222
+  offset: 10, 25
+  index: -1
 special-1
   rotate: false
-  xy: 1854, 546
+  xy: 1073, 456
   size: 169, 156
   orig: 171, 158
   offset: 1, 1
   index: -1
+special-10
+  rotate: false
+  xy: 222, 424
+  size: 215, 192
+  orig: 222, 222
+  offset: 0, 7
+  index: -1
+special-11
+  rotate: false
+  xy: 671, 608
+  size: 209, 197
+  orig: 222, 222
+  offset: 4, 9
+  index: -1
+special-12
+  rotate: false
+  xy: 3480, 793
+  size: 196, 218
+  orig: 222, 222
+  offset: 12, 1
+  index: -1
+special-13
+  rotate: false
+  xy: 3680, 806
+  size: 205, 205
+  orig: 222, 222
+  offset: 14, 14
+  index: -1
+special-14
+  rotate: false
+  xy: 645, 216
+  size: 206, 196
+  orig: 222, 222
+  offset: 3, 16
+  index: -1
+special-15
+  rotate: false
+  xy: 2220, 805
+  size: 211, 206
+  orig: 222, 222
+  offset: 5, 14
+  index: -1
+special-16
+  rotate: false
+  xy: 3884, 601
+  size: 200, 199
+  orig: 222, 222
+  offset: 10, 13
+  index: -1
 special-2
   rotate: false
-  xy: 748, 69
+  xy: 1424, 324
   size: 169, 160
   orig: 171, 162
   offset: 1, 1
   index: -1
 special-3
   rotate: false
-  xy: 2, 190
+  xy: 884, 597
   size: 185, 208
   orig: 187, 210
   offset: 1, 1
   index: -1
 special-4
   rotate: false
-  xy: 875, 829
+  xy: 3680, 614
   size: 200, 188
   orig: 202, 190
   offset: 1, 1
   index: -1
 special-5
   rotate: false
-  xy: 419, 406
+  xy: 2236, 624
   size: 187, 177
   orig: 189, 179
   offset: 1, 1
   index: -1
 special-6
   rotate: false
-  xy: 369, 223
+  xy: 2427, 622
   size: 185, 179
   orig: 187, 181
   offset: 1, 1
   index: -1
 special-7
   rotate: false
-  xy: 558, 41
+  xy: 2616, 616
   size: 186, 175
   orig: 188, 177
   offset: 1, 1
   index: -1
 special-8
   rotate: false
-  xy: 224, 815
+  xy: 1785, 809
   size: 214, 202
   orig: 216, 204
   offset: 1, 1
   index: -1
+special-9
+  rotate: false
+  xy: 2435, 805
+  size: 210, 206
+  orig: 222, 222
+  offset: 12, 0
+  index: -1
 weapon-1
   rotate: false
-  xy: 224, 642
+  xy: 1832, 632
   size: 198, 169
   orig: 200, 171
   offset: 1, 1
   index: -1
+weapon-10
+  rotate: false
+  xy: 2649, 795
+  size: 208, 216
+  orig: 222, 222
+  offset: 8, 0
+  index: -1
+weapon-11
+  rotate: false
+  xy: 2, 575
+  size: 216, 217
+  orig: 222, 222
+  offset: 6, 0
+  index: -1
+weapon-12
+  rotate: false
+  xy: 2, 355
+  size: 216, 216
+  orig: 222, 222
+  offset: 0, 0
+  index: -1
+weapon-13
+  rotate: false
+  xy: 3068, 796
+  size: 202, 215
+  orig: 222, 222
+  offset: 20, 7
+  index: -1
+weapon-14
+  rotate: false
+  xy: 3274, 796
+  size: 202, 215
+  orig: 222, 222
+  offset: 3, 7
+  index: -1
+weapon-15
+  rotate: false
+  xy: 2, 129
+  size: 209, 222
+  orig: 222, 222
+  offset: 12, 0
+  index: -1
+weapon-16
+  rotate: false
+  xy: 2861, 795
+  size: 203, 216
+  orig: 222, 222
+  offset: 11, 6
+  index: -1
 weapon-2
   rotate: false
-  xy: 2, 2
+  xy: 1033, 219
   size: 181, 184
   orig: 183, 186
   offset: 1, 1
   index: -1
 weapon-3
   rotate: false
-  xy: 1669, 836
+  xy: 1635, 624
   size: 193, 181
   orig: 195, 183
   offset: 1, 1
   index: -1
 weapon-4
   rotate: false
-  xy: 558, 220
+  xy: 1039, 33
   size: 182, 182
   orig: 184, 184
   offset: 1, 1
   index: -1
 weapon-5
   rotate: false
-  xy: 1079, 831
+  xy: 867, 407
   size: 197, 186
   orig: 199, 188
   offset: 1, 1
   index: -1
 weapon-6
   rotate: false
-  xy: 1476, 829
+  xy: 1442, 625
   size: 189, 188
   orig: 191, 190
   offset: 1, 1
   index: -1
 weapon-7
   rotate: false
-  xy: 1280, 825
+  xy: 1246, 618
   size: 192, 192
   orig: 194, 194
   offset: 1, 1
   index: -1
 weapon-8
   rotate: false
-  xy: 2, 592
+  xy: 2003, 805
   size: 213, 206
   orig: 215, 208
   offset: 1, 1
+  index: -1
+weapon-9
+  rotate: false
+  xy: 3889, 804
+  size: 199, 207
+  orig: 222, 222
+  offset: 21, 0
   index: -1

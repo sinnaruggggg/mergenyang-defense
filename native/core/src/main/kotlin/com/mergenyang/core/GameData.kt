@@ -37,6 +37,8 @@ data class CatDef(
     val melee: Boolean = false,
     val prefer: Line,
     val desc: String,
+    /** 화면에 그릴 때의 상대 크기 (뚱냥이는 덩치가 커 보이게) */
+    val viewScale: Float = 1f,
     /** 공격 프레임(0=준비, 1=타격)별로 대기 프레임 몸 크기에 맞추는 [배율, 가로 이동(512px 캔버스 기준)] */
     val atkFit: List<List<Float>> = listOf(listOf(1f, 0f), listOf(1f, 0f)),
 )
@@ -136,6 +138,12 @@ data class Balance(
     val lobbyEnergyRegenMs: Long,
     val boardCols: Int,
     val boardRows: Int,
+    /** 아이템 최고 단계 */
+    val maxTier: Int,
+    /** 공방 레벨과 상관없이 합성 가능한 단계 */
+    val freeMergeTier: Int,
+    /** freeMergeTier+1 단계부터 한 단계씩 해금되는 공방 레벨 */
+    val mergeUnlockLevels: List<Int>,
     val breakSeconds: Float,
     val catReviveSeconds: Float,
     val worldBossSeconds: Float,

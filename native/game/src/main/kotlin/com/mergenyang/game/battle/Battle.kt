@@ -128,7 +128,11 @@ class Battle(val game: MergeNyangGame, val spec: BattleSpec) {
     val feverMax = data.balance.feverMax
     val railSpeed = if (mode == Mode.STAGE && spec.chapter == 2) 650f else 1500f
 
-    val board = MergeBoard(Layout.COLS, Layout.ROWS, random)
+    val board = MergeBoard(Layout.COLS, Layout.ROWS, random, data.balance.maxTier).apply {
+        // 공방 레벨로 해금된 단계까지만 합성된다
+        mergeCap = rules.maxMergeTier(progress.workshopLevel())
+    }
+    val mergeCap get() = board.mergeCap
     var drag: Drag? = null
     val rail = ArrayList<RailItem>()
     private val chainQueue = ArrayList<ChainJob>()
@@ -344,14 +348,14 @@ class Battle(val game: MergeNyangGame, val spec: BattleSpec) {
             fx.number(nx, ny - 30f, "상자 오픈!", 40f, Gfx.GOLD)
             audio.play("chest")
         }
-        if (it.tier == MergeBoard.MAX_TIER && save.legend[it.line.name] != true) {
+        if (it.tier == board.maxTier && save.legend[it.line.name] != true) {
             save.legend[it.line.name] = true
             game.persist()
             legend = LegendShow(it.line)
             audio.play("legend")
             fx.flash(LEGEND_FLASH, 0.9f)
         }
-        if (it.tier < MergeBoard.MAX_TIER) chainQueue += ChainJob(cell, 0.24f, depth + 1, it.uid)
+        if (it.tier < board.mergeCap) chainQueue += ChainJob(cell, 0.24f, depth + 1, it.uid)
         if (tutorial == 0) advanceTutorial()
     }
 
@@ -1177,6 +1181,11 @@ class Battle(val game: MergeNyangGame, val spec: BattleSpec) {
         when (val r = board.drop(from, to)) {
             DropResult.Cancelled -> Unit
             DropResult.Frozen -> game.toast.show("얼어붙은 칸이에요!", ICE)
+            is DropResult.Locked -> {
+                val need = data.balance.mergeUnlockLevels.getOrNull(r.tier - data.balance.freeMergeTier - 1)
+                game.toast.show(if (need != null) "공방 Lv.$need 부터 ${r.tier}단계 합성 가능" else "최고 단계예요!", Gfx.GOLD)
+                audio.play("full")
+            }
             is DropResult.Moved -> { board[to].item?.pop = 0.2f; audio.play("drop") }
             is DropResult.Swapped -> {
                 board[to].item?.pop = 0.2f
@@ -1198,7 +1207,7 @@ class Battle(val game: MergeNyangGame, val spec: BattleSpec) {
                     progress.recordTier(bi.line, bi.tier)
                     fx.burst(Layout.cellCx(bonus), Layout.cellCy(bonus), Gfx.lineColor(bi.line), 20, 700f, 12f, 0.5f)
                     addFever(2f)
-                    if (bi.tier < MergeBoard.MAX_TIER) chainQueue += ChainJob(bonus, 0.3f, 1, bi.uid)
+                    if (bi.tier < board.mergeCap) chainQueue += ChainJob(bonus, 0.3f, 1, bi.uid)
                 }
             }
         }

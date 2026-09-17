@@ -22,6 +22,9 @@ sealed interface DropResult {
     data class Moved(val to: Int) : DropResult
     data class Swapped(val to: Int) : DropResult
 
+    /** 공방 레벨이 모자라 합성이 막힘 */
+    data class Locked(val tier: Int) : DropResult
+
     /**
      * @param cell 합성된 칸
      * @param bonusCell 5개 합성 시 추가 상위 아이템이 생긴 칸
@@ -40,7 +43,9 @@ sealed interface DropResult {
 data class ChainResult(val cell: Int, val from: Int, val tier: Int, val chestsOpened: List<Int>)
 
 /** 7x5 머지 보드 규칙 (기획서: 같은 라인·같은 단계 2개 → 다음 단계 1개) */
-class MergeBoard(val cols: Int, val rows: Int, private val random: Random = Random.Default) {
+class MergeBoard(val cols: Int, val rows: Int, private val random: Random = Random.Default, val maxTier: Int = 8) {
+    /** 공방 레벨로 해금된 합성 상한 (이 단계까지만 합쳐진다) */
+    var mergeCap: Int = maxTier
     val cells = Array(cols * rows) { Cell() }
     val size get() = cells.size
     private var nextUid = 1
@@ -104,7 +109,8 @@ class MergeBoard(val cols: Int, val rows: Int, private val random: Random = Rand
             cells[from].item = null
             return DropResult.Moved(to)
         }
-        if (src.sameAs(target) && target.tier < MAX_TIER) {
+        if (src.sameAs(target) && target.tier < maxTier) {
+            if (target.tier >= mergeCap) return DropResult.Locked(target.tier + 1)
             cells[from].item = null
             val baseTier = target.tier
             val grp = group(to, target.line, baseTier, from)
@@ -121,7 +127,7 @@ class MergeBoard(val cols: Int, val rows: Int, private val random: Random = Rand
             target.tier = baseTier + 1
             return DropResult.Merged(to, target.tier, bonus, consumed, openChestsAround(to))
         }
-        if (src.chest || target.chest || !src.sameAs(target) || target.tier >= MAX_TIER) {
+        if (src.chest || target.chest || !src.sameAs(target) || target.tier >= maxTier) {
             dst.item = src
             cells[from].item = target
             return DropResult.Swapped(to)
@@ -132,7 +138,7 @@ class MergeBoard(val cols: Int, val rows: Int, private val random: Random = Rand
     /** 연쇄 합성 상대: 인접한 같은 아이템 */
     fun chainPartner(cell: Int, busy: Int = -1): Int? {
         val it = cells[cell].item ?: return null
-        if (it.chest || it.tier >= MAX_TIER || cells[cell].frozen > 0f) return null
+        if (it.chest || it.tier >= maxTier || it.tier >= mergeCap || cells[cell].frozen > 0f) return null
         return neighbors(cell).firstOrNull { n -> n != busy && canUse(n) && cells[n].item!!.sameAs(it) }
     }
 
@@ -166,7 +172,4 @@ class MergeBoard(val cols: Int, val rows: Int, private val random: Random = Rand
         return Line.weapon
     }
 
-    companion object {
-        const val MAX_TIER = 8
-    }
 }

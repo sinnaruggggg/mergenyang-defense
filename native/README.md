@@ -8,14 +8,14 @@
 | 엔진 | libGDX 1.13.1 + KTX |
 | 게임 구조 | Fleks ECS (고양이·몬스터·투사체 엔티티, 시스템) |
 | UI | Scene2D (메뉴·팝업·결과·일시정지) |
-| 리소스 | TexturePacker 아틀라스 5장 + 배경 PNG |
+| 리소스 | TexturePacker 아틀라스 6장(ui·icons·items·portraits·chars·lobby) + 배경 PNG |
 | 데이터 | kotlinx.serialization + `assets/data/gamedata.json` (코드 수정 없이 밸런스 조정) |
 | 저장 | Jetpack DataStore (Android), 파일 (데스크톱 개발용) |
 | 빌드 | Gradle 8.14 Kotlin DSL, AGP 8.13, compileSdk/targetSdk 36, minSdk 26 |
 
 ## 모듈
 
-- `core`: 게임 규칙, 머지 보드, 웨이브, 전투 공식, 저장 모델 (순수 Kotlin, 서버와 공유 가능, 단위 테스트 12개)
+- `core`: 게임 규칙, 머지 보드, 웨이브, 전투 공식, 저장 모델 (순수 Kotlin, 서버와 공유 가능, 단위 테스트 13개)
 - `game`: libGDX 화면·연출·입력 (타이틀, 로비, 고양이, 성장, 모드, 스테이지, 상점, 랭킹, 전투)
 - `android`: 앱 실행기, DataStore 저장, 진동. 결제·광고·로그인 연동 자리(`AndroidServices`)
 - `desktop`: PC 개발 실행기, 자동 스크린샷 시나리오
@@ -46,6 +46,15 @@ D:/Android/Sdk/platform-tools/adb.exe -s emulator-5554 install -r apk/mergenyang
 ## 캐릭터 프레임 크기 보정
 
 대기 프레임(V3)과 공격 프레임(V4)은 원화 배율이 다르고, 공격 원화의 준비·타격 프레임끼리도 몸 크기가 다릅니다. 실루엣 겹침 비교로 구한 프레임별 보정값을 `gamedata.json`의 `atkFit` / `smithAtkFit`(`[[준비 배율, 가로 이동], [타격 배율, 가로 이동]]`)에 두고, 모든 화면이 `Chars.catAttack`을 거쳐 그립니다. 확인용 비교 시트는 자동 스크린샷의 `20_frame_sheet.png`입니다.
+
+## 합성 해금 규칙
+
+아이템은 4단계까지만 자유롭게 합성할 수 있고, 공방 레벨(대장간·머지냥이 강화 합계 + 1)이 오를 때마다 한 단계씩 열립니다. 요구 레벨은 뒤로 갈수록 가팔라집니다(`gamedata.json`의 `freeMergeTier`, `mergeUnlockLevels`: 2, 4, 7, 10, 14, 18, 23, 28, 34, 40, 47, 54 → 최대 16단계). 아직 열리지 않은 단계를 합치려 하면 필요한 공방 레벨을 알려 줍니다. 로비의 공방 카드에도 현재 상한과 다음 해금 레벨이 표시됩니다.
+
+## 참고
+
+- 빌드 결과물은 경로에 한글이 없는 폴더로 옮겨지므로, `GRADLE_USER_HOME`도 영문 경로를 쓰세요(예: `export GRADLE_USER_HOME=D:/Android/gradle-home`). 한글 경로면 Gradle 테스트 실행기가 뜨지 않습니다.
+- 자동 스크린샷은 절대 경로로 주는 편이 안전합니다(상대 경로는 `assets` 기준으로 만들어집니다).
 
 ## 아직 연동하지 않은 것
 

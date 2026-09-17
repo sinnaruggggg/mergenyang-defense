@@ -1,0 +1,72 @@
+{
+  "width": 941,
+  "height": 1672,
+  "layers": [
+    {
+      "id": "forge",
+      "x": 0,
+      "y": 260,
+      "w": 319,
+      "h": 622,
+      "depth": 878,
+      "file": "forge.png"
+    },
+    {
+      "id": "weapons",
+      "x": 286,
+      "y": 499,
+      "w": 84,
+      "h": 253,
+      "depth": 753,
+      "file": "weapons.png"
+    },
+    {
+      "id": "small-barrel",
+      "x": 676,
+      "y": 649,
+      "w": 50,
+      "h": 111,
+      "depth": 763,
+      "file": "small-barrel.png"
+    },
+    {
+      "id": "right-workbench",
+      "x": 675,
+      "y": 320,
+      "w": 266,
+      "h": 610,
+      "depth": 964,
+      "file": "right-workbench.png"
+    },
+    {
+      "id": "central-table",
+      "x": 321,
+      "y": 820,
+      "w": 438,
+      "h": 268,
+      "depth": 1080,
+      "file": "central-table.png"
+    },
+    {
+      "id": "left-chest",
+      "x": 0,
+      "y": 994,
+      "w": 183,
+      "h": 293,
+      "depth": 1280,
+      "file": "left-chest.png"
+    },
+    {
+      "id": "right-armor",
+      "x": 717,
+      "y": 895,
+      "w": 224,
+      "h": 525,
+      "depth": 1420,
+      "file": "right-armor.png"
+    }
+  ],
+  "validation": {
+    "differentPixels": 0
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "start": [
+    [
+      487.778958554729,
+      803.4006376195537
+    ],
+    [
+      694.3676939426142,
+      918.17215727949
+    ]
+  ],
+  "live": {
+    "travel": 637.132139971018,
+    "positions": [
+      [
+        350.05313496280553,
+        996.1285690754519
+      ],
+      [
+        519.1897624867163,
+        987.0350690754517
+      ]
+    ],
+    "invalid": 0
+  },
+  "growthButtonWorks": true,
+  "sourceAssembly": {
+    "mismatchedPixels": 0,
+    "method": "decoded-pixel comparison of actual compositing, not original-file copy"
+  }
+}

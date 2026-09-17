@@ -1,0 +1,23 @@
+{
+  "canvas": [
+    1000,
+    1000
+  ],
+  "frames": [
+    "raised.png",
+    "strike.png"
+  ],
+  "scale": 1,
+  "translationOnly": true,
+  "offsets": [
+    [
+      50,
+      100
+    ],
+    [
+      85,
+      100
+    ]
+  ],
+  "note": "AI-drawn poses share rendering scale; source pixel identity is not guaranteed between poses."
+}

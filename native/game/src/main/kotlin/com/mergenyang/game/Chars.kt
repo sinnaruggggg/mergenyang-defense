@@ -11,12 +11,15 @@ import com.mergenyang.core.GameData
 object Chars {
     lateinit var data: GameData
 
+    /** 캐릭터별 표시 배율 */
+    fun viewScale(id: String): Float = data.cats.firstOrNull { it.id == id }?.viewScale ?: 1f
+
     fun idleKey(anim: String, t: Float, phase: Float = 0f) = "chars/idle_${anim}_${((t * 2.5f + phase).toInt()) % 2}"
 
     fun idle(
         anim: String, x: Float, feetY: Float, s: Float, t: Float, phase: Float = 0f,
         flip: Boolean = false, sx: Float = 1f, sy: Float = 1f, alpha: Float = 1f, flash: Float = 0f, gray: Boolean = false,
-    ) = Gfx.frame(idleKey(anim, t, phase), x, feetY, s, flip, sx, sy, alpha, flash, gray)
+    ) = Gfx.frame(idleKey(anim, t, phase), x, feetY, s * viewScale(anim), flip, sx, sy, alpha, flash, gray)
 
     /** 고양이 공격 프레임 (id: warrior … wizard, smith) */
     fun catAttack(
@@ -24,8 +27,19 @@ object Chars {
         flip: Boolean = false, sx: Float = 1f, sy: Float = 1f, alpha: Float = 1f, flash: Float = 0f, gray: Boolean = false,
     ) {
         val fit = (if (id == "smith") data.smithAtkFit else data.cat(id).atkFit)[frame]
-        val dx = fit[1] * s * (if (flip) -1f else 1f)
-        Gfx.frame("chars/atk_cat-${id}_$frame", x + dx, feetY, s * fit[0], flip, sx, sy, alpha, flash, gray)
+        val vs = viewScale(id)
+        val dx = fit[1] * s * vs * (if (flip) -1f else 1f)
+        Gfx.frame("chars/atk_cat-${id}_$frame", x + dx, feetY, s * fit[0] * vs, flip, sx, sy, alpha, flash, gray)
+    }
+
+    /** 걷는 2프레임 (없으면 공격 준비 프레임으로 대체) */
+    fun walk(atkId: String, x: Float, feetY: Float, s: Float, t: Float, phase: Float = 0f,
+             sx: Float = 1f, sy: Float = 1f, alpha: Float = 1f, flash: Float = 0f, flip: Boolean = false) {
+        val frame = ((t * 5f + phase).toInt()) % 2
+        val scale = s * viewScale(atkId.removePrefix("cat-"))
+        val key = "chars/walk_${atkId}_$frame"
+        if (Gfx.assets.region(key) != null) Gfx.frame(key, x, feetY, scale, flip, sx, sy, alpha, flash)
+        else Gfx.frame("chars/atk_${atkId}_0", x, feetY, scale, flip, sx, sy, alpha, flash)
     }
 
     /** 몬스터·보스 프레임 (왼쪽을 바라봄) */

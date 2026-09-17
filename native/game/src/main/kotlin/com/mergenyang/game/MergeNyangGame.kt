@@ -185,6 +185,9 @@ class MergeNyangGame(val platform: Platform) : KtxGame<KtxScreen>(clearScreen = 
 
     fun currentScreenName(): String = currentScreen::class.java.simpleName
 
+    /** 개발 도구에서 현재 화면 접근 */
+    fun currentScreenOrNull(): Any? = if (loaded) currentScreen else null
+
     fun persist() {
         save.lastSeen = save.lastSeen.coerceAtLeast(1)
         platform.saveStore.save(save.toJson())

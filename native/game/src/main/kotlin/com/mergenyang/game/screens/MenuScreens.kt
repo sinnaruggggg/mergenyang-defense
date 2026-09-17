@@ -64,7 +64,7 @@ class TitleScreen(game: MergeNyangGame) : MenuScreen(game, "workshop") {
             Gfx.panel(240f, 1620f, 600f, 120f)
             Gfx.text("터치하여 시작", 540f, 1680f, 50f, alpha = a)
             Gfx.text("고양이가 만들고, 고양이가 싸운다!", 540f, 1820f, 32f, Color.WHITE, outline = true)
-            Gfx.text("v0.1 · Android 네이티브", 540f, 1880f, 22f, Color.WHITE, outline = true)
+            Gfx.text("v0.2 · Android 네이티브", 540f, 1880f, 22f, Color.WHITE, outline = true)
         }, 0f, 0f, Gfx.W, Gfx.H)
         g.at(HitActor {
             game.audio.play("produce")
@@ -77,47 +77,21 @@ class TitleScreen(game: MergeNyangGame) : MenuScreen(game, "workshop") {
     companion object { val DIMMER: Color = Gfx.color("281408ff") }
 }
 
-// ======================= 로비 =======================
-class LobbyScreen(game: MergeNyangGame) : MenuScreen(game, "workshop") {
-    private class Walker(val id: String, var x: Float, val y: Float, var vx: Float) {
-        var jump = 0f
-        var wait = rnd(1f, 3f)
-        var face = sign(vx)
-    }
-
-    private val walkers = ArrayList<Walker>()
+// ======================= 로비 (새 대장간 UI) =======================
+class LobbyScreen(game: MergeNyangGame) : MenuScreen(game, "lobby-room") {
     private var lastCyc = 0f
 
     override fun onBack() = Unit
 
-    override fun show() {
-        walkers.clear()
-        save.squad.forEachIndexed { i, id ->
-            walkers += Walker(data.cat(id).id, 380f + i * 360f, 900f + i * 30f, if (i == 0) 60f else -60f)
-        }
-        super.show()
-    }
-
     override fun update(delta: Float) {
-        for (w in walkers) {
-            if (w.jump > 0) w.jump -= delta
-            w.wait -= delta
-            if (w.wait <= 0) {
-                w.x += w.vx * delta
-                if (w.x < 200f || w.x > 880f) {
-                    w.vx = -w.vx
-                    w.x = w.x.coerceIn(200f, 880f)
-                }
-                w.face = sign(w.vx)
-                if (rnd(0f, 1f) < 0.004f) w.wait = rnd(1f, 3f)
-            }
-        }
         val cyc = time % 1.4f
-        if (cyc < lastCyc) fx.sparks(170f, 800f, SPARK, 10, -PI.toFloat() / 2, 2f)
+        if (cyc < lastCyc) fx.sparks(300f, 980f, SPARK, 8, -PI.toFloat() / 2, 2f)
         lastCyc = cyc
     }
 
     override fun build(g: Group) {
+        // 대장장이 반신 그림 (아래쪽은 보상 카드 뒤로 들어간다)
+        g.at(DrawActor { Gfx.fit("bg/lobby-smith", 570f, 897f, 720f, 720f) }, 0f, 300f, Gfx.W, 900f)
         topBar(g)
         g.at(PanelActor("ui/title-banner", 100, 0.5f), 150f, 108f, 780f, 124f)
         g.at(TextActor("냥이들의 대장간", 52f), 150f, 108f, 780f, 124f)
@@ -125,67 +99,75 @@ class LobbyScreen(game: MergeNyangGame) : MenuScreen(game, "workshop") {
         g.at(NyButton("도감", "cream", icon = "icons/book", textSize = 30f) { showPopup("codex") }, 24f, 250f, 200f, 80f)
         g.at(NyButton("도움말", "mint", icon = "icons/help", textSize = 30f) { showPopup("help") }, 856f, 250f, 200f, 80f)
 
-        // 대장장이와 산책하는 고양이 (탭하면 점프)
+        // 방치 보상 카드
         g.at(DrawActor {
-            val cyc = time % 1.4f
-            Chars.catAttack("smith", if (cyc < 0.2f) 1 else 0, 180f, 960f, 0.62f)
-            for (w in walkers.sortedBy { it.y }) {
-                val jy = if (w.jump > 0) sin((w.jump / 0.5f) * PI.toFloat()) * 90f else 0f
-                Chars.shadow(w.x, w.y, 200f)
-                val moving = w.wait <= 0
-                Chars.idle(w.id, w.x, w.y - jy - if (moving) abs(sin(time * 9f)) * 10f else 0f, 0.62f, time, flip = w.face < 0)
-            }
-        }, 0f, 330f, Gfx.W, 680f)
-        walkers.forEach { w ->
-            g.at(HitActor {
-                w.jump = 0.5f
-                game.audio.play("meow")
-                repeat(5) {
-                    fx.p {
-                        x = w.x + rnd(-40f, 40f); y = w.y - 250f; vx = rnd(-100f, 100f); vy = rnd(-300f, -150f)
-                        img = "icons/heart"; size = rnd(30f, 50f); life = 1f; additive = false; this.g = 100f; ui = true
-                    }
-                }
-            }.also { it.userObject = w }, w.x - 110f, w.y - 260f, 220f, 260f)
-        }
-
-        // 방치 보상
-        val (off, mins) = progress.offline(game.now)
-        g.at(PanelActor("ui/panel-cream"), 30f, 1010f, 1020f, 170f)
-        g.at(ImgActor("icons/chest"), 60f, 1040f, 120f, 110f)
-        g.at(TextActor("방치 보상이 도착했어요", 36f, align = Align.left), 200f, 1036f, 560f, 50f)
-        g.at(TextActor({
-            val (_, m) = progress.offline(game.now)
-            "${(m / 60).toInt()}시간 ${(m % 60).toInt()}분 · 최대 8시간"
-        }, 28f, Gfx.MUTED, Align.left), 200f, 1088f, 560f, 40f)
-        g.at(ImgActor("icons/gold"), 200f, 1133f, 30f, 30f)
-        g.at(TextActor({ fmt(progress.offline(game.now).first) }, 28f, Gfx.color("b07a10ff"), Align.left), 240f, 1128f, 300f, 40f)
-        g.at(NyButton("받기", "yellow") {
+            Gfx.fit("lobby/reward", 540f, 1210f, 1000f, 157f)
+            Gfx.fit("icons/chest", 120f, 1210f, 106f, 106f)
+            val (gold, mins) = progress.offline(game.now)
+            Gfx.text("방치 보상", 195f, 1172f, 34f, align = Align.left)
+            Gfx.text("${(mins / 60).toInt()}시간 ${(mins % 60).toInt()}분 · 최대 8시간", 195f, 1214f, 25f, Gfx.MUTED, Align.left)
+            Gfx.text("${fmt(gold)} 골드", 195f, 1245f, 24f, GOLD_TEXT, Align.left)
+            Gfx.fit("lobby/gold", 880f, 1210f, 245f, 69f, if (gold < 1) 0.55f else 1f)
+            Gfx.text("받기", 880f, 1207f, 29f, if (gold < 1) DIM_TEXT else DEEP_BROWN)
+        }, 0f, 1120f, Gfx.W, 180f)
+        g.at(HitActor {
             val (gold, _) = progress.offline(game.now)
-            save.gold += gold
-            save.lastSeen = game.now
-            game.persist()
-            fx.collect(900f, 1095f, "icons/gold", 400f, 56f, 20, true) { game.audio.play("coin") }
-            game.toast.show("골드 ${fmt(gold)} 획득!", Gfx.GOLD)
-            rebuild()
-        }.apply { disabled = off < 1 || mins < 1 }, 800f, 1045f, 220f, 100f)
+            if (gold >= 1) {
+                save.gold += gold
+                save.lastSeen = game.now
+                game.persist()
+                game.audio.play("chest")
+                fx.collect(880f, 1210f, "icons/gold", 400f, 56f, 20, true) { game.audio.play("coin") }
+                game.toast.show("골드 ${fmt(gold)} 획득!", Gfx.GOLD)
+                rebuild()
+            }
+        }, 758f, 1175f, 245f, 69f)
 
-        // 공방 레벨
+        // 공방 레벨 카드 (합성 해금 안내 포함)
         val lvl = progress.workshopLevel()
-        g.at(PanelActor("ui/panel-cream"), 30f, 1190f, 1020f, 190f)
-        g.at(TextActor("공방 Lv.$lvl", 40f, align = Align.left), 80f, 1215f, 400f, 56f)
-        g.at(TextActor("전투력 ${fmt(progress.power())}", 32f, Gfx.MUTED, Align.right), 560f, 1215f, 440f, 56f)
-        g.at(DrawActor { Gfx.bar(70f, 1275f, 940f, 44f, lvl / progress.workshopMaxLevel().toFloat(), "ui/progress-mint") }, 70f, 1275f, 940f, 44f)
-        g.at(TextActor("더 좋은 장비를 만드는 따뜻한 공방", 26f, Gfx.MUTED, Align.left), 80f, 1322f, 800f, 36f)
-        g.at(NyButton("대장간 성장", "yellow", icon = "icons/forge") { GrowthScreen.tab = "forge"; game.go<GrowthScreen>() }, 30f, 1395f, 500f, 120f)
-        g.at(NyButton("머지냥이 성장", "mint", icon = "icons/paw") { GrowthScreen.tab = "smith"; game.go<GrowthScreen>() }, 550f, 1395f, 500f, 120f)
+        val maxLv = progress.workshopMaxLevel()
+        val cap = game.rules.maxMergeTier(lvl)
+        val next = game.rules.nextMergeUnlock(lvl)
+        g.at(DrawActor {
+            Gfx.fit("lobby/level", 540f, 1375f, 1000f, 147f)
+            Gfx.text("공방 Lv.$lvl", 90f, 1336f, 34f, align = Align.left)
+            Gfx.text("전투력 ${fmt(progress.power())}", 990f, 1337f, 28f, Gfx.MUTED, Align.right)
+            Gfx.bar(90f, 1370f, 900f, 20f, lvl / maxLv.toFloat(), "ui/progress-mint")
+            val tip = if (next != null) "합성 ${cap}단계까지 · Lv.${next.second}에서 ${next.first}단계 해금"
+            else "모든 합성 단계를 열었어요!"
+            Gfx.text(tip, 90f, 1404f, 23f, Gfx.MUTED, Align.left)
+        }, 0f, 1300f, Gfx.W, 150f)
 
+        // 성장 버튼 두 개
+        g.at(DrawActor {
+            Gfx.fit("lobby/gold", 285f, 1526f, 490f, 137f)
+            Gfx.fit("lobby/mint", 795f, 1526f, 490f, 137f)
+            Gfx.fit("icons/forge", 140f, 1526f, 78f, 78f)
+            Gfx.fit("icons/paw", 649f, 1526f, 70f, 70f)
+            Gfx.text("대장간 성장", 335f, 1524f, 34f)
+            Gfx.text("머지냥이 성장", 848f, 1524f, 32f)
+        }, 0f, 1450f, Gfx.W, 145f)
+        g.at(HitActor { game.audio.play("click"); GrowthScreen.tab = "forge"; game.go<GrowthScreen>() }, 40f, 1458f, 490f, 137f)
+        g.at(HitActor { game.audio.play("click"); GrowthScreen.tab = "smith"; game.go<GrowthScreen>() }, 550f, 1458f, 490f, 137f)
+
+        // 모험 떠나기
         val ch = progress.unlockedChapter()
         val st = progress.unlockedStage(ch)
-        g.at(NyButton("모험 떠나기", "yellow", sub = "다음: ${ch + 1}-${st + 1} ${data.chapters[ch].name}", icon = "icons/sword", textSize = 60f, pulse = true) {
-            game.go<ModesScreen>()
-        }, 30f, 1530f, 1020f, 190f)
+        g.at(DrawActor {
+            Gfx.fit("lobby/adventure", 540f, 1673f, 1000f, 136f)
+            Gfx.fit("icons/sword", 304f, 1664f, 76f, 76f)
+            Gfx.text("모험 떠나기", 595f, 1646f, 44f)
+            Gfx.text("다음: ${ch + 1}-${st + 1} ${data.chapters[ch].name}", 595f, 1684f, 24f, ADVENTURE_SUB)
+        }, 0f, 1600f, Gfx.W, 145f)
+        g.at(HitActor { game.audio.play("click"); game.go<ModesScreen>() }, 40f, 1605f, 1000f, 136f)
         tabBar(g, "lobby")
+    }
+
+    companion object {
+        val GOLD_TEXT: Color = Gfx.color("98651bff")
+        val DEEP_BROWN: Color = Gfx.color("65441cff")
+        val DIM_TEXT: Color = Gfx.color("8e795eff")
+        val ADVENTURE_SUB: Color = Gfx.color("86612fff")
     }
 }
 
@@ -462,7 +444,7 @@ class ShopScreen(game: MergeNyangGame) : MenuScreen(game, "shop") {
     override fun build(g: Group) {
         topBar(g)
         header(g, "냥냥 상점", "오늘의 작은 선물을 만나보세요")
-        g.at(DrawActor { Chars.idle("smith", 540f, 700f, 0.75f, time) }, 0f, 300f, Gfx.W, 420f)
+        g.at(DrawActor { Gfx.fit("bg/shop-merchant", 540f, 552f, 486f, 486f) }, 0f, 300f, Gfx.W, 500f)
         val free = save.dailyChest != game.today
         g.at(PanelActor("ui/panel-cream"), 30f, 720f, 1020f, 190f)
         g.at(ImgActor("icons/chest"), 70f, 750f, 140f, 130f)

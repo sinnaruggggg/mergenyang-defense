@@ -4,7 +4,6 @@ import com.badlogic.gdx.graphics.Color
 import com.badlogic.gdx.utils.Align
 import com.mergenyang.core.BoardItem
 import com.mergenyang.core.Line
-import com.mergenyang.core.MergeBoard
 import com.mergenyang.core.Mode
 import com.mergenyang.game.Chars
 import com.mergenyang.game.Gfx
@@ -100,7 +99,8 @@ class BattleRenderer(private val b: Battle) {
         if (e.flash > 0.5f) { sx *= 1.05f; sy *= 0.94f }
         val lunge = if (e.state == FoeState.ATTACK && e.struck) -25f else 0f
         if (e.isBoss && e.rageT > 0f) Gfx.additive { Gfx.glow(e.x, y - 200f, 330f, RAGE_RED, 0.5f) }
-        Chars.foe(e.atkId, frame, e.x + lunge, y, e.scale, sx, sy, alpha, e.flash)
+        if (e.state == FoeState.WALK && !e.dead) Chars.walk(e.atkId, e.x, y, e.scale, t, e.bob, sx, sy, alpha, e.flash)
+        else Chars.foe(e.atkId, frame, e.x + lunge, y, e.scale, sx, sy, alpha, e.flash)
         if (e.dead) return
         if (e.isBoss && e.shieldHp > 0) {
             Gfx.additive {
@@ -196,7 +196,7 @@ class BattleRenderer(private val b: Battle) {
             Gfx.fit("ui/board-cell", cx, cy, Layout.CELL, Layout.CELL)
             if (d != null && i == hover && hover != d.from) {
                 val other = cell.item
-                val good = other != null && other.sameAs(d.item) && other.tier < MergeBoard.MAX_TIER && cell.frozen <= 0f
+                val good = other != null && other.sameAs(d.item) && other.tier < b.mergeCap && cell.frozen <= 0f
                 if (good) Gfx.img("ui/merge-glow", x - 30f, y - 30f, Layout.CELL + 60f, Layout.CELL + 60f, 0.6f + 0.3f * sin(t * 12f))
                 else Gfx.fit("ui/board-cell", cx, cy, Layout.CELL, Layout.CELL, 0.5f, HOVER)
             }
@@ -209,7 +209,7 @@ class BattleRenderer(private val b: Battle) {
                     drawItem(it, fxX, fxY, 0.6f + k * 0.4f)
                 } else {
                     val pop = if (it.pop > 0f) 1f + sin((1f - it.pop / 0.4f) * PI.toFloat()) * 0.35f else 1f
-                    if (d != null && d.moved && it.sameAs(d.item) && it.tier < MergeBoard.MAX_TIER) {
+                    if (d != null && d.moved && it.sameAs(d.item) && it.tier < b.mergeCap) {
                         Gfx.additive { Gfx.fit("ui/board-cell", cx, cy, Layout.CELL - 8f, Layout.CELL - 8f, 0.25f + 0.2f * sin(t * 8f), Gfx.lineColor(it.line)) }
                     }
                     if (!it.chest && it.tier >= 6) Gfx.additive { Gfx.glow(cx, cy, 70f, LEGEND_GLOW, 0.25f + 0.15f * sin(t * 4f + i)) }

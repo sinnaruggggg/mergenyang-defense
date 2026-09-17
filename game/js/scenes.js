@@ -39,19 +39,30 @@ const TABS = [
   { id: 'ranking', label: '랭킹', icon: 'icon.trophy' },
 ];
 function tabBar(active) {
-  UI.panel(10, 1745, 1060, 170, 'cream');
+  if(active==='lobby'){
+    imgFit('lobby.ui.reward',540,1830,1000,157);
+    TABS.forEach((t,i)=>{
+      const x=140+i*200;
+      if(t.id===active)imgFit('lobby.ui.mint',x,1815,174,62);
+      imgFit(t.icon,x,1807,66,66);
+      text(t.label,x,1865,{size:27,color:t.id===active?'#315737':'#634c39'});
+      if(UI.hit(x-95,1760,190,142)&&t.id!==active){Audio2.sfx('click');Game.go(t.id);}
+    });return;
+  }
+  const compact = active === 'lobby', py = compact ? 1800 : 1745;
+  UI.panel(10, py, 1060, compact ? 115 : 170, 'cream');
   const w = 1000 / TABS.length;
   TABS.forEach((t, i) => {
     const x = 40 + i * w, on = t.id === active || (active === 'stages' && t.id === 'modes') || (active === 'growth' && t.id === 'lobby');
-    if (on) nine('ui.button-mint-selected', x + 6, 1765, w - 12, 132, 60, 0.6);
+    if (on) nine('ui.button-mint-selected', x + 6, py + 10, w - 12, compact ? 98 : 132, 45, 0.6);
     const b = on ? Math.sin(performance.now() / 200) * 4 : 0;
-    imgFit(t.icon, x + w / 2, 1812 + b, on ? 84 : 72, on ? 84 : 72);
-    text(t.label, x + w / 2, 1872, { size: 28, color: on ? '#2a5a3a' : '#7a5636' });
-    if (UI.hit(x, 1760, w, 150) && !on) { Audio2.sfx('click'); Game.go(t.id); }
+    imgFit(t.icon, x + w / 2, py + (compact ? 42 : 67) + b, compact ? 62 : (on ? 84 : 72), compact ? 62 : (on ? 84 : 72));
+    text(t.label, x + w / 2, py + (compact ? 92 : 127), { size: compact ? 25 : 28, color: on ? '#2a5a3a' : '#7a5636' });
+    if (UI.hit(x, py + 10, w, compact ? 105 : 150) && !on) { Audio2.sfx('click'); Game.go(t.id); }
   });
 }
 function idleCat(id, x, y, S, t, o = {}) {
-  const k = IDLE_K[CATS[id] ? CATS[id].anim : id] || 1;
+  const k = (IDLE_K[CATS[id] ? CATS[id].anim : id] || 1) * (((CATS[id] || {}).view) || 1);
   drawSprite(`anim.${CATS[id] ? CATS[id].anim : id}.idle-${Math.floor(t * 2.5 + (o.phase || 0)) % 2}`, x, y, S * k, o);
 }
 function walkSprite(atkId, x, y, S, t, o = {}) {
@@ -121,7 +132,7 @@ const LobbyScene = {
     Audio2.playBgm('lobby');
     this.t = 0;
     const sq = Save.data.squad;
-    this.walkers = WorkshopRoom.init(sq);
+    this.walkers = [];
   },
   offlineGold() {
     const S = Save.data;
@@ -145,7 +156,13 @@ const LobbyScene = {
   },
   draw() {
     const S = Save.data, t = this.t;
-    WorkshopRoom.draw(this.walkers, t);
+    const room = IMG['lobby.ui.main-background'];
+    if (room) {
+      const scale = Math.max(W / room.width, H / room.height);
+      img('lobby.ui.main-background', (W - room.width * scale) / 2, (H - room.height * scale) / 2, room.width * scale, room.height * scale);
+    }
+    // Large waist-up portrait, bottom tucked behind the reward card.
+    imgFit('lobby.ui.smith', 570, 897, 720, 720);
     topBar();
     nine('ui.title-banner', 150, 108, 780, 124, 100, 0.5);
     text('냥이들의 대장간', W / 2, 170, { size: 52 });
@@ -155,30 +172,41 @@ const LobbyScene = {
     ctx.save(); FX.drawWorld(); ctx.restore();
     // 방치 보상
     const off = this.offlineGold();
-    UI.panel(30, 1010, 1020, 170, 'cream');
-    imgFit('icon.chest', 120, 1095, 120, 110);
-    text('방치 보상이 도착했어요', 200, 1060, { size: 36, align: 'left' });
-    text(`${Math.floor(off.mins / 60)}시간 ${Math.floor(off.mins % 60)}분 · 최대 8시간`, 200, 1110, { size: 28, align: 'left', color: '#8a6a4a' });
-    imgFit('icon.gold', 200 + 18, 1148, 30, 30);
-    text(fmt(off.gold), 240, 1148, { size: 28, align: 'left', color: '#b07a10' });
-    if (UI.button(800, 1045, 220, 100, '받기', { color: 'yellow', disabled: off.gold < 1 })) {
+    imgFit('lobby.ui.reward',540,1210,1000,157);
+    imgFit('icon.chest', 120, 1210, 106, 106);
+    text('방치 보상', 195, 1177, { size: 34, align: 'left' });
+    text(`${Math.floor(off.mins / 60)}시간 ${Math.floor(off.mins % 60)}분 · 최대 8시간`, 195, 1220, { size: 25, align: 'left', color: '#8a6a4a' });
+    text(`${fmt(off.gold)} 골드`,195,1251,{size:24,align:'left',color:'#98651b'});
+    imgFit('lobby.ui.gold',880,1210,245,69,off.gold<1?.55:1);
+    text('받기',880,1207,{size:29,color:off.gold<1?'#8e795e':'#65441c'});
+    if (off.gold>0 && UI.hit(758,1175,245,69)) {
       S.gold += off.gold; S.lastSeen = Date.now(); Save.save();
-      FX.collect(900, 1095, 'icon.gold', { x: 400, y: 56 }, 20, () => Audio2.sfx('coin'));
+      FX.collect(880, 1210, 'icon.gold', { x: 400, y: 56 }, 20, () => Audio2.sfx('coin'));
       Toast.show(`골드 ${fmt(off.gold)} 획득!`, '#ffe27a');
     }
     // 공방 레벨
     const lvl = 1 + [...FORGE_UPGRADES.map(u => Save.up('forge', u.id)), ...SMITH_UPGRADES.map(u => Save.up('smith', u.id))].reduce((a, b) => a + b, 0);
-    UI.panel(30, 1190, 1020, 190, 'cream');
-    text(`공방 Lv.${lvl}`, 80, 1245, { size: 40, align: 'left' });
-    text(`전투력 ${fmt(Save.power())}`, 1000, 1245, { size: 32, align: 'right', color: '#8a6a4a' });
+    imgFit('lobby.ui.level',540,1375,1000,147);
+    text(`공방 Lv.${lvl}`, 90, 1343, { size: 34, align: 'left' });
+    text(`전투력 ${fmt(Save.power())}`, 990, 1343, { size: 28, align: 'right', color: '#8a6a4a' });
     const maxLv = 1 + FORGE_UPGRADES.reduce((a, u) => a + u.max, 0) + SMITH_UPGRADES.reduce((a, u) => a + u.max, 0);
-    bar(70, 1280, 940, 44, lvl / maxLv, 'ui.progress-mint');
-    text('더 좋은 장비를 만드는 따뜻한 공방', 80, 1350, { size: 26, align: 'left', color: '#8a6a4a' });
-    if (UI.button(30, 1395, 500, 120, '대장간 성장', { color: 'yellow', icon: 'icon.forge' })) Game.go('growth', 'forge');
-    if (UI.button(550, 1395, 500, 120, '머지냥이 성장', { color: 'mint', icon: 'icon.paw' })) Game.go('growth', 'smith');
+    bar(90, 1373, 900, 25, lvl / maxLv, 'ui.progress-mint');
+    text('장비를 만들며 공방을 성장시키세요',90,1420,{size:23,align:'left',color:'#8a6a4a'});
+    imgFit('lobby.ui.gold',285,1526,490,137);
+    imgFit('lobby.ui.mint',795,1526,490,137);
+    imgFit('icon.forge',140,1526,78,78);
+    imgFit('icon.paw',649,1526,70,70);
+    text('대장간 성장',335,1524,{size:34});
+    text('머지냥이 성장',848,1524,{size:32});
+    if (UI.hit(40,1458,490,137)) Game.go('growth', 'forge');
+    if (UI.hit(550,1458,490,137)) Game.go('growth', 'smith');
     // 진행 상황 + 모험
     const ch = Save.unlockedChapter(), st = Save.unlockedStage(ch);
-    if (UI.button(30, 1530, 1020, 190, '모험 떠나기', { color: 'yellow', icon: 'icon.sword', size: 60, sub: `다음: ${ch + 1}-${st + 1} ${CHAPTERS[ch].name}`, pulse: true })) Game.go('modes');
+    imgFit('lobby.ui.adventure',540,1673,1000,136);
+    imgFit('icon.sword',304,1664,76,76);
+    text('모험 떠나기',595,1650,{size:44});
+    text(`다음: ${ch+1}-${st+1} ${CHAPTERS[ch].name}`,595,1693,{size:24,color:'#86612f'});
+    if (UI.hit(40,1605,1000,136)) Game.go('modes');
     tabBar('lobby');
     Toast.draw();
     FX.drawParts(true);
@@ -425,7 +453,7 @@ const ShopScene = {
     img('bg.shop', 0, 0, W, H);
     topBar();
     header('냥냥 상점', '오늘의 작은 선물을 만나보세요');
-    drawSprite(`anim.smith.idle-${Math.floor(t * 2) % 2}`, 540, 700, 0.75);
+    imgFit('shop.merchant', 540, 525, 510, 510);
     const today = new Date().toDateString();
     const free = S.dailyChest !== today;
     UI.panel(30, 720, 1020, 190, 'cream');

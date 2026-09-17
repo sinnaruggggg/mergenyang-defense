@@ -226,19 +226,20 @@ abstract class MenuScreen(val game: MergeNyangGame, private val background: Stri
             "codex" -> {
                 p.at(PanelActor("ui/panel-cream"), 40f, 300f, 1000f, 1350f)
                 p.at(TextActor("수집 도감", 56f), 40f, 350f, 1000f, 80f)
+                val maxTier = game.rules.maxTier
                 Line.entries.forEachIndexed { li, line ->
-                    p.at(TextActor(data.line(line).name, 32f, Gfx.lineColor(line), Align.left, outline = true), 80f, 460f + li * 270f, 300f, 44f)
+                    p.at(TextActor(data.line(line).name, 32f, Gfx.lineColor(line), Align.left, outline = true), 80f, 440f + li * 285f, 300f, 44f)
                     val got = save.maxTier[line.name] ?: 0
-                    for (t in 1..8) {
-                        val x = 80f + (t - 1) * 116f
-                        val y = 510f + li * 270f
+                    for (t in 1..maxTier) {
+                        val x = 80f + ((t - 1) % 8) * 116f
+                        val y = 470f + li * 285f + ((t - 1) / 8) * 108f
                         p.at(ImgActor("ui/board-cell"), x, y + 6f, 108f, 108f)
-                        p.at(ImgActor("items/${line.name}-$t", tint = if (t <= got) Color.WHITE else SILHOUETTE), x + 9f, y + 20f, 90f, 80f)
-                        p.at(TextActor("$t", 22f, Gfx.MUTED), x + 70f, y + 88f, 30f, 28f)
+                        p.at(ImgActor("items/${line.name}-$t", tint = if (t <= got) Color.WHITE else SILHOUETTE), x + 9f, y + 16f, 90f, 80f)
+                        p.at(TextActor("$t", 22f, Gfx.MUTED), x + 70f, y + 84f, 30f, 28f)
                     }
                 }
                 val cnt = Line.entries.sumOf { save.maxTier[it.name] ?: 0 }
-                p.at(TextActor("수집률 $cnt / 32 · 화면을 누르면 닫혀요", 34f), 40f, 1550f, 1000f, 60f)
+                p.at(TextActor("수집률 $cnt / ${Line.entries.size * maxTier} · 화면을 누르면 닫혀요", 34f), 40f, 1550f, 1000f, 60f)
             }
             "help" -> {
                 p.at(PanelActor("ui/panel-cream"), 60f, 330f, 960f, 1300f)

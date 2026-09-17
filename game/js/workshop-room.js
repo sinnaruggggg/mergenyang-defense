@@ -1,28 +1,30 @@
 'use strict';
-// Existing artwork retained. Background has a single uniform scale and vertical camera offset.
+// Fixed camera and original raster pixels from the approved illustration.
 const WorkshopRoom = {
-  cameraY: -360,
-  bounds: { left: 90, right: 990, top: 560, bottom: 956 },
-  props: [
-    {id:'forge',x:178,y:660,width:275,footW:220,footD:70},
-    {id:'bench',x:840,y:680,width:286,footW:230,footD:68},
-    {id:'anvil',x:420,y:814,width:144,footW:110,footD:42},
-    {id:'barrel',x:858,y:923,width:130,footW:104,footD:38},
-    {id:'crates',x:160,y:926,width:176,footW:144,footD:48},
+  scale:1080/941,
+  bounds:{left:285*1080/941,right:825*1080/941,top:620*1080/941,bottom:1140*1080/941},
+  sourceLayers:[
+    {id:'forge',x:0,y:260,w:319,h:622,depth:878},
+    {id:'weapons',x:286,y:499,w:84,h:253,depth:753},
+    {id:'small-barrel',x:676,y:649,w:50,h:111,depth:763},
+    {id:'right-workbench',x:675,y:320,w:266,h:610,depth:964},
+    {id:'central-table',x:321,y:820,w:438,h:268,depth:1080},
+    {id:'left-chest',x:0,y:994,w:183,h:293,depth:1280},
+    {id:'right-armor',x:717,y:895,w:224,h:525,depth:1420}
   ],
-  blocked(x,y,pad=26){
-    const b=this.bounds;
-    if(x<b.left||x>b.right||y<b.top||y>b.bottom)return true;
-    return this.props.some(p=>Math.abs(x-p.x)<p.footW/2+pad&&y>p.y-p.footD-pad&&y<p.y+pad)
-      || (Math.abs(x-420)<48&&Math.abs(y-866)<35);
+  props:[],
+  blocked(x,y){
+    const s=this.scale;x/=s;y/=s;
+    if(x<285||x>825||y<620||y>1140)return true;
+    return(x<305&&y>675&&y<940)||(x>680&&y>715&&y<960)||(x>315&&x<765&&y>930&&y<1100);
   },
   init(ids){
-    this.nodes=[];
-    for(let y=560;y<=950;y+=30)for(let x=90;x<=990;x+=30)if(!this.blocked(x,y))this.nodes.push({x,y});
-    this.lookup=new Map(this.nodes.map((n,i)=>[n.x+','+n.y,i]));
-    this.nodes.forEach(n=>{n.next=[];for(const [dx,dy]of [[30,0],[-30,0],[0,30],[0,-30]]){const k=this.lookup.get((n.x+dx)+','+(n.y+dy));if(k!==undefined)n.next.push(k)}});
-    this.travel=0;
-    return ids.map((id,i)=>{const n=this.nodes[Math.floor((i+1)*this.nodes.length/(ids.length+1))];return{id,x:n.x,y:n.y,face:1,wait:.4+i*.5,phase:i,path:[],moving:false,jump:0}});
+    const s=this.scale;this.nodes=[];
+    for(let y=620;y<=1140;y+=20)for(let x=285;x<=825;x+=20)if(!this.blocked(x*s,y*s))this.nodes.push({x:x*s,y:y*s});
+    this.lookup=new Map(this.nodes.map((n,i)=>[Math.round(n.x/s)+','+Math.round(n.y/s),i]));
+    this.nodes.forEach(n=>{n.next=[];for(const[dx,dy]of[[20,0],[-20,0],[0,20],[0,-20]]){const k=this.lookup.get((Math.round(n.x/s)+dx)+','+(Math.round(n.y/s)+dy));if(k!==undefined)n.next.push(k)}});
+    this.props=this.sourceLayers.map(p=>({id:p.id,x:(p.x+p.w/2)*s,y:p.depth*s,width:p.w*s,footW:p.w*s,footD:40*s}));this.travel=0;
+    return ids.map((id,i)=>{const target={x:(i?605:425)*s,y:(i?800:700)*s};const n=this.nodes.reduce((best,v)=>Math.hypot(v.x-target.x,v.y-target.y)<Math.hypot(best.x-target.x,best.y-target.y)?v:best,this.nodes[0]);return{id,x:n.x,y:n.y,face:1,wait:.3+i*.7,phase:i,path:[],moving:false,jump:0,art:id==='warrior'||id==='tank'?'warrior':id==='mage'?'mage':'scout'}});
   },
   route(w,target){
     let start=0,dist=Infinity;this.nodes.forEach((n,i)=>{const d=Math.hypot(n.x-w.x,n.y-w.y);if(d<dist){start=i;dist=d}});
@@ -32,31 +34,23 @@ const WorkshopRoom = {
   },
   update(w,dt,others){
     w.jump=Math.max(0,w.jump-dt);w.wait-=dt;w.moving=false;if(w.wait>0)return;
-    if(!w.path.length){w.path=this.route(w,Math.floor(Math.random()*this.nodes.length));w.wait=.5+Math.random();return}
-    const target=w.path[0],dx=target.x-w.x,dy=target.y-w.y,d=Math.hypot(dx,dy),step=Math.min(d,dt*78);
+    if(!w.path.length){w.path=this.route(w,Math.floor(Math.random()*this.nodes.length));w.wait=.3+Math.random()*.7;return}
+    const target=w.path[0],dx=target.x-w.x,dy=target.y-w.y,d=Math.hypot(dx,dy),step=Math.min(d,dt*65);
     if(d<.2){w.path.shift();return}
     const x=w.x+dx/d*step,y=w.y+dy/d*step;
-    // Separate cats on narrow paths without crossing a prop's ground footprint.
-    if(others.some(o=>o!==w&&Math.hypot(o.x-x,o.y-y)<40)){w.wait=.3+Math.random()*.5;w.path=[];return}
+    if(others.some(o=>o!==w&&Math.hypot(o.x-x,o.y-y)<45)){w.wait=.3;w.path=[];return}
     if(this.blocked(x,y)){w.path=[];return}
     w.x=x;w.y=y;w.moving=true;this.travel+=step;if(Math.abs(dx)>1)w.face=dx<0?-1:1;
   },
   draw(walkers,t){
-    img('workshop2.bg',0,0,W,H);
-    ctx.save();ctx.beginPath();ctx.rect(0,0,W,1010);ctx.clip();
-    img('workshop2.bg',0,this.cameraY,W,H);
-    const layers=[];
-    // Contact shadows are painted PNGs and lie on the ground, below every sprite.
-    for(const p of this.props){img('ui.ground-shadow',p.x-p.footW*.59,p.y-15,p.footW*1.18,26,.52);layers.push({y:p.y-p.footD*.3,draw:()=>{
-      const im=IMG['workshop2.'+p.id];if(!im)return;const h=p.width*im.height/im.width;
-      img('workshop2.'+p.id,p.x-p.width/2,p.y-h,p.width,h);
-    }})}
-    for(const w of walkers){const scale=.34+(w.y-560)/396*.08;
-      img('ui.ground-shadow',w.x-49,w.y-9,98,18,.65);
-      layers.push({y:w.y,draw:()=>drawSprite('walk.'+CATS[w.id].atkId+'.'+(w.moving?Math.floor(t*5+w.phase)%2:0),w.x,w.y-(w.jump>0?Math.sin(w.jump/.5*Math.PI)*35:0),scale,{flip:w.face<0})});
+    const s=this.scale;img('workshop.approved.background',0,0,941*s,1672*s);
+    ctx.save();ctx.beginPath();ctx.rect(0,0,W,1350);ctx.clip();
+    const layers=this.sourceLayers.map(p=>({y:p.depth*s,draw:()=>img('workshop.approved.'+p.id,p.x*s,p.y*s,p.w*s,p.h*s)}));
+    for(const w of walkers){const key='workshop.approved.'+w.art,im=IMG[key];if(!im)continue;
+      const height=(150+(w.y/s-620)*.17)*s,width=height*im.width/im.height;
+      img('ui.ground-shadow',w.x-width*.33,w.y-8,width*.66,17,.55);
+      layers.push({y:w.y,draw:()=>{const bob=w.moving?(Math.floor(t*5+w.phase)%2)*2:0;ctx.save();ctx.translate(w.x,w.y-bob-(w.jump>0?Math.sin(w.jump/.5*Math.PI)*25:0));if(w.face<0)ctx.scale(-1,1);img(key,-width/2,-height,width,height);ctx.restore();}});
     }
-    img('ui.ground-shadow',375,856,90,18,.6);
-    layers.push({y:866,draw:()=>drawCatAttack('cat-smith',t%1.4<.2?1:0,420,866,.36)});
     layers.sort((a,b)=>a.y-b.y).forEach(l=>l.draw());ctx.restore();
   }
 };

@@ -67,6 +67,11 @@ class ShotScript(private val dir: File) : DebugHook {
         at(5) { tap(540f, 1680f) }
         at(80) { }
         shot("02_lobby")
+        at(5) { (game.currentScreenOrNull() as? com.mergenyang.game.screens.MenuScreen)?.showPopup("codex") }
+        at(20) { }
+        shot("02b_codex")
+        at(5) { (game.currentScreenOrNull() as? com.mergenyang.game.screens.MenuScreen)?.closePopup() }
+        at(10) { }
         at(5) { game.go<ModesScreen>() }
         at(60) { }
         shot("03_modes")

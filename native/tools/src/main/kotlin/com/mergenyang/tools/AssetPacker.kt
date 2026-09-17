@@ -62,12 +62,20 @@ fun main(args: Array<String>) {
     val iconFiles = File(ui, "icons").listFiles { f -> f.extension == "png" }!!.map { it to it.nameWithoutExtension }
     pack("icons", stage("icons", iconFiles), settings(0.5f, 2048, true))
 
-    // items/item-weapon-1-twig.png → weapon-1
+    // items/item-weapon-1-twig.png → weapon-1, 9~16단계는 game/assets/items-extra
+    val webAssets = File(art.parentFile, "game/assets")
     val itemFiles = File(ui, "items").listFiles { f -> f.extension == "png" }!!.map { f ->
         val parts = f.nameWithoutExtension.removePrefix("item-").split("-")
         f to "${parts[0]}-${parts[1]}"
+    } + (File(webAssets, "items-extra").listFiles { f -> f.extension == "png" } ?: emptyArray()).map { f ->
+        val parts = f.nameWithoutExtension.removePrefix("item-").split("-")
+        f to "${parts[0]}-${parts[1]}"
     }
-    pack("items", stage("items", itemFiles), settings(0.5f, 2048, true))
+    pack("items", stage("items", itemFiles), settings(0.5f, 4096, true))
+
+    // 새 대장간 UI (패널·버튼 이미지)
+    val lobbyFiles = listOf("reward", "level", "gold", "mint", "adventure").map { File(webAssets, "workshop-ui/$it.png") to it }
+    pack("lobby", stage("lobby", lobbyFiles), settings(0.6f, 2048, false))
 
     val portraitFiles = File(ui, "characters").listFiles { f -> f.extension == "png" }!!.map { it to it.nameWithoutExtension }
     pack("portraits", stage("portraits", portraitFiles), settings(0.35f, 2048, true))
@@ -80,10 +88,20 @@ fun main(args: Array<String>) {
     atk.listFiles { f -> f.isDirectory }!!.forEach { d ->
         listOf(0, 1).forEach { charFiles += File(d, "attack-$it.png") to "atk_${d.name}_$it" }
     }
+    // 걷기 2프레임 (같은 그림을 위로 3px 옮긴 프레임)
+    File(webAssets, "walk").listFiles { f -> f.name.endsWith("-walk-0.png") || f.name.endsWith("-walk-1.png") }?.forEach { f ->
+        val id = f.nameWithoutExtension.substringBeforeLast("-walk-")
+        val frame = f.nameWithoutExtension.last()
+        charFiles += f to "walk_${id}_$frame"
+    }
     pack("chars", stage("chars", charFiles), settings(1f, 4096, true))
 
     val bgOut = File(out, "backgrounds").apply { mkdirs() }
     File(ui, "backgrounds").listFiles { f -> f.extension == "png" }!!.forEach { it.copyTo(File(bgOut, it.name), overwrite = true) }
+    // 새 대장간 배경과 대장장이 반신 그림은 크기가 커서 개별 텍스처로
+    File(webAssets, "workshop-ui/main-background.png").copyTo(File(bgOut, "lobby-room.png"), overwrite = true)
+    File(webAssets, "workshop-ui/smith-game-waist-up.png").copyTo(File(bgOut, "lobby-smith.png"), overwrite = true)
+    File(webAssets, "shop-merchant.png").copyTo(File(bgOut, "shop-merchant.png"), overwrite = true)
 
     work.deleteRecursively()
     makeLauncherIcons(ui, File(out.parentFile, "android/src/main/res"))

@@ -106,7 +106,7 @@ async function boot() {
   await loadImages(buildAssetMap(), drawLoading);
   // 오래 떠나 있었으면 방치 보상 유지, 첫 실행이면 기준 시각 설정
   if (!Save.data.lastSeen) Save.data.lastSeen = Date.now();
-  Game.enter('title');
+  Game.enter(new URLSearchParams(location.search).get('scene') === 'lobby' ? 'lobby' : 'title');
   requestAnimationFrame(frame);
 }
 addEventListener('beforeunload', () => Save.save());
