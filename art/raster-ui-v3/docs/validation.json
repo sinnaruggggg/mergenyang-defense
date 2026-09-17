@@ -1,0 +1,752 @@
+{
+  "status": "PASS",
+  "screenCount": 82,
+  "paintedAssets": 120,
+  "menuIcons": 36,
+  "itemTiers": [
+    {
+      "line": "weapon",
+      "tiers": 8
+    },
+    {
+      "line": "armor",
+      "tiers": 8
+    },
+    {
+      "line": "consumable",
+      "tiers": 8
+    },
+    {
+      "line": "special",
+      "tiers": 8
+    }
+  ],
+  "buttonInstances": 746,
+  "characterFrames": 24,
+  "rigidMotionPixelCheck": "PASS",
+  "allVisibleElementsUsePNG": true,
+  "errors": [],
+  "warnings": [],
+  "alphas": [
+    {
+      "id": "bg-workshop",
+      "width": 1080,
+      "height": 1920,
+      "hasAlpha": false
+    },
+    {
+      "id": "bg-town",
+      "width": 1080,
+      "height": 1920,
+      "hasAlpha": false
+    },
+    {
+      "id": "bg-shop",
+      "width": 1080,
+      "height": 1920,
+      "hasAlpha": false
+    },
+    {
+      "id": "bg-battle",
+      "width": 1080,
+      "height": 1920,
+      "hasAlpha": false
+    },
+    {
+      "id": "panel-cream",
+      "width": 414,
+      "height": 424,
+      "hasAlpha": true
+    },
+    {
+      "id": "panel-mint",
+      "width": 406,
+      "height": 413,
+      "hasAlpha": true
+    },
+    {
+      "id": "panel-lavender",
+      "width": 406,
+      "height": 411,
+      "hasAlpha": true
+    },
+    {
+      "id": "panel-peach",
+      "width": 403,
+      "height": 415,
+      "hasAlpha": true
+    },
+    {
+      "id": "panel-dark",
+      "width": 399,
+      "height": 390,
+      "hasAlpha": true
+    },
+    {
+      "id": "board-cell",
+      "width": 403,
+      "height": 390,
+      "hasAlpha": true
+    },
+    {
+      "id": "button-yellow-normal",
+      "width": 257,
+      "height": 134,
+      "hasAlpha": true
+    },
+    {
+      "id": "button-yellow-pressed",
+      "width": 258,
+      "height": 132,
+      "hasAlpha": true
+    },
+    {
+      "id": "button-yellow-disabled",
+      "width": 259,
+      "height": 135,
+      "hasAlpha": true
+    },
+    {
+      "id": "button-yellow-selected",
+      "width": 289,
+      "height": 155,
+      "hasAlpha": true
+    },
+    {
+      "id": "button-mint-normal",
+      "width": 260,
+      "height": 134,
+      "hasAlpha": true
+    },
+    {
+      "id": "button-mint-pressed",
+      "width": 262,
+      "height": 131,
+      "hasAlpha": true
+    },
+    {
+      "id": "button-mint-disabled",
+      "width": 261,
+      "height": 136,
+      "hasAlpha": true
+    },
+    {
+      "id": "button-mint-selected",
+      "width": 288,
+      "height": 156,
+      "hasAlpha": true
+    },
+    {
+      "id": "button-cream-normal",
+      "width": 262,
+      "height": 133,
+      "hasAlpha": true
+    },
+    {
+      "id": "button-cream-pressed",
+      "width": 261,
+      "height": 132,
+      "hasAlpha": true
+    },
+    {
+      "id": "button-cream-disabled",
+      "width": 260,
+      "height": 134,
+      "hasAlpha": true
+    },
+    {
+      "id": "button-cream-selected",
+      "width": 291,
+      "height": 159,
+      "hasAlpha": true
+    },
+    {
+      "id": "button-peach-normal",
+      "width": 261,
+      "height": 129,
+      "hasAlpha": true
+    },
+    {
+      "id": "button-peach-pressed",
+      "width": 261,
+      "height": 129,
+      "hasAlpha": true
+    },
+    {
+      "id": "button-peach-disabled",
+      "width": 262,
+      "height": 132,
+      "hasAlpha": true
+    },
+    {
+      "id": "button-peach-selected",
+      "width": 291,
+      "height": 155,
+      "hasAlpha": true
+    },
+    {
+      "id": "forge",
+      "width": 238,
+      "height": 241,
+      "hasAlpha": true
+    },
+    {
+      "id": "cat",
+      "width": 861,
+      "height": 783,
+      "hasAlpha": true
+    },
+    {
+      "id": "sword",
+      "width": 701,
+      "height": 696,
+      "hasAlpha": true
+    },
+    {
+      "id": "shop",
+      "width": 247,
+      "height": 285,
+      "hasAlpha": true
+    },
+    {
+      "id": "trophy",
+      "width": 228,
+      "height": 246,
+      "hasAlpha": true
+    },
+    {
+      "id": "energy",
+      "width": 207,
+      "height": 259,
+      "hasAlpha": true
+    },
+    {
+      "id": "gold",
+      "width": 224,
+      "height": 231,
+      "hasAlpha": true
+    },
+    {
+      "id": "gem",
+      "width": 204,
+      "height": 224,
+      "hasAlpha": true
+    },
+    {
+      "id": "mail",
+      "width": 759,
+      "height": 572,
+      "hasAlpha": true
+    },
+    {
+      "id": "book",
+      "width": 954,
+      "height": 744,
+      "hasAlpha": true
+    },
+    {
+      "id": "chest",
+      "width": 253,
+      "height": 261,
+      "hasAlpha": true
+    },
+    {
+      "id": "clock",
+      "width": 227,
+      "height": 244,
+      "hasAlpha": true
+    },
+    {
+      "id": "lock",
+      "width": 182,
+      "height": 233,
+      "hasAlpha": true
+    },
+    {
+      "id": "star",
+      "width": 226,
+      "height": 220,
+      "hasAlpha": true
+    },
+    {
+      "id": "shield",
+      "width": 229,
+      "height": 238,
+      "hasAlpha": true
+    },
+    {
+      "id": "heart",
+      "width": 199,
+      "height": 173,
+      "hasAlpha": true
+    },
+    {
+      "id": "bow",
+      "width": 243,
+      "height": 255,
+      "hasAlpha": true
+    },
+    {
+      "id": "wand",
+      "width": 187,
+      "height": 254,
+      "hasAlpha": true
+    },
+    {
+      "id": "people",
+      "width": 895,
+      "height": 747,
+      "hasAlpha": true
+    },
+    {
+      "id": "crown",
+      "width": 829,
+      "height": 719,
+      "hasAlpha": true
+    },
+    {
+      "id": "back",
+      "width": 276,
+      "height": 248,
+      "hasAlpha": true
+    },
+    {
+      "id": "gear",
+      "width": 306,
+      "height": 292,
+      "hasAlpha": true
+    },
+    {
+      "id": "flag",
+      "width": 290,
+      "height": 300,
+      "hasAlpha": true
+    },
+    {
+      "id": "plus",
+      "width": 256,
+      "height": 262,
+      "hasAlpha": true
+    },
+    {
+      "id": "close",
+      "width": 268,
+      "height": 259,
+      "hasAlpha": true
+    },
+    {
+      "id": "check",
+      "width": 273,
+      "height": 230,
+      "hasAlpha": true
+    },
+    {
+      "id": "tree",
+      "width": 320,
+      "height": 314,
+      "hasAlpha": true
+    },
+    {
+      "id": "rat",
+      "width": 285,
+      "height": 251,
+      "hasAlpha": true
+    },
+    {
+      "id": "scroll",
+      "width": 288,
+      "height": 299,
+      "hasAlpha": true
+    },
+    {
+      "id": "play",
+      "width": 227,
+      "height": 252,
+      "hasAlpha": true
+    },
+    {
+      "id": "ticket",
+      "width": 324,
+      "height": 236,
+      "hasAlpha": true
+    },
+    {
+      "id": "help",
+      "width": 220,
+      "height": 285,
+      "hasAlpha": true
+    },
+    {
+      "id": "pause",
+      "width": 218,
+      "height": 234,
+      "hasAlpha": true
+    },
+    {
+      "id": "paw",
+      "width": 278,
+      "height": 244,
+      "hasAlpha": true
+    },
+    {
+      "id": "can",
+      "width": 281,
+      "height": 234,
+      "hasAlpha": true
+    },
+    {
+      "id": "yarn",
+      "width": 274,
+      "height": 248,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-weapon-1-twig",
+      "width": 400,
+      "height": 342,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-weapon-2-wood-sword",
+      "width": 365,
+      "height": 371,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-weapon-3-fishbone-dagger",
+      "width": 390,
+      "height": 365,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-weapon-4-iron-sword",
+      "width": 368,
+      "height": 367,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-weapon-5-flame-sword",
+      "width": 397,
+      "height": 376,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-weapon-6-ice-sword",
+      "width": 381,
+      "height": 379,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-weapon-7-royal-sword",
+      "width": 388,
+      "height": 387,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-weapon-8-churu-blade",
+      "width": 429,
+      "height": 415,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-armor-1-cardboard",
+      "width": 352,
+      "height": 341,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-armor-2-leather",
+      "width": 364,
+      "height": 351,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-armor-3-pot-lid",
+      "width": 358,
+      "height": 351,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-armor-4-chainmail",
+      "width": 373,
+      "height": 349,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-armor-5-iron-armor",
+      "width": 423,
+      "height": 375,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-armor-6-knight-armor",
+      "width": 411,
+      "height": 380,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-armor-7-royal-armor",
+      "width": 445,
+      "height": 386,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-armor-8-cat-tower-armor",
+      "width": 439,
+      "height": 433,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-consumable-1-anchovy",
+      "width": 388,
+      "height": 220,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-consumable-2-fish",
+      "width": 393,
+      "height": 249,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-consumable-3-tuna-can",
+      "width": 340,
+      "height": 292,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-consumable-4-fish-fillet",
+      "width": 359,
+      "height": 269,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-consumable-5-sashimi",
+      "width": 395,
+      "height": 310,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-consumable-6-salmon-bowl",
+      "width": 366,
+      "height": 341,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-consumable-7-churu",
+      "width": 355,
+      "height": 347,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-consumable-8-gold-churu",
+      "width": 352,
+      "height": 377,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-special-1-fluff",
+      "width": 341,
+      "height": 316,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-special-2-yarn",
+      "width": 342,
+      "height": 324,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-special-3-fur-bomb",
+      "width": 374,
+      "height": 420,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-special-4-fire-fur",
+      "width": 403,
+      "height": 380,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-special-5-lightning-fur",
+      "width": 378,
+      "height": 358,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-special-6-ice-fur",
+      "width": 374,
+      "height": 361,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-special-7-star-fur",
+      "width": 376,
+      "height": 354,
+      "hasAlpha": true
+    },
+    {
+      "id": "item-special-8-giant-fur",
+      "width": 432,
+      "height": 408,
+      "hasAlpha": true
+    },
+    {
+      "id": "cat-warrior",
+      "width": 1208,
+      "height": 1036,
+      "hasAlpha": true
+    },
+    {
+      "id": "cat-tank",
+      "width": 1185,
+      "height": 1061,
+      "hasAlpha": true
+    },
+    {
+      "id": "cat-archer",
+      "width": 1112,
+      "height": 994,
+      "hasAlpha": true
+    },
+    {
+      "id": "cat-healer",
+      "width": 1188,
+      "height": 1029,
+      "hasAlpha": true
+    },
+    {
+      "id": "cat-wizard",
+      "width": 1202,
+      "height": 1148,
+      "hasAlpha": true
+    },
+    {
+      "id": "cat-smith",
+      "width": 1228,
+      "height": 1012,
+      "hasAlpha": true
+    },
+    {
+      "id": "boss-rat",
+      "width": 982,
+      "height": 979,
+      "hasAlpha": true
+    },
+    {
+      "id": "boss-eel",
+      "width": 1159,
+      "height": 1077,
+      "hasAlpha": true
+    },
+    {
+      "id": "supply-rail",
+      "width": 621,
+      "height": 273,
+      "hasAlpha": true
+    },
+    {
+      "id": "title-banner",
+      "width": 560,
+      "height": 259,
+      "hasAlpha": true
+    },
+    {
+      "id": "progress-track",
+      "width": 564,
+      "height": 138,
+      "hasAlpha": true
+    },
+    {
+      "id": "progress-mint",
+      "width": 541,
+      "height": 92,
+      "hasAlpha": true
+    },
+    {
+      "id": "progress-red",
+      "width": 549,
+      "height": 100,
+      "hasAlpha": true
+    },
+    {
+      "id": "progress-gold",
+      "width": 550,
+      "height": 99,
+      "hasAlpha": true
+    },
+    {
+      "id": "victory-laurel",
+      "width": 611,
+      "height": 383,
+      "hasAlpha": true
+    },
+    {
+      "id": "tutorial-hand",
+      "width": 289,
+      "height": 309,
+      "hasAlpha": true
+    },
+    {
+      "id": "mode-solo",
+      "width": 404,
+      "height": 566,
+      "hasAlpha": true
+    },
+    {
+      "id": "mode-coop",
+      "width": 403,
+      "height": 568,
+      "hasAlpha": true
+    },
+    {
+      "id": "mode-boss",
+      "width": 406,
+      "height": 567,
+      "hasAlpha": true
+    },
+    {
+      "id": "mode-duel",
+      "width": 405,
+      "height": 509,
+      "hasAlpha": true
+    },
+    {
+      "id": "mode-team",
+      "width": 403,
+      "height": 508,
+      "hasAlpha": true
+    },
+    {
+      "id": "mode-tower",
+      "width": 404,
+      "height": 511,
+      "hasAlpha": true
+    },
+    {
+      "id": "ground-shadow",
+      "width": 543,
+      "height": 157,
+      "hasAlpha": true
+    },
+    {
+      "id": "sword-arc",
+      "width": 534,
+      "height": 514,
+      "hasAlpha": true
+    },
+    {
+      "id": "healing-aura",
+      "width": 509,
+      "height": 495,
+      "hasAlpha": true
+    },
+    {
+      "id": "merge-glow",
+      "width": 502,
+      "height": 518,
+      "hasAlpha": true
+    }
+  ]
+}

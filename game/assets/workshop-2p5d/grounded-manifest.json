@@ -1,0 +1,80 @@
+[
+  {
+    "id": "forge",
+    "source": "forge.png",
+    "file": "forge-grounded.png",
+    "crop": {
+      "x": 87,
+      "y": 35,
+      "width": 1159,
+      "height": 1136
+    },
+    "anchor": "bottom-center",
+    "preserveAspect": true
+  },
+  {
+    "id": "bench",
+    "source": "bench.png",
+    "file": "bench-grounded.png",
+    "crop": {
+      "x": 115,
+      "y": 40,
+      "width": 1184,
+      "height": 1051
+    },
+    "anchor": "bottom-center",
+    "preserveAspect": true
+  },
+  {
+    "id": "barrel",
+    "source": "barrel.png",
+    "file": "barrel-grounded.png",
+    "crop": {
+      "x": 165,
+      "y": 62,
+      "width": 932,
+      "height": 1164
+    },
+    "anchor": "bottom-center",
+    "preserveAspect": true
+  },
+  {
+    "id": "anvil",
+    "source": "anvil.png",
+    "file": "anvil-grounded.png",
+    "crop": {
+      "x": 98,
+      "y": 60,
+      "width": 1006,
+      "height": 1175
+    },
+    "anchor": "bottom-center",
+    "preserveAspect": true
+  },
+  {
+    "id": "crates",
+    "source": "crates.png",
+    "file": "crates-grounded.png",
+    "crop": {
+      "x": 113,
+      "y": 64,
+      "width": 1204,
+      "height": 1015
+    },
+    "anchor": "bottom-center",
+    "preserveAspect": true
+  },
+  {
+    "id": "lamp",
+    "source": "lamp.png",
+    "file": "lamp-grounded.png",
+    "crop": {
+      "x": 192,
+      "y": 17,
+      "width": 662,
+      "height": 1498
+    },
+    "anchor": "bottom-center",
+    "preserveAspect": true
+  }
+]

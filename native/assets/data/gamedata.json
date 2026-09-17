@@ -1,0 +1,89 @@
+{
+  "stagesPerChapter": 20,
+  "lines": {
+    "weapon": { "name": "무기", "color": "ff8a4c", "base": 7, "effect": "공격력",
+      "files": ["twig", "wood-sword", "fishbone-dagger", "iron-sword", "flame-sword", "ice-sword", "royal-sword", "churu-blade"],
+      "names": ["나뭇가지", "나무검", "생선뼈 단검", "철검", "불꽃검", "얼음검", "왕실의 검", "전설의 츄르 블레이드"] },
+    "armor": { "name": "방어구", "color": "6fa8ff", "base": 3, "effect": "방어력",
+      "files": ["cardboard", "leather", "pot-lid", "chainmail", "iron-armor", "knight-armor", "royal-armor", "cat-tower-armor"],
+      "names": ["골판지", "가죽 조끼", "냄비뚜껑", "사슬 갑옷", "철갑", "기사 갑옷", "왕실 갑옷", "황금 캣타워 갑옷"] },
+    "consumable": { "name": "소모품", "color": "5fd18b", "base": 30, "effect": "회복",
+      "files": ["anchovy", "fish", "tuna-can", "fish-fillet", "sashimi", "salmon-bowl", "churu", "gold-churu"],
+      "names": ["멸치", "고등어", "통조림", "생선 살", "참치회", "연어 덮밥", "츄르", "황금 츄르"] },
+    "special": { "name": "특수", "color": "d78bff", "base": 28, "effect": "광역 피해",
+      "files": ["fluff", "yarn", "fur-bomb", "fire-fur", "lightning-fur", "ice-fur", "star-fur", "giant-fur"],
+      "names": ["털뭉치", "털실", "털폭탄", "불꽃 헤어볼", "번개 헤어볼", "얼음 헤어볼", "별빛 헤어볼", "거대 헤어볼"] }
+  },
+  "cats": [
+    { "id": "warrior", "name": "전사냥이", "role": "근접 딜러", "atkId": "cat-warrior", "hp": 130, "atk": 13, "cd": 0.55, "range": 190, "crit": 0.12, "melee": true, "prefer": "weapon", "desc": "빠른 공격 속도로 적을 베어요", "atkFit": [[1.06, -32], [1.19, -20]] },
+    { "id": "tank", "name": "뚱냥이", "role": "탱커", "atkId": "cat-tank", "hp": 240, "atk": 8, "cd": 0.9, "range": 180, "crit": 0.05, "def": 6, "melee": true, "prefer": "armor", "desc": "몬스터를 끌어모으고 방어구 효과 1.5배", "atkFit": [[1.12, 4], [1.04, -16]] },
+    { "id": "archer", "name": "궁사냥이", "role": "원거리 딜러", "atkId": "cat-archer", "hp": 95, "atk": 12, "cd": 0.8, "range": 720, "crit": 0.32, "prefer": "weapon", "desc": "후열에서 높은 치명타로 저격해요", "atkFit": [[0.98, -8], [0.93, -8]] },
+    { "id": "healer", "name": "성직냥이", "role": "힐러", "atkId": "cat-healer", "hp": 110, "atk": 6, "cd": 1.0, "range": 680, "crit": 0.05, "heal": 14, "prefer": "consumable", "desc": "소모품 효과를 아군 전체에 퍼뜨려요", "atkFit": [[1.11, -4], [1.11, -4]] },
+    { "id": "wizard", "name": "마법사냥이", "role": "광역 딜러", "atkId": "cat-wizard", "hp": 95, "atk": 11, "cd": 1.35, "range": 680, "crit": 0.1, "aoe": 190, "magic": true, "prefer": "weapon", "desc": "화염구로 여러 몬스터를 동시에 태워요", "atkFit": [[1.08, 8], [1.04, 4]] }
+  ],
+  "smithAtkFit": [[0.95, -12], [0.96, 20]],
+  "enemies": [
+    { "id": "rat", "name": "쥐 병사", "atkId": "enemy-rat", "hp": 60, "atk": 7, "cd": 1.1, "speed": 95, "scale": 0.62, "gold": 3 },
+    { "id": "roach", "name": "바퀴벌레", "atkId": "enemy-roach", "hp": 42, "atk": 5, "cd": 0.7, "speed": 165, "scale": 0.5, "gold": 2 },
+    { "id": "mushroom", "name": "독버섯", "atkId": "enemy-mushroom", "hp": 80, "atk": 5, "cd": 1.6, "speed": 70, "scale": 0.55, "ranged": 360, "poison": true, "gold": 3 },
+    { "id": "crow", "name": "까마귀", "atkId": "enemy-crow", "hp": 55, "atk": 6, "cd": 1.3, "speed": 130, "scale": 0.45, "ranged": 400, "fly": true, "gold": 3 },
+    { "id": "scorpion", "name": "전갈", "atkId": "enemy-scorpion", "hp": 115, "atk": 9, "cd": 1.2, "speed": 85, "scale": 0.48, "poison": true, "gold": 4 },
+    { "id": "mummy", "name": "미라 개", "atkId": "enemy-mummy", "hp": 150, "atk": 8, "cd": 1.3, "speed": 70, "scale": 0.58, "gold": 4 },
+    { "id": "bat", "name": "얼음 박쥐", "atkId": "enemy-bat", "hp": 60, "atk": 7, "cd": 0.9, "speed": 170, "scale": 0.45, "fly": true, "gold": 3 },
+    { "id": "penguin", "name": "펭귄 기사", "atkId": "enemy-penguin", "hp": 160, "atk": 10, "cd": 1.2, "speed": 80, "scale": 0.6, "armor": 0.25, "gold": 5 },
+    { "id": "vacuum", "name": "청소기 로봇", "atkId": "enemy-vacuum", "hp": 170, "atk": 9, "cd": 1.2, "speed": 75, "scale": 0.55, "shield": true, "gold": 5 },
+    { "id": "drone", "name": "드론", "atkId": "enemy-drone", "hp": 75, "atk": 7, "cd": 1.4, "speed": 120, "scale": 0.45, "ranged": 400, "fly": true, "shield": true, "gold": 5 }
+  ],
+  "bosses": [
+    { "id": "rat", "name": "쥐왕 찍찍대제", "atkId": "boss-rat", "hp": 1500, "atk": 22, "cd": 1.6, "scale": 1.0, "patterns": ["summon", "charge"], "tip": "광역 공격으로 쥐 떼를 정리하세요" },
+    { "id": "witch", "name": "까마귀 마녀", "atkId": "boss-witch", "hp": 1700, "atk": 18, "cd": 1.5, "scale": 1.0, "ranged": 520, "patterns": ["poison", "summon"], "tip": "소모품을 연속 보급하세요" },
+    { "id": "sphinx", "name": "스핑크스 개", "atkId": "boss-sphinx", "hp": 2000, "atk": 24, "cd": 1.6, "scale": 1.1, "patterns": ["riddle", "charge"], "tip": "표시된 라인 아이템을 긴급 합성!" },
+    { "id": "crab", "name": "거대 얼음 게", "atkId": "boss-crab", "hp": 2300, "atk": 26, "cd": 1.8, "scale": 1.1, "patterns": ["freeze", "armorbreak"], "tip": "빙결 전에 합성, 방어구를 재보급" },
+    { "id": "mech", "name": "메카 진공청소기", "atkId": "boss-mech", "hp": 2600, "atk": 25, "cd": 1.6, "scale": 1.2, "shield": true, "patterns": ["suck", "shieldup"], "tip": "흡입 전에 합성, 마법으로 보호막 해제" },
+    { "id": "eel", "name": "고대 뱀장어 킹", "atkId": "boss-eel", "hp": 1e12, "atk": 20, "cd": 1.5, "scale": 1.05, "world": true, "patterns": ["shock", "charge"], "tip": "방어구 탱커 + 마법사냥이" },
+    { "id": "whale", "name": "하늘 고래", "atkId": "boss-whale", "hp": 1e12, "atk": 18, "cd": 1.5, "scale": 1.3, "fly": true, "meleeHalf": true, "world": true, "patterns": ["charge", "summon"], "tip": "근접 피해 절반! 궁사·마법사" },
+    { "id": "golem", "name": "쓰레기산 골렘", "atkId": "boss-golem", "hp": 1e12, "atk": 22, "cd": 1.7, "scale": 1.15, "harden": true, "world": true, "patterns": ["summon", "charge"], "tip": "시간이 지날수록 단단해져요. 초반 폭딜!" },
+    { "id": "dog", "name": "암흑 개대왕", "atkId": "boss-dog", "hp": 1e12, "atk": 24, "cd": 1.4, "scale": 1.15, "world": true, "patterns": ["rage", "charge"], "tip": "광폭화를 버티는 생존 조합" }
+  ],
+  "worldBossOrder": ["eel", "whale", "golem", "dog"],
+  "chapters": [
+    { "name": "고양이 마을", "enemies": ["rat", "roach"], "boss": "rat", "rule": "기본 규칙 학습", "recommended": ["warrior", "wizard"] },
+    { "name": "어두운 숲", "enemies": ["mushroom", "crow"], "boss": "witch", "rule": "독 상태이상 → 소모품이 중요", "recommended": ["tank", "healer"] },
+    { "name": "사막 피라미드", "enemies": ["scorpion", "mummy"], "boss": "sphinx", "rule": "모래폭풍: 보급 레일이 느려져요", "recommended": ["archer", "tank"] },
+    { "name": "얼음 동굴", "enemies": ["bat", "penguin"], "boss": "crab", "rule": "빙결: 보드 칸이 얼어붙어요", "recommended": ["tank", "warrior"] },
+    { "name": "로봇 공장", "enemies": ["vacuum", "drone"], "boss": "mech", "rule": "방어막 몬스터 → 마법이 필요", "recommended": ["wizard", "tank"] }
+  ],
+  "forgeUpgrades": [
+    { "id": "startTier", "name": "생산 시작 단계", "icon": "forge", "max": 10, "desc": "2단계 아이템 생산 확률 {v}%", "valueBase": 0, "valuePer": 8, "costBase": 300, "costGrowth": 1.7 },
+    { "id": "energyMax", "name": "에너지 최대치", "icon": "energy", "max": 10, "desc": "전투 시작 에너지 {v}", "valueBase": 40, "valuePer": 6, "costBase": 200, "costGrowth": 1.6 },
+    { "id": "energyRegen", "name": "에너지 회복 속도", "icon": "clock", "max": 10, "desc": "{v}초마다 1 회복", "valueBase": 2.6, "valuePer": -0.16, "decimals": 2, "costBase": 250, "costGrowth": 1.65 },
+    { "id": "autoMerge", "name": "자동 생산", "icon": "gear", "max": 8, "desc": "{v}초마다 무료 생산", "descZero": "대장장이 냥이가 스스로 생산", "valueBase": 14, "valuePer": -1, "costBase": 600, "costGrowth": 1.8 }
+  ],
+  "smithUpgrades": [
+    { "id": "double", "name": "한 번에 여러 개", "icon": "paw", "max": 10, "desc": "2개 생산 확률 {v}%", "valueBase": 0, "valuePer": 6, "costBase": 350, "costGrowth": 1.7 },
+    { "id": "weaponRate", "name": "좋은 라인 확률", "icon": "sword", "max": 5, "desc": "무기·방어구 확률 +{v}%", "valueBase": 0, "valuePer": 3, "costBase": 400, "costGrowth": 1.8 },
+    { "id": "fever", "name": "피버 지속 시간", "icon": "star", "max": 5, "desc": "피버 {v}초", "valueBase": 8, "valuePer": 1, "costBase": 500, "costGrowth": 1.8 }
+  ],
+  "balance": {
+    "tierMul": 2.2,
+    "hpLinear": 0.2, "hpQuad": 0.0025,
+    "atkLinear": 0.06, "atkQuad": 0.0006,
+    "itemPowerPerStage": 0.07,
+    "armorHpMul": 6,
+    "catLevelStep": 0.25, "catCostBase": 120, "catCostGrowth": 1.32,
+    "waveMul": [0.45, 0.75, 1.0],
+    "eliteHp": 7, "eliteAtk": 2.2,
+    "shieldFactor": 0.6,
+    "lineRates": { "weapon": 35, "armor": 30, "consumable": 25, "special": 10 },
+    "feverMax": 12,
+    "stageEnergyCost": 5,
+    "lobbyEnergyMax": 50,
+    "lobbyEnergyRegenMs": 120000,
+    "boardCols": 7, "boardRows": 5,
+    "breakSeconds": 8,
+    "catReviveSeconds": 12,
+    "worldBossSeconds": 90,
+    "worldBossTries": 3,
+    "offlineCapMinutes": 480
+  }
+}

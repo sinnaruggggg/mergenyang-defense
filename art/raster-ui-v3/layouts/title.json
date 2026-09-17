@@ -1,0 +1,395 @@
+{
+  "id": "title",
+  "title": "머지냥 디펜스",
+  "group": "시작",
+  "width": 1080,
+  "height": 1920,
+  "coordinateSystem": "top-left",
+  "safeInsets": {
+    "top": 32,
+    "right": 36,
+    "bottom": 32,
+    "left": 36
+  },
+  "elements": [
+    {
+      "id": "background-1",
+      "type": "image",
+      "x": 0,
+      "y": 0,
+      "width": 1080,
+      "height": 1920,
+      "z": 0,
+      "visible": true,
+      "asset": "assets/placed/f13521a79c0180a52b.png",
+      "yScene2D": 0,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/backgrounds/workshop.png",
+      "fit": "stretch"
+    },
+    {
+      "id": "text-3",
+      "type": "image",
+      "x": 120,
+      "y": 180,
+      "width": 840,
+      "height": 47,
+      "z": 1,
+      "visible": true,
+      "text": "MERGE CAT DEFENSE",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 31,
+      "fontWeight": 700,
+      "color": "#6A7980",
+      "align": "center",
+      "yScene2D": 1693,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "MERGE CAT DEFENSE",
+      "asset": "assets/text/ba00237d11c8b1788a.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 540
+    },
+    {
+      "id": "text-4",
+      "type": "image",
+      "x": 89,
+      "y": 249,
+      "width": 900,
+      "height": 126,
+      "z": 2,
+      "visible": true,
+      "text": "머지냥 디펜스",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 84,
+      "fontWeight": 800,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 1545,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "머지냥 디펜스",
+      "asset": "assets/text/d0513380d723365844.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 540
+    },
+    {
+      "id": "subtitle-back-text-5",
+      "type": "image",
+      "asset": "assets/placed/33da3a8f6b5b2c6695.png",
+      "x": 66,
+      "y": 363,
+      "width": 948,
+      "height": 66,
+      "visible": true,
+      "fit": "stretch",
+      "z": 3,
+      "yScene2D": 1491,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "text-5",
+      "type": "image",
+      "x": 80,
+      "y": 368,
+      "width": 920,
+      "height": 53,
+      "z": 4,
+      "visible": true,
+      "text": "고양이가 만들고, 고양이가 지켜요",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 35,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 1499,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "고양이가 만들고, 고양이가 지켜요",
+      "asset": "assets/text/8f8b8aa3e3c2239b81.png",
+      "semanticType": "text",
+      "fit": "stretch"
+    },
+    {
+      "id": "shadow-cat-smith-6",
+      "type": "image",
+      "asset": "assets/placed/4239dea042bd080d53.png",
+      "x": 351,
+      "y": 1097,
+      "width": 377,
+      "height": 31,
+      "visible": true,
+      "fit": "stretch",
+      "z": 5,
+      "yScene2D": 792,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/ground-shadow.png",
+      "sourceFit": "stretch"
+    },
+    {
+      "id": "cat-smith-6",
+      "type": "image",
+      "x": 285,
+      "y": 604,
+      "width": 510,
+      "height": 510,
+      "z": 6,
+      "visible": true,
+      "asset": "assets/placed/f8b0cb569d229069b0.png",
+      "characterId": "smith",
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "fit": "stretch",
+      "yScene2D": 806,
+      "sourceAsset": "assets/characters/cat-smith.png",
+      "sourceFit": "contain-bottom"
+    },
+    {
+      "id": "shadow-cat-warrior-7",
+      "type": "image",
+      "asset": "assets/placed/446d03b3f6ff395646.png",
+      "x": 88,
+      "y": 1343,
+      "width": 259,
+      "height": 31,
+      "visible": true,
+      "fit": "stretch",
+      "z": 7,
+      "yScene2D": 546,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/ground-shadow.png",
+      "sourceFit": "stretch"
+    },
+    {
+      "id": "cat-warrior-7",
+      "type": "image",
+      "x": 42,
+      "y": 1010,
+      "width": 350,
+      "height": 350,
+      "z": 8,
+      "visible": true,
+      "asset": "assets/placed/4e3e8eaf8530a12b9d.png",
+      "characterId": "warrior",
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "fit": "stretch",
+      "yScene2D": 560,
+      "sourceAsset": "assets/characters/cat-warrior.png",
+      "sourceFit": "contain-bottom"
+    },
+    {
+      "id": "shadow-cat-tank-8",
+      "type": "image",
+      "asset": "assets/placed/446d03b3f6ff395646.png",
+      "x": 736,
+      "y": 1343,
+      "width": 259,
+      "height": 31,
+      "visible": true,
+      "fit": "stretch",
+      "z": 9,
+      "yScene2D": 546,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/ground-shadow.png",
+      "sourceFit": "stretch"
+    },
+    {
+      "id": "cat-tank-8",
+      "type": "image",
+      "x": 690,
+      "y": 1010,
+      "width": 350,
+      "height": 350,
+      "z": 10,
+      "visible": true,
+      "asset": "assets/placed/b6add6f126e791fe47.png",
+      "characterId": "tank",
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "fit": "stretch",
+      "yScene2D": 560,
+      "sourceAsset": "assets/characters/cat-tank.png",
+      "sourceFit": "contain-bottom"
+    },
+    {
+      "id": "button-9",
+      "type": "image",
+      "x": 160,
+      "y": 1500,
+      "width": 760,
+      "height": 120,
+      "z": 11,
+      "visible": true,
+      "asset": "assets/placed/f1f1d398f7498d511f.png",
+      "role": "button",
+      "states": {
+        "normal": "assets/placed/f1f1d398f7498d511f.png",
+        "pressed": "assets/placed/54b42c6258760b2721.png",
+        "disabled": "assets/placed/a6d62bd8a014f3f5c6.png",
+        "selected": "assets/placed/45cf9dabe513754967.png"
+      },
+      "disabled": false,
+      "hitRect": {
+        "x": 160,
+        "y": 1494,
+        "width": 760,
+        "height": 132
+      },
+      "action": {
+        "type": "navigate",
+        "target": "login"
+      },
+      "fit": "stretch",
+      "yScene2D": 300,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/button-yellow-normal.png",
+      "sourceFit": "nine-slice",
+      "contentFace": {
+        "x": 168,
+        "y": 1513,
+        "width": 744,
+        "height": 76,
+        "center": {
+          "x": 540,
+          "y": 1550.5
+        },
+        "method": "bright painted face, central 24% columns; excludes dark wooden base"
+      },
+      "alignmentStateOffsets": {
+        "normal": {
+          "x": 0,
+          "y": 0
+        },
+        "pressed": {
+          "x": 0,
+          "y": 6
+        },
+        "disabled": {
+          "x": 0,
+          "y": 1
+        },
+        "selected": {
+          "x": 0,
+          "y": 9
+        }
+      }
+    },
+    {
+      "id": "icon-paw-10",
+      "type": "image",
+      "x": 412,
+      "y": 1523,
+      "width": 56,
+      "height": 56,
+      "z": 12,
+      "visible": true,
+      "asset": "assets/placed/3eb50e025a30a9b03e.png",
+      "fit": "stretch",
+      "yScene2D": 341,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/icons/paw.png",
+      "sourceFit": "contain",
+      "alignmentOwner": "button-9"
+    },
+    {
+      "id": "text-11",
+      "type": "image",
+      "x": 244,
+      "y": 1527,
+      "width": 662,
+      "height": 48,
+      "z": 13,
+      "visible": true,
+      "text": "터치하여 시작",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 32,
+      "fontWeight": 700,
+      "color": "#3D4554",
+      "align": "center",
+      "buttonOwner": "button-9",
+      "yScene2D": 345,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "터치하여 시작",
+      "asset": "assets/text/fa79698efae2463c3f.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentOwner": "button-9"
+    },
+    {
+      "id": "text-12",
+      "type": "image",
+      "x": 130,
+      "y": 1784,
+      "width": 820,
+      "height": 38,
+      "z": 14,
+      "visible": true,
+      "text": "© MERGE CAT • UI ASSET PACK",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 25,
+      "fontWeight": 500,
+      "color": "#6A7980",
+      "align": "center",
+      "yScene2D": 98,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "© MERGE CAT • UI ASSET PACK",
+      "asset": "assets/text/50a3be35cf27a7399c.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 540
+    }
+  ],
+  "actions": [
+    {
+      "element": "button-9",
+      "target": "login",
+      "disabled": false
+    }
+  ],
+  "status": "design",
+  "n": 12
+}

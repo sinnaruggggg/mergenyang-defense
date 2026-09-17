@@ -1,0 +1,286 @@
+
+ui.png
+size: 4096, 2048
+format: RGBA8888
+filter: MipMapLinearLinear, Linear
+repeat: none
+board-cell
+  rotate: false
+  xy: 1732, 851
+  size: 403, 390
+  orig: 403, 390
+  offset: 0, 0
+  index: -1
+button-cream-disabled
+  rotate: false
+  xy: 2838, 1528
+  size: 260, 134
+  orig: 260, 134
+  offset: 0, 0
+  index: -1
+button-cream-normal
+  rotate: false
+  xy: 2857, 1666
+  size: 262, 133
+  orig: 262, 133
+  offset: 0, 0
+  index: -1
+button-cream-pressed
+  rotate: false
+  xy: 3102, 1253
+  size: 261, 132
+  orig: 261, 132
+  offset: 0, 0
+  index: -1
+button-cream-selected
+  rotate: false
+  xy: 2545, 1302
+  size: 291, 159
+  orig: 291, 159
+  offset: 0, 0
+  index: -1
+button-mint-disabled
+  rotate: false
+  xy: 3123, 1663
+  size: 261, 136
+  orig: 261, 136
+  offset: 0, 0
+  index: -1
+button-mint-normal
+  rotate: false
+  xy: 2840, 1390
+  size: 260, 134
+  orig: 260, 134
+  offset: 0, 0
+  index: -1
+button-mint-pressed
+  rotate: false
+  xy: 3102, 1528
+  size: 262, 131
+  orig: 262, 131
+  offset: 0, 0
+  index: -1
+button-mint-selected
+  rotate: false
+  xy: 3697, 1720
+  size: 288, 156
+  orig: 288, 156
+  offset: 0, 0
+  index: -1
+button-peach-disabled
+  rotate: false
+  xy: 3099, 1117
+  size: 262, 132
+  orig: 262, 132
+  offset: 0, 0
+  index: -1
+button-peach-normal
+  rotate: false
+  xy: 3388, 1588
+  size: 261, 129
+  orig: 261, 129
+  offset: 0, 0
+  index: -1
+button-peach-pressed
+  rotate: false
+  xy: 3653, 1587
+  size: 261, 129
+  orig: 261, 129
+  offset: 0, 0
+  index: -1
+button-peach-selected
+  rotate: false
+  xy: 3402, 1721
+  size: 291, 155
+  orig: 291, 155
+  offset: 0, 0
+  index: -1
+button-yellow-disabled
+  rotate: false
+  xy: 3104, 1389
+  size: 259, 135
+  orig: 259, 135
+  offset: 0, 0
+  index: -1
+button-yellow-normal
+  rotate: false
+  xy: 2838, 1116
+  size: 257, 134
+  orig: 257, 134
+  offset: 0, 0
+  index: -1
+button-yellow-pressed
+  rotate: false
+  xy: 2840, 1254
+  size: 258, 132
+  orig: 258, 132
+  offset: 0, 0
+  index: -1
+button-yellow-selected
+  rotate: false
+  xy: 2545, 1143
+  size: 289, 155
+  orig: 289, 155
+  offset: 0, 0
+  index: -1
+ground-shadow
+  rotate: false
+  xy: 3425, 1880
+  size: 543, 157
+  orig: 543, 157
+  offset: 0, 0
+  index: -1
+healing-aura
+  rotate: false
+  xy: 540, 1542
+  size: 509, 495
+  orig: 509, 495
+  offset: 0, 0
+  index: -1
+merge-glow
+  rotate: false
+  xy: 2, 1001
+  size: 502, 518
+  orig: 502, 518
+  offset: 0, 0
+  index: -1
+mode-boss
+  rotate: false
+  xy: 2, 430
+  size: 406, 567
+  orig: 406, 567
+  offset: 0, 0
+  index: -1
+mode-coop
+  rotate: false
+  xy: 820, 436
+  size: 403, 568
+  orig: 403, 568
+  offset: 0, 0
+  index: -1
+mode-duel
+  rotate: false
+  xy: 916, 1029
+  size: 405, 509
+  orig: 405, 509
+  offset: 0, 0
+  index: -1
+mode-solo
+  rotate: false
+  xy: 412, 431
+  size: 404, 566
+  orig: 404, 566
+  offset: 0, 0
+  index: -1
+mode-team
+  rotate: false
+  xy: 1325, 1039
+  size: 403, 508
+  orig: 403, 508
+  offset: 0, 0
+  index: -1
+mode-tower
+  rotate: false
+  xy: 508, 1008
+  size: 404, 511
+  orig: 404, 511
+  offset: 0, 0
+  index: -1
+panel-cream
+  rotate: false
+  xy: 2, 2
+  size: 414, 424
+  orig: 414, 424
+  offset: 0, 0
+  index: -1
+panel-dark
+  rotate: false
+  xy: 2142, 1266
+  size: 399, 390
+  orig: 399, 390
+  offset: 0, 0
+  index: -1
+panel-lavender
+  rotate: false
+  xy: 1732, 1245
+  size: 406, 411
+  orig: 406, 411
+  offset: 0, 0
+  index: -1
+panel-mint
+  rotate: false
+  xy: 827, 19
+  size: 406, 413
+  orig: 406, 413
+  offset: 0, 0
+  index: -1
+panel-peach
+  rotate: false
+  xy: 420, 12
+  size: 403, 415
+  orig: 403, 415
+  offset: 0, 0
+  index: -1
+progress-gold
+  rotate: false
+  xy: 1053, 1551
+  size: 550, 99
+  orig: 550, 99
+  offset: 0, 0
+  index: -1
+progress-mint
+  rotate: false
+  xy: 2857, 1803
+  size: 541, 92
+  orig: 541, 92
+  offset: 0, 0
+  index: -1
+progress-red
+  rotate: false
+  xy: 1668, 1660
+  size: 549, 100
+  orig: 549, 100
+  offset: 0, 0
+  index: -1
+progress-track
+  rotate: false
+  xy: 2857, 1899
+  size: 564, 138
+  orig: 564, 138
+  offset: 0, 0
+  index: -1
+supply-rail
+  rotate: false
+  xy: 1668, 1764
+  size: 621, 273
+  orig: 621, 273
+  offset: 0, 0
+  index: -1
+sword-arc
+  rotate: false
+  xy: 2, 1523
+  size: 534, 514
+  orig: 534, 514
+  offset: 0, 0
+  index: -1
+title-banner
+  rotate: false
+  xy: 2293, 1778
+  size: 560, 259
+  orig: 560, 259
+  offset: 0, 0
+  index: -1
+tutorial-hand
+  rotate: false
+  xy: 2545, 1465
+  size: 289, 309
+  orig: 289, 309
+  offset: 0, 0
+  index: -1
+victory-laurel
+  rotate: false
+  xy: 1053, 1654
+  size: 611, 383
+  orig: 611, 383
+  offset: 0, 0
+  index: -1

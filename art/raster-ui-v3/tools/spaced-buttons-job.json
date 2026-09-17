@@ -1,0 +1,25 @@
+{
+  "id": "buttons-spaced",
+  "prompt": "Use case: precise-object-edit. Recreate the supplied 4-by-4 button state atlas with the SAME16 painted button designs, same colors, row order, state order and transparent alpha. Change ONLY the spacing: each button including ALL selection glow must be surrounded by generous empty transparent space and must not touch any adjacent button. Four equal columns and four equal rows on a square2048 canvas. Every entire button body including glow occupies at most60percent of its cell width and40percent of its cell height. At least20percent empty margins within every cell. Preserve full glossy hand-painted wood-bordered pastel button artwork. Rows yellow, mint, cream, rose; columns normal, pressed, disabled, selected. No text, icons, labels, background, gridlines or frame. All16 are complete, clearly separated, standalone shapes. Do not allow selected glow to overlap disabled buttons.",
+  "kind": "atlas",
+  "cols": 4,
+  "rows": 4,
+  "names": [
+    "button-yellow-normal",
+    "button-yellow-pressed",
+    "button-yellow-disabled",
+    "button-yellow-selected",
+    "button-mint-normal",
+    "button-mint-pressed",
+    "button-mint-disabled",
+    "button-mint-selected",
+    "button-cream-normal",
+    "button-cream-pressed",
+    "button-cream-disabled",
+    "button-cream-selected",
+    "button-peach-normal",
+    "button-peach-pressed",
+    "button-peach-disabled",
+    "button-peach-selected"
+  ]
+}

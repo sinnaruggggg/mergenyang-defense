@@ -1,0 +1,2586 @@
+[
+  {
+    "id": "bg-workshop",
+    "file": "assets/backgrounds/workshop.png",
+    "source": "sources/bg-workshop.png",
+    "width": 1080,
+    "height": 1920,
+    "alpha": false
+  },
+  {
+    "id": "bg-town",
+    "file": "assets/backgrounds/town.png",
+    "source": "sources/bg-town.png",
+    "width": 1080,
+    "height": 1920,
+    "alpha": false
+  },
+  {
+    "id": "bg-shop",
+    "file": "assets/backgrounds/shop.png",
+    "source": "sources/bg-shop.png",
+    "width": 1080,
+    "height": 1920,
+    "alpha": false
+  },
+  {
+    "id": "bg-battle",
+    "file": "assets/backgrounds/battle.png",
+    "source": "sources/bg-battle.png",
+    "width": 1080,
+    "height": 1920,
+    "alpha": false
+  },
+  {
+    "id": "panel-cream",
+    "file": "assets/ui/panel-cream.png",
+    "source": "sources/panels.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 0,
+      "width": 425,
+      "height": 627
+    },
+    "sourceTrim": {
+      "left": 16,
+      "top": 168,
+      "width": 406,
+      "height": 416
+    },
+    "width": 414,
+    "height": 424,
+    "alpha": true,
+    "transparentFraction": 0.42062482409231633,
+    "sha256": "6d44a4010e3b13baaa2c4f6770745ae32d106c11a3d4775dcf87bf67704897d7"
+  },
+  {
+    "id": "panel-mint",
+    "file": "assets/ui/panel-mint.png",
+    "source": "sources/panels.png",
+    "sourceCell": {
+      "x": 425,
+      "y": 0,
+      "width": 406,
+      "height": 627
+    },
+    "sourceTrim": {
+      "left": 3,
+      "top": 176,
+      "width": 398,
+      "height": 405
+    },
+    "width": 406,
+    "height": 413,
+    "alpha": true,
+    "transparentFraction": 0.41163645791594977,
+    "sha256": "0b0bcae59e37c795ca7fafb8eb565af203eb918d9ae169b9e8f8d9f0f65d667f"
+  },
+  {
+    "id": "panel-lavender",
+    "file": "assets/ui/panel-lavender.png",
+    "source": "sources/panels.png",
+    "sourceCell": {
+      "x": 831,
+      "y": 0,
+      "width": 423,
+      "height": 627
+    },
+    "sourceTrim": {
+      "left": 5,
+      "top": 181,
+      "width": 398,
+      "height": 403
+    },
+    "width": 406,
+    "height": 411,
+    "alpha": true,
+    "transparentFraction": 0.429143996893157,
+    "sha256": "0c7568fc97da06c0ac1e083ca3db72a5f82a1e48c9a86f54b5227d19fa0bb4b7"
+  },
+  {
+    "id": "panel-peach",
+    "file": "assets/ui/panel-peach.png",
+    "source": "sources/panels.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 627,
+      "width": 427,
+      "height": 627
+    },
+    "sourceTrim": {
+      "left": 26,
+      "top": 42,
+      "width": 395,
+      "height": 407
+    },
+    "width": 403,
+    "height": 415,
+    "alpha": true,
+    "transparentFraction": 0.45191966503441916,
+    "sha256": "84b48d8cbf54c1343cf4e2426393b3185a681fa18703a17133f28a1150003563"
+  },
+  {
+    "id": "panel-dark",
+    "file": "assets/ui/panel-dark.png",
+    "source": "sources/panels.png",
+    "sourceCell": {
+      "x": 427,
+      "y": 627,
+      "width": 402,
+      "height": 627
+    },
+    "sourceTrim": {
+      "left": 4,
+      "top": 60,
+      "width": 391,
+      "height": 382
+    },
+    "width": 399,
+    "height": 390,
+    "alpha": true,
+    "transparentFraction": 0.429114396121466,
+    "sha256": "98ca49d2b39aa7e96d29ca399d685583a1c406c62199e66a2f27c441e4184c6f"
+  },
+  {
+    "id": "board-cell",
+    "file": "assets/ui/board-cell.png",
+    "source": "sources/panels.png",
+    "sourceCell": {
+      "x": 829,
+      "y": 627,
+      "width": 425,
+      "height": 627
+    },
+    "sourceTrim": {
+      "left": 6,
+      "top": 60,
+      "width": 395,
+      "height": 382
+    },
+    "width": 403,
+    "height": 390,
+    "alpha": true,
+    "transparentFraction": 0.4490139787972605,
+    "sha256": "249ca3fc7c59e42c81f595643ea27cc66151d4263ba41868f04410c33b3ee885"
+  },
+  {
+    "id": "button-yellow-normal",
+    "file": "assets/ui/button-yellow-normal.png",
+    "source": "sources/buttons-spaced.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 0,
+      "width": 323,
+      "height": 390
+    },
+    "sourceTrim": {
+      "left": 44,
+      "top": 196,
+      "width": 249,
+      "height": 126
+    },
+    "width": 257,
+    "height": 134,
+    "alpha": true,
+    "transparentFraction": 0.77383504008891,
+    "sha256": "3aed47125c9c9cf384c5504a22d02b311713730981437fb0d818a56c06ade422"
+  },
+  {
+    "id": "button-yellow-pressed",
+    "file": "assets/ui/button-yellow-pressed.png",
+    "source": "sources/buttons-spaced.png",
+    "sourceCell": {
+      "x": 323,
+      "y": 0,
+      "width": 305,
+      "height": 390
+    },
+    "sourceTrim": {
+      "left": 30,
+      "top": 197,
+      "width": 250,
+      "height": 124
+    },
+    "width": 258,
+    "height": 132,
+    "alpha": true,
+    "transparentFraction": 0.7611601513240858,
+    "sha256": "ff1bb4ba891f13603da21e67594035da03162c95af14258b495418da482940a1"
+  },
+  {
+    "id": "button-yellow-disabled",
+    "file": "assets/ui/button-yellow-disabled.png",
+    "source": "sources/buttons-spaced.png",
+    "sourceCell": {
+      "x": 628,
+      "y": 0,
+      "width": 299,
+      "height": 390
+    },
+    "sourceTrim": {
+      "left": 24,
+      "top": 196,
+      "width": 251,
+      "height": 127
+    },
+    "width": 259,
+    "height": 135,
+    "alpha": true,
+    "transparentFraction": 0.7515478946917074,
+    "sha256": "1771ca5a566979d2b6a8d706e341c6104b0c58fc0be0e7af0a3ae656b7c19593"
+  },
+  {
+    "id": "button-yellow-selected",
+    "file": "assets/ui/button-yellow-selected.png",
+    "source": "sources/buttons-spaced.png",
+    "sourceCell": {
+      "x": 927,
+      "y": 0,
+      "width": 327,
+      "height": 390
+    },
+    "sourceTrim": {
+      "left": 19,
+      "top": 177,
+      "width": 281,
+      "height": 147
+    },
+    "width": 289,
+    "height": 155,
+    "alpha": true,
+    "transparentFraction": 0.7125539088841841,
+    "sha256": "300895850e00ff0e265e1aab140d048c1c0260f16a4942ab6e3bf30d125925e9"
+  },
+  {
+    "id": "button-mint-normal",
+    "file": "assets/ui/button-mint-normal.png",
+    "source": "sources/buttons-spaced.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 390,
+      "width": 325,
+      "height": 275
+    },
+    "sourceTrim": {
+      "left": 44,
+      "top": 80,
+      "width": 252,
+      "height": 126
+    },
+    "width": 260,
+    "height": 134,
+    "alpha": true,
+    "transparentFraction": 0.6748531468531469,
+    "sha256": "30fa1e638df44c07d1c175763fb8ebbe47115572ac76a5b5fd5d560599ce054e"
+  },
+  {
+    "id": "button-mint-pressed",
+    "file": "assets/ui/button-mint-pressed.png",
+    "source": "sources/buttons-spaced.png",
+    "sourceCell": {
+      "x": 325,
+      "y": 390,
+      "width": 303,
+      "height": 275
+    },
+    "sourceTrim": {
+      "left": 27,
+      "top": 84,
+      "width": 254,
+      "height": 123
+    },
+    "width": 262,
+    "height": 131,
+    "alpha": true,
+    "transparentFraction": 0.6571977197719772,
+    "sha256": "0832bfeac724571edf563fa259e2b4794cb8ecbeaa461808d44e8cf3a5009599"
+  },
+  {
+    "id": "button-mint-disabled",
+    "file": "assets/ui/button-mint-disabled.png",
+    "source": "sources/buttons-spaced.png",
+    "sourceCell": {
+      "x": 628,
+      "y": 390,
+      "width": 299,
+      "height": 275
+    },
+    "sourceTrim": {
+      "left": 23,
+      "top": 80,
+      "width": 253,
+      "height": 128
+    },
+    "width": 261,
+    "height": 136,
+    "alpha": true,
+    "transparentFraction": 0.6397810884767406,
+    "sha256": "f17b8042dee1fd0ea6495800b55b6deb37536fdbab46e2973366610c81ae2c23"
+  },
+  {
+    "id": "button-mint-selected",
+    "file": "assets/ui/button-mint-selected.png",
+    "source": "sources/buttons-spaced.png",
+    "sourceCell": {
+      "x": 927,
+      "y": 390,
+      "width": 327,
+      "height": 275
+    },
+    "sourceTrim": {
+      "left": 19,
+      "top": 61,
+      "width": 280,
+      "height": 148
+    },
+    "width": 288,
+    "height": 156,
+    "alpha": true,
+    "transparentFraction": 0.5905476786210732,
+    "sha256": "c3316adbf169babee8c33fcd35803fb0845dc0a6056db9168d58c372911ba8a2"
+  },
+  {
+    "id": "button-cream-normal",
+    "file": "assets/ui/button-cream-normal.png",
+    "source": "sources/buttons-spaced.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 665,
+      "width": 325,
+      "height": 278
+    },
+    "sourceTrim": {
+      "left": 43,
+      "top": 86,
+      "width": 254,
+      "height": 125
+    },
+    "width": 262,
+    "height": 133,
+    "alpha": true,
+    "transparentFraction": 0.6781073602656337,
+    "sha256": "e2f9eea29f991ce9285b176fab6fbe7a8b12eeb7ce26d6e46ddab71265a1f04e"
+  },
+  {
+    "id": "button-cream-pressed",
+    "file": "assets/ui/button-cream-pressed.png",
+    "source": "sources/buttons-spaced.png",
+    "sourceCell": {
+      "x": 325,
+      "y": 665,
+      "width": 302,
+      "height": 278
+    },
+    "sourceTrim": {
+      "left": 27,
+      "top": 86,
+      "width": 253,
+      "height": 124
+    },
+    "width": 261,
+    "height": 132,
+    "alpha": true,
+    "transparentFraction": 0.6581423602839582,
+    "sha256": "234f2c78239870536a56147283f4292160c9909cf5ece04d37504212b1e90c74"
+  },
+  {
+    "id": "button-cream-disabled",
+    "file": "assets/ui/button-cream-disabled.png",
+    "source": "sources/buttons-spaced.png",
+    "sourceCell": {
+      "x": 627,
+      "y": 665,
+      "width": 299,
+      "height": 278
+    },
+    "sourceTrim": {
+      "left": 24,
+      "top": 84,
+      "width": 252,
+      "height": 126
+    },
+    "width": 260,
+    "height": 134,
+    "alpha": true,
+    "transparentFraction": 0.6470007940136185,
+    "sha256": "505fe3cbbc8c52a2513c15923d3244dad35ee002a7bb1502751a44693c9cafb4"
+  },
+  {
+    "id": "button-cream-selected",
+    "file": "assets/ui/button-cream-selected.png",
+    "source": "sources/buttons-spaced.png",
+    "sourceCell": {
+      "x": 926,
+      "y": 665,
+      "width": 328,
+      "height": 278
+    },
+    "sourceTrim": {
+      "left": 19,
+      "top": 61,
+      "width": 283,
+      "height": 151
+    },
+    "width": 291,
+    "height": 159,
+    "alpha": true,
+    "transparentFraction": 0.58591419547289,
+    "sha256": "36f4ce7ee51e688518580e3f64dccb6acde15eafb27c76a933c12d33becbce11"
+  },
+  {
+    "id": "button-peach-normal",
+    "file": "assets/ui/button-peach-normal.png",
+    "source": "sources/buttons-spaced.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 943,
+      "width": 325,
+      "height": 311
+    },
+    "sourceTrim": {
+      "left": 44,
+      "top": 84,
+      "width": 253,
+      "height": 121
+    },
+    "width": 261,
+    "height": 129,
+    "alpha": true,
+    "transparentFraction": 0.720059361860005,
+    "sha256": "1a34f64f4ba3758284bf0284505df802d5b48182ab6fe15b15f21f03d33e5be3"
+  },
+  {
+    "id": "button-peach-pressed",
+    "file": "assets/ui/button-peach-pressed.png",
+    "source": "sources/buttons-spaced.png",
+    "sourceCell": {
+      "x": 325,
+      "y": 943,
+      "width": 302,
+      "height": 311
+    },
+    "sourceTrim": {
+      "left": 27,
+      "top": 84,
+      "width": 253,
+      "height": 121
+    },
+    "width": 261,
+    "height": 129,
+    "alpha": true,
+    "transparentFraction": 0.6991972061923724,
+    "sha256": "00d134f5644755ef15b22962970ab3905d9752cd0653cf05e648d4c29f771ea9"
+  },
+  {
+    "id": "button-peach-disabled",
+    "file": "assets/ui/button-peach-disabled.png",
+    "source": "sources/buttons-spaced.png",
+    "sourceCell": {
+      "x": 627,
+      "y": 943,
+      "width": 299,
+      "height": 311
+    },
+    "sourceTrim": {
+      "left": 23,
+      "top": 82,
+      "width": 254,
+      "height": 124
+    },
+    "width": 262,
+    "height": 132,
+    "alpha": true,
+    "transparentFraction": 0.6875329340029466,
+    "sha256": "f960f290b55d8678ff35ae193bb2b9981d36e79c65c76d165ef33ba3576d09b3"
+  },
+  {
+    "id": "button-peach-selected",
+    "file": "assets/ui/button-peach-selected.png",
+    "source": "sources/buttons-spaced.png",
+    "sourceCell": {
+      "x": 926,
+      "y": 943,
+      "width": 328,
+      "height": 311
+    },
+    "sourceTrim": {
+      "left": 20,
+      "top": 60,
+      "width": 283,
+      "height": 147
+    },
+    "width": 291,
+    "height": 155,
+    "alpha": true,
+    "transparentFraction": 0.6382440592894675,
+    "sha256": "39dc38d4a1c141069f901e9129b357136dd0a157d9707fd919e069253e9cc6a1"
+  },
+  {
+    "id": "forge",
+    "file": "assets/icons/forge.png",
+    "source": "sources/icons-menu.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 0,
+      "width": 254,
+      "height": 391
+    },
+    "sourceTrim": {
+      "left": 23,
+      "top": 141,
+      "width": 230,
+      "height": 233
+    },
+    "width": 238,
+    "height": 241,
+    "alpha": true,
+    "transparentFraction": 0.6587490182653,
+    "sha256": "e6ec7cccaac53d087fedae96b8e0dc27998a40b0d8a5d982d299eb88c0c65653"
+  },
+  {
+    "id": "cat",
+    "file": "assets/icons/cat.png",
+    "source": "sources/icons-single-cat.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 0,
+      "width": 1254,
+      "height": 1254
+    },
+    "sourceTrim": {
+      "left": 206,
+      "top": 260,
+      "width": 853,
+      "height": 775
+    },
+    "width": 861,
+    "height": 783,
+    "alpha": true,
+    "transparentFraction": 0.7160238751147842,
+    "sha256": "f925b9e9cd1db1ae4b118a1da0e128f33562cb82482aeceb9d6560ae7510a086"
+  },
+  {
+    "id": "sword",
+    "file": "assets/icons/sword.png",
+    "source": "sources/icons-single-sword.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 0,
+      "width": 1254,
+      "height": 1254
+    },
+    "sourceTrim": {
+      "left": 278,
+      "top": 326,
+      "width": 693,
+      "height": 688
+    },
+    "width": 701,
+    "height": 696,
+    "alpha": true,
+    "transparentFraction": 0.8147656367248409,
+    "sha256": "721e71d0c0c2cf7345fba7bce03c638e3103bbfea77bb153633482542c714f3e"
+  },
+  {
+    "id": "shop",
+    "file": "assets/icons/shop.png",
+    "source": "sources/icons-menu.png",
+    "sourceCell": {
+      "x": 752,
+      "y": 0,
+      "width": 251,
+      "height": 391
+    },
+    "sourceTrim": {
+      "left": 7,
+      "top": 95,
+      "width": 239,
+      "height": 277
+    },
+    "width": 247,
+    "height": 285,
+    "alpha": true,
+    "transparentFraction": 0.43703447081240254,
+    "sha256": "93d5c33c8688d83727c481f4b732f00d1cf3268d61337e1d18a082e151e8ec09"
+  },
+  {
+    "id": "trophy",
+    "file": "assets/icons/trophy.png",
+    "source": "sources/icons-menu.png",
+    "sourceCell": {
+      "x": 1003,
+      "y": 0,
+      "width": 251,
+      "height": 391
+    },
+    "sourceTrim": {
+      "left": 5,
+      "top": 133,
+      "width": 220,
+      "height": 238
+    },
+    "width": 228,
+    "height": 246,
+    "alpha": true,
+    "transparentFraction": 0.6215954595938497,
+    "sha256": "0fcb8fd79cb1fb049dce2c7990d6dcb1e98e4d2e61ecd0cc4ba843f5faf0433b"
+  },
+  {
+    "id": "energy",
+    "file": "assets/icons/energy.png",
+    "source": "sources/icons-menu.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 391,
+      "width": 251,
+      "height": 271
+    },
+    "sourceTrim": {
+      "left": 40,
+      "top": 13,
+      "width": 199,
+      "height": 251
+    },
+    "width": 207,
+    "height": 259,
+    "alpha": true,
+    "transparentFraction": 0.5483306625894944,
+    "sha256": "9c272e9f57ed7a1d68e1714708a37c8bee0b2ef1ca51a443badc057019e007e0"
+  },
+  {
+    "id": "gold",
+    "file": "assets/icons/gold.png",
+    "source": "sources/icons-menu.png",
+    "sourceCell": {
+      "x": 251,
+      "y": 391,
+      "width": 251,
+      "height": 271
+    },
+    "sourceTrim": {
+      "left": 17,
+      "top": 37,
+      "width": 216,
+      "height": 223
+    },
+    "width": 224,
+    "height": 231,
+    "alpha": true,
+    "transparentFraction": 0.44483321327237174,
+    "sha256": "177f1a3aa28f74c7bafa571d34a9d33dd4279cea72455059e8d586c84168c6f4"
+  },
+  {
+    "id": "gem",
+    "file": "assets/icons/gem.png",
+    "source": "sources/icons-menu.png",
+    "sourceCell": {
+      "x": 502,
+      "y": 391,
+      "width": 241,
+      "height": 271
+    },
+    "sourceTrim": {
+      "left": 26,
+      "top": 36,
+      "width": 196,
+      "height": 216
+    },
+    "width": 204,
+    "height": 224,
+    "alpha": true,
+    "transparentFraction": 0.5907121311877019,
+    "sha256": "dbaf38fdace0024328c1a54cbc16e4d01716e9d8eecbb6132a7e7a8f00d59495"
+  },
+  {
+    "id": "mail",
+    "file": "assets/icons/mail.png",
+    "source": "sources/icons-single-mail.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 0,
+      "width": 1254,
+      "height": 1254
+    },
+    "sourceTrim": {
+      "left": 283,
+      "top": 381,
+      "width": 751,
+      "height": 564
+    },
+    "width": 759,
+    "height": 572,
+    "alpha": true,
+    "transparentFraction": 0.80777302106942,
+    "sha256": "c6f855df216ca7e4c5af0f784e433838e77458f41fa5ad370ca87507ffb62081"
+  },
+  {
+    "id": "book",
+    "file": "assets/icons/book.png",
+    "source": "sources/icons-single-book.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 0,
+      "width": 1254,
+      "height": 1254
+    },
+    "sourceTrim": {
+      "left": 152,
+      "top": 272,
+      "width": 946,
+      "height": 736
+    },
+    "width": 954,
+    "height": 744,
+    "alpha": true,
+    "transparentFraction": 0.6673890758504206,
+    "sha256": "db0f8acac1f99f42bfe67ad3e2d002e7d71e55000239b69de4b476cd439f9710"
+  },
+  {
+    "id": "chest",
+    "file": "assets/icons/chest.png",
+    "source": "sources/icons-menu.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 662,
+      "width": 274,
+      "height": 269
+    },
+    "sourceTrim": {
+      "left": 19,
+      "top": 9,
+      "width": 245,
+      "height": 253
+    },
+    "width": 253,
+    "height": 261,
+    "alpha": true,
+    "transparentFraction": 0.33421973787751336,
+    "sha256": "c630b6bae4462185878735e05e1e2bbf0f296e0430c8ce4d6b682a1474331451"
+  },
+  {
+    "id": "clock",
+    "file": "assets/icons/clock.png",
+    "source": "sources/icons-menu.png",
+    "sourceCell": {
+      "x": 274,
+      "y": 662,
+      "width": 248,
+      "height": 269
+    },
+    "sourceTrim": {
+      "left": 10,
+      "top": 16,
+      "width": 219,
+      "height": 236
+    },
+    "width": 227,
+    "height": 244,
+    "alpha": true,
+    "transparentFraction": 0.4681466602710157,
+    "sha256": "5efdae0510800e2a19536e2d7bc1124064076432e71d800aef3fad85140934bd"
+  },
+  {
+    "id": "lock",
+    "file": "assets/icons/lock.png",
+    "source": "sources/icons-menu.png",
+    "sourceCell": {
+      "x": 522,
+      "y": 662,
+      "width": 218,
+      "height": 269
+    },
+    "sourceTrim": {
+      "left": 19,
+      "top": 25,
+      "width": 174,
+      "height": 225
+    },
+    "width": 182,
+    "height": 233,
+    "alpha": true,
+    "transparentFraction": 0.4935541079772177,
+    "sha256": "39878905f59ff94905dd477f893c68a50c9be465c943338941253ca39916fdb2"
+  },
+  {
+    "id": "star",
+    "file": "assets/icons/star.png",
+    "source": "sources/icons-menu.png",
+    "sourceCell": {
+      "x": 740,
+      "y": 662,
+      "width": 257,
+      "height": 269
+    },
+    "sourceTrim": {
+      "left": 24,
+      "top": 31,
+      "width": 218,
+      "height": 212
+    },
+    "width": 226,
+    "height": 220,
+    "alpha": true,
+    "transparentFraction": 0.5943181982555364,
+    "sha256": "905de46425331a7378280dfda79a8aa003cd73e215b0a11f558260568129300c"
+  },
+  {
+    "id": "shield",
+    "file": "assets/icons/shield.png",
+    "source": "sources/icons-menu.png",
+    "sourceCell": {
+      "x": 997,
+      "y": 662,
+      "width": 257,
+      "height": 269
+    },
+    "sourceTrim": {
+      "left": 15,
+      "top": 25,
+      "width": 221,
+      "height": 230
+    },
+    "width": 229,
+    "height": 238,
+    "alpha": true,
+    "transparentFraction": 0.42150637177614164,
+    "sha256": "00594d0c4da114609c2ac3ed5e23e4fd6ac12ed4dc4486b75eaf5b454f55d1ac"
+  },
+  {
+    "id": "heart",
+    "file": "assets/icons/heart.png",
+    "source": "sources/icons-menu.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 931,
+      "width": 251,
+      "height": 323
+    },
+    "sourceTrim": {
+      "left": 41,
+      "top": 62,
+      "width": 191,
+      "height": 165
+    },
+    "width": 199,
+    "height": 173,
+    "alpha": true,
+    "transparentFraction": 0.7142821901249491,
+    "sha256": "d4de02bb5529d8ed16167619f3ce9d0e64afe9912f550b1e03527128eac847c8"
+  },
+  {
+    "id": "bow",
+    "file": "assets/icons/bow.png",
+    "source": "sources/icons-menu.png",
+    "sourceCell": {
+      "x": 251,
+      "y": 931,
+      "width": 254,
+      "height": 323
+    },
+    "sourceTrim": {
+      "left": 17,
+      "top": 11,
+      "width": 235,
+      "height": 247
+    },
+    "width": 243,
+    "height": 255,
+    "alpha": true,
+    "transparentFraction": 0.6840520708905194,
+    "sha256": "376da159597a5422c3292f37bc842140242cae987b23fe65dd9989a853d15eb9"
+  },
+  {
+    "id": "wand",
+    "file": "assets/icons/wand.png",
+    "source": "sources/icons-menu.png",
+    "sourceCell": {
+      "x": 505,
+      "y": 931,
+      "width": 214,
+      "height": 323
+    },
+    "sourceTrim": {
+      "left": 25,
+      "top": 5,
+      "width": 179,
+      "height": 246
+    },
+    "width": 187,
+    "height": 254,
+    "alpha": true,
+    "transparentFraction": 0.5828101038743092,
+    "sha256": "f6d616088e919c58f3807be9eeb0d40e986bc9580c8fdd03ec08194bb9c5bf24"
+  },
+  {
+    "id": "people",
+    "file": "assets/icons/people.png",
+    "source": "sources/icons-single-people.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 0,
+      "width": 1254,
+      "height": 1254
+    },
+    "sourceTrim": {
+      "left": 204,
+      "top": 281,
+      "width": 887,
+      "height": 739
+    },
+    "width": 895,
+    "height": 747,
+    "alpha": true,
+    "transparentFraction": 0.7309884287345884,
+    "sha256": "88ca84c4567e93acdcf88f9e7926365c20b2a4bdd6747af5fc776c87dad86702"
+  },
+  {
+    "id": "crown",
+    "file": "assets/icons/crown.png",
+    "source": "sources/icons-single-crown.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 0,
+      "width": 1254,
+      "height": 1254
+    },
+    "sourceTrim": {
+      "left": 216,
+      "top": 285,
+      "width": 821,
+      "height": 711
+    },
+    "width": 829,
+    "height": 719,
+    "alpha": true,
+    "transparentFraction": 0.7505691516016372,
+    "sha256": "368797a8c13a7898fd6ffb15446851bae1e0eb16c28ccee08b00e7d0f020bfbb"
+  },
+  {
+    "id": "back",
+    "file": "assets/icons/back.png",
+    "source": "sources/icons-controls.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 0,
+      "width": 315,
+      "height": 340
+    },
+    "sourceTrim": {
+      "left": 31,
+      "top": 82,
+      "width": 268,
+      "height": 240
+    },
+    "width": 276,
+    "height": 248,
+    "alpha": true,
+    "transparentFraction": 0.5960971055088702,
+    "sha256": "66ec969968d60704c8c5cc925b0d31ae3a039af36f3adf3a4ac4496058bc2f28"
+  },
+  {
+    "id": "gear",
+    "file": "assets/icons/gear.png",
+    "source": "sources/icons-controls.png",
+    "sourceCell": {
+      "x": 315,
+      "y": 0,
+      "width": 336,
+      "height": 340
+    },
+    "sourceTrim": {
+      "left": 15,
+      "top": 51,
+      "width": 298,
+      "height": 284
+    },
+    "width": 306,
+    "height": 292,
+    "alpha": true,
+    "transparentFraction": 0.5081845238095238,
+    "sha256": "397d8a73f07c6feccc615e076060c29ce47aff31c37843e8fc4a008d8a1eab10"
+  },
+  {
+    "id": "flag",
+    "file": "assets/icons/flag.png",
+    "source": "sources/icons-controls.png",
+    "sourceCell": {
+      "x": 651,
+      "y": 0,
+      "width": 314,
+      "height": 340
+    },
+    "sourceTrim": {
+      "left": 24,
+      "top": 43,
+      "width": 282,
+      "height": 292
+    },
+    "width": 290,
+    "height": 300,
+    "alpha": true,
+    "transparentFraction": 0.51370363431997,
+    "sha256": "46113274942c09e47ea93e683cc8f73341b69c77b7a736e956d062c80fb92062"
+  },
+  {
+    "id": "plus",
+    "file": "assets/icons/plus.png",
+    "source": "sources/icons-controls.png",
+    "sourceCell": {
+      "x": 965,
+      "y": 0,
+      "width": 289,
+      "height": 340
+    },
+    "sourceTrim": {
+      "left": 8,
+      "top": 68,
+      "width": 248,
+      "height": 254
+    },
+    "width": 256,
+    "height": 262,
+    "alpha": true,
+    "transparentFraction": 0.590677793608793,
+    "sha256": "aeb03118d0c047d6be11edf85a168fd4ab7f4d71c8aa025d25e38b45c024b1e9"
+  },
+  {
+    "id": "close",
+    "file": "assets/icons/close.png",
+    "source": "sources/icons-controls.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 340,
+      "width": 326,
+      "height": 313
+    },
+    "sourceTrim": {
+      "left": 42,
+      "top": 39,
+      "width": 260,
+      "height": 251
+    },
+    "width": 268,
+    "height": 259,
+    "alpha": true,
+    "transparentFraction": 0.5208353750563516,
+    "sha256": "4a837a861c75a5fcdce138b71337fb8231c3b99d5b4f10721da771f3080be4e3"
+  },
+  {
+    "id": "check",
+    "file": "assets/icons/check.png",
+    "source": "sources/icons-controls.png",
+    "sourceCell": {
+      "x": 326,
+      "y": 340,
+      "width": 296,
+      "height": 313
+    },
+    "sourceTrim": {
+      "left": 23,
+      "top": 64,
+      "width": 265,
+      "height": 222
+    },
+    "width": 273,
+    "height": 230,
+    "alpha": true,
+    "transparentFraction": 0.6807918141783956,
+    "sha256": "d6247f9c9df2fb87f9bda01b80c20aa129ac1c01cbb35dd0a8e20eb5c83fd0fa"
+  },
+  {
+    "id": "tree",
+    "file": "assets/icons/tree.png",
+    "source": "sources/icons-controls.png",
+    "sourceCell": {
+      "x": 622,
+      "y": 340,
+      "width": 329,
+      "height": 313
+    },
+    "sourceTrim": {
+      "left": 7,
+      "top": 5,
+      "width": 312,
+      "height": 306
+    },
+    "width": 320,
+    "height": 314,
+    "alpha": true,
+    "transparentFraction": 0.32061528302436465,
+    "sha256": "1ccb3a1f2ac0e601234901e934fbd9fcc61e836130b63b583e1e5de66bb97e75"
+  },
+  {
+    "id": "rat",
+    "file": "assets/icons/rat.png",
+    "source": "sources/icons-controls.png",
+    "sourceCell": {
+      "x": 951,
+      "y": 340,
+      "width": 303,
+      "height": 313
+    },
+    "sourceTrim": {
+      "left": 9,
+      "top": 36,
+      "width": 277,
+      "height": 243
+    },
+    "width": 285,
+    "height": 251,
+    "alpha": true,
+    "transparentFraction": 0.5153786944189627,
+    "sha256": "3f05581d3c68d0bc10516ec2dd4a203d826beedb4d678d9d40909e62bda13bb7"
+  },
+  {
+    "id": "scroll",
+    "file": "assets/icons/scroll.png",
+    "source": "sources/icons-controls.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 653,
+      "width": 345,
+      "height": 306
+    },
+    "sourceTrim": {
+      "left": 37,
+      "top": 3,
+      "width": 280,
+      "height": 291
+    },
+    "width": 288,
+    "height": 299,
+    "alpha": true,
+    "transparentFraction": 0.4712797196173155,
+    "sha256": "591fd5f0666eae5dde5b5cb2d26dad2a02e50186ec53b9b998856a6acf007a37"
+  },
+  {
+    "id": "play",
+    "file": "assets/icons/play.png",
+    "source": "sources/icons-controls.png",
+    "sourceCell": {
+      "x": 345,
+      "y": 653,
+      "width": 267,
+      "height": 306
+    },
+    "sourceTrim": {
+      "left": 27,
+      "top": 28,
+      "width": 219,
+      "height": 244
+    },
+    "width": 227,
+    "height": 252,
+    "alpha": true,
+    "transparentFraction": 0.565273799906979,
+    "sha256": "364cb9858ca640b54e8fc18f0e5009fbb795fa22fb1e0c629b23d073fe011623"
+  },
+  {
+    "id": "ticket",
+    "file": "assets/icons/ticket.png",
+    "source": "sources/icons-controls.png",
+    "sourceCell": {
+      "x": 612,
+      "y": 653,
+      "width": 360,
+      "height": 306
+    },
+    "sourceTrim": {
+      "left": 22,
+      "top": 49,
+      "width": 316,
+      "height": 228
+    },
+    "width": 324,
+    "height": 236,
+    "alpha": true,
+    "transparentFraction": 0.5262799564270153,
+    "sha256": "e5272719ef9dcec8c7867088af68eb595708094e50bf149a52e70eacad6cbfd0"
+  },
+  {
+    "id": "help",
+    "file": "assets/icons/help.png",
+    "source": "sources/icons-controls.png",
+    "sourceCell": {
+      "x": 972,
+      "y": 653,
+      "width": 282,
+      "height": 306
+    },
+    "sourceTrim": {
+      "left": 21,
+      "top": 8,
+      "width": 212,
+      "height": 277
+    },
+    "width": 220,
+    "height": 285,
+    "alpha": true,
+    "transparentFraction": 0.5906109488712743,
+    "sha256": "7e38e664bcbb2ffced63c5a7641e376ba7508512b9c12fa50abb4fcb86738faf"
+  },
+  {
+    "id": "pause",
+    "file": "assets/icons/pause.png",
+    "source": "sources/icons-controls.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 959,
+      "width": 305,
+      "height": 295
+    },
+    "sourceTrim": {
+      "left": 67,
+      "top": 16,
+      "width": 210,
+      "height": 226
+    },
+    "width": 218,
+    "height": 234,
+    "alpha": true,
+    "transparentFraction": 0.5047513198110586,
+    "sha256": "117fbcdea77a5b12d54a8f445e79e99edf3e960afef7ca607381020eda537dad"
+  },
+  {
+    "id": "paw",
+    "file": "assets/icons/paw.png",
+    "source": "sources/icons-controls.png",
+    "sourceCell": {
+      "x": 305,
+      "y": 959,
+      "width": 322,
+      "height": 295
+    },
+    "sourceTrim": {
+      "left": 28,
+      "top": 12,
+      "width": 270,
+      "height": 236
+    },
+    "width": 278,
+    "height": 244,
+    "alpha": true,
+    "transparentFraction": 0.49926308032424466,
+    "sha256": "5b250cc49e99356160f9a9644ef11643549b1c61e52fcf13c90da07874e77137"
+  },
+  {
+    "id": "can",
+    "file": "assets/icons/can.png",
+    "source": "sources/icons-controls.png",
+    "sourceCell": {
+      "x": 627,
+      "y": 959,
+      "width": 313,
+      "height": 295
+    },
+    "sourceTrim": {
+      "left": 24,
+      "top": 14,
+      "width": 273,
+      "height": 226
+    },
+    "width": 281,
+    "height": 234,
+    "alpha": true,
+    "transparentFraction": 0.4088157253479179,
+    "sha256": "ec88ce1ba62b9925deb6f43e58654c991fb9b6c359509b95749e5de878b1c652"
+  },
+  {
+    "id": "yarn",
+    "file": "assets/icons/yarn.png",
+    "source": "sources/icons-controls.png",
+    "sourceCell": {
+      "x": 940,
+      "y": 959,
+      "width": 314,
+      "height": 295
+    },
+    "sourceTrim": {
+      "left": 15,
+      "top": 14,
+      "width": 266,
+      "height": 240
+    },
+    "width": 274,
+    "height": 248,
+    "alpha": true,
+    "transparentFraction": 0.47436035841520025,
+    "sha256": "094d5b2c8cea3fd0e6a721a6c90d0a20f13b4a6f6053a3b155866c212c619e75"
+  },
+  {
+    "id": "item-weapon-1-twig",
+    "file": "assets/items/item-weapon-1-twig.png",
+    "source": "sources/items-weapon.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 0,
+      "width": 477,
+      "height": 436
+    },
+    "sourceTrim": {
+      "left": 63,
+      "top": 68,
+      "width": 392,
+      "height": 334
+    },
+    "width": 400,
+    "height": 342,
+    "alpha": true,
+    "transparentFraction": 0.7622853076375666,
+    "sha256": "a97791d979591123e65d5e589276063f6e8ed38881815b1c930596dd75532b5f"
+  },
+  {
+    "id": "item-weapon-2-wood-sword",
+    "file": "assets/items/item-weapon-2-wood-sword.png",
+    "source": "sources/items-weapon.png",
+    "sourceCell": {
+      "x": 477,
+      "y": 0,
+      "width": 409,
+      "height": 436
+    },
+    "sourceTrim": {
+      "left": 22,
+      "top": 47,
+      "width": 357,
+      "height": 363
+    },
+    "width": 365,
+    "height": 371,
+    "alpha": true,
+    "transparentFraction": 0.7189329535003701,
+    "sha256": "b9613719d68016ef089587b22d1d589e74e858affef682511a805c4a53ef8904"
+  },
+  {
+    "id": "item-weapon-3-fishbone-dagger",
+    "file": "assets/items/item-weapon-3-fishbone-dagger.png",
+    "source": "sources/items-weapon.png",
+    "sourceCell": {
+      "x": 886,
+      "y": 0,
+      "width": 452,
+      "height": 436
+    },
+    "sourceTrim": {
+      "left": 30,
+      "top": 61,
+      "width": 382,
+      "height": 357
+    },
+    "width": 390,
+    "height": 365,
+    "alpha": true,
+    "transparentFraction": 0.7517100349110984,
+    "sha256": "368edb27af956b9a1cafd15d11edded9c1725a25a21cd1e76715622f0032f72b"
+  },
+  {
+    "id": "item-weapon-4-iron-sword",
+    "file": "assets/items/item-weapon-4-iron-sword.png",
+    "source": "sources/items-weapon.png",
+    "sourceCell": {
+      "x": 1338,
+      "y": 0,
+      "width": 436,
+      "height": 436
+    },
+    "sourceTrim": {
+      "left": 40,
+      "top": 46,
+      "width": 360,
+      "height": 359
+    },
+    "width": 368,
+    "height": 367,
+    "alpha": true,
+    "transparentFraction": 0.7356335746149314,
+    "sha256": "79cc2ec16f97a065fce79e4beb281e139757c46b0bad4815df3f839e977c469a"
+  },
+  {
+    "id": "item-weapon-5-flame-sword",
+    "file": "assets/items/item-weapon-5-flame-sword.png",
+    "source": "sources/items-weapon.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 436,
+      "width": 457,
+      "height": 451
+    },
+    "sourceTrim": {
+      "left": 49,
+      "top": 34,
+      "width": 389,
+      "height": 368
+    },
+    "width": 397,
+    "height": 376,
+    "alpha": true,
+    "transparentFraction": 0.6357668589616073,
+    "sha256": "b50c0caf557bba3050879f55385e8fe1107908312b4d7ef90659972d8311211d"
+  },
+  {
+    "id": "item-weapon-6-ice-sword",
+    "file": "assets/items/item-weapon-6-ice-sword.png",
+    "source": "sources/items-weapon.png",
+    "sourceCell": {
+      "x": 457,
+      "y": 436,
+      "width": 430,
+      "height": 451
+    },
+    "sourceTrim": {
+      "left": 23,
+      "top": 30,
+      "width": 373,
+      "height": 371
+    },
+    "width": 381,
+    "height": 379,
+    "alpha": true,
+    "transparentFraction": 0.6349404424276801,
+    "sha256": "5cf3ef41759ee91bfcf2a8f53d779df34856a94a7b81690ddbad25e7318e2d50"
+  },
+  {
+    "id": "item-weapon-7-royal-sword",
+    "file": "assets/items/item-weapon-7-royal-sword.png",
+    "source": "sources/items-weapon.png",
+    "sourceCell": {
+      "x": 887,
+      "y": 436,
+      "width": 437,
+      "height": 451
+    },
+    "sourceTrim": {
+      "left": 43,
+      "top": 24,
+      "width": 380,
+      "height": 379
+    },
+    "width": 388,
+    "height": 387,
+    "alpha": true,
+    "transparentFraction": 0.7113406769599212,
+    "sha256": "e169e93f4c0f44b069a3ed8b1c4604ab0423f5967b2c8bce2597bf4a7b30f293"
+  },
+  {
+    "id": "item-weapon-8-churu-blade",
+    "file": "assets/items/item-weapon-8-churu-blade.png",
+    "source": "sources/items-weapon.png",
+    "sourceCell": {
+      "x": 1324,
+      "y": 436,
+      "width": 450,
+      "height": 451
+    },
+    "sourceTrim": {
+      "left": 7,
+      "top": 9,
+      "width": 421,
+      "height": 407
+    },
+    "width": 429,
+    "height": 415,
+    "alpha": true,
+    "transparentFraction": 0.40174919931017494,
+    "sha256": "776a1f98764619942d023ef5b42b65eab9f9bcfe0d450a2dc5f87452221554e3"
+  },
+  {
+    "id": "item-armor-1-cardboard",
+    "file": "assets/items/item-armor-1-cardboard.png",
+    "source": "sources/items-armor.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 0,
+      "width": 430,
+      "height": 423
+    },
+    "sourceTrim": {
+      "left": 48,
+      "top": 72,
+      "width": 344,
+      "height": 333
+    },
+    "width": 352,
+    "height": 341,
+    "alpha": true,
+    "transparentFraction": 0.4860685029413382,
+    "sha256": "b08930c68050da6f04eba1893c93c5caff517cdb2ce5859576a6320d19fb4488"
+  },
+  {
+    "id": "item-armor-2-leather",
+    "file": "assets/items/item-armor-2-leather.png",
+    "source": "sources/items-armor.png",
+    "sourceCell": {
+      "x": 430,
+      "y": 0,
+      "width": 435,
+      "height": 423
+    },
+    "sourceTrim": {
+      "left": 38,
+      "top": 66,
+      "width": 356,
+      "height": 343
+    },
+    "width": 364,
+    "height": 351,
+    "alpha": true,
+    "transparentFraction": 0.4524822695035461,
+    "sha256": "90ffdbf22edbf2e2a4c0014c306c9560b7eb6c96cb52189be93d5c2c651501ad"
+  },
+  {
+    "id": "item-armor-3-pot-lid",
+    "file": "assets/items/item-armor-3-pot-lid.png",
+    "source": "sources/items-armor.png",
+    "sourceCell": {
+      "x": 865,
+      "y": 0,
+      "width": 442,
+      "height": 423
+    },
+    "sourceTrim": {
+      "left": 40,
+      "top": 64,
+      "width": 350,
+      "height": 343
+    },
+    "width": 358,
+    "height": 351,
+    "alpha": true,
+    "transparentFraction": 0.495378838933282,
+    "sha256": "d06a35c65909ca17d888afffb6f551cee806698ecd8eaf4d8009dd860c213171"
+  },
+  {
+    "id": "item-armor-4-chainmail",
+    "file": "assets/items/item-armor-4-chainmail.png",
+    "source": "sources/items-armor.png",
+    "sourceCell": {
+      "x": 1307,
+      "y": 0,
+      "width": 467,
+      "height": 423
+    },
+    "sourceTrim": {
+      "left": 51,
+      "top": 64,
+      "width": 365,
+      "height": 341
+    },
+    "width": 373,
+    "height": 349,
+    "alpha": true,
+    "transparentFraction": 0.4636809573708749,
+    "sha256": "0be2037cf8457b6ae4d77ec62883e2cc01bd73880867362e300364c0bd5cf285"
+  },
+  {
+    "id": "item-armor-5-iron-armor",
+    "file": "assets/items/item-armor-5-iron-armor.png",
+    "source": "sources/items-armor.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 423,
+      "width": 442,
+      "height": 464
+    },
+    "sourceTrim": {
+      "left": 16,
+      "top": 51,
+      "width": 415,
+      "height": 367
+    },
+    "width": 423,
+    "height": 375,
+    "alpha": true,
+    "transparentFraction": 0.4822417693867998,
+    "sha256": "acc02a376d4ebf957803a500e35fca2d1abf3c2dc254573190b8fc5701cec810"
+  },
+  {
+    "id": "item-armor-6-knight-armor",
+    "file": "assets/items/item-armor-6-knight-armor.png",
+    "source": "sources/items-armor.png",
+    "sourceCell": {
+      "x": 442,
+      "y": 423,
+      "width": 419,
+      "height": 464
+    },
+    "sourceTrim": {
+      "left": 11,
+      "top": 45,
+      "width": 403,
+      "height": 372
+    },
+    "width": 411,
+    "height": 380,
+    "alpha": true,
+    "transparentFraction": 0.40858262694428443,
+    "sha256": "3821315aa28ab5da6d5c1f1b421096cce20944d419303e93dbdbba016bf6c5cf"
+  },
+  {
+    "id": "item-armor-7-royal-armor",
+    "file": "assets/items/item-armor-7-royal-armor.png",
+    "source": "sources/items-armor.png",
+    "sourceCell": {
+      "x": 861,
+      "y": 423,
+      "width": 450,
+      "height": 464
+    },
+    "sourceTrim": {
+      "left": 6,
+      "top": 44,
+      "width": 437,
+      "height": 378
+    },
+    "width": 445,
+    "height": 386,
+    "alpha": true,
+    "transparentFraction": 0.39338122605363984,
+    "sha256": "a61a8983fb4c2e47d07aa44456311d994b8abde05e01285a70b3182611af1973"
+  },
+  {
+    "id": "item-armor-8-cat-tower-armor",
+    "file": "assets/items/item-armor-8-cat-tower-armor.png",
+    "source": "sources/items-armor.png",
+    "sourceCell": {
+      "x": 1311,
+      "y": 423,
+      "width": 463,
+      "height": 464
+    },
+    "sourceTrim": {
+      "left": 7,
+      "top": 12,
+      "width": 431,
+      "height": 425
+    },
+    "width": 439,
+    "height": 433,
+    "alpha": true,
+    "transparentFraction": 0.4016533849705817,
+    "sha256": "e6a38299eca2af959411bc7d1c41658ded7d017f5fa7b989e4812388d99587a9"
+  },
+  {
+    "id": "item-consumable-1-anchovy",
+    "file": "assets/items/item-consumable-1-anchovy.png",
+    "source": "sources/items-consumable.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 0,
+      "width": 451,
+      "height": 415
+    },
+    "sourceTrim": {
+      "left": 46,
+      "top": 160,
+      "width": 380,
+      "height": 212
+    },
+    "width": 388,
+    "height": 220,
+    "alpha": true,
+    "transparentFraction": 0.7091443378836855,
+    "sha256": "ffde8587b8520bc084dcefcda43662e34b9e93b856f45e5459739bd6d2a776c5"
+  },
+  {
+    "id": "item-consumable-2-fish",
+    "file": "assets/items/item-consumable-2-fish.png",
+    "source": "sources/items-consumable.png",
+    "sourceCell": {
+      "x": 451,
+      "y": 0,
+      "width": 455,
+      "height": 415
+    },
+    "sourceTrim": {
+      "left": 24,
+      "top": 141,
+      "width": 385,
+      "height": 241
+    },
+    "width": 393,
+    "height": 249,
+    "alpha": true,
+    "transparentFraction": 0.7161392824043427,
+    "sha256": "3c816666fde8b3612204f3633051e0ef2fa71efd94f467567006aa12726fdaf7"
+  },
+  {
+    "id": "item-consumable-3-tuna-can",
+    "file": "assets/items/item-consumable-3-tuna-can.png",
+    "source": "sources/items-consumable.png",
+    "sourceCell": {
+      "x": 906,
+      "y": 0,
+      "width": 425,
+      "height": 415
+    },
+    "sourceTrim": {
+      "left": 45,
+      "top": 109,
+      "width": 332,
+      "height": 284
+    },
+    "width": 340,
+    "height": 292,
+    "alpha": true,
+    "transparentFraction": 0.5264691708008504,
+    "sha256": "73c5c8b94036229fc2210c5e127bf382db0c394044b3a8695c5c274b78e2ae7c"
+  },
+  {
+    "id": "item-consumable-4-fish-fillet",
+    "file": "assets/items/item-consumable-4-fish-fillet.png",
+    "source": "sources/items-consumable.png",
+    "sourceCell": {
+      "x": 1331,
+      "y": 0,
+      "width": 443,
+      "height": 415
+    },
+    "sourceTrim": {
+      "left": 47,
+      "top": 130,
+      "width": 351,
+      "height": 261
+    },
+    "width": 359,
+    "height": 269,
+    "alpha": true,
+    "transparentFraction": 0.672419701378879,
+    "sha256": "5e7ac5cf9b7c7b89cfb1ce7b13ba31606ad21dada5722cb14bc801181f8b52c5"
+  },
+  {
+    "id": "item-consumable-5-sashimi",
+    "file": "assets/items/item-consumable-5-sashimi.png",
+    "source": "sources/items-consumable.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 415,
+      "width": 467,
+      "height": 472
+    },
+    "sourceTrim": {
+      "left": 53,
+      "top": 68,
+      "width": 387,
+      "height": 302
+    },
+    "width": 395,
+    "height": 310,
+    "alpha": true,
+    "transparentFraction": 0.6274725075309404,
+    "sha256": "a29e978f4d434fe613fc71eeff6594f3e258dc8dec5e78001a9ac46c6c5e4d78"
+  },
+  {
+    "id": "item-consumable-6-salmon-bowl",
+    "file": "assets/items/item-consumable-6-salmon-bowl.png",
+    "source": "sources/items-consumable.png",
+    "sourceCell": {
+      "x": 467,
+      "y": 415,
+      "width": 431,
+      "height": 472
+    },
+    "sourceTrim": {
+      "left": 26,
+      "top": 50,
+      "width": 358,
+      "height": 333
+    },
+    "width": 366,
+    "height": 341,
+    "alpha": true,
+    "transparentFraction": 0.5949457312517205,
+    "sha256": "adf526212ec7cec254cd9efa89f00347e45a9a8d32d2d67bab02198ac9e6daca"
+  },
+  {
+    "id": "item-consumable-7-churu",
+    "file": "assets/items/item-consumable-7-churu.png",
+    "source": "sources/items-consumable.png",
+    "sourceCell": {
+      "x": 898,
+      "y": 415,
+      "width": 432,
+      "height": 472
+    },
+    "sourceTrim": {
+      "left": 46,
+      "top": 43,
+      "width": 347,
+      "height": 339
+    },
+    "width": 355,
+    "height": 347,
+    "alpha": true,
+    "transparentFraction": 0.7749185891399875,
+    "sha256": "60f6cfe98fcef843c900f9e8269cf15353945d9317ec2205814b8626894c4974"
+  },
+  {
+    "id": "item-consumable-8-gold-churu",
+    "file": "assets/items/item-consumable-8-gold-churu.png",
+    "source": "sources/items-consumable.png",
+    "sourceCell": {
+      "x": 1330,
+      "y": 415,
+      "width": 444,
+      "height": 472
+    },
+    "sourceTrim": {
+      "left": 38,
+      "top": 22,
+      "width": 344,
+      "height": 369
+    },
+    "width": 352,
+    "height": 377,
+    "alpha": true,
+    "transparentFraction": 0.6672154145671095,
+    "sha256": "4ba92b162bdd56a38ef4471f6a96a9ce8c56c15299c6054b9a44853170f3aa86"
+  },
+  {
+    "id": "item-special-1-fluff",
+    "file": "assets/items/item-special-1-fluff.png",
+    "source": "sources/items-special.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 0,
+      "width": 439,
+      "height": 443
+    },
+    "sourceTrim": {
+      "left": 59,
+      "top": 112,
+      "width": 333,
+      "height": 308
+    },
+    "width": 341,
+    "height": 316,
+    "alpha": true,
+    "transparentFraction": 0.6139697753461849,
+    "sha256": "011d6c04805f0991d56e68b7f18fc1e95e3ffd4ca51af113151edf92b817ad4c"
+  },
+  {
+    "id": "item-special-2-yarn",
+    "file": "assets/items/item-special-2-yarn.png",
+    "source": "sources/items-special.png",
+    "sourceCell": {
+      "x": 439,
+      "y": 0,
+      "width": 432,
+      "height": 443
+    },
+    "sourceTrim": {
+      "left": 47,
+      "top": 113,
+      "width": 334,
+      "height": 316
+    },
+    "width": 342,
+    "height": 324,
+    "alpha": true,
+    "transparentFraction": 0.6118374299807708,
+    "sha256": "70ec540f2c12187f1be4a55f63af9903d9abf8455bb87880dc905f44c4f4d658"
+  },
+  {
+    "id": "item-special-3-fur-bomb",
+    "file": "assets/items/item-special-3-fur-bomb.png",
+    "source": "sources/items-special.png",
+    "sourceCell": {
+      "x": 871,
+      "y": 0,
+      "width": 448,
+      "height": 443
+    },
+    "sourceTrim": {
+      "left": 49,
+      "top": 19,
+      "width": 366,
+      "height": 412
+    },
+    "width": 374,
+    "height": 420,
+    "alpha": true,
+    "transparentFraction": 0.526160915833602,
+    "sha256": "3ab1c2bdabd6167ad939edf0d79aea6bb2ddf1656bea637f9272169b4c3b580a"
+  },
+  {
+    "id": "item-special-4-fire-fur",
+    "file": "assets/items/item-special-4-fire-fur.png",
+    "source": "sources/items-special.png",
+    "sourceCell": {
+      "x": 1319,
+      "y": 0,
+      "width": 455,
+      "height": 443
+    },
+    "sourceTrim": {
+      "left": 35,
+      "top": 64,
+      "width": 395,
+      "height": 372
+    },
+    "width": 403,
+    "height": 380,
+    "alpha": true,
+    "transparentFraction": 0.5082529208940044,
+    "sha256": "0970a97865b1e311b719ab0672ac0bdda831d08ae19397737996f1940a220633"
+  },
+  {
+    "id": "item-special-5-lightning-fur",
+    "file": "assets/items/item-special-5-lightning-fur.png",
+    "source": "sources/items-special.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 443,
+      "width": 435,
+      "height": 444
+    },
+    "sourceTrim": {
+      "left": 32,
+      "top": 34,
+      "width": 370,
+      "height": 350
+    },
+    "width": 378,
+    "height": 358,
+    "alpha": true,
+    "transparentFraction": 0.4846380863622243,
+    "sha256": "a1bfca0d6ac0acaabb44886decda9de2d3547879fcb2d26d679d8c944c28c83f"
+  },
+  {
+    "id": "item-special-6-ice-fur",
+    "file": "assets/items/item-special-6-ice-fur.png",
+    "source": "sources/items-special.png",
+    "sourceCell": {
+      "x": 435,
+      "y": 443,
+      "width": 434,
+      "height": 444
+    },
+    "sourceTrim": {
+      "left": 38,
+      "top": 49,
+      "width": 366,
+      "height": 353
+    },
+    "width": 374,
+    "height": 361,
+    "alpha": true,
+    "transparentFraction": 0.5355689791173662,
+    "sha256": "09c299791ec832bed0542ec8804cb597f1b22b444ab1d7a3c186f355a0b7efe1"
+  },
+  {
+    "id": "item-special-7-star-fur",
+    "file": "assets/items/item-special-7-star-fur.png",
+    "source": "sources/items-special.png",
+    "sourceCell": {
+      "x": 869,
+      "y": 443,
+      "width": 428,
+      "height": 444
+    },
+    "sourceTrim": {
+      "left": 31,
+      "top": 48,
+      "width": 368,
+      "height": 346
+    },
+    "width": 376,
+    "height": 354,
+    "alpha": true,
+    "transparentFraction": 0.5335785551907047,
+    "sha256": "74a7c66022fcfa8cc00c642fdb30547e5b17c114c5fe8973286ac5805d49b22c"
+  },
+  {
+    "id": "item-special-8-giant-fur",
+    "file": "assets/items/item-special-8-giant-fur.png",
+    "source": "sources/items-special.png",
+    "sourceCell": {
+      "x": 1297,
+      "y": 443,
+      "width": 477,
+      "height": 444
+    },
+    "sourceTrim": {
+      "left": 27,
+      "top": 9,
+      "width": 424,
+      "height": 400
+    },
+    "width": 432,
+    "height": 408,
+    "alpha": true,
+    "transparentFraction": 0.34598749693089315,
+    "sha256": "33b7b40d59d1f421b0e0402b9afdb8d460fbc84af217acb2222c9f3672d1863a"
+  },
+  {
+    "id": "cat-warrior",
+    "file": "assets/characters/cat-warrior.png",
+    "source": "sources/cat-warrior.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 0,
+      "width": 1254,
+      "height": 1254
+    },
+    "sourceTrim": {
+      "left": 28,
+      "top": 113,
+      "width": 1200,
+      "height": 1028
+    },
+    "width": 1208,
+    "height": 1036,
+    "alpha": true,
+    "transparentFraction": 0.4969049599495331,
+    "sha256": "31514cf12177305d533fc5412079a09dc29491c04dae55ee0709c3aaba11b0e6"
+  },
+  {
+    "id": "cat-tank",
+    "file": "assets/characters/cat-tank.png",
+    "source": "sources/cat-tank.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 0,
+      "width": 1254,
+      "height": 1254
+    },
+    "sourceTrim": {
+      "left": 51,
+      "top": 113,
+      "width": 1177,
+      "height": 1053
+    },
+    "width": 1185,
+    "height": 1061,
+    "alpha": true,
+    "transparentFraction": 0.4666369054432514,
+    "sha256": "407e6d6b44dbfe2d8481bb63c0f1fad42cbdc0a796b729df5fb682a9425bf37a"
+  },
+  {
+    "id": "cat-archer",
+    "file": "assets/characters/cat-archer.png",
+    "source": "sources/cat-archer.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 0,
+      "width": 1254,
+      "height": 1254
+    },
+    "sourceTrim": {
+      "left": 123,
+      "top": 161,
+      "width": 1104,
+      "height": 986
+    },
+    "width": 1112,
+    "height": 994,
+    "alpha": true,
+    "transparentFraction": 0.5603504193280069,
+    "sha256": "a5339b568c7296d6ce724cae49eab58d392458e01025cd5c123f04ba6ce23277"
+  },
+  {
+    "id": "cat-healer",
+    "file": "assets/characters/cat-healer.png",
+    "source": "sources/cat-healer.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 0,
+      "width": 1254,
+      "height": 1254
+    },
+    "sourceTrim": {
+      "left": 64,
+      "top": 124,
+      "width": 1180,
+      "height": 1021
+    },
+    "width": 1188,
+    "height": 1029,
+    "alpha": true,
+    "transparentFraction": 0.5026689712537106,
+    "sha256": "24ffd8a39506c35dc2bfa2c33a47bdb3d0988023bfb6d91905d5181fb2e38ccc"
+  },
+  {
+    "id": "cat-wizard",
+    "file": "assets/characters/cat-wizard.png",
+    "source": "sources/cat-wizard.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 0,
+      "width": 1254,
+      "height": 1254
+    },
+    "sourceTrim": {
+      "left": 49,
+      "top": 53,
+      "width": 1194,
+      "height": 1140
+    },
+    "width": 1202,
+    "height": 1148,
+    "alpha": true,
+    "transparentFraction": 0.45347773885925485,
+    "sha256": "226bc8a74c532a1f69ed7536260023b23cc8f13581a859caea3054ef1e86fb77"
+  },
+  {
+    "id": "cat-smith",
+    "file": "assets/characters/cat-smith.png",
+    "source": "sources/cat-smith.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 0,
+      "width": 1254,
+      "height": 1254
+    },
+    "sourceTrim": {
+      "left": 32,
+      "top": 125,
+      "width": 1220,
+      "height": 1004
+    },
+    "width": 1228,
+    "height": 1012,
+    "alpha": true,
+    "transparentFraction": 0.5423258014544844,
+    "sha256": "c7eb79a73440f64889f6245f631ad2718552a607e2a7cdf897a5dc82bdad4812"
+  },
+  {
+    "id": "boss-rat",
+    "file": "assets/characters/boss-rat.png",
+    "source": "sources/boss-rat-clean.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 0,
+      "width": 1254,
+      "height": 1254
+    },
+    "sourceTrim": {
+      "left": 163,
+      "top": 153,
+      "width": 974,
+      "height": 971
+    },
+    "width": 982,
+    "height": 979,
+    "alpha": true,
+    "transparentFraction": 0.6520925701232929,
+    "sha256": "4f70d1a090e7bd8fc7e5d5a040ef936101f5e4f7f2788c57eca8953e159d6467"
+  },
+  {
+    "id": "boss-eel",
+    "file": "assets/characters/boss-eel.png",
+    "source": "sources/boss-eel.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 0,
+      "width": 1254,
+      "height": 1254
+    },
+    "sourceTrim": {
+      "left": 51,
+      "top": 78,
+      "width": 1151,
+      "height": 1069
+    },
+    "width": 1159,
+    "height": 1077,
+    "alpha": true,
+    "transparentFraction": 0.5043598920456135,
+    "sha256": "d2cf55d7773735a4be5afd363bab612ac6642491e230a84ec2cc8c3e79e3085f"
+  },
+  {
+    "id": "supply-rail",
+    "file": "assets/ui/supply-rail.png",
+    "source": "sources/battle-parts.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 0,
+      "width": 650,
+      "height": 406
+    },
+    "sourceTrim": {
+      "left": 21,
+      "top": 94,
+      "width": 613,
+      "height": 265
+    },
+    "width": 621,
+    "height": 273,
+    "alpha": true,
+    "transparentFraction": 0.5539598332701781,
+    "sha256": "6310ae3c1e9a9930495711f1191f1298cc31a16d8c765003e85089a21d7a3ff5"
+  },
+  {
+    "id": "title-banner",
+    "file": "assets/ui/title-banner.png",
+    "source": "sources/battle-parts.png",
+    "sourceCell": {
+      "x": 650,
+      "y": 0,
+      "width": 604,
+      "height": 406
+    },
+    "sourceTrim": {
+      "left": 16,
+      "top": 108,
+      "width": 552,
+      "height": 251
+    },
+    "width": 560,
+    "height": 259,
+    "alpha": true,
+    "transparentFraction": 0.5664616840113529,
+    "sha256": "24664a9260aec9337b2a91548f132e57a0adc8a35411df189e97d12c222c5216"
+  },
+  {
+    "id": "progress-track",
+    "file": "assets/ui/progress-track.png",
+    "source": "sources/battle-parts.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 406,
+      "width": 642,
+      "height": 219
+    },
+    "sourceTrim": {
+      "left": 53,
+      "top": 46,
+      "width": 556,
+      "height": 130
+    },
+    "width": 564,
+    "height": 138,
+    "alpha": true,
+    "transparentFraction": 0.5129020327458428,
+    "sha256": "657293fa29d59f82dc779301e8bbe7cd812827e16a4f95032fe8d42b51f215dc"
+  },
+  {
+    "id": "progress-mint",
+    "file": "assets/ui/progress-mint.png",
+    "source": "sources/battle-parts.png",
+    "sourceCell": {
+      "x": 642,
+      "y": 406,
+      "width": 612,
+      "height": 219
+    },
+    "sourceTrim": {
+      "left": 32,
+      "top": 70,
+      "width": 533,
+      "height": 84
+    },
+    "width": 541,
+    "height": 92,
+    "alpha": true,
+    "transparentFraction": 0.677970274867938,
+    "sha256": "34dada4f1f427dc67ec7c1c166d402ebc8fe870cc5b1443d6b5151f9ded02270"
+  },
+  {
+    "id": "progress-red",
+    "file": "assets/ui/progress-red.png",
+    "source": "sources/battle-parts.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 625,
+      "width": 629,
+      "height": 168
+    },
+    "sourceTrim": {
+      "left": 55,
+      "top": 42,
+      "width": 541,
+      "height": 92
+    },
+    "width": 549,
+    "height": 100,
+    "alpha": true,
+    "transparentFraction": 0.5465213112271936,
+    "sha256": "f0a93bd08ea04f0b992d277babb3106f45df81f5164ccffc310a4bf1d58f44f8"
+  },
+  {
+    "id": "progress-gold",
+    "file": "assets/ui/progress-gold.png",
+    "source": "sources/battle-parts.png",
+    "sourceCell": {
+      "x": 629,
+      "y": 625,
+      "width": 625,
+      "height": 168
+    },
+    "sourceTrim": {
+      "left": 32,
+      "top": 42,
+      "width": 542,
+      "height": 91
+    },
+    "width": 550,
+    "height": 99,
+    "alpha": true,
+    "transparentFraction": 0.5481142857142857,
+    "sha256": "b04ff7ee55d3874d3adf2b6932d3040fc65de2c0c71b2c28a49e6602e927b19c"
+  },
+  {
+    "id": "victory-laurel",
+    "file": "assets/ui/victory-laurel.png",
+    "source": "sources/battle-parts.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 793,
+      "width": 737,
+      "height": 461
+    },
+    "sourceTrim": {
+      "left": 51,
+      "top": 33,
+      "width": 603,
+      "height": 375
+    },
+    "width": 611,
+    "height": 383,
+    "alpha": true,
+    "transparentFraction": 0.49222532574751954,
+    "sha256": "25a2112bb58c47fc04d8728abe1f17c2abaff5bf4ac29d8227b4946e98521f0c"
+  },
+  {
+    "id": "tutorial-hand",
+    "file": "assets/ui/tutorial-hand.png",
+    "source": "sources/battle-parts.png",
+    "sourceCell": {
+      "x": 737,
+      "y": 793,
+      "width": 517,
+      "height": 461
+    },
+    "sourceTrim": {
+      "left": 82,
+      "top": 80,
+      "width": 281,
+      "height": 301
+    },
+    "width": 289,
+    "height": 309,
+    "alpha": true,
+    "transparentFraction": 0.7832271111912964,
+    "sha256": "6331c7d281d250c6545a8ef219cf404b3a4aa9c03b608da5aad40f5e4cbae4da"
+  },
+  {
+    "id": "mode-solo",
+    "file": "assets/ui/mode-solo.png",
+    "source": "sources/mode-illustrations.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 0,
+      "width": 426,
+      "height": 672
+    },
+    "sourceTrim": {
+      "left": 24,
+      "top": 103,
+      "width": 396,
+      "height": 558
+    },
+    "width": 404,
+    "height": 566,
+    "alpha": true,
+    "transparentFraction": 0.23929339928459648,
+    "sha256": "e2c0b10515a383f54722159fe6f829c2ebde7972ff227366055d16c803cd15ae"
+  },
+  {
+    "id": "mode-coop",
+    "file": "assets/ui/mode-coop.png",
+    "source": "sources/mode-illustrations.png",
+    "sourceCell": {
+      "x": 426,
+      "y": 0,
+      "width": 404,
+      "height": 672
+    },
+    "sourceTrim": {
+      "left": 3,
+      "top": 102,
+      "width": 395,
+      "height": 560
+    },
+    "width": 403,
+    "height": 568,
+    "alpha": true,
+    "transparentFraction": 0.2006129184347006,
+    "sha256": "38d9849add593dac371d4b8d0f77437d8a9bb8e95e66317b8eaa722d166c4bb2"
+  },
+  {
+    "id": "mode-boss",
+    "file": "assets/ui/mode-boss.png",
+    "source": "sources/mode-illustrations.png",
+    "sourceCell": {
+      "x": 830,
+      "y": 0,
+      "width": 424,
+      "height": 672
+    },
+    "sourceTrim": {
+      "left": 4,
+      "top": 103,
+      "width": 398,
+      "height": 559
+    },
+    "width": 406,
+    "height": 567,
+    "alpha": true,
+    "transparentFraction": 0.23402052448337826,
+    "sha256": "458172942f937fa0ff37676027ab25c063f81568bedfd618449e7fddb23ab07d"
+  },
+  {
+    "id": "mode-duel",
+    "file": "assets/ui/mode-duel.png",
+    "source": "sources/mode-illustrations.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 672,
+      "width": 426,
+      "height": 582
+    },
+    "sourceTrim": {
+      "left": 24,
+      "top": 9,
+      "width": 397,
+      "height": 501
+    },
+    "width": 405,
+    "height": 509,
+    "alpha": true,
+    "transparentFraction": 0.21870916218963263,
+    "sha256": "a144e1fdffda2d6f7291f4a3eef706ded52f104a61dadabb129816d001401e2c"
+  },
+  {
+    "id": "mode-team",
+    "file": "assets/ui/mode-team.png",
+    "source": "sources/mode-illustrations.png",
+    "sourceCell": {
+      "x": 426,
+      "y": 672,
+      "width": 404,
+      "height": 582
+    },
+    "sourceTrim": {
+      "left": 3,
+      "top": 9,
+      "width": 395,
+      "height": 500
+    },
+    "width": 403,
+    "height": 508,
+    "alpha": true,
+    "transparentFraction": 0.17877921812799838,
+    "sha256": "d033f0c975a6a3e6460c71827f198acd30bea9e19cef7d1c0c9289b34bf5ee18"
+  },
+  {
+    "id": "mode-tower",
+    "file": "assets/ui/mode-tower.png",
+    "source": "sources/mode-illustrations.png",
+    "sourceCell": {
+      "x": 830,
+      "y": 672,
+      "width": 424,
+      "height": 582
+    },
+    "sourceTrim": {
+      "left": 4,
+      "top": 9,
+      "width": 396,
+      "height": 503
+    },
+    "width": 404,
+    "height": 511,
+    "alpha": true,
+    "transparentFraction": 0.211664397328665,
+    "sha256": "b98666da6aa9b4adf30dd44623facf6cffb51cbf3121e45811e76700b8477304"
+  },
+  {
+    "id": "ground-shadow",
+    "file": "assets/ui/ground-shadow.png",
+    "source": "sources/effects.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 0,
+      "width": 634,
+      "height": 624
+    },
+    "sourceTrim": {
+      "left": 47,
+      "top": 373,
+      "width": 535,
+      "height": 149
+    },
+    "width": 543,
+    "height": 157,
+    "alpha": true,
+    "transparentFraction": 0.8410984388902369,
+    "sha256": "f7537163ce3c0ebb75970526a9de2fffd5d477670d41dee9bf48896b327168ba"
+  },
+  {
+    "id": "sword-arc",
+    "file": "assets/ui/sword-arc.png",
+    "source": "sources/effects.png",
+    "sourceCell": {
+      "x": 634,
+      "y": 0,
+      "width": 620,
+      "height": 624
+    },
+    "sourceTrim": {
+      "left": 71,
+      "top": 78,
+      "width": 526,
+      "height": 506
+    },
+    "width": 534,
+    "height": 514,
+    "alpha": true,
+    "transparentFraction": 0.7033834780810587,
+    "sha256": "6bbc3da8c4224e0b1d59122aa92a70e7a22420379468e3fe919e1017c8198cb8"
+  },
+  {
+    "id": "healing-aura",
+    "file": "assets/ui/healing-aura.png",
+    "source": "sources/effects.png",
+    "sourceCell": {
+      "x": 0,
+      "y": 624,
+      "width": 643,
+      "height": 630
+    },
+    "sourceTrim": {
+      "left": 77,
+      "top": 62,
+      "width": 501,
+      "height": 487
+    },
+    "width": 509,
+    "height": 495,
+    "alpha": true,
+    "transparentFraction": 0.700755387691624,
+    "sha256": "d2e9bb8acfe5b0e1ba09dfde8ad6ee11519af7b0bf23108ed28e10ec21f2503a"
+  },
+  {
+    "id": "merge-glow",
+    "file": "assets/ui/merge-glow.png",
+    "source": "sources/effects.png",
+    "sourceCell": {
+      "x": 643,
+      "y": 624,
+      "width": 611,
+      "height": 630
+    },
+    "sourceTrim": {
+      "left": 60,
+      "top": 37,
+      "width": 494,
+      "height": 510
+    },
+    "width": 502,
+    "height": 518,
+    "alpha": true,
+    "transparentFraction": 0.744795157561115,
+    "sha256": "fc6138ebb850f30d9890bfc0a9fe29e95af01d0ed38ecf630f20c1f606ff0757"
+  }
+]

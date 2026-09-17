@@ -1,0 +1,202 @@
+[
+  {
+    "id": "cat-warrior",
+    "name": "전사냥이",
+    "action": "sword raised back then sword swung forward right; keep shield",
+    "existing": true,
+    "prompt": "Create a production two-frame attack sprite sheet of EXACT reference character. Transparent RGBA background. Wide 2:1 canvas, exactly TWO equally sized square cells side by side, no divider, no text. Left cell anticipation, right cell impact: sword raised back then sword swung forward right; keep shield. Same head/body size, face, fur patches, clothing, equipment design in both. Feet planted at identical local coordinates and same ground baseline. Lock torso/head, change arms and weapon articulation only. Full body each cell, generous 12% transparent margins, no cropping or cross-cell overlap. Match reference polished pastel hand-painted storybook game illustration. NO shadow, NO effects, NO speed lines. Both poses face right. Make clear actual attack not whole-sprite translation.",
+    "generatedPath": "C:\\Users\\sinna\\.codex\\generated_images\\01a0ad8a-318f-75d1-814b-048441e405e8\\exec-c235fc77-1b88-417c-bc87-14b364c1e25a.png"
+  },
+  {
+    "id": "cat-tank",
+    "name": "뚱냥이",
+    "action": "shield held close then shield thrust forward right; keep sword",
+    "existing": true,
+    "prompt": "Production 2-frame attack sprite sheet, exact supplied character identity. Transparent RGBA, wide 2:1 canvas exactly TWO equal square cells side by side. Left anticipation, right impact: shield held close then shield thrust forward right; keep sword. Face RIGHT. Identical local head/torso position and size, same fur markings costume weapon dimensions between cells. Feet planted same baseline, only arms/weapon articulate. NO character redesign or scaling. Polished pastel painted fantasy game style of reference. Full body and weapons contained within each cell with 12% transparent padding. No labels, borders, shadows, effects or speedlines. Clear substantial attack pose difference.",
+    "generatedPath": "C:\\Users\\sinna\\.codex\\generated_images\\01a0ad8a-318f-75d1-814b-048441e405e8\\exec-47a6bd71-aeee-4e08-a8df-0a77ea883cfe.png"
+  },
+  {
+    "id": "cat-archer",
+    "name": "궁사냥이",
+    "action": "bow string drawn with arrow then string released and empty bow forward right",
+    "existing": true,
+    "prompt": "Edit reference into corrected production TWO-frame sprite sheet preserving this character exactly. bow string drawn with arrow then string released and empty bow forward right. IMPORTANT ZOOM OUT: characters occupy only 60 percent of each half-cell height and width. Huge transparent padding 20% on all sides, especially RIGHT edge. Central 15% of full image MUST be completely transparent, no object can enter this empty vertical strip. Absolutely entire tail, whiskers, bow, arrow and weapon visible without cropping. Wide 2:1 RGBA transparent. Two equal square cells left anticipation right impact. Same body/head dimensions and local positions and same ground level in each. Face right. Articulate attacking arms/jaw, do not move whole body. Exact pastel illustrated reference identity. No effects, text, backdrop, borders, shadows.",
+    "generatedPath": "C:\\Users\\sinna\\.codex\\generated_images\\01a0ad8a-318f-75d1-814b-048441e405e8\\exec-78b49d8a-e078-45d5-85ec-cc346fae8e2d.png"
+  },
+  {
+    "id": "cat-healer",
+    "name": "성직냥이",
+    "action": "staff drawn upright then staff thrust right for holy magic attack",
+    "existing": true,
+    "prompt": "Production 2-frame attack sprite sheet, exact supplied character identity. Transparent RGBA, wide 2:1 canvas exactly TWO equal square cells side by side. Left anticipation, right impact: staff drawn upright then staff thrust right for holy magic attack. Face RIGHT. Identical local head/torso position and size, same fur markings costume weapon dimensions between cells. Feet planted same baseline, only arms/weapon articulate. NO character redesign or scaling. Polished pastel painted fantasy game style of reference. Full body and weapons contained within each cell with 12% transparent padding. No labels, borders, shadows, effects or speedlines. Clear substantial attack pose difference.",
+    "generatedPath": "C:\\Users\\sinna\\.codex\\generated_images\\01a0ad8a-318f-75d1-814b-048441e405e8\\exec-3b04ca41-b134-4851-a61c-2fe428fd6968.png"
+  },
+  {
+    "id": "cat-wizard",
+    "name": "마법사냥이",
+    "action": "crystal staff raised then staff aimed right for magic attack",
+    "existing": true,
+    "prompt": "Production two-frame attack sprite sheet of EXACT supplied character. Transparent RGBA background wide 2:1 image with exactly TWO equal square cells. Left cell anticipation; right cell attack impact: crystal staff raised then staff aimed right for magic attack. Facing RIGHT. Same head size torso size silhouette proportions costume details and weapon dimensions in both frames. Head/torso stay at identical local coordinates, limbs and weapon articulate; eel jaw and neck only change. Same grounded baseline and pivot. Fully contained body and equipment, 12% clear padding each cell. Reference pastel hand painted game illustration, meticulous outlines. NO text, borders, background, shadows, effects, lightning, speedlines. Actual articulated attack not translated duplicate.",
+    "generatedPath": "C:\\Users\\sinna\\.codex\\generated_images\\01a0ad8a-318f-75d1-814b-048441e405e8\\exec-b426659c-73c6-4fd8-9e2b-f4269b764dcb.png"
+  },
+  {
+    "id": "cat-smith",
+    "name": "대장장이냥이",
+    "action": "hammer raised then hammer swung down forward right",
+    "existing": true,
+    "prompt": "Production two-frame attack sprite sheet of EXACT supplied character. Transparent RGBA background wide 2:1 image with exactly TWO equal square cells. Left cell anticipation; right cell attack impact: hammer raised then hammer swung down forward right. Facing RIGHT. Same head size torso size silhouette proportions costume details and weapon dimensions in both frames. Head/torso stay at identical local coordinates, limbs and weapon articulate; eel jaw and neck only change. Same grounded baseline and pivot. Fully contained body and equipment, 12% clear padding each cell. Reference pastel hand painted game illustration, meticulous outlines. NO text, borders, background, shadows, effects, lightning, speedlines. Actual articulated attack not translated duplicate.",
+    "generatedPath": "C:\\Users\\sinna\\.codex\\generated_images\\01a0ad8a-318f-75d1-814b-048441e405e8\\exec-03acaec1-739e-483a-9940-608a4cdae501.png"
+  },
+  {
+    "id": "boss-rat",
+    "name": "쥐왕 찍찍대제",
+    "action": "mace lifted back then mace swung down toward left",
+    "existing": true,
+    "prompt": "Production two-frame attack sprite sheet of EXACT supplied character. Transparent RGBA background wide 2:1 image with exactly TWO equal square cells. Left cell anticipation; right cell attack impact: mace lifted back then mace swung down toward left. Facing LEFT. Same head size torso size silhouette proportions costume details and weapon dimensions in both frames. Head/torso stay at identical local coordinates, limbs and weapon articulate; eel jaw and neck only change. Same grounded baseline and pivot. Fully contained body and equipment, 12% clear padding each cell. Reference pastel hand painted game illustration, meticulous outlines. NO text, borders, background, shadows, effects, lightning, speedlines. Actual articulated attack not translated duplicate.",
+    "generatedPath": "C:\\Users\\sinna\\.codex\\generated_images\\01a0ad8a-318f-75d1-814b-048441e405e8\\exec-15a2f0d8-b48f-4887-8084-d7fb214719bd.png"
+  },
+  {
+    "id": "boss-eel",
+    "name": "고대 뱀장어 킹",
+    "action": "jaw slightly open then jaw open for electric bite toward left",
+    "existing": true,
+    "prompt": "Edit reference into corrected production TWO-frame sprite sheet preserving this character exactly. jaw slightly open then jaw open for electric bite toward left. IMPORTANT ZOOM OUT: characters occupy only 60 percent of each half-cell height and width. Huge transparent padding 20% on all sides, especially RIGHT edge. Central 15% of full image MUST be completely transparent, no object can enter this empty vertical strip. Absolutely entire tail, whiskers, bow, arrow and weapon visible without cropping. Wide 2:1 RGBA transparent. Two equal square cells left anticipation right impact. Same body/head dimensions and local positions and same ground level in each. Face left. Articulate attacking arms/jaw, do not move whole body. Exact pastel illustrated reference identity. No effects, text, backdrop, borders, shadows.",
+    "generatedPath": "C:\\Users\\sinna\\.codex\\generated_images\\01a0ad8a-318f-75d1-814b-048441e405e8\\exec-779e6862-598b-49ae-b8b2-a20fcc8a4735.png"
+  },
+  {
+    "id": "enemy-rat",
+    "name": "쥐 병사",
+    "action": "small gray mouse soldier with iron helmet wooden round shield short spear; spear drawn then thrust left",
+    "existing": false,
+    "prompt": "Edit reference into corrected production TWO-frame sprite sheet preserving this character exactly. small gray mouse soldier with iron helmet wooden round shield short spear; spear drawn then thrust left. IMPORTANT ZOOM OUT: characters occupy only 60 percent of each half-cell height and width. Huge transparent padding 20% on all sides, especially RIGHT edge. Central 15% of full image MUST be completely transparent, no object can enter this empty vertical strip. Absolutely entire tail, whiskers, bow, arrow and weapon visible without cropping. Wide 2:1 RGBA transparent. Two equal square cells left anticipation right impact. Same body/head dimensions and local positions and same ground level in each. Face left. Articulate attacking arms/jaw, do not move whole body. Exact pastel illustrated reference identity. No effects, text, backdrop, borders, shadows.",
+    "generatedPath": "C:\\Users\\sinna\\.codex\\generated_images\\01a0ad8a-318f-75d1-814b-048441e405e8\\exec-2a55cfdf-e51d-460c-9929-77fa68adfa64.png"
+  },
+  {
+    "id": "enemy-roach",
+    "name": "바퀴벌레",
+    "action": "cute chestnut armored cockroach six legs two antennae; front legs drawn then striking left",
+    "existing": false,
+    "prompt": "Create one production TWO-frame attack sprite sheet: cute chestnut armored cockroach six legs two antennae; front legs drawn then striking left. Character 바퀴벌레. Supplied image is STYLE reference only; draw specified monster not a cat. Cute pastel hand-painted fantasy game, warm dark outlines, cream highlights, detailed painted textures. Transparent RGBA, wide 2:1 with two equal square cells. LEFT cell anticipation RIGHT cell impact. Both face LEFT. Same character head/body sizes and exact design in both, head/torso locked at same local coordinates, move only attacking limbs/jaw. Identical baseline, 12% transparent margins around each full figure, no overlap. NO text, shadows, effects, scenery, borders.",
+    "generatedPath": "C:\\Users\\sinna\\.codex\\generated_images\\01a0ad8a-318f-75d1-814b-048441e405e8\\exec-c2ae5fd8-81ba-4779-80b0-3f65a30a8b07.png"
+  },
+  {
+    "id": "enemy-mushroom",
+    "name": "독버섯",
+    "action": "cute lilac spotted poisonous mushroom creature; little arms drawn then thrust left to cast spores",
+    "existing": false,
+    "prompt": "Create one production TWO-frame attack sprite sheet: cute lilac spotted poisonous mushroom creature; little arms drawn then thrust left to cast spores. Character 독버섯. Supplied image is STYLE reference only; draw specified monster not a cat. Cute pastel hand-painted fantasy game, warm dark outlines, cream highlights, detailed painted textures. Transparent RGBA, wide 2:1 with two equal square cells. LEFT cell anticipation RIGHT cell impact. Both face LEFT. Same character head/body sizes and exact design in both, head/torso locked at same local coordinates, move only attacking limbs/jaw. Identical baseline, 12% transparent margins around each full figure, no overlap. NO text, shadows, effects, scenery, borders.",
+    "generatedPath": "C:\\Users\\sinna\\.codex\\generated_images\\01a0ad8a-318f-75d1-814b-048441e405e8\\exec-3831d531-6349-490a-a0b6-a8afed2498fd.png"
+  },
+  {
+    "id": "enemy-crow",
+    "name": "까마귀",
+    "action": "cute charcoal lavender crow; wings lifted then wings sweeping down to peck left",
+    "existing": false,
+    "prompt": "Create one production TWO-frame attack sprite sheet: cute charcoal lavender crow; wings lifted then wings sweeping down to peck left. Character 까마귀. Supplied image is STYLE reference only; draw specified monster not a cat. Cute pastel hand-painted fantasy game, warm dark outlines, cream highlights, detailed painted textures. Transparent RGBA, wide 2:1 with two equal square cells. LEFT cell anticipation RIGHT cell impact. Both face LEFT. Same character head/body sizes and exact design in both, head/torso locked at same local coordinates, move only attacking limbs/jaw. Identical baseline, 12% transparent margins around each full figure, no overlap. NO text, shadows, effects, scenery, borders.",
+    "generatedPath": "C:\\Users\\sinna\\.codex\\generated_images\\01a0ad8a-318f-75d1-814b-048441e405e8\\exec-99bee8e9-8bbc-4c65-b807-fe2391969d69.png"
+  },
+  {
+    "id": "enemy-scorpion",
+    "name": "전갈",
+    "action": "cute sandy amber scorpion; tail cocked back then stinger thrust left",
+    "existing": false,
+    "prompt": "Production two-frame attack sprite sheet: cute sandy amber scorpion; tail cocked back then stinger thrust left. Character 전갈. Reference image STYLE ONLY, not subject. Cute detailed pastel painted fantasy mobile game matching warm outlines and soft cream highlights. Transparent RGBA wide 2:1 sheet exactly TWO equal square cells. Left anticipation, right impact, both face LEFT. Same exact design and head/torso dimensions locked at identical local positions; only attacking limbs move. Same baseline. Entire body and weapon each cell, 12% empty margins. No labels, border, shadow, attack effects, scenery.",
+    "generatedPath": "C:\\Users\\sinna\\.codex\\generated_images\\01a0ad8a-318f-75d1-814b-048441e405e8\\exec-93016c77-32d2-4a7b-9888-7be1b6944cce.png"
+  },
+  {
+    "id": "enemy-mummy",
+    "name": "미라 개",
+    "action": "cute beige dog wrapped in ivory mummy bandages blue collar; paws drawn then swipe left",
+    "existing": false,
+    "prompt": "Production two-frame attack sprite sheet: cute beige dog wrapped in ivory mummy bandages blue collar; paws drawn then swipe left. Character 미라 개. Reference image STYLE ONLY, not subject. Cute detailed pastel painted fantasy mobile game matching warm outlines and soft cream highlights. Transparent RGBA wide 2:1 sheet exactly TWO equal square cells. Left anticipation, right impact, both face LEFT. Same exact design and head/torso dimensions locked at identical local positions; only attacking limbs move. Same baseline. Entire body and weapon each cell, 12% empty margins. No labels, border, shadow, attack effects, scenery.",
+    "generatedPath": "C:\\Users\\sinna\\.codex\\generated_images\\01a0ad8a-318f-75d1-814b-048441e405e8\\exec-f74c0e5e-636f-4670-85ff-5b97fdf2426d.png"
+  },
+  {
+    "id": "enemy-bat",
+    "name": "얼음 박쥐",
+    "action": "cute icy blue bat with crystal ears; wings raised then wings down bite left",
+    "existing": false,
+    "prompt": "Production two-frame attack sprite sheet: cute icy blue bat with crystal ears; wings raised then wings down bite left. Character 얼음 박쥐. Reference image STYLE ONLY, not subject. Cute detailed pastel painted fantasy mobile game matching warm outlines and soft cream highlights. Transparent RGBA wide 2:1 sheet exactly TWO equal square cells. Left anticipation, right impact, both face LEFT. Same exact design and head/torso dimensions locked at identical local positions; only attacking limbs move. Same baseline. Entire body and weapon each cell, 12% empty margins. No labels, border, shadow, attack effects, scenery.",
+    "generatedPath": "C:\\Users\\sinna\\.codex\\generated_images\\01a0ad8a-318f-75d1-814b-048441e405e8\\exec-37957bc4-2fac-499a-a833-d117a5314491.png"
+  },
+  {
+    "id": "enemy-penguin",
+    "name": "펭귄 기사",
+    "action": "cute penguin silver knight ice-blue scarf short lance; lance drawn then thrust left",
+    "existing": false,
+    "prompt": "Production two-frame attack sprite sheet: cute penguin silver knight ice-blue scarf short lance; lance drawn then thrust left. Character 펭귄 기사. Reference image STYLE ONLY, not subject. Cute detailed pastel painted fantasy mobile game matching warm outlines and soft cream highlights. Transparent RGBA wide 2:1 sheet exactly TWO equal square cells. Left anticipation, right impact, both face LEFT. Same exact design and head/torso dimensions locked at identical local positions; only attacking limbs move. Same baseline. Entire body and weapon each cell, 12% empty margins. No labels, border, shadow, attack effects, scenery.",
+    "generatedPath": "C:\\Users\\sinna\\.codex\\generated_images\\01a0ad8a-318f-75d1-814b-048441e405e8\\exec-90df6773-e1ee-427e-9266-7ce1c23df206.png"
+  },
+  {
+    "id": "enemy-vacuum",
+    "name": "청소기 로봇",
+    "action": "cute round mint cream vacuum robot with face and hose; hose drawn then hose aimed left",
+    "existing": false,
+    "prompt": "Production two-frame attack sprite sheet: cute round mint cream vacuum robot with face and hose; hose drawn then hose aimed left. Character 청소기 로봇. Reference STYLE ONLY; specified monster, not rat. Cute polished pastel painted fantasy game, detailed soft textures and warm dark outlines. Transparent RGBA wide 2:1, exactly TWO equal square cells. Left anticipation, right attack impact, both facing LEFT. Keep identical head and torso scale/design/local coordinates, limbs and attack tools articulate only. Same baseline. Fully contained body/equipment with 12% empty margins each cell. No text, border, shadows, effects, scenery.",
+    "generatedPath": "C:\\Users\\sinna\\.codex\\generated_images\\01a0ad8a-318f-75d1-814b-048441e405e8\\exec-b2a2909d-7c6b-4808-af63-89a6c1ef8e10.png"
+  },
+  {
+    "id": "enemy-drone",
+    "name": "드론",
+    "action": "cute lavender brass hovering drone with twin propellers and small blaster; blaster recoiled then extended left",
+    "existing": false,
+    "prompt": "Production two-frame attack sprite sheet: cute lavender brass hovering drone with twin propellers and small blaster; blaster recoiled then extended left. Character 드론. Reference STYLE ONLY; specified monster, not rat. Cute polished pastel painted fantasy game, detailed soft textures and warm dark outlines. Transparent RGBA wide 2:1, exactly TWO equal square cells. Left anticipation, right attack impact, both facing LEFT. Keep identical head and torso scale/design/local coordinates, limbs and attack tools articulate only. Same baseline. Fully contained body/equipment with 12% empty margins each cell. No text, border, shadows, effects, scenery.",
+    "generatedPath": "C:\\Users\\sinna\\.codex\\generated_images\\01a0ad8a-318f-75d1-814b-048441e405e8\\exec-6c0d96b0-a511-49ef-9a87-990283b9e458.png"
+  },
+  {
+    "id": "boss-witch",
+    "name": "까마귀 마녀",
+    "action": "raven witch lavender wide hat sage robe with wooden staff; staff raised then pointed left",
+    "existing": false,
+    "prompt": "Production two-frame attack sprite sheet: raven witch lavender wide hat sage robe with wooden staff; staff raised then pointed left. Character 까마귀 마녀. Reference STYLE ONLY; specified monster, not rat. Cute polished pastel painted fantasy game, detailed soft textures and warm dark outlines. Transparent RGBA wide 2:1, exactly TWO equal square cells. Left anticipation, right attack impact, both facing LEFT. Keep identical head and torso scale/design/local coordinates, limbs and attack tools articulate only. Same baseline. Fully contained body/equipment with 12% empty margins each cell. No text, border, shadows, effects, scenery.",
+    "generatedPath": "C:\\Users\\sinna\\.codex\\generated_images\\01a0ad8a-318f-75d1-814b-048441e405e8\\exec-438b70bc-0efa-4805-83e8-480bc3010e8b.png"
+  },
+  {
+    "id": "boss-sphinx",
+    "name": "스핑크스 개",
+    "action": "cute huge golden dog sphinx blue gold pharaoh headdress; front paw raised then swiping left",
+    "existing": false,
+    "prompt": "Production two-frame attack sprite sheet: cute huge golden dog sphinx blue gold pharaoh headdress; front paw raised then swiping left. Character 스핑크스 개. Reference STYLE ONLY; specified monster, not rat. Cute polished pastel painted fantasy game, detailed soft textures and warm dark outlines. Transparent RGBA wide 2:1, exactly TWO equal square cells. Left anticipation, right attack impact, both facing LEFT. Keep identical head and torso scale/design/local coordinates, limbs and attack tools articulate only. Same baseline. Fully contained body/equipment with 12% empty margins each cell. No text, border, shadows, effects, scenery.",
+    "generatedPath": "C:\\Users\\sinna\\.codex\\generated_images\\01a0ad8a-318f-75d1-814b-048441e405e8\\exec-25ff6aa1-84b9-4992-bd04-02d02bb39ebc.png"
+  },
+  {
+    "id": "boss-crab",
+    "name": "거대 얼음 게",
+    "action": "huge cute glacier-blue crystal crab; large claw raised then clamping left",
+    "existing": false,
+    "prompt": "Production TWO-frame attack sprite sheet: huge cute glacier-blue crystal crab; large claw raised then clamping left. Character 거대 얼음 게. Input image STYLE reference ONLY. Polished cute pastel hand painted fantasy mobile game matching warm dark outlines, cream highlights and detailed brush texture. Transparent RGBA wide 2:1 sheet exactly TWO equal square cells. Left anticipation, right attack impact, both facing LEFT. Keep same exact character design, identical head/body dimensions and local center positions; only attacking appendages and jaw articulate. Same baseline. Full character/equipment inside each cell with generous 12% transparent margins. NO text, border, shadow, effects, scenery.",
+    "generatedPath": "C:\\Users\\sinna\\.codex\\generated_images\\01a0ad8a-318f-75d1-814b-048441e405e8\\exec-04dcbfea-016b-48de-b51c-c845c27b8550.png"
+  },
+  {
+    "id": "boss-mech",
+    "name": "메카 진공청소기",
+    "action": "large brass mint armored vacuum machine boss with hose claw and tank treads; claw raised then strikes left",
+    "existing": false,
+    "prompt": "Create a premium pastel hand-painted cute fantasy game TWO frame sprite sheet. Subject: large brass mint armored vacuum machine boss with hose claw and tank treads; claw raised then strikes left. CRITICAL species fidelity: Mechanical vacuum cleaner boss only: rounded brass mint industrial canister on tank treads, suction hose, articulated claw. Robot face grille, NO animal head, NO eel, NO dragon. Wide 2:1 transparent RGBA. Exactly two full-body poses separated by a wide clear central gutter, each occupying max70% of its square half. Left pose anticipation right pose attack impact. Both face left. Identical body/head sizes shapes colors and body center and baseline in both, move only attack appendages. Soft cream highlights muted sage sky blue lavender, detailed painterly texture warm dark outlines, polished Korean mobile fantasy storybook art. No text, shadows, labels, scenery or attack VFX.",
+    "generatedPath": "C:\\Users\\sinna\\.codex\\generated_images\\01a0ad8a-318f-75d1-814b-048441e405e8\\exec-e66e5455-6db3-4623-bed4-d4c6b3e7a751.png"
+  },
+  {
+    "id": "boss-whale",
+    "name": "하늘 고래",
+    "action": "cute celestial sky-blue whale with cream belly gold star markings tiny winglike fins; fins raised then fins swept down and mouth open left",
+    "existing": false,
+    "prompt": "Create a premium pastel hand-painted cute fantasy game TWO frame sprite sheet. Subject: cute celestial sky-blue whale with cream belly gold star markings tiny winglike fins; fins raised then fins swept down and mouth open left. CRITICAL species fidelity: A true whale with broad rounded whale head, tiny eyes, horizontal whale tail flukes and pectoral fins. NO dragon, NO eel, NO serpent, NO crown. Wide 2:1 transparent RGBA. Exactly two full-body poses separated by a wide clear central gutter, each occupying max70% of its square half. Left pose anticipation right pose attack impact. Both face left. Identical body/head sizes shapes colors and body center and baseline in both, move only attack appendages. Soft cream highlights muted sage sky blue lavender, detailed painterly texture warm dark outlines, polished Korean mobile fantasy storybook art. No text, shadows, labels, scenery or attack VFX.",
+    "generatedPath": "C:\\Users\\sinna\\.codex\\generated_images\\01a0ad8a-318f-75d1-814b-048441e405e8\\exec-87518950-36c1-49a9-aded-4a3506acb830.png"
+  },
+  {
+    "id": "boss-golem",
+    "name": "쓰레기산 골렘",
+    "action": "cute bulky golem assembled from pastel scrap wood tin cans and metal with glowing teal eyes; fist drawn back then punch left",
+    "existing": false,
+    "prompt": "Production TWO-frame attack sprite sheet: cute bulky golem assembled from pastel scrap wood tin cans and metal with glowing teal eyes; fist drawn back then punch left. Character 쓰레기산 골렘. Input image STYLE reference ONLY. Polished cute pastel hand painted fantasy mobile game matching warm dark outlines, cream highlights and detailed brush texture. Transparent RGBA wide 2:1 sheet exactly TWO equal square cells. Left anticipation, right attack impact, both facing LEFT. Keep same exact character design, identical head/body dimensions and local center positions; only attacking appendages and jaw articulate. Same baseline. Full character/equipment inside each cell with generous 12% transparent margins. NO text, border, shadow, effects, scenery.",
+    "generatedPath": "C:\\Users\\sinna\\.codex\\generated_images\\01a0ad8a-318f-75d1-814b-048441e405e8\\exec-25f858b7-63d8-47a8-8a59-bede6069bbc6.png"
+  },
+  {
+    "id": "boss-dog",
+    "name": "암흑 개대왕",
+    "action": "huge charcoal purple dog king gold crown violet cape dark armor; armored paw drawn then claw strike left",
+    "existing": false,
+    "prompt": "Create a premium pastel hand-painted cute fantasy game TWO frame sprite sheet. Subject: huge charcoal purple dog king gold crown violet cape dark armor; armored paw drawn then claw strike left. CRITICAL species fidelity: A real chubby canine king with floppy dog ears, short broad canine muzzle, four canine paws, short furry tail; gold crown and violet armored cape. NO scales, NO reptile, NO dragon, NO eel. Wide 2:1 transparent RGBA. Exactly two full-body poses separated by a wide clear central gutter, each occupying max70% of its square half. Left pose anticipation right pose attack impact. Both face left. Identical body/head sizes shapes colors and body center and baseline in both, move only attack appendages. Soft cream highlights muted sage sky blue lavender, detailed painterly texture warm dark outlines, polished Korean mobile fantasy storybook art. No text, shadows, labels, scenery or attack VFX.",
+    "generatedPath": "C:\\Users\\sinna\\.codex\\generated_images\\01a0ad8a-318f-75d1-814b-048441e405e8\\exec-30acec52-d630-4cca-bda2-3fe422a32d13.png"
+  }
+]

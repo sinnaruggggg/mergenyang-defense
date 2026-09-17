@@ -1,0 +1,62 @@
+
+portraits.png
+size: 2048, 1024
+format: RGBA8888
+filter: MipMapLinearLinear, Linear
+repeat: none
+boss-eel
+  rotate: false
+  xy: 427, 35
+  size: 406, 377
+  orig: 406, 377
+  offset: 0, 0
+  index: -1
+boss-rat
+  rotate: false
+  xy: 1247, 72
+  size: 344, 343
+  orig: 344, 343
+  offset: 0, 0
+  index: -1
+cat-archer
+  rotate: false
+  xy: 854, 73
+  size: 389, 348
+  orig: 389, 348
+  offset: 0, 0
+  index: -1
+cat-healer
+  rotate: false
+  xy: 1288, 419
+  size: 416, 360
+  orig: 416, 360
+  offset: 0, 0
+  index: -1
+cat-smith
+  rotate: false
+  xy: 854, 425
+  size: 430, 354
+  orig: 430, 354
+  offset: 0, 0
+  index: -1
+cat-tank
+  rotate: false
+  xy: 2, 2
+  size: 415, 371
+  orig: 415, 371
+  offset: 0, 0
+  index: -1
+cat-warrior
+  rotate: false
+  xy: 427, 416
+  size: 423, 363
+  orig: 423, 363
+  offset: 0, 0
+  index: -1
+cat-wizard
+  rotate: false
+  xy: 2, 377
+  size: 421, 402
+  orig: 421, 402
+  offset: 0, 0
+  index: -1

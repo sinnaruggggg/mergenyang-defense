@@ -1,0 +1,485 @@
+{
+  "id": "skin-detail",
+  "title": "포근한 수호자",
+  "group": "상점",
+  "width": 1080,
+  "height": 1920,
+  "coordinateSystem": "top-left",
+  "safeInsets": {
+    "top": 32,
+    "right": 36,
+    "bottom": 32,
+    "left": 36
+  },
+  "elements": [
+    {
+      "id": "background-1",
+      "type": "image",
+      "x": 0,
+      "y": 0,
+      "width": 1080,
+      "height": 1920,
+      "z": 0,
+      "visible": true,
+      "asset": "assets/placed/f13521a79c0180a52b.png",
+      "yScene2D": 0,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/backgrounds/workshop.png",
+      "fit": "stretch"
+    },
+    {
+      "id": "scrim-3",
+      "type": "image",
+      "x": 0,
+      "y": 0,
+      "width": 1080,
+      "height": 1920,
+      "z": 1,
+      "visible": true,
+      "opacity": 0.68,
+      "asset": "assets/placed/55540868acf5004fc2.png",
+      "fit": "stretch",
+      "yScene2D": 0,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-dark.png",
+      "sourceFit": "stretch"
+    },
+    {
+      "id": "modal-4",
+      "type": "image",
+      "x": 80,
+      "y": 380,
+      "width": 920,
+      "height": 1110,
+      "z": 2,
+      "visible": true,
+      "asset": "assets/placed/5849297e598a0962d1.png",
+      "fit": "stretch",
+      "yScene2D": 430,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "text-5",
+      "type": "image",
+      "x": 128,
+      "y": 426,
+      "width": 760,
+      "height": 66,
+      "z": 3,
+      "visible": true,
+      "text": "포근한 수호자",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 44,
+      "fontWeight": 800,
+      "color": "#3D4554",
+      "align": "left",
+      "yScene2D": 1428,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "포근한 수호자",
+      "asset": "assets/text/23767aafb046bfa0be.png",
+      "semanticType": "text",
+      "fit": "stretch"
+    },
+    {
+      "id": "button-6",
+      "type": "image",
+      "x": 886,
+      "y": 418,
+      "width": 70,
+      "height": 70,
+      "z": 4,
+      "visible": true,
+      "asset": "assets/placed/f91cecc34197c96b80.png",
+      "role": "button",
+      "states": {
+        "normal": "assets/placed/f91cecc34197c96b80.png",
+        "pressed": "assets/placed/8807435c7f1636481d.png",
+        "disabled": "assets/placed/7b40e9b1053bc64261.png",
+        "selected": "assets/placed/50b9760f9126ecaf05.png"
+      },
+      "disabled": false,
+      "hitRect": {
+        "x": 855,
+        "y": 387,
+        "width": 132,
+        "height": 132
+      },
+      "action": {
+        "type": "navigate",
+        "target": "workshop"
+      },
+      "fit": "stretch",
+      "yScene2D": 1432,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/button-cream-normal.png",
+      "sourceFit": "nine-slice",
+      "contentFace": {
+        "x": 894,
+        "y": 425,
+        "width": 54,
+        "height": 44,
+        "center": {
+          "x": 921,
+          "y": 446.5
+        },
+        "method": "bright painted face, central 24% columns; excludes dark wooden base"
+      },
+      "alignmentStateOffsets": {
+        "normal": {
+          "x": 0,
+          "y": 0
+        },
+        "pressed": {
+          "x": 0,
+          "y": 3
+        },
+        "disabled": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": {
+          "x": 0,
+          "y": 6
+        }
+      }
+    },
+    {
+      "id": "icon-close-7",
+      "type": "image",
+      "x": 893,
+      "y": 419,
+      "width": 56,
+      "height": 56,
+      "z": 5,
+      "visible": true,
+      "asset": "assets/placed/817461fe4c2257e48c.png",
+      "fit": "stretch",
+      "yScene2D": 1445,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/icons/close.png",
+      "sourceFit": "contain",
+      "alignmentOwner": "button-6"
+    },
+    {
+      "id": "text-8",
+      "type": "image",
+      "x": 128,
+      "y": 500,
+      "width": 760,
+      "height": 42,
+      "z": 6,
+      "visible": true,
+      "text": "외형 전용 · 능력치 변화 없음",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 28,
+      "fontWeight": 600,
+      "color": "#6A7980",
+      "align": "left",
+      "yScene2D": 1378,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "외형 전용 · 능력치 변화 없음",
+      "asset": "assets/text/38270c50c80f7e7b93.png",
+      "semanticType": "text",
+      "fit": "stretch"
+    },
+    {
+      "id": "icon-cat-9",
+      "type": "image",
+      "x": 428,
+      "y": 576,
+      "width": 224,
+      "height": 224,
+      "z": 7,
+      "visible": true,
+      "asset": "assets/placed/1bda2384fdfb45511b.png",
+      "fit": "stretch",
+      "yScene2D": 1120,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/icons/cat.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-10",
+      "type": "image",
+      "x": 151,
+      "y": 850,
+      "width": 780,
+      "height": 47,
+      "z": 8,
+      "visible": true,
+      "text": "뚱냥이 전용 스킨",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 31,
+      "fontWeight": 700,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 1023,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "뚱냥이 전용 스킨",
+      "asset": "assets/text/3943beeb9b3e805c4d.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 540
+    },
+    {
+      "id": "text-11",
+      "type": "image",
+      "x": 151,
+      "y": 919,
+      "width": 780,
+      "height": 47,
+      "z": 9,
+      "visible": true,
+      "text": "₩2,500 · 구매 확인 후 적용",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 31,
+      "fontWeight": 500,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 954,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "₩2,500 · 구매 확인 후 적용",
+      "asset": "assets/text/f3d5b19f3495f3719c.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 540
+    },
+    {
+      "id": "button-12",
+      "type": "image",
+      "x": 136,
+      "y": 1178,
+      "width": 808,
+      "height": 100,
+      "z": 10,
+      "visible": true,
+      "asset": "assets/placed/0646388a9dbce20e3a.png",
+      "role": "button",
+      "states": {
+        "normal": "assets/placed/0646388a9dbce20e3a.png",
+        "pressed": "assets/placed/352f0097b6f883b679.png",
+        "disabled": "assets/placed/12c934752b4688eb10.png",
+        "selected": "assets/placed/e3c390e66881cef1d1.png"
+      },
+      "disabled": false,
+      "hitRect": {
+        "x": 136,
+        "y": 1162,
+        "width": 808,
+        "height": 132
+      },
+      "action": {
+        "type": "navigate",
+        "target": "purchase"
+      },
+      "fit": "stretch",
+      "yScene2D": 642,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/button-yellow-normal.png",
+      "sourceFit": "nine-slice",
+      "contentFace": {
+        "x": 144,
+        "y": 1189,
+        "width": 792,
+        "height": 63,
+        "center": {
+          "x": 540,
+          "y": 1220
+        },
+        "method": "bright painted face, central 24% columns; excludes dark wooden base"
+      },
+      "alignmentStateOffsets": {
+        "normal": {
+          "x": 0,
+          "y": 0
+        },
+        "pressed": {
+          "x": 0,
+          "y": 6
+        },
+        "disabled": {
+          "x": 0,
+          "y": 1
+        },
+        "selected": {
+          "x": 0,
+          "y": 7
+        }
+      }
+    },
+    {
+      "id": "text-13",
+      "type": "image",
+      "x": 153,
+      "y": 1196,
+      "width": 776,
+      "height": 48,
+      "z": 11,
+      "visible": true,
+      "text": "구매하기",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 32,
+      "fontWeight": 700,
+      "color": "#3D4554",
+      "align": "center",
+      "buttonOwner": "button-12",
+      "yScene2D": 676,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "구매하기",
+      "asset": "assets/text/5430d29e003d601289.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentOwner": "button-12"
+    },
+    {
+      "id": "button-14",
+      "type": "image",
+      "x": 136,
+      "y": 1302,
+      "width": 808,
+      "height": 100,
+      "z": 12,
+      "visible": true,
+      "asset": "assets/placed/84b006e00a2f7bb200.png",
+      "role": "button",
+      "states": {
+        "normal": "assets/placed/84b006e00a2f7bb200.png",
+        "pressed": "assets/placed/ba42ea931ba576f213.png",
+        "disabled": "assets/placed/6c01e4d52a6109b11c.png",
+        "selected": "assets/placed/af56bfb3fffeeed847.png"
+      },
+      "disabled": false,
+      "hitRect": {
+        "x": 136,
+        "y": 1286,
+        "width": 808,
+        "height": 132
+      },
+      "action": {
+        "type": "navigate",
+        "target": "skins"
+      },
+      "fit": "stretch",
+      "yScene2D": 518,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/button-cream-normal.png",
+      "sourceFit": "nine-slice",
+      "contentFace": {
+        "x": 144,
+        "y": 1312,
+        "width": 792,
+        "height": 64,
+        "center": {
+          "x": 540,
+          "y": 1343.5
+        },
+        "method": "bright painted face, central 24% columns; excludes dark wooden base"
+      },
+      "alignmentStateOffsets": {
+        "normal": {
+          "x": 0,
+          "y": 0
+        },
+        "pressed": {
+          "x": 0,
+          "y": 4
+        },
+        "disabled": {
+          "x": 0,
+          "y": 1
+        },
+        "selected": {
+          "x": 0,
+          "y": 8
+        }
+      }
+    },
+    {
+      "id": "text-15",
+      "type": "image",
+      "x": 152,
+      "y": 1320,
+      "width": 776,
+      "height": 48,
+      "z": 13,
+      "visible": true,
+      "text": "스킨 목록",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 32,
+      "fontWeight": 700,
+      "color": "#3D4554",
+      "align": "center",
+      "buttonOwner": "button-14",
+      "yScene2D": 552,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "스킨 목록",
+      "asset": "assets/text/d7f3f656f435a7507b.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentOwner": "button-14"
+    }
+  ],
+  "actions": [
+    {
+      "element": "button-6",
+      "target": "workshop",
+      "disabled": false
+    },
+    {
+      "element": "button-12",
+      "target": "purchase",
+      "disabled": false
+    },
+    {
+      "element": "button-14",
+      "target": "skins",
+      "disabled": false
+    }
+  ],
+  "status": "design",
+  "n": 15
+}

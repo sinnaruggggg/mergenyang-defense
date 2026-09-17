@@ -1,0 +1,229 @@
+items.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+item-weapon-1-twig
+  rotate: false
+  xy: 8, 8
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-weapon-2-wood-sword
+  rotate: false
+  xy: 264, 8
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-weapon-3-fishbone-dagger
+  rotate: false
+  xy: 520, 8
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-weapon-4-iron-sword
+  rotate: false
+  xy: 776, 8
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-weapon-5-flame-sword
+  rotate: false
+  xy: 1032, 8
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-weapon-6-ice-sword
+  rotate: false
+  xy: 1288, 8
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-weapon-7-royal-sword
+  rotate: false
+  xy: 1544, 8
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-weapon-8-churu-blade
+  rotate: false
+  xy: 1800, 8
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-armor-1-cardboard
+  rotate: false
+  xy: 8, 264
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-armor-2-leather
+  rotate: false
+  xy: 264, 264
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-armor-3-pot-lid
+  rotate: false
+  xy: 520, 264
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-armor-4-chainmail
+  rotate: false
+  xy: 776, 264
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-armor-5-iron-armor
+  rotate: false
+  xy: 1032, 264
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-armor-6-knight-armor
+  rotate: false
+  xy: 1288, 264
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-armor-7-royal-armor
+  rotate: false
+  xy: 1544, 264
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-armor-8-cat-tower-armor
+  rotate: false
+  xy: 1800, 264
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-consumable-1-anchovy
+  rotate: false
+  xy: 8, 520
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-consumable-2-fish
+  rotate: false
+  xy: 264, 520
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-consumable-3-tuna-can
+  rotate: false
+  xy: 520, 520
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-consumable-4-fish-fillet
+  rotate: false
+  xy: 776, 520
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-consumable-5-sashimi
+  rotate: false
+  xy: 1032, 520
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-consumable-6-salmon-bowl
+  rotate: false
+  xy: 1288, 520
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-consumable-7-churu
+  rotate: false
+  xy: 1544, 520
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-consumable-8-gold-churu
+  rotate: false
+  xy: 1800, 520
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-special-1-fluff
+  rotate: false
+  xy: 8, 776
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-special-2-yarn
+  rotate: false
+  xy: 264, 776
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-special-3-fur-bomb
+  rotate: false
+  xy: 520, 776
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-special-4-fire-fur
+  rotate: false
+  xy: 776, 776
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-special-5-lightning-fur
+  rotate: false
+  xy: 1032, 776
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-special-6-ice-fur
+  rotate: false
+  xy: 1288, 776
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-special-7-star-fur
+  rotate: false
+  xy: 1544, 776
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+item-special-8-giant-fur
+  rotate: false
+  xy: 1800, 776
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1

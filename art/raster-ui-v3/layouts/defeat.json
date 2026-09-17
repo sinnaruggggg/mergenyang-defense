@@ -1,0 +1,953 @@
+{
+  "id": "defeat",
+  "title": "다시 도전해 볼까요?",
+  "group": "전투 결과",
+  "width": 1080,
+  "height": 1920,
+  "coordinateSystem": "top-left",
+  "safeInsets": {
+    "top": 32,
+    "right": 36,
+    "bottom": 32,
+    "left": 36
+  },
+  "elements": [
+    {
+      "id": "background-1",
+      "type": "image",
+      "x": 0,
+      "y": 0,
+      "width": 1080,
+      "height": 1920,
+      "z": 0,
+      "visible": true,
+      "asset": "assets/placed/f13521a79c0180a52b.png",
+      "yScene2D": 0,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/backgrounds/workshop.png",
+      "fit": "stretch"
+    },
+    {
+      "id": "resource-bar-3",
+      "type": "image",
+      "x": 30,
+      "y": 28,
+      "width": 1020,
+      "height": 90,
+      "z": 1,
+      "visible": true,
+      "asset": "assets/placed/67b2bb1183ebc40ed1.png",
+      "fit": "stretch",
+      "yScene2D": 1802,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "title-bar-4",
+      "type": "image",
+      "x": 30,
+      "y": 128,
+      "width": 1020,
+      "height": 104,
+      "z": 2,
+      "visible": true,
+      "asset": "assets/placed/21cf35d5dcee417b8d.png",
+      "fit": "stretch",
+      "yScene2D": 1688,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-energy-5",
+      "type": "image",
+      "x": 52,
+      "y": 43,
+      "width": 54,
+      "height": 54,
+      "z": 3,
+      "visible": true,
+      "asset": "assets/placed/9fa198e8f4245dbd0f.png",
+      "fit": "stretch",
+      "yScene2D": 1823,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/icons/energy.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-6",
+      "type": "image",
+      "x": 113,
+      "y": 50,
+      "width": 195,
+      "height": 47,
+      "z": 4,
+      "visible": true,
+      "text": "40/50",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 31,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "left",
+      "yScene2D": 1823,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "40/50",
+      "asset": "assets/text/4f65a133e0ebec885a.png",
+      "semanticType": "text",
+      "fit": "stretch"
+    },
+    {
+      "id": "icon-gold-7",
+      "type": "image",
+      "x": 368,
+      "y": 43,
+      "width": 54,
+      "height": 54,
+      "z": 5,
+      "visible": true,
+      "asset": "assets/placed/0274a23a232ef47921.png",
+      "fit": "stretch",
+      "yScene2D": 1823,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/icons/gold.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-8",
+      "type": "image",
+      "x": 429,
+      "y": 50,
+      "width": 195,
+      "height": 47,
+      "z": 6,
+      "visible": true,
+      "text": "12,500",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 31,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "left",
+      "yScene2D": 1823,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "12,500",
+      "asset": "assets/text/ed149040bb71721e2c.png",
+      "semanticType": "text",
+      "fit": "stretch"
+    },
+    {
+      "id": "icon-gem-9",
+      "type": "image",
+      "x": 684,
+      "y": 43,
+      "width": 54,
+      "height": 54,
+      "z": 7,
+      "visible": true,
+      "asset": "assets/placed/e238412bd856f270d9.png",
+      "fit": "stretch",
+      "yScene2D": 1823,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/icons/gem.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-10",
+      "type": "image",
+      "x": 745,
+      "y": 50,
+      "width": 195,
+      "height": 47,
+      "z": 8,
+      "visible": true,
+      "text": "320",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 31,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "left",
+      "yScene2D": 1823,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "320",
+      "asset": "assets/text/b710de3b8f0ad3e447.png",
+      "semanticType": "text",
+      "fit": "stretch"
+    },
+    {
+      "id": "button-11",
+      "type": "image",
+      "x": 38,
+      "y": 138,
+      "width": 76,
+      "height": 76,
+      "z": 9,
+      "visible": true,
+      "asset": "assets/placed/a55e725f8d802af4a0.png",
+      "role": "button",
+      "states": {
+        "normal": "assets/placed/a55e725f8d802af4a0.png",
+        "pressed": "assets/placed/9337f64dcf26049252.png",
+        "disabled": "assets/placed/b43981713656e9642f.png",
+        "selected": "assets/placed/8bb5ada6049787c325.png"
+      },
+      "disabled": false,
+      "hitRect": {
+        "x": 10,
+        "y": 110,
+        "width": 132,
+        "height": 132
+      },
+      "action": {
+        "type": "navigate",
+        "target": "modes"
+      },
+      "fit": "stretch",
+      "yScene2D": 1706,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/button-cream-normal.png",
+      "sourceFit": "nine-slice",
+      "contentFace": {
+        "x": 46,
+        "y": 145,
+        "width": 60,
+        "height": 49,
+        "center": {
+          "x": 76,
+          "y": 169
+        },
+        "method": "bright painted face, central 24% columns; excludes dark wooden base"
+      },
+      "alignmentStateOffsets": {
+        "normal": {
+          "x": 0,
+          "y": 0
+        },
+        "pressed": {
+          "x": 0,
+          "y": 3
+        },
+        "disabled": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": {
+          "x": 0,
+          "y": 7
+        }
+      }
+    },
+    {
+      "id": "icon-back-12",
+      "type": "image",
+      "x": 48,
+      "y": 141,
+      "width": 56,
+      "height": 56,
+      "z": 10,
+      "visible": true,
+      "asset": "assets/placed/dc05be2a4b9c6fda0c.png",
+      "fit": "stretch",
+      "yScene2D": 1723,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/icons/back.png",
+      "sourceFit": "contain",
+      "alignmentOwner": "button-11"
+    },
+    {
+      "id": "text-13",
+      "type": "image",
+      "x": 138,
+      "y": 143,
+      "width": 742,
+      "height": 65,
+      "z": 11,
+      "visible": true,
+      "text": "다시 도전해 볼까요?",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 43,
+      "fontWeight": 800,
+      "color": "#3D4554",
+      "align": "left",
+      "yScene2D": 1712,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "다시 도전해 볼까요?",
+      "asset": "assets/text/11c43fadd5a917e3d5.png",
+      "semanticType": "text",
+      "fit": "stretch"
+    },
+    {
+      "id": "button-14",
+      "type": "image",
+      "x": 958,
+      "y": 138,
+      "width": 76,
+      "height": 76,
+      "z": 12,
+      "visible": true,
+      "asset": "assets/placed/a55e725f8d802af4a0.png",
+      "role": "button",
+      "states": {
+        "normal": "assets/placed/a55e725f8d802af4a0.png",
+        "pressed": "assets/placed/9337f64dcf26049252.png",
+        "disabled": "assets/placed/b43981713656e9642f.png",
+        "selected": "assets/placed/8bb5ada6049787c325.png"
+      },
+      "disabled": false,
+      "hitRect": {
+        "x": 930,
+        "y": 110,
+        "width": 132,
+        "height": 132
+      },
+      "action": {
+        "type": "navigate",
+        "target": "settings"
+      },
+      "fit": "stretch",
+      "yScene2D": 1706,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/button-cream-normal.png",
+      "sourceFit": "nine-slice",
+      "contentFace": {
+        "x": 966,
+        "y": 145,
+        "width": 60,
+        "height": 49,
+        "center": {
+          "x": 996,
+          "y": 169
+        },
+        "method": "bright painted face, central 24% columns; excludes dark wooden base"
+      },
+      "alignmentStateOffsets": {
+        "normal": {
+          "x": 0,
+          "y": 0
+        },
+        "pressed": {
+          "x": 0,
+          "y": 3
+        },
+        "disabled": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": {
+          "x": 0,
+          "y": 7
+        }
+      }
+    },
+    {
+      "id": "icon-gear-15",
+      "type": "image",
+      "x": 968,
+      "y": 141,
+      "width": 56,
+      "height": 56,
+      "z": 13,
+      "visible": true,
+      "asset": "assets/placed/71b09a6dc991d6f600.png",
+      "fit": "stretch",
+      "yScene2D": 1723,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/icons/gear.png",
+      "sourceFit": "contain",
+      "alignmentOwner": "button-14"
+    },
+    {
+      "id": "subtitle-back-text-16",
+      "type": "image",
+      "asset": "assets/placed/2b66c97c3e5d93237c.png",
+      "x": 46,
+      "y": 263,
+      "width": 988,
+      "height": 61,
+      "visible": true,
+      "fit": "stretch",
+      "z": 14,
+      "yScene2D": 1596,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "text-16",
+      "type": "image",
+      "x": 60,
+      "y": 270,
+      "width": 960,
+      "height": 48,
+      "z": 15,
+      "visible": true,
+      "text": "다음에는 더 잘할 수 있어요",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 32,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 1602,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "다음에는 더 잘할 수 있어요",
+      "asset": "assets/text/e277fa89e388ab67b2.png",
+      "semanticType": "text",
+      "fit": "stretch"
+    },
+    {
+      "id": "shadow-cat-warrior-17",
+      "type": "image",
+      "asset": "assets/placed/3b578b99615c3c71e5.png",
+      "x": 220,
+      "y": 718,
+      "width": 266,
+      "height": 31,
+      "visible": true,
+      "fit": "stretch",
+      "z": 16,
+      "yScene2D": 1171,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/ground-shadow.png",
+      "sourceFit": "stretch"
+    },
+    {
+      "id": "cat-warrior-17",
+      "type": "image",
+      "x": 173,
+      "y": 375,
+      "width": 360,
+      "height": 360,
+      "z": 17,
+      "visible": true,
+      "asset": "assets/placed/df40bd0f70e2949339.png",
+      "characterId": "warrior",
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "fit": "stretch",
+      "yScene2D": 1185,
+      "sourceAsset": "assets/characters/cat-warrior.png",
+      "sourceFit": "contain-bottom"
+    },
+    {
+      "id": "shadow-cat-tank-18",
+      "type": "image",
+      "asset": "assets/placed/3b578b99615c3c71e5.png",
+      "x": 602,
+      "y": 718,
+      "width": 266,
+      "height": 31,
+      "visible": true,
+      "fit": "stretch",
+      "z": 18,
+      "yScene2D": 1171,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/ground-shadow.png",
+      "sourceFit": "stretch"
+    },
+    {
+      "id": "cat-tank-18",
+      "type": "image",
+      "x": 555,
+      "y": 375,
+      "width": 360,
+      "height": 360,
+      "z": 19,
+      "visible": true,
+      "asset": "assets/placed/d8881cc9a187eb71d0.png",
+      "characterId": "tank",
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "fit": "stretch",
+      "yScene2D": 1185,
+      "sourceAsset": "assets/characters/cat-tank.png",
+      "sourceFit": "contain-bottom"
+    },
+    {
+      "id": "subtitle-back-text-19",
+      "type": "image",
+      "asset": "assets/placed/ff19d9061472516982.png",
+      "x": 56,
+      "y": 766,
+      "width": 968,
+      "height": 111,
+      "visible": true,
+      "fit": "stretch",
+      "z": 20,
+      "yScene2D": 1043,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "text-19",
+      "type": "image",
+      "x": 70,
+      "y": 773,
+      "width": 940,
+      "height": 98,
+      "z": 21,
+      "visible": true,
+      "text": "도전은 계속됩니다",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 65,
+      "fontWeight": 800,
+      "color": "#BA954E",
+      "align": "center",
+      "yScene2D": 1049,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "도전은 계속됩니다",
+      "asset": "assets/text/ca501d0dd6592b7652.png",
+      "semanticType": "text",
+      "fit": "stretch"
+    },
+    {
+      "id": "panel-20",
+      "type": "image",
+      "x": 48,
+      "y": 918,
+      "width": 984,
+      "height": 148,
+      "z": 22,
+      "visible": true,
+      "asset": "assets/placed/4405b4a78e9acda39f.png",
+      "fit": "stretch",
+      "yScene2D": 854,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-trophy-21",
+      "type": "image",
+      "x": 72,
+      "y": 950,
+      "width": 72,
+      "height": 72,
+      "z": 23,
+      "visible": true,
+      "asset": "assets/placed/bfdc290d6960908a18.png",
+      "fit": "stretch",
+      "yScene2D": 898,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/icons/trophy.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-22",
+      "type": "image",
+      "x": 168,
+      "y": 938,
+      "width": 814,
+      "height": 51,
+      "z": 24,
+      "visible": true,
+      "text": "전투 기록",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 34,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "left",
+      "yScene2D": 931,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "전투 기록",
+      "asset": "assets/text/9cebc9699b46ecf86a.png",
+      "semanticType": "text",
+      "fit": "stretch"
+    },
+    {
+      "id": "text-23",
+      "type": "image",
+      "x": 168,
+      "y": 991,
+      "width": 834,
+      "height": 39,
+      "z": 25,
+      "visible": true,
+      "text": "클리어 시간 02:18 · 보급 24회",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 26,
+      "fontWeight": 500,
+      "color": "#6A7980",
+      "align": "left",
+      "yScene2D": 890,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "클리어 시간 02:18 · 보급 24회",
+      "asset": "assets/text/6f91d7e6aac118ddc6.png",
+      "semanticType": "text",
+      "fit": "stretch"
+    },
+    {
+      "id": "panel-24",
+      "type": "image",
+      "x": 48,
+      "y": 1094,
+      "width": 984,
+      "height": 148,
+      "z": 26,
+      "visible": true,
+      "asset": "assets/placed/4405b4a78e9acda39f.png",
+      "fit": "stretch",
+      "yScene2D": 678,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-chest-25",
+      "type": "image",
+      "x": 72,
+      "y": 1126,
+      "width": 72,
+      "height": 72,
+      "z": 27,
+      "visible": true,
+      "asset": "assets/placed/39275b559de057d382.png",
+      "fit": "stretch",
+      "yScene2D": 722,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/icons/chest.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-26",
+      "type": "image",
+      "x": 168,
+      "y": 1114,
+      "width": 814,
+      "height": 51,
+      "z": 28,
+      "visible": true,
+      "text": "획득 보상",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 34,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "left",
+      "yScene2D": 755,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "획득 보상",
+      "asset": "assets/text/0e8ebb9f45f56f5176.png",
+      "semanticType": "text",
+      "fit": "stretch"
+    },
+    {
+      "id": "text-27",
+      "type": "image",
+      "x": 168,
+      "y": 1167,
+      "width": 834,
+      "height": 39,
+      "z": 29,
+      "visible": true,
+      "text": "성장과 편성을 확인해 보세요",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 26,
+      "fontWeight": 500,
+      "color": "#6A7980",
+      "align": "left",
+      "yScene2D": 714,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "성장과 편성을 확인해 보세요",
+      "asset": "assets/text/51af74d75f011f3e51.png",
+      "semanticType": "text",
+      "fit": "stretch"
+    },
+    {
+      "id": "button-28",
+      "type": "image",
+      "x": 48,
+      "y": 1515,
+      "width": 984,
+      "height": 112,
+      "z": 30,
+      "visible": true,
+      "asset": "assets/placed/92355701f3992aaf32.png",
+      "role": "button",
+      "states": {
+        "normal": "assets/placed/92355701f3992aaf32.png",
+        "pressed": "assets/placed/05902ec48b8e37aae3.png",
+        "disabled": "assets/placed/7968d4e98da1c1badc.png",
+        "selected": "assets/placed/04ca5d7a640d9e3bbf.png"
+      },
+      "disabled": false,
+      "hitRect": {
+        "x": 48,
+        "y": 1505,
+        "width": 984,
+        "height": 132
+      },
+      "action": {
+        "type": "navigate",
+        "target": "battle"
+      },
+      "fit": "stretch",
+      "yScene2D": 293,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/button-yellow-normal.png",
+      "sourceFit": "nine-slice",
+      "contentFace": {
+        "x": 56,
+        "y": 1527,
+        "width": 968,
+        "height": 71,
+        "center": {
+          "x": 540,
+          "y": 1562
+        },
+        "method": "bright painted face, central 24% columns; excludes dark wooden base"
+      },
+      "alignmentStateOffsets": {
+        "normal": {
+          "x": 0,
+          "y": 0
+        },
+        "pressed": {
+          "x": 0,
+          "y": 5
+        },
+        "disabled": {
+          "x": 0,
+          "y": 1
+        },
+        "selected": {
+          "x": 0,
+          "y": 8
+        }
+      }
+    },
+    {
+      "id": "text-29",
+      "type": "image",
+      "x": 64,
+      "y": 1538,
+      "width": 952,
+      "height": 48,
+      "z": 31,
+      "visible": true,
+      "text": "광고 보고 부활",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 32,
+      "fontWeight": 700,
+      "color": "#3D4554",
+      "align": "center",
+      "buttonOwner": "button-28",
+      "yScene2D": 334,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "광고 보고 부활",
+      "asset": "assets/text/346822ff8ab9e716b0.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentOwner": "button-28"
+    },
+    {
+      "id": "button-30",
+      "type": "image",
+      "x": 48,
+      "y": 1665,
+      "width": 984,
+      "height": 104,
+      "z": 32,
+      "visible": true,
+      "asset": "assets/placed/ba11d72c26790e41ba.png",
+      "role": "button",
+      "states": {
+        "normal": "assets/placed/ba11d72c26790e41ba.png",
+        "pressed": "assets/placed/710f888b3677af3a8d.png",
+        "disabled": "assets/placed/eb0232eaf3384447b0.png",
+        "selected": "assets/placed/a35a6cde613b8fe449.png"
+      },
+      "disabled": false,
+      "hitRect": {
+        "x": 48,
+        "y": 1651,
+        "width": 984,
+        "height": 132
+      },
+      "action": {
+        "type": "navigate",
+        "target": "squad"
+      },
+      "fit": "stretch",
+      "yScene2D": 151,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/button-cream-normal.png",
+      "sourceFit": "nine-slice",
+      "contentFace": {
+        "x": 56,
+        "y": 1675,
+        "width": 968,
+        "height": 67,
+        "center": {
+          "x": 540,
+          "y": 1708
+        },
+        "method": "bright painted face, central 24% columns; excludes dark wooden base"
+      },
+      "alignmentStateOffsets": {
+        "normal": {
+          "x": 0,
+          "y": 0
+        },
+        "pressed": {
+          "x": 0,
+          "y": 4
+        },
+        "disabled": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": {
+          "x": 0,
+          "y": 9
+        }
+      }
+    },
+    {
+      "id": "text-31",
+      "type": "image",
+      "x": 65,
+      "y": 1684,
+      "width": 952,
+      "height": 48,
+      "z": 33,
+      "visible": true,
+      "text": "편성 바꾸기",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 32,
+      "fontWeight": 700,
+      "color": "#3D4554",
+      "align": "center",
+      "buttonOwner": "button-30",
+      "yScene2D": 188,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "편성 바꾸기",
+      "asset": "assets/text/d8eff45afd86fe8a3b.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentOwner": "button-30"
+    }
+  ],
+  "actions": [
+    {
+      "element": "button-11",
+      "target": "modes",
+      "disabled": false
+    },
+    {
+      "element": "button-14",
+      "target": "settings",
+      "disabled": false
+    },
+    {
+      "element": "button-28",
+      "target": "battle",
+      "disabled": false
+    },
+    {
+      "element": "button-30",
+      "target": "squad",
+      "disabled": false
+    }
+  ],
+  "status": "design",
+  "n": 31
+}

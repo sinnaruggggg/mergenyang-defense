@@ -1,0 +1,65 @@
+[
+  {
+    "id": "icons-single-cat",
+    "kind": "single",
+    "names": [
+      "cat"
+    ],
+    "ref": "D:\\머지냥디펜스\\art\\raster-ui-v3\\sources\\icons-menu.png",
+    "prompt": "Use case: background-extraction. Extract and faithfully reproduce ONLY the happy calico cat FACE with goggles and red scarf (top row, second icon), including every whisker tip from the supplied icon atlas as ONE individual production-ready PNG asset on genuine transparent alpha background. Preserve the existing hand-painted pastel fantasy art, colors, shading, outlines and silhouette exactly. No other icons, no grid, no labels or text, no square backing. Center the entire complete icon in a square1024 canvas with AT LEAST20percent fully transparent margin on ALL four sides. The object should occupy at most60percent of canvas width and height. Do not crop even a single whisker or leaf. Keep all tips fully visible. One single isolated icon, not a sheet."
+  },
+  {
+    "id": "icons-single-sword",
+    "kind": "single",
+    "names": [
+      "sword"
+    ],
+    "ref": "D:\\머지냥디펜스\\art\\raster-ui-v3\\sources\\icons-menu.png",
+    "prompt": "Use case: background-extraction. Extract and faithfully reproduce ONLY the crossed silver swords with golden hilts (top row, third icon), including both blade tips and both pommels from the supplied icon atlas as ONE individual production-ready PNG asset on genuine transparent alpha background. Preserve the existing hand-painted pastel fantasy art, colors, shading, outlines and silhouette exactly. No other icons, no grid, no labels or text, no square backing. Center the entire complete icon in a square1024 canvas with AT LEAST20percent fully transparent margin on ALL four sides. The object should occupy at most60percent of canvas width and height. Do not crop even a single whisker or leaf. Keep all tips fully visible. One single isolated icon, not a sheet."
+  },
+  {
+    "id": "icons-single-mail",
+    "kind": "single",
+    "names": [
+      "mail"
+    ],
+    "ref": "D:\\머지냥디펜스\\art\\raster-ui-v3\\sources\\icons-menu.png",
+    "prompt": "Use case: background-extraction. Extract and faithfully reproduce ONLY the cream envelope with red paw wax seal and green leaf (second row, fourth icon), including the leaf tip from the supplied icon atlas as ONE individual production-ready PNG asset on genuine transparent alpha background. Preserve the existing hand-painted pastel fantasy art, colors, shading, outlines and silhouette exactly. No other icons, no grid, no labels or text, no square backing. Center the entire complete icon in a square1024 canvas with AT LEAST20percent fully transparent margin on ALL four sides. The object should occupy at most60percent of canvas width and height. Do not crop even a single whisker or leaf. Keep all tips fully visible. One single isolated icon, not a sheet."
+  },
+  {
+    "id": "icons-single-book",
+    "kind": "single",
+    "names": [
+      "book"
+    ],
+    "ref": "D:\\머지냥디펜스\\art\\raster-ui-v3\\sources\\icons-menu.png",
+    "prompt": "Use case: background-extraction. Extract and faithfully reproduce ONLY the open illustrated storybook (second row, fifth icon), including every page corner from the supplied icon atlas as ONE individual production-ready PNG asset on genuine transparent alpha background. Preserve the existing hand-painted pastel fantasy art, colors, shading, outlines and silhouette exactly. No other icons, no grid, no labels or text, no square backing. Center the entire complete icon in a square1024 canvas with AT LEAST20percent fully transparent margin on ALL four sides. The object should occupy at most60percent of canvas width and height. Do not crop even a single whisker or leaf. Keep all tips fully visible. One single isolated icon, not a sheet."
+  },
+  {
+    "id": "icons-single-people",
+    "kind": "single",
+    "names": [
+      "people"
+    ],
+    "ref": "D:\\머지냥디펜스\\art\\raster-ui-v3\\sources\\icons-menu.png",
+    "prompt": "Use case: background-extraction. Extract and faithfully reproduce ONLY the pair of friendly cat heads (bottom row, fourth icon), including all whiskers and the three little hearts from the supplied icon atlas as ONE individual production-ready PNG asset on genuine transparent alpha background. Preserve the existing hand-painted pastel fantasy art, colors, shading, outlines and silhouette exactly. No other icons, no grid, no labels or text, no square backing. Center the entire complete icon in a square1024 canvas with AT LEAST20percent fully transparent margin on ALL four sides. The object should occupy at most60percent of canvas width and height. Do not crop even a single whisker or leaf. Keep all tips fully visible. One single isolated icon, not a sheet."
+  },
+  {
+    "id": "icons-single-crown",
+    "kind": "single",
+    "names": [
+      "crown"
+    ],
+    "ref": "D:\\머지냥디펜스\\art\\raster-ui-v3\\sources\\icons-menu.png",
+    "prompt": "Use case: background-extraction. Extract and faithfully reproduce ONLY the golden crown with pink jewels (bottom row, fifth icon), including all crown spikes from the supplied icon atlas as ONE individual production-ready PNG asset on genuine transparent alpha background. Preserve the existing hand-painted pastel fantasy art, colors, shading, outlines and silhouette exactly. No other icons, no grid, no labels or text, no square backing. Center the entire complete icon in a square1024 canvas with AT LEAST20percent fully transparent margin on ALL four sides. The object should occupy at most60percent of canvas width and height. Do not crop even a single whisker or leaf. Keep all tips fully visible. One single isolated icon, not a sheet."
+  },
+  {
+    "id": "boss-rat-clean",
+    "kind": "character",
+    "names": [
+      "boss-rat"
+    ],
+    "ref": "D:\\머지냥디펜스\\art\\raster-ui-v3\\sources\\boss-rat.png",
+    "prompt": "Use case: identity-preserve. Keep this exact pastel illustrated rat king boss sprite: same face, body shape, crown, purple armor, rose cape, huge mace, same pose and direction. Repair the tiny mace spike tip touching the left image edge, and place the COMPLETE figure and COMPLETE mace inside a much larger genuine transparent square canvas. At least18percent entirely empty alpha margin on ALL four sides, subject occupies at most64percent of canvas width or height. No other change, no floor, no shadow, no text, no frame, no backdrop. Keep every armor and weapon detail, render sharp detailed raster game sprite with actual alpha."
+  }
+]

@@ -1,0 +1,777 @@
+[
+  {
+    "id": "cat-warrior",
+    "alpha": true,
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "split": 886,
+    "sameScale": true,
+    "identicalFrames": false,
+    "bounds": [
+      {
+        "x": 60,
+        "y": 54,
+        "width": 812,
+        "height": 772,
+        "bottom": 825,
+        "pixels": 391889
+      },
+      {
+        "x": 13,
+        "y": 136,
+        "width": 854,
+        "height": 690,
+        "bottom": 825,
+        "pixels": 346912
+      }
+    ],
+    "edgeTouch": false,
+    "note": "Checks canvas/alpha/scale only. Independent painted poses are not pixel-identical anatomy."
+  },
+  {
+    "id": "cat-tank",
+    "alpha": true,
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "split": 846,
+    "sameScale": true,
+    "identicalFrames": false,
+    "bounds": [
+      {
+        "x": 52,
+        "y": 80,
+        "width": 735,
+        "height": 719,
+        "bottom": 798,
+        "pixels": 366118
+      },
+      {
+        "x": 58,
+        "y": 80,
+        "width": 835,
+        "height": 719,
+        "bottom": 798,
+        "pixels": 373460
+      }
+    ],
+    "edgeTouch": false,
+    "note": "Checks canvas/alpha/scale only. Independent painted poses are not pixel-identical anatomy."
+  },
+  {
+    "id": "cat-archer",
+    "alpha": true,
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "split": 869,
+    "sameScale": true,
+    "identicalFrames": false,
+    "bounds": [
+      {
+        "x": 41,
+        "y": 159,
+        "width": 659,
+        "height": 578,
+        "bottom": 736,
+        "pixels": 239328
+      },
+      {
+        "x": 169,
+        "y": 159,
+        "width": 663,
+        "height": 578,
+        "bottom": 736,
+        "pixels": 244004
+      }
+    ],
+    "edgeTouch": false,
+    "note": "Checks canvas/alpha/scale only. Independent painted poses are not pixel-identical anatomy."
+  },
+  {
+    "id": "cat-healer",
+    "alpha": true,
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "split": 819,
+    "sameScale": true,
+    "identicalFrames": false,
+    "bounds": [
+      {
+        "x": 31,
+        "y": 53,
+        "width": 761,
+        "height": 755,
+        "bottom": 807,
+        "pixels": 361956
+      },
+      {
+        "x": 26,
+        "y": 102,
+        "width": 915,
+        "height": 707,
+        "bottom": 808,
+        "pixels": 358838
+      }
+    ],
+    "edgeTouch": false,
+    "note": "Checks canvas/alpha/scale only. Independent painted poses are not pixel-identical anatomy."
+  },
+  {
+    "id": "cat-wizard",
+    "alpha": true,
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "split": 838,
+    "sameScale": true,
+    "identicalFrames": false,
+    "bounds": [
+      {
+        "x": 28,
+        "y": 11,
+        "width": 787,
+        "height": 842,
+        "bottom": 852,
+        "pixels": 423315
+      },
+      {
+        "x": 23,
+        "y": 79,
+        "width": 887,
+        "height": 773,
+        "bottom": 851,
+        "pixels": 393089
+      }
+    ],
+    "edgeTouch": false,
+    "note": "Checks canvas/alpha/scale only. Independent painted poses are not pixel-identical anatomy."
+  },
+  {
+    "id": "cat-smith",
+    "alpha": true,
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "split": 835,
+    "sameScale": true,
+    "identicalFrames": false,
+    "bounds": [
+      {
+        "x": 26,
+        "y": 9,
+        "width": 757,
+        "height": 857,
+        "bottom": 865,
+        "pixels": 380324
+      },
+      {
+        "x": 52,
+        "y": 195,
+        "width": 860,
+        "height": 671,
+        "bottom": 865,
+        "pixels": 338953
+      }
+    ],
+    "edgeTouch": false,
+    "note": "Checks canvas/alpha/scale only. Independent painted poses are not pixel-identical anatomy."
+  },
+  {
+    "id": "boss-rat",
+    "alpha": true,
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "split": 857,
+    "sameScale": true,
+    "identicalFrames": false,
+    "bounds": [
+      {
+        "x": 161,
+        "y": 8,
+        "width": 682,
+        "height": 848,
+        "bottom": 855,
+        "pixels": 359824
+      },
+      {
+        "x": 13,
+        "y": 201,
+        "width": 888,
+        "height": 656,
+        "bottom": 856,
+        "pixels": 338000
+      }
+    ],
+    "edgeTouch": false,
+    "note": "Checks canvas/alpha/scale only. Independent painted poses are not pixel-identical anatomy."
+  },
+  {
+    "id": "boss-eel",
+    "alpha": true,
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "split": 872,
+    "sameScale": true,
+    "identicalFrames": false,
+    "bounds": [
+      {
+        "x": 70,
+        "y": 155,
+        "width": 619,
+        "height": 590,
+        "bottom": 744,
+        "pixels": 224169
+      },
+      {
+        "x": 182,
+        "y": 155,
+        "width": 612,
+        "height": 590,
+        "bottom": 744,
+        "pixels": 224651
+      }
+    ],
+    "edgeTouch": false,
+    "note": "Checks canvas/alpha/scale only. Independent painted poses are not pixel-identical anatomy."
+  },
+  {
+    "id": "enemy-rat",
+    "alpha": true,
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "split": 832,
+    "sameScale": true,
+    "identicalFrames": false,
+    "bounds": [
+      {
+        "x": 111,
+        "y": 256,
+        "width": 546,
+        "height": 421,
+        "bottom": 676,
+        "pixels": 111164
+      },
+      {
+        "x": 175,
+        "y": 254,
+        "width": 663,
+        "height": 423,
+        "bottom": 676,
+        "pixels": 114674
+      }
+    ],
+    "edgeTouch": false,
+    "note": "Checks canvas/alpha/scale only. Independent painted poses are not pixel-identical anatomy."
+  },
+  {
+    "id": "enemy-roach",
+    "alpha": true,
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "split": 885,
+    "sameScale": true,
+    "identicalFrames": false,
+    "bounds": [
+      {
+        "x": 19,
+        "y": 129,
+        "width": 846,
+        "height": 665,
+        "bottom": 793,
+        "pixels": 223820
+      },
+      {
+        "x": 19,
+        "y": 127,
+        "width": 848,
+        "height": 666,
+        "bottom": 792,
+        "pixels": 237933
+      }
+    ],
+    "edgeTouch": false,
+    "note": "Checks canvas/alpha/scale only. Independent painted poses are not pixel-identical anatomy."
+  },
+  {
+    "id": "enemy-mushroom",
+    "alpha": true,
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "split": 841,
+    "sameScale": true,
+    "identicalFrames": false,
+    "bounds": [
+      {
+        "x": 101,
+        "y": 113,
+        "width": 677,
+        "height": 681,
+        "bottom": 793,
+        "pixels": 296117
+      },
+      {
+        "x": 62,
+        "y": 113,
+        "width": 836,
+        "height": 681,
+        "bottom": 793,
+        "pixels": 322732
+      }
+    ],
+    "edgeTouch": false,
+    "note": "Checks canvas/alpha/scale only. Independent painted poses are not pixel-identical anatomy."
+  },
+  {
+    "id": "enemy-crow",
+    "alpha": true,
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "split": 905,
+    "sameScale": true,
+    "identicalFrames": false,
+    "bounds": [
+      {
+        "x": 161,
+        "y": 70,
+        "width": 710,
+        "height": 759,
+        "bottom": 828,
+        "pixels": 322213
+      },
+      {
+        "x": 34,
+        "y": 292,
+        "width": 802,
+        "height": 537,
+        "bottom": 828,
+        "pixels": 222402
+      }
+    ],
+    "edgeTouch": false,
+    "note": "Checks canvas/alpha/scale only. Independent painted poses are not pixel-identical anatomy."
+  },
+  {
+    "id": "enemy-scorpion",
+    "alpha": true,
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "split": 887,
+    "sameScale": true,
+    "identicalFrames": false,
+    "bounds": [
+      {
+        "x": 41,
+        "y": 76,
+        "width": 804,
+        "height": 743,
+        "bottom": 818,
+        "pixels": 290147
+      },
+      {
+        "x": 41,
+        "y": 239,
+        "width": 804,
+        "height": 580,
+        "bottom": 818,
+        "pixels": 285770
+      }
+    ],
+    "edgeTouch": false,
+    "note": "Checks canvas/alpha/scale only. Independent painted poses are not pixel-identical anatomy."
+  },
+  {
+    "id": "enemy-mummy",
+    "alpha": true,
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "split": 868,
+    "sameScale": true,
+    "identicalFrames": false,
+    "bounds": [
+      {
+        "x": 100,
+        "y": 103,
+        "width": 727,
+        "height": 745,
+        "bottom": 847,
+        "pixels": 329167
+      },
+      {
+        "x": 41,
+        "y": 103,
+        "width": 853,
+        "height": 745,
+        "bottom": 847,
+        "pixels": 351931
+      }
+    ],
+    "edgeTouch": false,
+    "note": "Checks canvas/alpha/scale only. Independent painted poses are not pixel-identical anatomy."
+  },
+  {
+    "id": "enemy-bat",
+    "alpha": true,
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "split": 946,
+    "sameScale": true,
+    "identicalFrames": false,
+    "bounds": [
+      {
+        "x": 22,
+        "y": 80,
+        "width": 882,
+        "height": 698,
+        "bottom": 777,
+        "pixels": 279028
+      },
+      {
+        "x": 42,
+        "y": 238,
+        "width": 748,
+        "height": 564,
+        "bottom": 801,
+        "pixels": 220555
+      }
+    ],
+    "edgeTouch": false,
+    "note": "Checks canvas/alpha/scale only. Independent painted poses are not pixel-identical anatomy."
+  },
+  {
+    "id": "enemy-penguin",
+    "alpha": true,
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "split": 878,
+    "sameScale": true,
+    "identicalFrames": false,
+    "bounds": [
+      {
+        "x": 23,
+        "y": 164,
+        "width": 844,
+        "height": 603,
+        "bottom": 766,
+        "pixels": 245295
+      },
+      {
+        "x": 11,
+        "y": 164,
+        "width": 878,
+        "height": 603,
+        "bottom": 766,
+        "pixels": 236759
+      }
+    ],
+    "edgeTouch": false,
+    "note": "Checks canvas/alpha/scale only. Independent painted poses are not pixel-identical anatomy."
+  },
+  {
+    "id": "enemy-vacuum",
+    "alpha": true,
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "split": 873,
+    "sameScale": true,
+    "identicalFrames": false,
+    "bounds": [
+      {
+        "x": 42,
+        "y": 133,
+        "width": 808,
+        "height": 652,
+        "bottom": 784,
+        "pixels": 274787
+      },
+      {
+        "x": 22,
+        "y": 217,
+        "width": 848,
+        "height": 568,
+        "bottom": 784,
+        "pixels": 254255
+      }
+    ],
+    "edgeTouch": false,
+    "note": "Checks canvas/alpha/scale only. Independent painted poses are not pixel-identical anatomy."
+  },
+  {
+    "id": "enemy-drone",
+    "alpha": true,
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "split": 871,
+    "sameScale": true,
+    "identicalFrames": false,
+    "bounds": [
+      {
+        "x": 92,
+        "y": 80,
+        "width": 749,
+        "height": 679,
+        "bottom": 758,
+        "pixels": 289941
+      },
+      {
+        "x": 30,
+        "y": 82,
+        "width": 864,
+        "height": 674,
+        "bottom": 755,
+        "pixels": 321072
+      }
+    ],
+    "edgeTouch": false,
+    "note": "Checks canvas/alpha/scale only. Independent painted poses are not pixel-identical anatomy."
+  },
+  {
+    "id": "boss-witch",
+    "alpha": true,
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "split": 882,
+    "sameScale": true,
+    "identicalFrames": false,
+    "bounds": [
+      {
+        "x": 98,
+        "y": 6,
+        "width": 774,
+        "height": 865,
+        "bottom": 870,
+        "pixels": 378841
+      },
+      {
+        "x": 9,
+        "y": 161,
+        "width": 857,
+        "height": 710,
+        "bottom": 870,
+        "pixels": 333794
+      }
+    ],
+    "edgeTouch": false,
+    "note": "Checks canvas/alpha/scale only. Independent painted poses are not pixel-identical anatomy."
+  },
+  {
+    "id": "boss-sphinx",
+    "alpha": true,
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "split": 893,
+    "sameScale": true,
+    "identicalFrames": false,
+    "bounds": [
+      {
+        "x": 29,
+        "y": 71,
+        "width": 854,
+        "height": 755,
+        "bottom": 825,
+        "pixels": 370889
+      },
+      {
+        "x": 10,
+        "y": 78,
+        "width": 867,
+        "height": 748,
+        "bottom": 825,
+        "pixels": 365194
+      }
+    ],
+    "edgeTouch": false,
+    "note": "Checks canvas/alpha/scale only. Independent painted poses are not pixel-identical anatomy."
+  },
+  {
+    "id": "boss-crab",
+    "alpha": true,
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "split": 892,
+    "sameScale": true,
+    "identicalFrames": false,
+    "bounds": [
+      {
+        "x": 17,
+        "y": 139,
+        "width": 861,
+        "height": 651,
+        "bottom": 789,
+        "pixels": 354982
+      },
+      {
+        "x": 13,
+        "y": 156,
+        "width": 860,
+        "height": 634,
+        "bottom": 789,
+        "pixels": 343475
+      }
+    ],
+    "edgeTouch": false,
+    "note": "Checks canvas/alpha/scale only. Independent painted poses are not pixel-identical anatomy."
+  },
+  {
+    "id": "boss-mech",
+    "alpha": true,
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "split": 832,
+    "sameScale": true,
+    "identicalFrames": false,
+    "bounds": [
+      {
+        "x": 31,
+        "y": 81,
+        "width": 745,
+        "height": 697,
+        "bottom": 777,
+        "pixels": 277791
+      },
+      {
+        "x": 55,
+        "y": 224,
+        "width": 884,
+        "height": 554,
+        "bottom": 777,
+        "pixels": 266172
+      }
+    ],
+    "edgeTouch": false,
+    "note": "Checks canvas/alpha/scale only. Independent painted poses are not pixel-identical anatomy."
+  },
+  {
+    "id": "boss-whale",
+    "alpha": true,
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "split": 893,
+    "sameScale": true,
+    "identicalFrames": false,
+    "bounds": [
+      {
+        "x": 16,
+        "y": 226,
+        "width": 819,
+        "height": 404,
+        "bottom": 629,
+        "pixels": 171686
+      },
+      {
+        "x": 57,
+        "y": 269,
+        "width": 813,
+        "height": 379,
+        "bottom": 647,
+        "pixels": 160044
+      }
+    ],
+    "edgeTouch": false,
+    "note": "Checks canvas/alpha/scale only. Independent painted poses are not pixel-identical anatomy."
+  },
+  {
+    "id": "boss-golem",
+    "alpha": true,
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "split": 877,
+    "sameScale": true,
+    "identicalFrames": false,
+    "bounds": [
+      {
+        "x": 29,
+        "y": 104,
+        "width": 839,
+        "height": 700,
+        "bottom": 803,
+        "pixels": 358773
+      },
+      {
+        "x": 8,
+        "y": 104,
+        "width": 872,
+        "height": 700,
+        "bottom": 803,
+        "pixels": 349564
+      }
+    ],
+    "edgeTouch": false,
+    "note": "Checks canvas/alpha/scale only. Independent painted poses are not pixel-identical anatomy."
+  },
+  {
+    "id": "boss-dog",
+    "alpha": true,
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "split": 838,
+    "sameScale": true,
+    "identicalFrames": false,
+    "bounds": [
+      {
+        "x": 60,
+        "y": 125,
+        "width": 716,
+        "height": 628,
+        "bottom": 752,
+        "pixels": 262816
+      },
+      {
+        "x": 62,
+        "y": 133,
+        "width": 854,
+        "height": 620,
+        "bottom": 752,
+        "pixels": 272528
+      }
+    ],
+    "edgeTouch": false,
+    "note": "Checks canvas/alpha/scale only. Independent painted poses are not pixel-identical anatomy."
+  }
+]

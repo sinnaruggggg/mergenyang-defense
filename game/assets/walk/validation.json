@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "characters": 25,
+  "frames": 50,
+  "exactTranslationPx": [
+    0,
+    -3
+  ],
+  "failures": []
+}

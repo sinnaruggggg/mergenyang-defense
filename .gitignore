@@ -1,0 +1,32 @@
+# 대용량 원본·백업 (GitHub 용량 제한)
+*.zip
+art/build/
+art/raster-ui-v3/screens/
+art/raster-ui-v3/sources/
+art/raster-ui-v3/previews/
+art/raster-ui-v3/assets/placed/
+art/attack-motion-v4/sources/
+art/attack-motion-v4/previews/
+output/
+dist/
+
+# 개발 도구·로컬 설정
+.claude/
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+
+# 네이티브 빌드
+native/local.properties
+native/.gradle/
+native/build/
+native/*/build/
+native/build-assets-src/
+native/android/libs/
+native/shots/
+native/apk/
+native/.desktop-save.json
+native/.shots-save.json
+native/.kotlin/

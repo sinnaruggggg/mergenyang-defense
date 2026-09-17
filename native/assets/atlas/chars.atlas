@@ -1,0 +1,440 @@
+
+chars.png
+size: 4096, 2048
+format: RGBA8888
+filter: MipMapLinearLinear, Linear
+repeat: none
+atk_boss-crab_0
+  rotate: false
+  xy: 792, 677
+  size: 387, 293
+  orig: 512, 512
+  offset: 31, 39
+  index: -1
+atk_boss-crab_1
+  rotate: false
+  xy: 789, 387
+  size: 387, 286
+  orig: 512, 512
+  offset: 31, 39
+  index: -1
+atk_boss-dog_0
+  rotate: false
+  xy: 2849, 34
+  size: 300, 264
+  orig: 512, 512
+  offset: 97, 39
+  index: -1
+atk_boss-dog_1
+  rotate: false
+  xy: 1903, 768
+  size: 358, 260
+  orig: 512, 512
+  offset: 31, 39
+  index: -1
+atk_boss-eel_0
+  rotate: false
+  xy: 719, 33
+  size: 367, 350
+  orig: 512, 512
+  offset: 32, 39
+  index: -1
+atk_boss-eel_1
+  rotate: false
+  xy: 1090, 33
+  size: 363, 350
+  orig: 512, 512
+  offset: 31, 39
+  index: -1
+atk_boss-golem_0
+  rotate: false
+  xy: 1815, 290
+  size: 352, 294
+  orig: 512, 512
+  offset: 67, 39
+  index: -1
+atk_boss-golem_1
+  rotate: false
+  xy: 1183, 644
+  size: 366, 294
+  orig: 512, 512
+  offset: 31, 39
+  index: -1
+atk_boss-mech_0
+  rotate: false
+  xy: 3368, 830
+  size: 285, 266
+  orig: 512, 512
+  offset: 83, 39
+  index: -1
+atk_boss-mech_1
+  rotate: false
+  xy: 2265, 666
+  size: 337, 212
+  orig: 512, 512
+  offset: 31, 39
+  index: -1
+atk_boss-rat_0
+  rotate: false
+  xy: 385, 47
+  size: 330, 410
+  orig: 512, 512
+  offset: 110, 39
+  index: -1
+atk_boss-rat_1
+  rotate: false
+  xy: 2993, 1699
+  size: 429, 318
+  orig: 512, 512
+  offset: 52, 39
+  index: -1
+atk_boss-sphinx_0
+  rotate: false
+  xy: 2281, 1051
+  size: 346, 306
+  orig: 512, 512
+  offset: 36, 39
+  index: -1
+atk_boss-sphinx_1
+  rotate: false
+  xy: 3013, 1065
+  size: 351, 303
+  orig: 512, 512
+  offset: 31, 39
+  index: -1
+atk_boss-whale_0
+  rotate: false
+  xy: 1895, 588
+  size: 354, 176
+  orig: 512, 512
+  offset: 127, 39
+  index: -1
+atk_boss-whale_1
+  rotate: false
+  xy: 2281, 882
+  size: 352, 165
+  orig: 512, 512
+  offset: 92, 39
+  index: -1
+atk_boss-witch_0
+  rotate: false
+  xy: 1198, 942
+  size: 338, 378
+  orig: 512, 512
+  offset: 71, 39
+  index: -1
+atk_boss-witch_1
+  rotate: false
+  xy: 1903, 1032
+  size: 374, 310
+  orig: 512, 512
+  offset: 31, 39
+  index: -1
+atk_cat-archer_0
+  rotate: false
+  xy: 867, 1643
+  size: 426, 374
+  orig: 512, 512
+  offset: 55, 39
+  index: -1
+atk_cat-archer_1
+  rotate: false
+  xy: 435, 1643
+  size: 428, 374
+  orig: 512, 512
+  offset: 52, 39
+  index: -1
+atk_cat-healer_0
+  rotate: false
+  xy: 1553, 660
+  size: 338, 336
+  orig: 512, 512
+  offset: 74, 39
+  index: -1
+atk_cat-healer_1
+  rotate: false
+  xy: 847, 1324
+  size: 407, 315
+  orig: 512, 512
+  offset: 74, 39
+  index: -1
+atk_cat-smith_0
+  rotate: false
+  xy: 424, 949
+  size: 364, 412
+  orig: 512, 512
+  offset: 51, 39
+  index: -1
+atk_cat-smith_1
+  rotate: false
+  xy: 2993, 1372
+  size: 413, 323
+  orig: 512, 512
+  offset: 31, 39
+  index: -1
+atk_cat-tank_0
+  rotate: false
+  xy: 1457, 53
+  size: 354, 346
+  orig: 512, 512
+  offset: 74, 39
+  index: -1
+atk_cat-tank_1
+  rotate: false
+  xy: 792, 974
+  size: 402, 346
+  orig: 512, 512
+  offset: 79, 39
+  index: -1
+atk_cat-warrior_0
+  rotate: false
+  xy: 1540, 1000
+  size: 359, 342
+  orig: 512, 512
+  offset: 93, 39
+  index: -1
+atk_cat-warrior_1
+  rotate: false
+  xy: 2631, 1056
+  size: 378, 305
+  orig: 512, 512
+  offset: 103, 39
+  index: -1
+atk_cat-wizard_0
+  rotate: false
+  xy: 2, 52
+  size: 379, 405
+  orig: 512, 512
+  offset: 57, 39
+  index: -1
+atk_cat-wizard_1
+  rotate: false
+  xy: 1297, 1645
+  size: 427, 372
+  orig: 512, 512
+  offset: 54, 39
+  index: -1
+atk_enemy-bat_0
+  rotate: false
+  xy: 1728, 1346
+  size: 386, 306
+  orig: 512, 512
+  offset: 31, 39
+  index: -1
+atk_enemy-bat_1
+  rotate: false
+  xy: 2511, 290
+  size: 328, 247
+  orig: 512, 512
+  offset: 48, 39
+  index: -1
+atk_enemy-crow_0
+  rotate: false
+  xy: 424, 559
+  size: 361, 386
+  orig: 512, 512
+  offset: 88, 39
+  index: -1
+atk_enemy-crow_1
+  rotate: false
+  xy: 435, 1365
+  size: 408, 274
+  orig: 512, 512
+  offset: 31, 39
+  index: -1
+atk_enemy-drone_0
+  rotate: false
+  xy: 2171, 279
+  size: 336, 305
+  orig: 512, 512
+  offset: 85, 39
+  index: -1
+atk_enemy-drone_1
+  rotate: false
+  xy: 2571, 1365
+  size: 387, 303
+  orig: 512, 512
+  offset: 31, 39
+  index: -1
+atk_enemy-mummy_0
+  rotate: false
+  xy: 2281, 1361
+  size: 286, 293
+  orig: 512, 512
+  offset: 80, 39
+  index: -1
+atk_enemy-mummy_1
+  rotate: false
+  xy: 1258, 1346
+  size: 335, 293
+  orig: 512, 512
+  offset: 31, 39
+  index: -1
+atk_enemy-mushroom_0
+  rotate: false
+  xy: 3368, 1100
+  size: 267, 268
+  orig: 512, 512
+  offset: 93, 39
+  index: -1
+atk_enemy-mushroom_1
+  rotate: false
+  xy: 2516, 18
+  size: 329, 268
+  orig: 512, 512
+  offset: 31, 39
+  index: -1
+atk_enemy-penguin_0
+  rotate: false
+  xy: 2843, 302
+  size: 328, 235
+  orig: 512, 512
+  offset: 47, 39
+  index: -1
+atk_enemy-penguin_1
+  rotate: false
+  xy: 2637, 817
+  size: 341, 235
+  orig: 512, 512
+  offset: 31, 39
+  index: -1
+atk_enemy-rat_0
+  rotate: false
+  xy: 1537, 428
+  size: 274, 212
+  orig: 512, 512
+  offset: 98, 39
+  index: -1
+atk_enemy-rat_1
+  rotate: false
+  xy: 3013, 848
+  size: 333, 213
+  orig: 512, 512
+  offset: 31, 39
+  index: -1
+atk_enemy-roach_0
+  rotate: false
+  xy: 2166, 2
+  size: 346, 273
+  orig: 512, 512
+  offset: 31, 39
+  index: -1
+atk_enemy-roach_1
+  rotate: false
+  xy: 1815, 13
+  size: 347, 273
+  orig: 512, 512
+  offset: 31, 39
+  index: -1
+atk_enemy-scorpion_0
+  rotate: false
+  xy: 2, 1620
+  size: 429, 397
+  orig: 512, 512
+  offset: 52, 39
+  index: -1
+atk_enemy-scorpion_1
+  rotate: false
+  xy: 3426, 1707
+  size: 429, 310
+  orig: 512, 512
+  offset: 49, 39
+  index: -1
+atk_enemy-vacuum_0
+  rotate: false
+  xy: 2606, 541
+  size: 337, 272
+  orig: 512, 512
+  offset: 50, 39
+  index: -1
+atk_enemy-vacuum_1
+  rotate: false
+  xy: 1180, 403
+  size: 353, 237
+  orig: 512, 512
+  offset: 31, 39
+  index: -1
+idle_archer_0
+  rotate: false
+  xy: 2, 839
+  size: 418, 374
+  orig: 512, 512
+  offset: 47, 35
+  index: -1
+idle_archer_1
+  rotate: false
+  xy: 2, 839
+  size: 418, 374
+  orig: 512, 512
+  offset: 47, 37
+  index: -1
+idle_healer_0
+  rotate: false
+  xy: 1728, 1656
+  size: 417, 361
+  orig: 512, 512
+  offset: 47, 35
+  index: -1
+idle_healer_1
+  rotate: false
+  xy: 1728, 1656
+  size: 417, 361
+  orig: 512, 512
+  offset: 47, 37
+  index: -1
+idle_smith_0
+  rotate: false
+  xy: 2571, 1672
+  size: 418, 345
+  orig: 512, 512
+  offset: 47, 35
+  index: -1
+idle_smith_1
+  rotate: false
+  xy: 2571, 1672
+  size: 418, 345
+  orig: 512, 512
+  offset: 47, 37
+  index: -1
+idle_tank_0
+  rotate: false
+  xy: 2, 461
+  size: 418, 374
+  orig: 512, 512
+  offset: 47, 35
+  index: -1
+idle_tank_1
+  rotate: false
+  xy: 2, 461
+  size: 418, 374
+  orig: 512, 512
+  offset: 47, 37
+  index: -1
+idle_warrior_0
+  rotate: false
+  xy: 2149, 1658
+  size: 418, 359
+  orig: 512, 512
+  offset: 47, 35
+  index: -1
+idle_warrior_1
+  rotate: false
+  xy: 2149, 1658
+  size: 418, 359
+  orig: 512, 512
+  offset: 47, 37
+  index: -1
+idle_wizard_0
+  rotate: false
+  xy: 2, 1217
+  size: 418, 399
+  orig: 512, 512
+  offset: 47, 35
+  index: -1
+idle_wizard_1
+  rotate: false
+  xy: 2, 1217
+  size: 418, 399
+  orig: 512, 512
+  offset: 47, 37
+  index: -1

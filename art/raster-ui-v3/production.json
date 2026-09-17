@@ -1,0 +1,363 @@
+{
+  "version": 3,
+  "reference": "D:\\머지냥디펜스\\art\\battle-concepts-v2\\04-ratking-boss-pastel.png",
+  "policy": "All visible pictorial assets are AI-painted raster PNG. Code may only crop, preserve alpha, pack, position and render text. No procedural icons, panels or buttons.",
+  "jobs": [
+    {
+      "id": "bg-workshop",
+      "prompt": "Use case: stylized-concept. Premium hand-painted 2D mobile game art for Merge Cat Defense. Match the supplied pastel boss battle reference exactly in rendering quality: softly shaded cream surfaces, warm brown ink contours, sage/mint foliage, lavender steel, honey gold, dusty rose accents, cute plump shapes, lovingly painted bevels and subtle wood/stone grain. Crisp readable silhouettes, sophisticated illustration, not simplistic flat clipart, not vector icons, not 3D. No lettering unless requested. All artwork must be drawn as raster illustration.\nCreate a portrait 9:16 BACKGROUND ONLY for the forge home menu. A beautiful cozy stone-and-timber cat blacksmith workshop opens through a large arch to a pastel fantasy town and sage ivy. An unoccupied anvil and tools on left, softly glowing small forge, honey wooden floor broad and open in center, shelves near edges, lilac castle through arch. Scene interest in upper 65 percent; lower35 percent calmer wooden worktable area for UI overlay. Absolutely no characters, no items floating in air, no buttons, no text, no panels, no UI. Preserve illustration density and refinement of reference. Entire canvas opaque.",
+      "kind": "background"
+    },
+    {
+      "id": "bg-town",
+      "prompt": "Use case: stylized-concept. Premium hand-painted 2D mobile game art for Merge Cat Defense. Match the supplied pastel boss battle reference exactly in rendering quality: softly shaded cream surfaces, warm brown ink contours, sage/mint foliage, lavender steel, honey gold, dusty rose accents, cute plump shapes, lovingly painted bevels and subtle wood/stone grain. Crisp readable silhouettes, sophisticated illustration, not simplistic flat clipart, not vector icons, not 3D. No lettering unless requested. All artwork must be drawn as raster illustration.\nCreate a portrait 9:16 BACKGROUND ONLY for cat collection and battle-mode menu. A sunlit pastel medieval cat village plaza, ivy covered cream stone arch and towers, warm wood roof cottages, lilac mountains and peach blue sky. Wide clear central pavement for character placement at middle third. Foliage and architecture around edges with thoughtfully detailed worldbuilding. Lower half softer calmer warm cobblestone for UI overlays. No characters, UI, writing or foreground props occupying center. Full-bleed opaque painted background.",
+      "kind": "background"
+    },
+    {
+      "id": "bg-shop",
+      "prompt": "Use case: stylized-concept. Premium hand-painted 2D mobile game art for Merge Cat Defense. Match the supplied pastel boss battle reference exactly in rendering quality: softly shaded cream surfaces, warm brown ink contours, sage/mint foliage, lavender steel, honey gold, dusty rose accents, cute plump shapes, lovingly painted bevels and subtle wood/stone grain. Crisp readable silhouettes, sophisticated illustration, not simplistic flat clipart, not vector icons, not 3D. No lettering unless requested. All artwork must be drawn as raster illustration.\nCreate a portrait 9:16 BACKGROUND ONLY for a cozy cat shop UI. Warm wooden potion-and-trinket shop with mint curtains, cream stone, hanging vines, shelves containing pastel jars, neatly arranged gift packages near edges, sunlit arched back window. A counter across upper-middle at y about38percent and open space above for separate merchant cat. Bottom55percent clean quiet warm wood cabinet surface behind future UI. No characters, text, buttons, UI or display cards. Fully opaque detailed painted illustration.",
+      "kind": "background"
+    },
+    {
+      "id": "bg-battle",
+      "prompt": "Use case: stylized-concept. Premium hand-painted 2D mobile game art for Merge Cat Defense. Match the supplied pastel boss battle reference exactly in rendering quality: softly shaded cream surfaces, warm brown ink contours, sage/mint foliage, lavender steel, honey gold, dusty rose accents, cute plump shapes, lovingly painted bevels and subtle wood/stone grain. Crisp readable silhouettes, sophisticated illustration, not simplistic flat clipart, not vector icons, not 3D. No lettering unless requested. All artwork must be drawn as raster illustration.\nCreate a portrait 9:16 CLEAN BACKGROUND PLATE from the reference battle setting. Top34percent pastel castle gateway battlefield and a walkable ledge at y33percent, warm cream stone arches, sage ivy, lavender banners and hazy lilac towers. Lower66percent an empty warm wooden crafting table framed by stone and climbing ivy at edges. Remove ALL UI, all board tiles, all characters/enemies, all weapons, all particles, all words, all numbers, all rails. Keep entire center open for separately layered assets. Full-bleed opaque painted environment.",
+      "kind": "background"
+    },
+    {
+      "id": "panels",
+      "prompt": "Use case: stylized-concept. Premium hand-painted 2D mobile game art for Merge Cat Defense. Match the supplied pastel boss battle reference exactly in rendering quality: softly shaded cream surfaces, warm brown ink contours, sage/mint foliage, lavender steel, honey gold, dusty rose accents, cute plump shapes, lovingly painted bevels and subtle wood/stone grain. Crisp readable silhouettes, sophisticated illustration, not simplistic flat clipart, not vector icons, not 3D. No lettering unless requested. All artwork must be drawn as raster illustration.\nOne production-ready TRANSPARENT PNG UI panel atlas, EXACTLY 3 columns by 2 rows of equal square cells. Six separate blank illustrated UI components centered one per cell, each inside central88percent with 6percent clear margins. No overlap, no grid lines, no labels, no text, genuine alpha outside objects. Row1 left-to-right: large cream parchment panel with softly rounded warm wood frame and small brass corner studs; pale mint inset card with sage border and cream bevel; pale lavender inset card with muted slate border. Row2: pale peach inset card with honey border; dark warm walnut panel with lavender-metal rim for HUD; square cream merge-board tile with rounded recessed edge, subtle embossed paw watermark at center. Each is mostly quiet solid center for text placement; edges detailed like reference UI. Draw complete outer silhouettes, no shadows extending into adjacent cells. Square 2048x2048 atlas.",
+      "kind": "atlas",
+      "cols": 3,
+      "rows": 2,
+      "names": [
+        "panel-cream",
+        "panel-mint",
+        "panel-lavender",
+        "panel-peach",
+        "panel-dark",
+        "board-cell"
+      ]
+    },
+    {
+      "id": "buttons",
+      "prompt": "Use case: stylized-concept. Premium hand-painted 2D mobile game art for Merge Cat Defense. Match the supplied pastel boss battle reference exactly in rendering quality: softly shaded cream surfaces, warm brown ink contours, sage/mint foliage, lavender steel, honey gold, dusty rose accents, cute plump shapes, lovingly painted bevels and subtle wood/stone grain. Crisp readable silhouettes, sophisticated illustration, not simplistic flat clipart, not vector icons, not 3D. No lettering unless requested. All artwork must be drawn as raster illustration.\nOne TRANSPARENT PNG game button sprite atlas, EXACTLY FOUR columns by FOUR rows, uniform equal cells; one horizontal rounded rectangular button centered per cell, each button about 88percent cell width and40percent cell height, no words or symbols, no contact shadows outside. Genuine alpha between objects, no grid lines. COLUMN states always: normal raised / pressed slightly inset / disabled desaturated / selected with bright delicate rim. ROW1 buttery honey yellow primary buttons; ROW2 mint green secondary buttons; ROW3 cream ivory tertiary buttons; ROW4 dusty rose warning buttons. Painted wood underedge, nuanced cream shine, thin warm brown outlines, subtle bevels consistent with reference. NOT flat vector shapes. All16 complete buttons equal size; no extra decorations. 2048x2048 square.",
+      "kind": "atlas",
+      "cols": 4,
+      "rows": 4,
+      "names": [
+        "button-yellow-normal",
+        "button-yellow-pressed",
+        "button-yellow-disabled",
+        "button-yellow-selected",
+        "button-mint-normal",
+        "button-mint-pressed",
+        "button-mint-disabled",
+        "button-mint-selected",
+        "button-cream-normal",
+        "button-cream-pressed",
+        "button-cream-disabled",
+        "button-cream-selected",
+        "button-peach-normal",
+        "button-peach-pressed",
+        "button-peach-disabled",
+        "button-peach-selected"
+      ]
+    },
+    {
+      "id": "icons-menu",
+      "prompt": "Use case: stylized-concept. Premium hand-painted 2D mobile game art for Merge Cat Defense. Match the supplied pastel boss battle reference exactly in rendering quality: softly shaded cream surfaces, warm brown ink contours, sage/mint foliage, lavender steel, honey gold, dusty rose accents, cute plump shapes, lovingly painted bevels and subtle wood/stone grain. Crisp readable silhouettes, sophisticated illustration, not simplistic flat clipart, not vector icons, not 3D. No lettering unless requested. All artwork must be drawn as raster illustration.\nOne production game icon atlas with genuine transparent alpha background, EXACTLY FIVE columns and FOUR rows,20 icons. Each individually painted icon centered in its equal cell, object stays inside central76percent with generous transparent gutter. No frames, no grid lines, no labels. Row1: blacksmith anvil and small hammer; happy calico cat face; crossed sword pair; cozy mint awning shop stall; golden paw trophy. Row2: blue lightning energy bolt; embossed gold coin; faceted pastel blue lavender gem; ivory envelope with paw seal; open illustrated storybook. Row3: wooden treasure chest with gold coins; brass pocket watch; small brass padlock; butter gold five-point star; lavender metal round shield. Row4: pink heart; wooden bow with arrow; mint paw healer wand; two cute friendly cat heads; ornate golden crown with pink jewels. Every asset equally polished like painted items in reference. Square atlas 2048x2048.",
+      "kind": "atlas",
+      "cols": 5,
+      "rows": 4,
+      "names": [
+        "forge",
+        "cat",
+        "sword",
+        "shop",
+        "trophy",
+        "energy",
+        "gold",
+        "gem",
+        "mail",
+        "book",
+        "chest",
+        "clock",
+        "lock",
+        "star",
+        "shield",
+        "heart",
+        "bow",
+        "wand",
+        "people",
+        "crown"
+      ]
+    },
+    {
+      "id": "icons-controls",
+      "prompt": "Use case: stylized-concept. Premium hand-painted 2D mobile game art for Merge Cat Defense. Match the supplied pastel boss battle reference exactly in rendering quality: softly shaded cream surfaces, warm brown ink contours, sage/mint foliage, lavender steel, honey gold, dusty rose accents, cute plump shapes, lovingly painted bevels and subtle wood/stone grain. Crisp readable silhouettes, sophisticated illustration, not simplistic flat clipart, not vector icons, not 3D. No lettering unless requested. All artwork must be drawn as raster illustration.\nOne production TRANSPARENT PNG icon atlas, EXACTLY FOUR columns by FOUR rows. Each painted icon independently centered with20percent transparent gutter, no frames, gridlines or labels. Row1: chunky carved wood left-pointing arrow; lavender steel gear; dusty rose pennant flag; raised honey-gold plus sign. Row2: chunky rounded coral X; mint checkmark; sage leafy tree; cute grey mouse soldier head. Row3: cream scroll with decorative unreadable short ink strokes; mint triangular play symbol; pastel blue admission ticket with tiny paw; chunky lavender question mark. Row4: pair of cream pause bars; warm brown cat pawprint; illustrated blue silver tuna can with tiny fish pictogram; dusty pink yarn ball. All16 visually distinct; high quality hand-painted bevels with clear outlines, consistent with reference. True alpha outside assets. 2048x2048.",
+      "kind": "atlas",
+      "cols": 4,
+      "rows": 4,
+      "names": [
+        "back",
+        "gear",
+        "flag",
+        "plus",
+        "close",
+        "check",
+        "tree",
+        "rat",
+        "scroll",
+        "play",
+        "ticket",
+        "help",
+        "pause",
+        "paw",
+        "can",
+        "yarn"
+      ]
+    },
+    {
+      "id": "items-weapon",
+      "prompt": "Use case: stylized-concept. Premium hand-painted 2D mobile game art for Merge Cat Defense. Match the supplied pastel boss battle reference exactly in rendering quality: softly shaded cream surfaces, warm brown ink contours, sage/mint foliage, lavender steel, honey gold, dusty rose accents, cute plump shapes, lovingly painted bevels and subtle wood/stone grain. Crisp readable silhouettes, sophisticated illustration, not simplistic flat clipart, not vector icons, not 3D. No lettering unless requested. All artwork must be drawn as raster illustration.\nA TRANSPARENT PNG merge item progression atlas. EXACTLY FOUR columns by TWO rows, eight equal cells, ordered left-to-right top-to-bottom. Objects: a leafy twig; a carved wooden practice sword; a fishbone dagger; a lavender iron sword; a magical flame sword; an icy pale blue crystal sword; a gold royal sword with ruby; legendary golden cat-treat blade with paw hilt. Each individually painted complete object centered in its cell, all fit inside central75percent with clear transparent gutter and consistent illustration scale. No labels, no numbers, no frames, no gridlines, no UI. All eight distinct, tier progression evident. Beautiful charming loot with outlines, subtle volume, natural painterly highlights matching reference board items. Landscape 2048x1024 atlas; genuinely transparent outside objects.",
+      "kind": "atlas",
+      "cols": 4,
+      "rows": 2,
+      "names": [
+        "item-weapon-1-twig",
+        "item-weapon-2-wood-sword",
+        "item-weapon-3-fishbone-dagger",
+        "item-weapon-4-iron-sword",
+        "item-weapon-5-flame-sword",
+        "item-weapon-6-ice-sword",
+        "item-weapon-7-royal-sword",
+        "item-weapon-8-churu-blade"
+      ]
+    },
+    {
+      "id": "items-armor",
+      "prompt": "Use case: stylized-concept. Premium hand-painted 2D mobile game art for Merge Cat Defense. Match the supplied pastel boss battle reference exactly in rendering quality: softly shaded cream surfaces, warm brown ink contours, sage/mint foliage, lavender steel, honey gold, dusty rose accents, cute plump shapes, lovingly painted bevels and subtle wood/stone grain. Crisp readable silhouettes, sophisticated illustration, not simplistic flat clipart, not vector icons, not 3D. No lettering unless requested. All artwork must be drawn as raster illustration.\nA TRANSPARENT PNG merge item progression atlas. EXACTLY FOUR columns by TWO rows, eight equal cells, ordered left-to-right top-to-bottom. Objects: a folded corrugated cardboard vest; a tan leather cat vest with paw emboss; a round lavender pot-lid shield; a silver chainmail vest; a lavender iron breastplate; a full pastel knight breastplate; regal gold and lilac armor; legendary ornate golden cat-tower shaped armor. Each individually painted complete object centered in its cell, all fit inside central75percent with clear transparent gutter and consistent illustration scale. No labels, no numbers, no frames, no gridlines, no UI. All eight distinct, tier progression evident. Beautiful charming loot with outlines, subtle volume, natural painterly highlights matching reference board items. Landscape 2048x1024 atlas; genuinely transparent outside objects.",
+      "kind": "atlas",
+      "cols": 4,
+      "rows": 2,
+      "names": [
+        "item-armor-1-cardboard",
+        "item-armor-2-leather",
+        "item-armor-3-pot-lid",
+        "item-armor-4-chainmail",
+        "item-armor-5-iron-armor",
+        "item-armor-6-knight-armor",
+        "item-armor-7-royal-armor",
+        "item-armor-8-cat-tower-armor"
+      ]
+    },
+    {
+      "id": "items-consumable",
+      "prompt": "Use case: stylized-concept. Premium hand-painted 2D mobile game art for Merge Cat Defense. Match the supplied pastel boss battle reference exactly in rendering quality: softly shaded cream surfaces, warm brown ink contours, sage/mint foliage, lavender steel, honey gold, dusty rose accents, cute plump shapes, lovingly painted bevels and subtle wood/stone grain. Crisp readable silhouettes, sophisticated illustration, not simplistic flat clipart, not vector icons, not 3D. No lettering unless requested. All artwork must be drawn as raster illustration.\nA TRANSPARENT PNG merge item progression atlas. EXACTLY FOUR columns by TWO rows, eight equal cells, ordered left-to-right top-to-bottom. Objects: a little anchovy; a fresh blue whole fish; a silver blue tuna can; a fresh pale pink fish fillet; three slices of premium tuna sashimi; a bowl of salmon and rice; a pink cat-treat tube; a legendary golden cat-treat tube with tiny crown. Each individually painted complete object centered in its cell, all fit inside central75percent with clear transparent gutter and consistent illustration scale. No labels, no numbers, no frames, no gridlines, no UI. All eight distinct, tier progression evident. Beautiful charming loot with outlines, subtle volume, natural painterly highlights matching reference board items. Landscape 2048x1024 atlas; genuinely transparent outside objects.",
+      "kind": "atlas",
+      "cols": 4,
+      "rows": 2,
+      "names": [
+        "item-consumable-1-anchovy",
+        "item-consumable-2-fish",
+        "item-consumable-3-tuna-can",
+        "item-consumable-4-fish-fillet",
+        "item-consumable-5-sashimi",
+        "item-consumable-6-salmon-bowl",
+        "item-consumable-7-churu",
+        "item-consumable-8-gold-churu"
+      ]
+    },
+    {
+      "id": "items-special",
+      "prompt": "Use case: stylized-concept. Premium hand-painted 2D mobile game art for Merge Cat Defense. Match the supplied pastel boss battle reference exactly in rendering quality: softly shaded cream surfaces, warm brown ink contours, sage/mint foliage, lavender steel, honey gold, dusty rose accents, cute plump shapes, lovingly painted bevels and subtle wood/stone grain. Crisp readable silhouettes, sophisticated illustration, not simplistic flat clipart, not vector icons, not 3D. No lettering unless requested. All artwork must be drawn as raster illustration.\nA TRANSPARENT PNG merge item progression atlas. EXACTLY FOUR columns by TWO rows, eight equal cells, ordered left-to-right top-to-bottom. Objects: a small fluffy cream fur ball; a pink yarn ball; a cute purple fur bomb with fuse; an orange magical flaming fur ball; a lilac fur ball wrapped by blue lightning; an icy mint fur ball; a celestial fur ball with little golden stars; a huge legendary radiant rainbow fur ball with crown. Each individually painted complete object centered in its cell, all fit inside central75percent with clear transparent gutter and consistent illustration scale. No labels, no numbers, no frames, no gridlines, no UI. All eight distinct, tier progression evident. Beautiful charming loot with outlines, subtle volume, natural painterly highlights matching reference board items. Landscape 2048x1024 atlas; genuinely transparent outside objects.",
+      "kind": "atlas",
+      "cols": 4,
+      "rows": 2,
+      "names": [
+        "item-special-1-fluff",
+        "item-special-2-yarn",
+        "item-special-3-fur-bomb",
+        "item-special-4-fire-fur",
+        "item-special-5-lightning-fur",
+        "item-special-6-ice-fur",
+        "item-special-7-star-fur",
+        "item-special-8-giant-fur"
+      ]
+    },
+    {
+      "id": "cat-warrior",
+      "prompt": "Use case: stylized-concept. Premium hand-painted 2D mobile game art for Merge Cat Defense. Match the supplied pastel boss battle reference exactly in rendering quality: softly shaded cream surfaces, warm brown ink contours, sage/mint foliage, lavender steel, honey gold, dusty rose accents, cute plump shapes, lovingly painted bevels and subtle wood/stone grain. Crisp readable silhouettes, sophisticated illustration, not simplistic flat clipart, not vector icons, not 3D. No lettering unless requested. All artwork must be drawn as raster illustration.\nA single full-body isolated game CHARACTER SPRITE on genuine transparent alpha. calico white cat with orange and charcoal head patches, small brass goggles on forehead, red scarf, brown leather tunic, sword and round shield, friendly determined face. The warrior and healer must match reference character identity. Three-quarter view facing right, short plush chibi proportions, large round head, small sturdy body, all ears tail feet weapons fully visible. Subject fills80percent canvas with10percent transparent margin. No ground, no UI, no text, no shadow oval, no frame, no other objects. Premium detailed hand-painted raster sprite with readable warm dark outlines, pastel cel shading, soft fabric/leather/metal accents at same quality as reference. Square 1024x1024. This is one stable neutral ready pose, not a sprite sheet.",
+      "kind": "character"
+    },
+    {
+      "id": "cat-tank",
+      "prompt": "Use case: stylized-concept. Premium hand-painted 2D mobile game art for Merge Cat Defense. Match the supplied pastel boss battle reference exactly in rendering quality: softly shaded cream surfaces, warm brown ink contours, sage/mint foliage, lavender steel, honey gold, dusty rose accents, cute plump shapes, lovingly painted bevels and subtle wood/stone grain. Crisp readable silhouettes, sophisticated illustration, not simplistic flat clipart, not vector icons, not 3D. No lettering unless requested. All artwork must be drawn as raster illustration.\nA single full-body isolated game CHARACTER SPRITE on genuine transparent alpha. chubby grey-and-white cat with white muzzle and belly, slate grey head patches, teal mint scarf, leather tunic, very large round lavender shield. The warrior and healer must match reference character identity. Three-quarter view facing right, short plush chibi proportions, large round head, small sturdy body, all ears tail feet weapons fully visible. Subject fills80percent canvas with10percent transparent margin. No ground, no UI, no text, no shadow oval, no frame, no other objects. Premium detailed hand-painted raster sprite with readable warm dark outlines, pastel cel shading, soft fabric/leather/metal accents at same quality as reference. Square 1024x1024. This is one stable neutral ready pose, not a sprite sheet.",
+      "kind": "character"
+    },
+    {
+      "id": "cat-archer",
+      "prompt": "Use case: stylized-concept. Premium hand-painted 2D mobile game art for Merge Cat Defense. Match the supplied pastel boss battle reference exactly in rendering quality: softly shaded cream surfaces, warm brown ink contours, sage/mint foliage, lavender steel, honey gold, dusty rose accents, cute plump shapes, lovingly painted bevels and subtle wood/stone grain. Crisp readable silhouettes, sophisticated illustration, not simplistic flat clipart, not vector icons, not 3D. No lettering unless requested. All artwork must be drawn as raster illustration.\nA single full-body isolated game CHARACTER SPRITE on genuine transparent alpha. small cream and ginger tabby cat with sage green pointed hood and feather, brown leather belt, curved wooden bow and quiver, cheerful alert face. The warrior and healer must match reference character identity. Three-quarter view facing right, short plush chibi proportions, large round head, small sturdy body, all ears tail feet weapons fully visible. Subject fills80percent canvas with10percent transparent margin. No ground, no UI, no text, no shadow oval, no frame, no other objects. Premium detailed hand-painted raster sprite with readable warm dark outlines, pastel cel shading, soft fabric/leather/metal accents at same quality as reference. Square 1024x1024. This is one stable neutral ready pose, not a sprite sheet.",
+      "kind": "character"
+    },
+    {
+      "id": "cat-healer",
+      "prompt": "Use case: stylized-concept. Premium hand-painted 2D mobile game art for Merge Cat Defense. Match the supplied pastel boss battle reference exactly in rendering quality: softly shaded cream surfaces, warm brown ink contours, sage/mint foliage, lavender steel, honey gold, dusty rose accents, cute plump shapes, lovingly painted bevels and subtle wood/stone grain. Crisp readable silhouettes, sophisticated illustration, not simplistic flat clipart, not vector icons, not 3D. No lettering unless requested. All artwork must be drawn as raster illustration.\nA single full-body isolated game CHARACTER SPRITE on genuine transparent alpha. plump white cat with tiny ginger forehead patch, sage green pointed hood and mint cloak, cream tunic, golden bell at collar, holding glowing mint paw-topped wooden staff. The warrior and healer must match reference character identity. Three-quarter view facing right, short plush chibi proportions, large round head, small sturdy body, all ears tail feet weapons fully visible. Subject fills80percent canvas with10percent transparent margin. No ground, no UI, no text, no shadow oval, no frame, no other objects. Premium detailed hand-painted raster sprite with readable warm dark outlines, pastel cel shading, soft fabric/leather/metal accents at same quality as reference. Square 1024x1024. This is one stable neutral ready pose, not a sprite sheet.",
+      "kind": "character"
+    },
+    {
+      "id": "cat-wizard",
+      "prompt": "Use case: stylized-concept. Premium hand-painted 2D mobile game art for Merge Cat Defense. Match the supplied pastel boss battle reference exactly in rendering quality: softly shaded cream surfaces, warm brown ink contours, sage/mint foliage, lavender steel, honey gold, dusty rose accents, cute plump shapes, lovingly painted bevels and subtle wood/stone grain. Crisp readable silhouettes, sophisticated illustration, not simplistic flat clipart, not vector icons, not 3D. No lettering unless requested. All artwork must be drawn as raster illustration.\nA single full-body isolated game CHARACTER SPRITE on genuine transparent alpha. plump pale lilac and white cat, large soft purple wizard hat with gold stars, lilac robe and pink sash, a wooden wand tipped with blue crystal, cheerful wise face. The warrior and healer must match reference character identity. Three-quarter view facing right, short plush chibi proportions, large round head, small sturdy body, all ears tail feet weapons fully visible. Subject fills80percent canvas with10percent transparent margin. No ground, no UI, no text, no shadow oval, no frame, no other objects. Premium detailed hand-painted raster sprite with readable warm dark outlines, pastel cel shading, soft fabric/leather/metal accents at same quality as reference. Square 1024x1024. This is one stable neutral ready pose, not a sprite sheet.",
+      "kind": "character"
+    },
+    {
+      "id": "cat-smith",
+      "prompt": "Use case: stylized-concept. Premium hand-painted 2D mobile game art for Merge Cat Defense. Match the supplied pastel boss battle reference exactly in rendering quality: softly shaded cream surfaces, warm brown ink contours, sage/mint foliage, lavender steel, honey gold, dusty rose accents, cute plump shapes, lovingly painted bevels and subtle wood/stone grain. Crisp readable silhouettes, sophisticated illustration, not simplistic flat clipart, not vector icons, not 3D. No lettering unless requested. All artwork must be drawn as raster illustration.\nA single full-body isolated game CHARACTER SPRITE on genuine transparent alpha. calico white and orange blacksmith cat with brown goggles on forehead, red neckerchief, leather apron, stout arms holding a blacksmith hammer, friendly eyes. The warrior and healer must match reference character identity. Three-quarter view facing right, short plush chibi proportions, large round head, small sturdy body, all ears tail feet weapons fully visible. Subject fills80percent canvas with10percent transparent margin. No ground, no UI, no text, no shadow oval, no frame, no other objects. Premium detailed hand-painted raster sprite with readable warm dark outlines, pastel cel shading, soft fabric/leather/metal accents at same quality as reference. Square 1024x1024. This is one stable neutral ready pose, not a sprite sheet.",
+      "kind": "character"
+    },
+    {
+      "id": "boss-rat",
+      "prompt": "Use case: stylized-concept. Premium hand-painted 2D mobile game art for Merge Cat Defense. Match the supplied pastel boss battle reference exactly in rendering quality: softly shaded cream surfaces, warm brown ink contours, sage/mint foliage, lavender steel, honey gold, dusty rose accents, cute plump shapes, lovingly painted bevels and subtle wood/stone grain. Crisp readable silhouettes, sophisticated illustration, not simplistic flat clipart, not vector icons, not 3D. No lettering unless requested. All artwork must be drawn as raster illustration.\nA single isolated full-body boss CHARACTER SPRITE, genuine transparent alpha. Crowned grey rat king from reference, gigantic round body, lavender slate armor with butter gold trim, dusty rose cape, golden crown with pink jewel, huge mace, round pink ears, cute angry expression. Three-quarter view FACING LEFT toward player cats. Complete weapon ears cape feet visible within85percent canvas. No ground, shadows, text, UI, frames or other creatures. Match reference exact identity, quality and pastel painting. Square.",
+      "kind": "character"
+    },
+    {
+      "id": "boss-eel",
+      "prompt": "Use case: stylized-concept. Premium hand-painted 2D mobile game art for Merge Cat Defense. Match the supplied pastel boss battle reference exactly in rendering quality: softly shaded cream surfaces, warm brown ink contours, sage/mint foliage, lavender steel, honey gold, dusty rose accents, cute plump shapes, lovingly painted bevels and subtle wood/stone grain. Crisp readable silhouettes, sophisticated illustration, not simplistic flat clipart, not vector icons, not 3D. No lettering unless requested. All artwork must be drawn as raster illustration.\nSingle full-body isolated cute fantasy electric eel king boss sprite, genuine transparent alpha. Curled huge lilac blue eel with cream belly, tiny golden crown, playful angry face, mint fins and small golden electric sparks near whiskers. Facing left, complete silhouette inside80percent of square, clear empty gutter. Detailed softly shaded hand-painted pastel art matching reference ratking quality. No floor, no labels, no UI, no other creatures.",
+      "kind": "character"
+    },
+    {
+      "id": "battle-parts",
+      "prompt": "Use case: stylized-concept. Premium hand-painted 2D mobile game art for Merge Cat Defense. Match the supplied pastel boss battle reference exactly in rendering quality: softly shaded cream surfaces, warm brown ink contours, sage/mint foliage, lavender steel, honey gold, dusty rose accents, cute plump shapes, lovingly painted bevels and subtle wood/stone grain. Crisp readable silhouettes, sophisticated illustration, not simplistic flat clipart, not vector icons, not 3D. No lettering unless requested. All artwork must be drawn as raster illustration.\nOne TRANSPARENT PNG game UI atlas, EXACTLY TWO columns and FOUR rows, eight equal cells, one complete component centered per cell with8percent gutter. Row1 left: ornate horizontal wooden and lavender steel supply conveyor rail with three mint arrow chevrons, no text; right: horizontal cream scroll title banner with little brass corner studs, no text. Row2 left: horizontal empty dark brown recessed progress-bar frame with cream rim; right: horizontal soft mint green glossy progress fill, no frame. Row3 left: horizontal red pink glossy health fill; right: horizontal golden yellow glossy fever fill. Row4 left: ornate golden laurel wreath with three raised gold stars for victory; right: white glove hand cursor pointing upper-left. Every component painted richly like reference. No words, numbers, labels, gridlines. Genuine alpha outside. Square2048.",
+      "kind": "atlas",
+      "cols": 2,
+      "rows": 4,
+      "names": [
+        "supply-rail",
+        "title-banner",
+        "progress-track",
+        "progress-mint",
+        "progress-red",
+        "progress-gold",
+        "victory-laurel",
+        "tutorial-hand"
+      ]
+    },
+    {
+      "id": "mode-illustrations",
+      "prompt": "Use case: stylized-concept. Premium hand-painted 2D mobile game art for Merge Cat Defense. Match the supplied pastel boss battle reference exactly in rendering quality: softly shaded cream surfaces, warm brown ink contours, sage/mint foliage, lavender steel, honey gold, dusty rose accents, cute plump shapes, lovingly painted bevels and subtle wood/stone grain. Crisp readable silhouettes, sophisticated illustration, not simplistic flat clipart, not vector icons, not 3D. No lettering unless requested. All artwork must be drawn as raster illustration.\nCreate a cohesive TRANSPARENT production game illustration atlas with EXACTLY THREE columns and TWO rows, six equal cells. Each cell contains ONE rounded rectangular landscape illustration badge (4:3 aspect) filling88percent width, fully separated with alpha gutter; no text, numbers, borders or UI. Row1: charming cat village castle gate and little mouse soldiers (solo defense); three cute cat adventurers crossing a forest bridge (co-op); enormous crowned blue eel emerging behind lilac temple (world boss). Row2: crossed swords above a warm stone arena (duel); two teams of three tiny knight cats facing across arena (team battle); ivy-covered tall magical spiral tower (infinite tower). Draw every vignette lovingly in same pastel hand-painted quality as reference, cream architecture sage greens lilac stone warm gold accents. 2048 square.",
+      "kind": "atlas",
+      "cols": 3,
+      "rows": 2,
+      "names": [
+        "mode-solo",
+        "mode-coop",
+        "mode-boss",
+        "mode-duel",
+        "mode-team",
+        "mode-tower"
+      ]
+    },
+    {
+      "id": "effects",
+      "kind": "atlas",
+      "cols": 2,
+      "rows": 2,
+      "names": [
+        "ground-shadow",
+        "sword-arc",
+        "healing-aura",
+        "merge-glow"
+      ],
+      "prompt": "Use case: stylized-concept. Create a genuine TRANSPARENT PNG game VFX sprite atlas matching the supplied softly painted pastel cat fantasy reference. EXACTLY TWO columns and TWO rows, four fully separated effects with generous empty gutters, no labels, words, characters, UI, borders or background. Top left: one soft warm grey/brown ground contact shadow, a wide horizontal translucent ellipse with naturally feathered edges and no object, subtle watercolor-like softness, its entire perimeter fading to zero alpha. Top right: a curved ivory and butter-gold sword slash crescent with 3 small gold impact sparks, curved from lower left toward upper right, soft luminous detail, no sword. Bottom left: pale mint healing swirl with three tiny luminous pawprint particles, soft airy translucent glow, no character or staff. Bottom right: a glowing rounded-square buttery yellow selection outline surrounding an entirely transparent empty interior, soft golden sparkle in two corners, for highlighting a merge board cell. Premium raster illustrated effects, restrained glow, actual alpha transparency. Keep each effect entirely within its cell, no overlap. Square 2048x2048."
+    },
+    {
+      "id": "icons-single-cat",
+      "kind": "single",
+      "names": [
+        "cat"
+      ],
+      "ref": "D:\\머지냥디펜스\\art\\raster-ui-v3\\sources\\icons-menu.png",
+      "prompt": "Use case: background-extraction. Extract and faithfully reproduce ONLY the happy calico cat FACE with goggles and red scarf (top row, second icon), including every whisker tip from the supplied icon atlas as ONE individual production-ready PNG asset on genuine transparent alpha background. Preserve the existing hand-painted pastel fantasy art, colors, shading, outlines and silhouette exactly. No other icons, no grid, no labels or text, no square backing. Center the entire complete icon in a square1024 canvas with AT LEAST20percent fully transparent margin on ALL four sides. The object should occupy at most60percent of canvas width and height. Do not crop even a single whisker or leaf. Keep all tips fully visible. One single isolated icon, not a sheet."
+    },
+    {
+      "id": "icons-single-sword",
+      "kind": "single",
+      "names": [
+        "sword"
+      ],
+      "ref": "D:\\머지냥디펜스\\art\\raster-ui-v3\\sources\\icons-menu.png",
+      "prompt": "Use case: background-extraction. Extract and faithfully reproduce ONLY the crossed silver swords with golden hilts (top row, third icon), including both blade tips and both pommels from the supplied icon atlas as ONE individual production-ready PNG asset on genuine transparent alpha background. Preserve the existing hand-painted pastel fantasy art, colors, shading, outlines and silhouette exactly. No other icons, no grid, no labels or text, no square backing. Center the entire complete icon in a square1024 canvas with AT LEAST20percent fully transparent margin on ALL four sides. The object should occupy at most60percent of canvas width and height. Do not crop even a single whisker or leaf. Keep all tips fully visible. One single isolated icon, not a sheet."
+    },
+    {
+      "id": "icons-single-mail",
+      "kind": "single",
+      "names": [
+        "mail"
+      ],
+      "ref": "D:\\머지냥디펜스\\art\\raster-ui-v3\\sources\\icons-menu.png",
+      "prompt": "Use case: background-extraction. Extract and faithfully reproduce ONLY the cream envelope with red paw wax seal and green leaf (second row, fourth icon), including the leaf tip from the supplied icon atlas as ONE individual production-ready PNG asset on genuine transparent alpha background. Preserve the existing hand-painted pastel fantasy art, colors, shading, outlines and silhouette exactly. No other icons, no grid, no labels or text, no square backing. Center the entire complete icon in a square1024 canvas with AT LEAST20percent fully transparent margin on ALL four sides. The object should occupy at most60percent of canvas width and height. Do not crop even a single whisker or leaf. Keep all tips fully visible. One single isolated icon, not a sheet."
+    },
+    {
+      "id": "icons-single-book",
+      "kind": "single",
+      "names": [
+        "book"
+      ],
+      "ref": "D:\\머지냥디펜스\\art\\raster-ui-v3\\sources\\icons-menu.png",
+      "prompt": "Use case: background-extraction. Extract and faithfully reproduce ONLY the open illustrated storybook (second row, fifth icon), including every page corner from the supplied icon atlas as ONE individual production-ready PNG asset on genuine transparent alpha background. Preserve the existing hand-painted pastel fantasy art, colors, shading, outlines and silhouette exactly. No other icons, no grid, no labels or text, no square backing. Center the entire complete icon in a square1024 canvas with AT LEAST20percent fully transparent margin on ALL four sides. The object should occupy at most60percent of canvas width and height. Do not crop even a single whisker or leaf. Keep all tips fully visible. One single isolated icon, not a sheet."
+    },
+    {
+      "id": "icons-single-people",
+      "kind": "single",
+      "names": [
+        "people"
+      ],
+      "ref": "D:\\머지냥디펜스\\art\\raster-ui-v3\\sources\\icons-menu.png",
+      "prompt": "Use case: background-extraction. Extract and faithfully reproduce ONLY the pair of friendly cat heads (bottom row, fourth icon), including all whiskers and the three little hearts from the supplied icon atlas as ONE individual production-ready PNG asset on genuine transparent alpha background. Preserve the existing hand-painted pastel fantasy art, colors, shading, outlines and silhouette exactly. No other icons, no grid, no labels or text, no square backing. Center the entire complete icon in a square1024 canvas with AT LEAST20percent fully transparent margin on ALL four sides. The object should occupy at most60percent of canvas width and height. Do not crop even a single whisker or leaf. Keep all tips fully visible. One single isolated icon, not a sheet."
+    },
+    {
+      "id": "icons-single-crown",
+      "kind": "single",
+      "names": [
+        "crown"
+      ],
+      "ref": "D:\\머지냥디펜스\\art\\raster-ui-v3\\sources\\icons-menu.png",
+      "prompt": "Use case: background-extraction. Extract and faithfully reproduce ONLY the golden crown with pink jewels (bottom row, fifth icon), including all crown spikes from the supplied icon atlas as ONE individual production-ready PNG asset on genuine transparent alpha background. Preserve the existing hand-painted pastel fantasy art, colors, shading, outlines and silhouette exactly. No other icons, no grid, no labels or text, no square backing. Center the entire complete icon in a square1024 canvas with AT LEAST20percent fully transparent margin on ALL four sides. The object should occupy at most60percent of canvas width and height. Do not crop even a single whisker or leaf. Keep all tips fully visible. One single isolated icon, not a sheet."
+    },
+    {
+      "id": "boss-rat-clean",
+      "kind": "character",
+      "names": [
+        "boss-rat"
+      ],
+      "ref": "D:\\머지냥디펜스\\art\\raster-ui-v3\\sources\\boss-rat.png",
+      "prompt": "Use case: identity-preserve. Keep this exact pastel illustrated rat king boss sprite: same face, body shape, crown, purple armor, rose cape, huge mace, same pose and direction. Repair the tiny mace spike tip touching the left image edge, and place the COMPLETE figure and COMPLETE mace inside a much larger genuine transparent square canvas. At least18percent entirely empty alpha margin on ALL four sides, subject occupies at most64percent of canvas width or height. No other change, no floor, no shadow, no text, no frame, no backdrop. Keep every armor and weapon detail, render sharp detailed raster game sprite with actual alpha."
+    },
+    {
+      "id": "buttons-spaced",
+      "prompt": "Use case: precise-object-edit. Recreate the supplied 4-by-4 button state atlas with the SAME16 painted button designs, same colors, row order, state order and transparent alpha. Change ONLY the spacing: each button including ALL selection glow must be surrounded by generous empty transparent space and must not touch any adjacent button. Four equal columns and four equal rows on a square2048 canvas. Every entire button body including glow occupies at most60percent of its cell width and40percent of its cell height. At least20percent empty margins within every cell. Preserve full glossy hand-painted wood-bordered pastel button artwork. Rows yellow, mint, cream, rose; columns normal, pressed, disabled, selected. No text, icons, labels, background, gridlines or frame. All16 are complete, clearly separated, standalone shapes. Do not allow selected glow to overlap disabled buttons.",
+      "kind": "atlas",
+      "cols": 4,
+      "rows": 4,
+      "names": [
+        "button-yellow-normal",
+        "button-yellow-pressed",
+        "button-yellow-disabled",
+        "button-yellow-selected",
+        "button-mint-normal",
+        "button-mint-pressed",
+        "button-mint-disabled",
+        "button-mint-selected",
+        "button-cream-normal",
+        "button-cream-pressed",
+        "button-cream-disabled",
+        "button-cream-selected",
+        "button-peach-normal",
+        "button-peach-pressed",
+        "button-peach-disabled",
+        "button-peach-selected"
+      ]
+    }
+  ],
+  "referenceFile": "sources/style-reference.png"
+}

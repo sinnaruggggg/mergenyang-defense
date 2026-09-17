@@ -1,0 +1,297 @@
+{
+  "texture": "icons.png",
+  "width": 2048,
+  "height": 1280,
+  "origin": "top-left",
+  "rotation": false,
+  "regions": [
+    {
+      "name": "forge",
+      "x": 8,
+      "y": 8,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/forge.png"
+    },
+    {
+      "name": "cat",
+      "x": 264,
+      "y": 8,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/cat.png"
+    },
+    {
+      "name": "sword",
+      "x": 520,
+      "y": 8,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/sword.png"
+    },
+    {
+      "name": "shop",
+      "x": 776,
+      "y": 8,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/shop.png"
+    },
+    {
+      "name": "trophy",
+      "x": 1032,
+      "y": 8,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/trophy.png"
+    },
+    {
+      "name": "energy",
+      "x": 1288,
+      "y": 8,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/energy.png"
+    },
+    {
+      "name": "gold",
+      "x": 1544,
+      "y": 8,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/gold.png"
+    },
+    {
+      "name": "gem",
+      "x": 1800,
+      "y": 8,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/gem.png"
+    },
+    {
+      "name": "mail",
+      "x": 8,
+      "y": 264,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/mail.png"
+    },
+    {
+      "name": "book",
+      "x": 264,
+      "y": 264,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/book.png"
+    },
+    {
+      "name": "chest",
+      "x": 520,
+      "y": 264,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/chest.png"
+    },
+    {
+      "name": "clock",
+      "x": 776,
+      "y": 264,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/clock.png"
+    },
+    {
+      "name": "lock",
+      "x": 1032,
+      "y": 264,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/lock.png"
+    },
+    {
+      "name": "star",
+      "x": 1288,
+      "y": 264,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/star.png"
+    },
+    {
+      "name": "shield",
+      "x": 1544,
+      "y": 264,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/shield.png"
+    },
+    {
+      "name": "heart",
+      "x": 1800,
+      "y": 264,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/heart.png"
+    },
+    {
+      "name": "bow",
+      "x": 8,
+      "y": 520,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/bow.png"
+    },
+    {
+      "name": "wand",
+      "x": 264,
+      "y": 520,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/wand.png"
+    },
+    {
+      "name": "people",
+      "x": 520,
+      "y": 520,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/people.png"
+    },
+    {
+      "name": "crown",
+      "x": 776,
+      "y": 520,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/crown.png"
+    },
+    {
+      "name": "back",
+      "x": 1032,
+      "y": 520,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/back.png"
+    },
+    {
+      "name": "gear",
+      "x": 1288,
+      "y": 520,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/gear.png"
+    },
+    {
+      "name": "flag",
+      "x": 1544,
+      "y": 520,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/flag.png"
+    },
+    {
+      "name": "plus",
+      "x": 1800,
+      "y": 520,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/plus.png"
+    },
+    {
+      "name": "close",
+      "x": 8,
+      "y": 776,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/close.png"
+    },
+    {
+      "name": "check",
+      "x": 264,
+      "y": 776,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/check.png"
+    },
+    {
+      "name": "tree",
+      "x": 520,
+      "y": 776,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/tree.png"
+    },
+    {
+      "name": "rat",
+      "x": 776,
+      "y": 776,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/rat.png"
+    },
+    {
+      "name": "scroll",
+      "x": 1032,
+      "y": 776,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/scroll.png"
+    },
+    {
+      "name": "play",
+      "x": 1288,
+      "y": 776,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/play.png"
+    },
+    {
+      "name": "ticket",
+      "x": 1544,
+      "y": 776,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/ticket.png"
+    },
+    {
+      "name": "help",
+      "x": 1800,
+      "y": 776,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/help.png"
+    },
+    {
+      "name": "pause",
+      "x": 8,
+      "y": 1032,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/pause.png"
+    },
+    {
+      "name": "paw",
+      "x": 264,
+      "y": 1032,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/paw.png"
+    },
+    {
+      "name": "can",
+      "x": 520,
+      "y": 1032,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/can.png"
+    },
+    {
+      "name": "yarn",
+      "x": 776,
+      "y": 1032,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/icons/yarn.png"
+    }
+  ]
+}

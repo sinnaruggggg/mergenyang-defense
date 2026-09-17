@@ -1,0 +1,265 @@
+{
+  "texture": "items.png",
+  "width": 2048,
+  "height": 1024,
+  "origin": "top-left",
+  "rotation": false,
+  "regions": [
+    {
+      "name": "item-weapon-1-twig",
+      "x": 8,
+      "y": 8,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-weapon-1-twig.png"
+    },
+    {
+      "name": "item-weapon-2-wood-sword",
+      "x": 264,
+      "y": 8,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-weapon-2-wood-sword.png"
+    },
+    {
+      "name": "item-weapon-3-fishbone-dagger",
+      "x": 520,
+      "y": 8,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-weapon-3-fishbone-dagger.png"
+    },
+    {
+      "name": "item-weapon-4-iron-sword",
+      "x": 776,
+      "y": 8,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-weapon-4-iron-sword.png"
+    },
+    {
+      "name": "item-weapon-5-flame-sword",
+      "x": 1032,
+      "y": 8,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-weapon-5-flame-sword.png"
+    },
+    {
+      "name": "item-weapon-6-ice-sword",
+      "x": 1288,
+      "y": 8,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-weapon-6-ice-sword.png"
+    },
+    {
+      "name": "item-weapon-7-royal-sword",
+      "x": 1544,
+      "y": 8,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-weapon-7-royal-sword.png"
+    },
+    {
+      "name": "item-weapon-8-churu-blade",
+      "x": 1800,
+      "y": 8,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-weapon-8-churu-blade.png"
+    },
+    {
+      "name": "item-armor-1-cardboard",
+      "x": 8,
+      "y": 264,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-armor-1-cardboard.png"
+    },
+    {
+      "name": "item-armor-2-leather",
+      "x": 264,
+      "y": 264,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-armor-2-leather.png"
+    },
+    {
+      "name": "item-armor-3-pot-lid",
+      "x": 520,
+      "y": 264,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-armor-3-pot-lid.png"
+    },
+    {
+      "name": "item-armor-4-chainmail",
+      "x": 776,
+      "y": 264,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-armor-4-chainmail.png"
+    },
+    {
+      "name": "item-armor-5-iron-armor",
+      "x": 1032,
+      "y": 264,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-armor-5-iron-armor.png"
+    },
+    {
+      "name": "item-armor-6-knight-armor",
+      "x": 1288,
+      "y": 264,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-armor-6-knight-armor.png"
+    },
+    {
+      "name": "item-armor-7-royal-armor",
+      "x": 1544,
+      "y": 264,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-armor-7-royal-armor.png"
+    },
+    {
+      "name": "item-armor-8-cat-tower-armor",
+      "x": 1800,
+      "y": 264,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-armor-8-cat-tower-armor.png"
+    },
+    {
+      "name": "item-consumable-1-anchovy",
+      "x": 8,
+      "y": 520,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-consumable-1-anchovy.png"
+    },
+    {
+      "name": "item-consumable-2-fish",
+      "x": 264,
+      "y": 520,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-consumable-2-fish.png"
+    },
+    {
+      "name": "item-consumable-3-tuna-can",
+      "x": 520,
+      "y": 520,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-consumable-3-tuna-can.png"
+    },
+    {
+      "name": "item-consumable-4-fish-fillet",
+      "x": 776,
+      "y": 520,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-consumable-4-fish-fillet.png"
+    },
+    {
+      "name": "item-consumable-5-sashimi",
+      "x": 1032,
+      "y": 520,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-consumable-5-sashimi.png"
+    },
+    {
+      "name": "item-consumable-6-salmon-bowl",
+      "x": 1288,
+      "y": 520,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-consumable-6-salmon-bowl.png"
+    },
+    {
+      "name": "item-consumable-7-churu",
+      "x": 1544,
+      "y": 520,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-consumable-7-churu.png"
+    },
+    {
+      "name": "item-consumable-8-gold-churu",
+      "x": 1800,
+      "y": 520,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-consumable-8-gold-churu.png"
+    },
+    {
+      "name": "item-special-1-fluff",
+      "x": 8,
+      "y": 776,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-special-1-fluff.png"
+    },
+    {
+      "name": "item-special-2-yarn",
+      "x": 264,
+      "y": 776,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-special-2-yarn.png"
+    },
+    {
+      "name": "item-special-3-fur-bomb",
+      "x": 520,
+      "y": 776,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-special-3-fur-bomb.png"
+    },
+    {
+      "name": "item-special-4-fire-fur",
+      "x": 776,
+      "y": 776,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-special-4-fire-fur.png"
+    },
+    {
+      "name": "item-special-5-lightning-fur",
+      "x": 1032,
+      "y": 776,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-special-5-lightning-fur.png"
+    },
+    {
+      "name": "item-special-6-ice-fur",
+      "x": 1288,
+      "y": 776,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-special-6-ice-fur.png"
+    },
+    {
+      "name": "item-special-7-star-fur",
+      "x": 1544,
+      "y": 776,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-special-7-star-fur.png"
+    },
+    {
+      "name": "item-special-8-giant-fur",
+      "x": 1800,
+      "y": 776,
+      "width": 240,
+      "height": 240,
+      "originalAsset": "assets/items/item-special-8-giant-fur.png"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "effects",
+  "kind": "atlas",
+  "cols": 2,
+  "rows": 2,
+  "names": [
+    "ground-shadow",
+    "sword-arc",
+    "healing-aura",
+    "merge-glow"
+  ],
+  "prompt": "Use case: stylized-concept. Create a genuine TRANSPARENT PNG game VFX sprite atlas matching the supplied softly painted pastel cat fantasy reference. EXACTLY TWO columns and TWO rows, four fully separated effects with generous empty gutters, no labels, words, characters, UI, borders or background. Top left: one soft warm grey/brown ground contact shadow, a wide horizontal translucent ellipse with naturally feathered edges and no object, subtle watercolor-like softness, its entire perimeter fading to zero alpha. Top right: a curved ivory and butter-gold sword slash crescent with 3 small gold impact sparks, curved from lower left toward upper right, soft luminous detail, no sword. Bottom left: pale mint healing swirl with three tiny luminous pawprint particles, soft airy translucent glow, no character or staff. Bottom right: a glowing rounded-square buttery yellow selection outline surrounding an entirely transparent empty interior, soft golden sparkle in two corners, for highlighting a merge board cell. Premium raster illustrated effects, restrained glow, actual alpha transparency. Keep each effect entirely within its cell, no overlap. Square 2048x2048."
+}

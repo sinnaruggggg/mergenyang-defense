@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "textOverflows": [],
+  "navigation": "우리 고양이들",
+  "galleryScreens": 82,
+  "assetCount": 120,
+  "gameNodes": {
+    "svg": 0,
+    "canvas": 0,
+    "images": 66
+  },
+  "layerSelection": true,
+  "motionFrameChanges": true
+}

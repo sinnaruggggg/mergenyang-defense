@@ -1,0 +1,755 @@
+{
+  "version": 1,
+  "characters": [
+    {
+      "id": "cat-warrior",
+      "canvas": [
+        512,
+        512
+      ],
+      "pivot": [
+        256,
+        472
+      ],
+      "frames": [
+        {
+          "file": "cat-warrior-walk-0.png",
+          "offset": [
+            0,
+            0
+          ],
+          "durationMs": 180
+        },
+        {
+          "file": "cat-warrior-walk-1.png",
+          "offset": [
+            0,
+            -3
+          ],
+          "durationMs": 180
+        }
+      ],
+      "invariant": "same source bitmap; translation only; no resize, shape edit, or separate redrawing"
+    },
+    {
+      "id": "cat-tank",
+      "canvas": [
+        512,
+        512
+      ],
+      "pivot": [
+        256,
+        472
+      ],
+      "frames": [
+        {
+          "file": "cat-tank-walk-0.png",
+          "offset": [
+            0,
+            0
+          ],
+          "durationMs": 180
+        },
+        {
+          "file": "cat-tank-walk-1.png",
+          "offset": [
+            0,
+            -3
+          ],
+          "durationMs": 180
+        }
+      ],
+      "invariant": "same source bitmap; translation only; no resize, shape edit, or separate redrawing"
+    },
+    {
+      "id": "cat-archer",
+      "canvas": [
+        512,
+        512
+      ],
+      "pivot": [
+        256,
+        472
+      ],
+      "frames": [
+        {
+          "file": "cat-archer-walk-0.png",
+          "offset": [
+            0,
+            0
+          ],
+          "durationMs": 180
+        },
+        {
+          "file": "cat-archer-walk-1.png",
+          "offset": [
+            0,
+            -3
+          ],
+          "durationMs": 180
+        }
+      ],
+      "invariant": "same source bitmap; translation only; no resize, shape edit, or separate redrawing"
+    },
+    {
+      "id": "cat-healer",
+      "canvas": [
+        512,
+        512
+      ],
+      "pivot": [
+        256,
+        472
+      ],
+      "frames": [
+        {
+          "file": "cat-healer-walk-0.png",
+          "offset": [
+            0,
+            0
+          ],
+          "durationMs": 180
+        },
+        {
+          "file": "cat-healer-walk-1.png",
+          "offset": [
+            0,
+            -3
+          ],
+          "durationMs": 180
+        }
+      ],
+      "invariant": "same source bitmap; translation only; no resize, shape edit, or separate redrawing"
+    },
+    {
+      "id": "cat-wizard",
+      "canvas": [
+        512,
+        512
+      ],
+      "pivot": [
+        256,
+        472
+      ],
+      "frames": [
+        {
+          "file": "cat-wizard-walk-0.png",
+          "offset": [
+            0,
+            0
+          ],
+          "durationMs": 180
+        },
+        {
+          "file": "cat-wizard-walk-1.png",
+          "offset": [
+            0,
+            -3
+          ],
+          "durationMs": 180
+        }
+      ],
+      "invariant": "same source bitmap; translation only; no resize, shape edit, or separate redrawing"
+    },
+    {
+      "id": "cat-smith",
+      "canvas": [
+        512,
+        512
+      ],
+      "pivot": [
+        256,
+        472
+      ],
+      "frames": [
+        {
+          "file": "cat-smith-walk-0.png",
+          "offset": [
+            0,
+            0
+          ],
+          "durationMs": 180
+        },
+        {
+          "file": "cat-smith-walk-1.png",
+          "offset": [
+            0,
+            -3
+          ],
+          "durationMs": 180
+        }
+      ],
+      "invariant": "same source bitmap; translation only; no resize, shape edit, or separate redrawing"
+    },
+    {
+      "id": "boss-rat",
+      "canvas": [
+        512,
+        512
+      ],
+      "pivot": [
+        256,
+        472
+      ],
+      "frames": [
+        {
+          "file": "boss-rat-walk-0.png",
+          "offset": [
+            0,
+            0
+          ],
+          "durationMs": 180
+        },
+        {
+          "file": "boss-rat-walk-1.png",
+          "offset": [
+            0,
+            -3
+          ],
+          "durationMs": 180
+        }
+      ],
+      "invariant": "same source bitmap; translation only; no resize, shape edit, or separate redrawing"
+    },
+    {
+      "id": "boss-eel",
+      "canvas": [
+        512,
+        512
+      ],
+      "pivot": [
+        256,
+        472
+      ],
+      "frames": [
+        {
+          "file": "boss-eel-walk-0.png",
+          "offset": [
+            0,
+            0
+          ],
+          "durationMs": 180
+        },
+        {
+          "file": "boss-eel-walk-1.png",
+          "offset": [
+            0,
+            -3
+          ],
+          "durationMs": 180
+        }
+      ],
+      "invariant": "same source bitmap; translation only; no resize, shape edit, or separate redrawing"
+    },
+    {
+      "id": "enemy-rat",
+      "canvas": [
+        512,
+        512
+      ],
+      "pivot": [
+        256,
+        472
+      ],
+      "frames": [
+        {
+          "file": "enemy-rat-walk-0.png",
+          "offset": [
+            0,
+            0
+          ],
+          "durationMs": 180
+        },
+        {
+          "file": "enemy-rat-walk-1.png",
+          "offset": [
+            0,
+            -3
+          ],
+          "durationMs": 180
+        }
+      ],
+      "invariant": "same source bitmap; translation only; no resize, shape edit, or separate redrawing"
+    },
+    {
+      "id": "enemy-roach",
+      "canvas": [
+        512,
+        512
+      ],
+      "pivot": [
+        256,
+        472
+      ],
+      "frames": [
+        {
+          "file": "enemy-roach-walk-0.png",
+          "offset": [
+            0,
+            0
+          ],
+          "durationMs": 180
+        },
+        {
+          "file": "enemy-roach-walk-1.png",
+          "offset": [
+            0,
+            -3
+          ],
+          "durationMs": 180
+        }
+      ],
+      "invariant": "same source bitmap; translation only; no resize, shape edit, or separate redrawing"
+    },
+    {
+      "id": "enemy-mushroom",
+      "canvas": [
+        512,
+        512
+      ],
+      "pivot": [
+        256,
+        472
+      ],
+      "frames": [
+        {
+          "file": "enemy-mushroom-walk-0.png",
+          "offset": [
+            0,
+            0
+          ],
+          "durationMs": 180
+        },
+        {
+          "file": "enemy-mushroom-walk-1.png",
+          "offset": [
+            0,
+            -3
+          ],
+          "durationMs": 180
+        }
+      ],
+      "invariant": "same source bitmap; translation only; no resize, shape edit, or separate redrawing"
+    },
+    {
+      "id": "enemy-crow",
+      "canvas": [
+        512,
+        512
+      ],
+      "pivot": [
+        256,
+        472
+      ],
+      "frames": [
+        {
+          "file": "enemy-crow-walk-0.png",
+          "offset": [
+            0,
+            0
+          ],
+          "durationMs": 180
+        },
+        {
+          "file": "enemy-crow-walk-1.png",
+          "offset": [
+            0,
+            -3
+          ],
+          "durationMs": 180
+        }
+      ],
+      "invariant": "same source bitmap; translation only; no resize, shape edit, or separate redrawing"
+    },
+    {
+      "id": "enemy-scorpion",
+      "canvas": [
+        512,
+        512
+      ],
+      "pivot": [
+        256,
+        472
+      ],
+      "frames": [
+        {
+          "file": "enemy-scorpion-walk-0.png",
+          "offset": [
+            0,
+            0
+          ],
+          "durationMs": 180
+        },
+        {
+          "file": "enemy-scorpion-walk-1.png",
+          "offset": [
+            0,
+            -3
+          ],
+          "durationMs": 180
+        }
+      ],
+      "invariant": "same source bitmap; translation only; no resize, shape edit, or separate redrawing"
+    },
+    {
+      "id": "enemy-mummy",
+      "canvas": [
+        512,
+        512
+      ],
+      "pivot": [
+        256,
+        472
+      ],
+      "frames": [
+        {
+          "file": "enemy-mummy-walk-0.png",
+          "offset": [
+            0,
+            0
+          ],
+          "durationMs": 180
+        },
+        {
+          "file": "enemy-mummy-walk-1.png",
+          "offset": [
+            0,
+            -3
+          ],
+          "durationMs": 180
+        }
+      ],
+      "invariant": "same source bitmap; translation only; no resize, shape edit, or separate redrawing"
+    },
+    {
+      "id": "enemy-bat",
+      "canvas": [
+        512,
+        512
+      ],
+      "pivot": [
+        256,
+        472
+      ],
+      "frames": [
+        {
+          "file": "enemy-bat-walk-0.png",
+          "offset": [
+            0,
+            0
+          ],
+          "durationMs": 180
+        },
+        {
+          "file": "enemy-bat-walk-1.png",
+          "offset": [
+            0,
+            -3
+          ],
+          "durationMs": 180
+        }
+      ],
+      "invariant": "same source bitmap; translation only; no resize, shape edit, or separate redrawing"
+    },
+    {
+      "id": "enemy-penguin",
+      "canvas": [
+        512,
+        512
+      ],
+      "pivot": [
+        256,
+        472
+      ],
+      "frames": [
+        {
+          "file": "enemy-penguin-walk-0.png",
+          "offset": [
+            0,
+            0
+          ],
+          "durationMs": 180
+        },
+        {
+          "file": "enemy-penguin-walk-1.png",
+          "offset": [
+            0,
+            -3
+          ],
+          "durationMs": 180
+        }
+      ],
+      "invariant": "same source bitmap; translation only; no resize, shape edit, or separate redrawing"
+    },
+    {
+      "id": "enemy-vacuum",
+      "canvas": [
+        512,
+        512
+      ],
+      "pivot": [
+        256,
+        472
+      ],
+      "frames": [
+        {
+          "file": "enemy-vacuum-walk-0.png",
+          "offset": [
+            0,
+            0
+          ],
+          "durationMs": 180
+        },
+        {
+          "file": "enemy-vacuum-walk-1.png",
+          "offset": [
+            0,
+            -3
+          ],
+          "durationMs": 180
+        }
+      ],
+      "invariant": "same source bitmap; translation only; no resize, shape edit, or separate redrawing"
+    },
+    {
+      "id": "enemy-drone",
+      "canvas": [
+        512,
+        512
+      ],
+      "pivot": [
+        256,
+        472
+      ],
+      "frames": [
+        {
+          "file": "enemy-drone-walk-0.png",
+          "offset": [
+            0,
+            0
+          ],
+          "durationMs": 180
+        },
+        {
+          "file": "enemy-drone-walk-1.png",
+          "offset": [
+            0,
+            -3
+          ],
+          "durationMs": 180
+        }
+      ],
+      "invariant": "same source bitmap; translation only; no resize, shape edit, or separate redrawing"
+    },
+    {
+      "id": "boss-witch",
+      "canvas": [
+        512,
+        512
+      ],
+      "pivot": [
+        256,
+        472
+      ],
+      "frames": [
+        {
+          "file": "boss-witch-walk-0.png",
+          "offset": [
+            0,
+            0
+          ],
+          "durationMs": 180
+        },
+        {
+          "file": "boss-witch-walk-1.png",
+          "offset": [
+            0,
+            -3
+          ],
+          "durationMs": 180
+        }
+      ],
+      "invariant": "same source bitmap; translation only; no resize, shape edit, or separate redrawing"
+    },
+    {
+      "id": "boss-sphinx",
+      "canvas": [
+        512,
+        512
+      ],
+      "pivot": [
+        256,
+        472
+      ],
+      "frames": [
+        {
+          "file": "boss-sphinx-walk-0.png",
+          "offset": [
+            0,
+            0
+          ],
+          "durationMs": 180
+        },
+        {
+          "file": "boss-sphinx-walk-1.png",
+          "offset": [
+            0,
+            -3
+          ],
+          "durationMs": 180
+        }
+      ],
+      "invariant": "same source bitmap; translation only; no resize, shape edit, or separate redrawing"
+    },
+    {
+      "id": "boss-crab",
+      "canvas": [
+        512,
+        512
+      ],
+      "pivot": [
+        256,
+        472
+      ],
+      "frames": [
+        {
+          "file": "boss-crab-walk-0.png",
+          "offset": [
+            0,
+            0
+          ],
+          "durationMs": 180
+        },
+        {
+          "file": "boss-crab-walk-1.png",
+          "offset": [
+            0,
+            -3
+          ],
+          "durationMs": 180
+        }
+      ],
+      "invariant": "same source bitmap; translation only; no resize, shape edit, or separate redrawing"
+    },
+    {
+      "id": "boss-mech",
+      "canvas": [
+        512,
+        512
+      ],
+      "pivot": [
+        256,
+        472
+      ],
+      "frames": [
+        {
+          "file": "boss-mech-walk-0.png",
+          "offset": [
+            0,
+            0
+          ],
+          "durationMs": 180
+        },
+        {
+          "file": "boss-mech-walk-1.png",
+          "offset": [
+            0,
+            -3
+          ],
+          "durationMs": 180
+        }
+      ],
+      "invariant": "same source bitmap; translation only; no resize, shape edit, or separate redrawing"
+    },
+    {
+      "id": "boss-whale",
+      "canvas": [
+        512,
+        512
+      ],
+      "pivot": [
+        256,
+        472
+      ],
+      "frames": [
+        {
+          "file": "boss-whale-walk-0.png",
+          "offset": [
+            0,
+            0
+          ],
+          "durationMs": 180
+        },
+        {
+          "file": "boss-whale-walk-1.png",
+          "offset": [
+            0,
+            -3
+          ],
+          "durationMs": 180
+        }
+      ],
+      "invariant": "same source bitmap; translation only; no resize, shape edit, or separate redrawing"
+    },
+    {
+      "id": "boss-golem",
+      "canvas": [
+        512,
+        512
+      ],
+      "pivot": [
+        256,
+        472
+      ],
+      "frames": [
+        {
+          "file": "boss-golem-walk-0.png",
+          "offset": [
+            0,
+            0
+          ],
+          "durationMs": 180
+        },
+        {
+          "file": "boss-golem-walk-1.png",
+          "offset": [
+            0,
+            -3
+          ],
+          "durationMs": 180
+        }
+      ],
+      "invariant": "same source bitmap; translation only; no resize, shape edit, or separate redrawing"
+    },
+    {
+      "id": "boss-dog",
+      "canvas": [
+        512,
+        512
+      ],
+      "pivot": [
+        256,
+        472
+      ],
+      "frames": [
+        {
+          "file": "boss-dog-walk-0.png",
+          "offset": [
+            0,
+            0
+          ],
+          "durationMs": 180
+        },
+        {
+          "file": "boss-dog-walk-1.png",
+          "offset": [
+            0,
+            -3
+          ],
+          "durationMs": 180
+        }
+      ],
+      "invariant": "same source bitmap; translation only; no resize, shape edit, or separate redrawing"
+    }
+  ]
+}

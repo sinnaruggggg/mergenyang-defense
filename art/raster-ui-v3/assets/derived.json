@@ -1,0 +1,5263 @@
+[
+  {
+    "file": "assets/placed/f13521a79c0180a52b.png",
+    "sourceAsset": "assets/backgrounds/workshop.png",
+    "width": 1080,
+    "height": 1920,
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/33da3a8f6b5b2c6695.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 948,
+    "height": 66,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/4239dea042bd080d53.png",
+    "sourceAsset": "assets/ui/ground-shadow.png",
+    "width": 377,
+    "height": 31,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/f8b0cb569d229069b0.png",
+    "sourceAsset": "assets/characters/cat-smith.png",
+    "width": 510,
+    "height": 510,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/446d03b3f6ff395646.png",
+    "sourceAsset": "assets/ui/ground-shadow.png",
+    "width": 259,
+    "height": 31,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/4e3e8eaf8530a12b9d.png",
+    "sourceAsset": "assets/characters/cat-warrior.png",
+    "width": 350,
+    "height": 350,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/b6add6f126e791fe47.png",
+    "sourceAsset": "assets/characters/cat-tank.png",
+    "width": 350,
+    "height": 350,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/f1f1d398f7498d511f.png",
+    "sourceAsset": "assets/ui/button-yellow-normal.png",
+    "width": 760,
+    "height": 120,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/54b42c6258760b2721.png",
+    "sourceAsset": "assets/ui/button-yellow-pressed.png",
+    "width": 760,
+    "height": 120,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/a6d62bd8a014f3f5c6.png",
+    "sourceAsset": "assets/ui/button-yellow-disabled.png",
+    "width": 760,
+    "height": 120,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/45cf9dabe513754967.png",
+    "sourceAsset": "assets/ui/button-yellow-selected.png",
+    "width": 760,
+    "height": 120,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/3eb50e025a30a9b03e.png",
+    "sourceAsset": "assets/icons/paw.png",
+    "width": 56,
+    "height": 56,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/67b2bb1183ebc40ed1.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 1020,
+    "height": 90,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/21cf35d5dcee417b8d.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 1020,
+    "height": 104,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/9fa198e8f4245dbd0f.png",
+    "sourceAsset": "assets/icons/energy.png",
+    "width": 54,
+    "height": 54,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/0274a23a232ef47921.png",
+    "sourceAsset": "assets/icons/gold.png",
+    "width": 54,
+    "height": 54,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/e238412bd856f270d9.png",
+    "sourceAsset": "assets/icons/gem.png",
+    "width": 54,
+    "height": 54,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/a55e725f8d802af4a0.png",
+    "sourceAsset": "assets/ui/button-cream-normal.png",
+    "width": 76,
+    "height": 76,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/9337f64dcf26049252.png",
+    "sourceAsset": "assets/ui/button-cream-pressed.png",
+    "width": 76,
+    "height": 76,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/b43981713656e9642f.png",
+    "sourceAsset": "assets/ui/button-cream-disabled.png",
+    "width": 76,
+    "height": 76,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/8bb5ada6049787c325.png",
+    "sourceAsset": "assets/ui/button-cream-selected.png",
+    "width": 76,
+    "height": 76,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/dc05be2a4b9c6fda0c.png",
+    "sourceAsset": "assets/icons/back.png",
+    "width": 56,
+    "height": 56,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/71b09a6dc991d6f600.png",
+    "sourceAsset": "assets/icons/gear.png",
+    "width": 56,
+    "height": 56,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/9281e188c6350ac762.png",
+    "sourceAsset": "assets/ui/ground-shadow.png",
+    "width": 311,
+    "height": 31,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/136758c24e6a01dd77.png",
+    "sourceAsset": "assets/characters/cat-smith.png",
+    "width": 420,
+    "height": 420,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/3baa246fd0544b20fe.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 952,
+    "height": 868,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/5e0b1273117ba62845.png",
+    "sourceAsset": "assets/ui/panel-lavender.png",
+    "width": 864,
+    "height": 112,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/8c7d610737a27e665d.png",
+    "sourceAsset": "assets/ui/button-mint-normal.png",
+    "width": 864,
+    "height": 110,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/aef65eeb7dbb8ec15d.png",
+    "sourceAsset": "assets/ui/button-mint-pressed.png",
+    "width": 864,
+    "height": 110,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/4e6884d5b109f843df.png",
+    "sourceAsset": "assets/ui/button-mint-disabled.png",
+    "width": 864,
+    "height": 110,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/3e977c942fc626acfc.png",
+    "sourceAsset": "assets/ui/button-mint-selected.png",
+    "width": 864,
+    "height": 110,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/96460184cd4457d493.png",
+    "sourceAsset": "assets/ui/button-yellow-normal.png",
+    "width": 864,
+    "height": 110,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/251032a97387357535.png",
+    "sourceAsset": "assets/ui/button-yellow-pressed.png",
+    "width": 864,
+    "height": 110,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/c26327d514b0f5d79b.png",
+    "sourceAsset": "assets/ui/button-yellow-disabled.png",
+    "width": 864,
+    "height": 110,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/a635b1030f26a0f74f.png",
+    "sourceAsset": "assets/ui/button-yellow-selected.png",
+    "width": 864,
+    "height": 110,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/aeea6a9162ecca60be.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 332,
+    "height": 84,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/c7e44287f5565b282a.png",
+    "sourceAsset": "assets/ui/title-banner.png",
+    "width": 780,
+    "height": 135,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/54145a8c7dc277b074.png",
+    "sourceAsset": "assets/ui/button-cream-normal.png",
+    "width": 92,
+    "height": 92,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/c1d059c325eb8fb08b.png",
+    "sourceAsset": "assets/ui/button-cream-pressed.png",
+    "width": 92,
+    "height": 92,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/f27540316a0cda61b3.png",
+    "sourceAsset": "assets/ui/button-cream-disabled.png",
+    "width": 92,
+    "height": 92,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/eea9ee774993b7ce00.png",
+    "sourceAsset": "assets/ui/button-cream-selected.png",
+    "width": 92,
+    "height": 92,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/684b7bc9151e735643.png",
+    "sourceAsset": "assets/icons/back.png",
+    "width": 54,
+    "height": 54,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/df1483c483c132da85.png",
+    "sourceAsset": "assets/icons/gear.png",
+    "width": 54,
+    "height": 54,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/01ac4c2ebc83c43078.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 1044,
+    "height": 157,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/781a57819a38fb1e94.png",
+    "sourceAsset": "assets/ui/panel-mint.png",
+    "width": 198,
+    "height": 139,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/bab1d6a5f417a1bb97.png",
+    "sourceAsset": "assets/icons/forge.png",
+    "width": 70,
+    "height": 70,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/164bb5461c096b7f70.png",
+    "sourceAsset": "assets/icons/cat.png",
+    "width": 70,
+    "height": 70,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/efffa4b7a4db7016a9.png",
+    "sourceAsset": "assets/icons/sword.png",
+    "width": 70,
+    "height": 70,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/08eaabb2f272930ef7.png",
+    "sourceAsset": "assets/icons/shop.png",
+    "width": 70,
+    "height": 70,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/1d1c0284cd20ff4bd8.png",
+    "sourceAsset": "assets/icons/trophy.png",
+    "width": 70,
+    "height": 70,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/107472c4981890ff99.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 828,
+    "height": 63,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/eacbc56f9daf0a7ed9.png",
+    "sourceAsset": "assets/ui/ground-shadow.png",
+    "width": 318,
+    "height": 31,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/fbc5425c2835881551.png",
+    "sourceAsset": "assets/characters/cat-smith.png",
+    "width": 430,
+    "height": 480,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/19dc4d470b32ec7ffd.png",
+    "sourceAsset": "assets/ui/ground-shadow.png",
+    "width": 196,
+    "height": 31,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/3a175e72662caa384b.png",
+    "sourceAsset": "assets/characters/cat-warrior.png",
+    "width": 265,
+    "height": 275,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/ff75e42f3bad8d3a5b.png",
+    "sourceAsset": "assets/characters/cat-tank.png",
+    "width": 265,
+    "height": 275,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/dc8a73ebfcd6baa962.png",
+    "sourceAsset": "assets/ui/button-cream-normal.png",
+    "width": 190,
+    "height": 88,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/60fac8471d035d33ac.png",
+    "sourceAsset": "assets/ui/button-cream-pressed.png",
+    "width": 190,
+    "height": 88,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/cde307a439e721689a.png",
+    "sourceAsset": "assets/ui/button-cream-disabled.png",
+    "width": 190,
+    "height": 88,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/2585de3edd48176378.png",
+    "sourceAsset": "assets/ui/button-cream-selected.png",
+    "width": 190,
+    "height": 88,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/1e002595d028910137.png",
+    "sourceAsset": "assets/icons/mail.png",
+    "width": 54,
+    "height": 54,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/d5ff82ebde53efbac1.png",
+    "sourceAsset": "assets/ui/button-mint-normal.png",
+    "width": 190,
+    "height": 88,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/b7e7959ff6e39f3293.png",
+    "sourceAsset": "assets/ui/button-mint-pressed.png",
+    "width": 190,
+    "height": 88,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/ae6e7d6956a6a238e9.png",
+    "sourceAsset": "assets/ui/button-mint-disabled.png",
+    "width": 190,
+    "height": 88,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/ea5ad5f36373375fcf.png",
+    "sourceAsset": "assets/ui/button-mint-selected.png",
+    "width": 190,
+    "height": 88,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/4aa0077dac1b15812d.png",
+    "sourceAsset": "assets/icons/flag.png",
+    "width": 54,
+    "height": 54,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/cb5557ef0a1f40e3b2.png",
+    "sourceAsset": "assets/icons/book.png",
+    "width": 54,
+    "height": 54,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/4152f8d18878a30ed3.png",
+    "sourceAsset": "assets/ui/panel-mint.png",
+    "width": 990,
+    "height": 183,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/fb900a9f2c1c8908e9.png",
+    "sourceAsset": "assets/icons/chest.png",
+    "width": 150,
+    "height": 142,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/ca2ab2ebd8dd49484a.png",
+    "sourceAsset": "assets/ui/button-yellow-normal.png",
+    "width": 212,
+    "height": 86,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/68c1246e62e68fb20c.png",
+    "sourceAsset": "assets/ui/button-yellow-pressed.png",
+    "width": 212,
+    "height": 86,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/5aea609d5739c9abb9.png",
+    "sourceAsset": "assets/ui/button-yellow-disabled.png",
+    "width": 212,
+    "height": 86,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/6d566b37b8b57199cb.png",
+    "sourceAsset": "assets/ui/button-yellow-selected.png",
+    "width": 212,
+    "height": 86,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/0f754da57e2ac381be.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 990,
+    "height": 226,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/95fc71441bef8abed9.png",
+    "sourceAsset": "assets/ui/progress-track.png",
+    "width": 912,
+    "height": 43,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/ffbb1cb8b1ea229a32.png",
+    "sourceAsset": "assets/ui/progress-mint.png",
+    "width": 287,
+    "height": 29,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/8c1f3d51f81272f582.png",
+    "sourceAsset": "assets/ui/button-yellow-normal.png",
+    "width": 476,
+    "height": 105,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/39ec28fb9eae4a8c9e.png",
+    "sourceAsset": "assets/ui/button-yellow-pressed.png",
+    "width": 476,
+    "height": 105,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/88b1a094c07b2a9f16.png",
+    "sourceAsset": "assets/ui/button-yellow-disabled.png",
+    "width": 476,
+    "height": 105,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/119812f5ea4df6f7f6.png",
+    "sourceAsset": "assets/ui/button-yellow-selected.png",
+    "width": 476,
+    "height": 105,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/7e5b8b798e3ba43b17.png",
+    "sourceAsset": "assets/icons/forge.png",
+    "width": 54,
+    "height": 54,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/f0de1883ba0c79ce12.png",
+    "sourceAsset": "assets/ui/button-mint-normal.png",
+    "width": 488,
+    "height": 105,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/f96d993f1544493eea.png",
+    "sourceAsset": "assets/ui/button-mint-pressed.png",
+    "width": 488,
+    "height": 105,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/2e2dd44ca83c8ea09f.png",
+    "sourceAsset": "assets/ui/button-mint-disabled.png",
+    "width": 488,
+    "height": 105,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/533d7b5b962f0a4ca8.png",
+    "sourceAsset": "assets/ui/button-mint-selected.png",
+    "width": 488,
+    "height": 105,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/6835b6293964d2bd07.png",
+    "sourceAsset": "assets/icons/cat.png",
+    "width": 54,
+    "height": 54,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/42fecfaa1e86d98bf6.png",
+    "sourceAsset": "assets/ui/button-yellow-normal.png",
+    "width": 990,
+    "height": 129,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/df0c9f3987f3a86142.png",
+    "sourceAsset": "assets/ui/button-yellow-pressed.png",
+    "width": 990,
+    "height": 129,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/653bbf580ab16f4fce.png",
+    "sourceAsset": "assets/ui/button-yellow-disabled.png",
+    "width": 990,
+    "height": 129,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/9de3711c01d26d1489.png",
+    "sourceAsset": "assets/ui/button-yellow-selected.png",
+    "width": 990,
+    "height": 129,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/6173136cdc88651b2d.png",
+    "sourceAsset": "assets/icons/sword.png",
+    "width": 54,
+    "height": 54,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/8a8204f9fa1fc6115b.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 1032,
+    "height": 160,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/f669ab757bc5fc9425.png",
+    "sourceAsset": "assets/ui/panel-mint.png",
+    "width": 190,
+    "height": 135,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/12ef2fd983b0f617f0.png",
+    "sourceAsset": "assets/icons/forge.png",
+    "width": 60,
+    "height": 60,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/75618a37a684a9366c.png",
+    "sourceAsset": "assets/icons/cat.png",
+    "width": 60,
+    "height": 60,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/2f37f0487b559d4738.png",
+    "sourceAsset": "assets/icons/sword.png",
+    "width": 60,
+    "height": 60,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/48f9aabd0f0ed93c20.png",
+    "sourceAsset": "assets/icons/shop.png",
+    "width": 60,
+    "height": 60,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/f021e42cfce953f174.png",
+    "sourceAsset": "assets/icons/trophy.png",
+    "width": 60,
+    "height": 60,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/4405b4a78e9acda39f.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 984,
+    "height": 148,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/cc3109fb19ae684c0c.png",
+    "sourceAsset": "assets/icons/forge.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/75eff27796b699b40d.png",
+    "sourceAsset": "assets/icons/back.png",
+    "width": 34,
+    "height": 34,
+    "operation": "contain",
+    "rotation": 180,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/73c724dcc37a2cccca.png",
+    "sourceAsset": "assets/icons/plus.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/21d7319266d98259e9.png",
+    "sourceAsset": "assets/icons/energy.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/1d5f06daf7608e198d.png",
+    "sourceAsset": "assets/icons/clock.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/4ed079920ced162053.png",
+    "sourceAsset": "assets/icons/sword.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/fd4fac1b73c4006ec6.png",
+    "sourceAsset": "assets/icons/lock.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/1753c0537bc9f8cfc7.png",
+    "sourceAsset": "assets/ui/panel-mint.png",
+    "width": 984,
+    "height": 250,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/29cf6c496bb3e07a5b.png",
+    "sourceAsset": "assets/ui/ground-shadow.png",
+    "width": 207,
+    "height": 31,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/fffb39b9c46b0c51d2.png",
+    "sourceAsset": "assets/characters/cat-smith.png",
+    "width": 280,
+    "height": 280,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/dabcc98c00c0b5e5ef.png",
+    "sourceAsset": "assets/icons/star.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/fdec97549c9ec1a512.png",
+    "sourceAsset": "assets/icons/shield.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/dc763255ac0033c191.png",
+    "sourceAsset": "assets/icons/can.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/3af5c37aa7eafd767a.png",
+    "sourceAsset": "assets/icons/yarn.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/b49845e6f39d61fc37.png",
+    "sourceAsset": "assets/ui/button-yellow-normal.png",
+    "width": 984,
+    "height": 110,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/b52827eddbefc7bcae.png",
+    "sourceAsset": "assets/ui/button-yellow-pressed.png",
+    "width": 984,
+    "height": 110,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/6b0e25ad8684a0cf9d.png",
+    "sourceAsset": "assets/ui/button-yellow-disabled.png",
+    "width": 984,
+    "height": 110,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/dd74795959a6dc9003.png",
+    "sourceAsset": "assets/ui/button-yellow-selected.png",
+    "width": 984,
+    "height": 110,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/55540868acf5004fc2.png",
+    "sourceAsset": "assets/ui/panel-dark.png",
+    "width": 1080,
+    "height": 1920,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 0.68
+  },
+  {
+    "file": "assets/placed/5849297e598a0962d1.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 920,
+    "height": 1110,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/f91cecc34197c96b80.png",
+    "sourceAsset": "assets/ui/button-cream-normal.png",
+    "width": 70,
+    "height": 70,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/8807435c7f1636481d.png",
+    "sourceAsset": "assets/ui/button-cream-pressed.png",
+    "width": 70,
+    "height": 70,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/7b40e9b1053bc64261.png",
+    "sourceAsset": "assets/ui/button-cream-disabled.png",
+    "width": 70,
+    "height": 70,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/50b9760f9126ecaf05.png",
+    "sourceAsset": "assets/ui/button-cream-selected.png",
+    "width": 70,
+    "height": 70,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/817461fe4c2257e48c.png",
+    "sourceAsset": "assets/icons/close.png",
+    "width": 56,
+    "height": 56,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/fb2a88227f82ff71e2.png",
+    "sourceAsset": "assets/icons/chest.png",
+    "width": 224,
+    "height": 224,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/0646388a9dbce20e3a.png",
+    "sourceAsset": "assets/ui/button-yellow-normal.png",
+    "width": 808,
+    "height": 100,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/352f0097b6f883b679.png",
+    "sourceAsset": "assets/ui/button-yellow-pressed.png",
+    "width": 808,
+    "height": 100,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/12c934752b4688eb10.png",
+    "sourceAsset": "assets/ui/button-yellow-disabled.png",
+    "width": 808,
+    "height": 100,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/e3c390e66881cef1d1.png",
+    "sourceAsset": "assets/ui/button-yellow-selected.png",
+    "width": 808,
+    "height": 100,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/84b006e00a2f7bb200.png",
+    "sourceAsset": "assets/ui/button-cream-normal.png",
+    "width": 808,
+    "height": 100,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/ba42ea931ba576f213.png",
+    "sourceAsset": "assets/ui/button-cream-pressed.png",
+    "width": 808,
+    "height": 100,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/6c01e4d52a6109b11c.png",
+    "sourceAsset": "assets/ui/button-cream-disabled.png",
+    "width": 808,
+    "height": 100,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/af56bfb3fffeeed847.png",
+    "sourceAsset": "assets/ui/button-cream-selected.png",
+    "width": 808,
+    "height": 100,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/bf43533c8e132fe4b9.png",
+    "sourceAsset": "assets/icons/forge.png",
+    "width": 224,
+    "height": 224,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/829bfc992bada528c9.png",
+    "sourceAsset": "assets/icons/star.png",
+    "width": 224,
+    "height": 224,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/348bc5b287f1eee990.png",
+    "sourceAsset": "assets/backgrounds/town.png",
+    "width": 1080,
+    "height": 1920,
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/7fc32405737a13d71a.png",
+    "sourceAsset": "assets/ui/panel-mint.png",
+    "width": 990,
+    "height": 559,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/b48bbc3e7a3366d044.png",
+    "sourceAsset": "assets/ui/ground-shadow.png",
+    "width": 294,
+    "height": 31,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/e4633a0b6be0292eaf.png",
+    "sourceAsset": "assets/characters/cat-warrior.png",
+    "width": 397,
+    "height": 345,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/f6fadf4473357f2c90.png",
+    "sourceAsset": "assets/characters/cat-tank.png",
+    "width": 397,
+    "height": 345,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/fdd5703b0062cddc34.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 668,
+    "height": 74,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/8b198c3ede1034efed.png",
+    "sourceAsset": "assets/ui/button-mint-normal.png",
+    "width": 283,
+    "height": 86,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/63f35400d42fce8529.png",
+    "sourceAsset": "assets/ui/button-mint-pressed.png",
+    "width": 283,
+    "height": 86,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/8541a8e7bc11603db6.png",
+    "sourceAsset": "assets/ui/button-mint-disabled.png",
+    "width": 283,
+    "height": 86,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/d03bf91d811db33b4c.png",
+    "sourceAsset": "assets/ui/button-mint-selected.png",
+    "width": 283,
+    "height": 86,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/8e5036f817f5b785a1.png",
+    "sourceAsset": "assets/ui/panel-peach.png",
+    "width": 190,
+    "height": 265,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/3b958a8a0aee1bdc1f.png",
+    "sourceAsset": "assets/characters/cat-warrior.png",
+    "width": 174,
+    "height": 175,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/99b34fb15e8f7946a2.png",
+    "sourceAsset": "assets/ui/panel-lavender.png",
+    "width": 190,
+    "height": 265,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/08de9938cb3b4637fe.png",
+    "sourceAsset": "assets/characters/cat-tank.png",
+    "width": 174,
+    "height": 175,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/a21653dea6b0b04950.png",
+    "sourceAsset": "assets/ui/panel-mint.png",
+    "width": 190,
+    "height": 265,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/54af0663f4a202e5d1.png",
+    "sourceAsset": "assets/characters/cat-archer.png",
+    "width": 174,
+    "height": 175,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/7c0ca0c391f6ac5e2c.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 190,
+    "height": 265,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/0d20d8b756389978c8.png",
+    "sourceAsset": "assets/characters/cat-healer.png",
+    "width": 174,
+    "height": 175,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/42de9ad071198236f6.png",
+    "sourceAsset": "assets/characters/cat-wizard.png",
+    "width": 174,
+    "height": 175,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/96d75760bb0e508650.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 990,
+    "height": 254,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/001ae764f14988bf6f.png",
+    "sourceAsset": "assets/ui/ground-shadow.png",
+    "width": 151,
+    "height": 31,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/e328c257e6b972a654.png",
+    "sourceAsset": "assets/characters/cat-warrior.png",
+    "width": 204,
+    "height": 215,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/bccf949f21f79e82cc.png",
+    "sourceAsset": "assets/ui/button-yellow-normal.png",
+    "width": 393,
+    "height": 80,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/f4f51751d6e682b605.png",
+    "sourceAsset": "assets/ui/button-yellow-pressed.png",
+    "width": 393,
+    "height": 80,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/d9e26918a536e27a2d.png",
+    "sourceAsset": "assets/ui/button-yellow-disabled.png",
+    "width": 393,
+    "height": 80,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/abb2ffdc497dc3897f.png",
+    "sourceAsset": "assets/ui/button-yellow-selected.png",
+    "width": 393,
+    "height": 80,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/65bbada97d9520df74.png",
+    "sourceAsset": "assets/ui/button-mint-normal.png",
+    "width": 476,
+    "height": 105,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/9eac673c5e28b39c5a.png",
+    "sourceAsset": "assets/ui/button-mint-pressed.png",
+    "width": 476,
+    "height": 105,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/bb2f7cc76ad1ca43a6.png",
+    "sourceAsset": "assets/ui/button-mint-disabled.png",
+    "width": 476,
+    "height": 105,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/deb67a6f3f37c8f968.png",
+    "sourceAsset": "assets/ui/button-mint-selected.png",
+    "width": 476,
+    "height": 105,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/b02a9af45e9b6e87c6.png",
+    "sourceAsset": "assets/ui/button-cream-normal.png",
+    "width": 488,
+    "height": 105,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/ccf181caac38aced63.png",
+    "sourceAsset": "assets/ui/button-cream-pressed.png",
+    "width": 488,
+    "height": 105,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/574fc210280c31bffe.png",
+    "sourceAsset": "assets/ui/button-cream-disabled.png",
+    "width": 488,
+    "height": 105,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/c6fbb7ad14280cd737.png",
+    "sourceAsset": "assets/ui/button-cream-selected.png",
+    "width": 488,
+    "height": 105,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/4d5e6f962cf7893814.png",
+    "sourceAsset": "assets/ui/panel-peach.png",
+    "width": 984,
+    "height": 590,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/fa2918d5cbcb0e4d77.png",
+    "sourceAsset": "assets/ui/ground-shadow.png",
+    "width": 355,
+    "height": 31,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/6556ef52f2c407213b.png",
+    "sourceAsset": "assets/characters/cat-warrior.png",
+    "width": 480,
+    "height": 480,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/e0aa01af46824ab768.png",
+    "sourceAsset": "assets/ui/button-mint-normal.png",
+    "width": 476,
+    "height": 108,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/70a32be31358f346d2.png",
+    "sourceAsset": "assets/ui/button-mint-pressed.png",
+    "width": 476,
+    "height": 108,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/e114bcb5205af1b6ff.png",
+    "sourceAsset": "assets/ui/button-mint-disabled.png",
+    "width": 476,
+    "height": 108,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/f6f66ce1afbca62595.png",
+    "sourceAsset": "assets/ui/button-mint-selected.png",
+    "width": 476,
+    "height": 108,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/d529888b9398593830.png",
+    "sourceAsset": "assets/ui/button-yellow-normal.png",
+    "width": 484,
+    "height": 108,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/346e4b9e8168c12347.png",
+    "sourceAsset": "assets/ui/button-yellow-pressed.png",
+    "width": 484,
+    "height": 108,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/aa01f1c250fd751d8a.png",
+    "sourceAsset": "assets/ui/button-yellow-disabled.png",
+    "width": 484,
+    "height": 108,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/8e8f1548b610656999.png",
+    "sourceAsset": "assets/ui/button-yellow-selected.png",
+    "width": 484,
+    "height": 108,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/c1c3a9b4a60efb966f.png",
+    "sourceAsset": "assets/ui/button-cream-normal.png",
+    "width": 984,
+    "height": 100,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/8672f6e1debd5c8af4.png",
+    "sourceAsset": "assets/ui/button-cream-pressed.png",
+    "width": 984,
+    "height": 100,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/90c9de09f02ebbd4fe.png",
+    "sourceAsset": "assets/ui/button-cream-disabled.png",
+    "width": 984,
+    "height": 100,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/37df256a52f0cc8d90.png",
+    "sourceAsset": "assets/ui/button-cream-selected.png",
+    "width": 984,
+    "height": 100,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/4f61cd0d191b5108a5.png",
+    "sourceAsset": "assets/ui/panel-lavender.png",
+    "width": 984,
+    "height": 590,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/a506f90db6076c4229.png",
+    "sourceAsset": "assets/characters/cat-tank.png",
+    "width": 480,
+    "height": 480,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/a39873207dfddc251c.png",
+    "sourceAsset": "assets/ui/panel-mint.png",
+    "width": 984,
+    "height": 590,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/e4ee48272d3141dbcc.png",
+    "sourceAsset": "assets/characters/cat-archer.png",
+    "width": 480,
+    "height": 480,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/0347aae6a0ac7a277a.png",
+    "sourceAsset": "assets/icons/bow.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/a55e252e63b6cf0b14.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 984,
+    "height": 590,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/99d2f5e3f3ed275dd3.png",
+    "sourceAsset": "assets/characters/cat-healer.png",
+    "width": 480,
+    "height": 480,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/8406a7ef085f47b4aa.png",
+    "sourceAsset": "assets/icons/heart.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/8b9a067c4dd2da831f.png",
+    "sourceAsset": "assets/characters/cat-wizard.png",
+    "width": 480,
+    "height": 480,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/8621eda390e57ba03b.png",
+    "sourceAsset": "assets/icons/wand.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/ef23217a50313881d0.png",
+    "sourceAsset": "assets/ui/panel-mint.png",
+    "width": 984,
+    "height": 380,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/2b03c264c92fa96253.png",
+    "sourceAsset": "assets/characters/cat-tank.png",
+    "width": 280,
+    "height": 280,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/ac093c819e1e746a71.png",
+    "sourceAsset": "assets/ui/ground-shadow.png",
+    "width": 167,
+    "height": 31,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/d42b088398627cee7d.png",
+    "sourceAsset": "assets/characters/cat-warrior.png",
+    "width": 225,
+    "height": 225,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/b480c09427c3adad9d.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 778,
+    "height": 66,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/215dd449d71ec137d5.png",
+    "sourceAsset": "assets/ui/panel-mint.png",
+    "width": 316,
+    "height": 316,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/8f36a201386c94c775.png",
+    "sourceAsset": "assets/icons/check.png",
+    "width": 42,
+    "height": 42,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/c6062cab8666d53160.png",
+    "sourceAsset": "assets/characters/cat-tank.png",
+    "width": 225,
+    "height": 225,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/698ef65fe075a780be.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 316,
+    "height": 316,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/c626f2e04016080b38.png",
+    "sourceAsset": "assets/characters/cat-archer.png",
+    "width": 225,
+    "height": 225,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/44af46ae5b8679cecd.png",
+    "sourceAsset": "assets/characters/cat-healer.png",
+    "width": 225,
+    "height": 225,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/15cb6d8c8118bb4783.png",
+    "sourceAsset": "assets/characters/cat-wizard.png",
+    "width": 225,
+    "height": 225,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/92355701f3992aaf32.png",
+    "sourceAsset": "assets/ui/button-yellow-normal.png",
+    "width": 984,
+    "height": 112,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/05902ec48b8e37aae3.png",
+    "sourceAsset": "assets/ui/button-yellow-pressed.png",
+    "width": 984,
+    "height": 112,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/7968d4e98da1c1badc.png",
+    "sourceAsset": "assets/ui/button-yellow-disabled.png",
+    "width": 984,
+    "height": 112,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/04ca5d7a640d9e3bbf.png",
+    "sourceAsset": "assets/ui/button-yellow-selected.png",
+    "width": 984,
+    "height": 112,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/6597ca2b5bd037aa0e.png",
+    "sourceAsset": "assets/icons/check.png",
+    "width": 56,
+    "height": 56,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/9458049c56b816572b.png",
+    "sourceAsset": "assets/ui/panel-lavender.png",
+    "width": 984,
+    "height": 250,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/78a48d2eec5b30a5ad.png",
+    "sourceAsset": "assets/characters/cat-warrior.png",
+    "width": 280,
+    "height": 280,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/fda2fbf8115782f1b9.png",
+    "sourceAsset": "assets/ui/button-mint-normal.png",
+    "width": 318,
+    "height": 82,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/5af164fc5addbad6b3.png",
+    "sourceAsset": "assets/ui/button-mint-pressed.png",
+    "width": 318,
+    "height": 82,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/904c9c2e26a761a59e.png",
+    "sourceAsset": "assets/ui/button-mint-disabled.png",
+    "width": 318,
+    "height": 82,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/1519ba443ee7105a7d.png",
+    "sourceAsset": "assets/ui/button-mint-selected.png",
+    "width": 318,
+    "height": 82,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/c91c38b96ae935da3e.png",
+    "sourceAsset": "assets/ui/button-cream-normal.png",
+    "width": 318,
+    "height": 82,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/f5a506b051e208c919.png",
+    "sourceAsset": "assets/ui/button-cream-pressed.png",
+    "width": 318,
+    "height": 82,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/878767c2ebbbdb0d1a.png",
+    "sourceAsset": "assets/ui/button-cream-disabled.png",
+    "width": 318,
+    "height": 82,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/788d28902c650078ef.png",
+    "sourceAsset": "assets/ui/button-cream-selected.png",
+    "width": 318,
+    "height": 82,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/ec3fb3ec37edde286e.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 928,
+    "height": 69,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/57c0343888c9417062.png",
+    "sourceAsset": "assets/ui/progress-track.png",
+    "width": 952,
+    "height": 28,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/2536270d7bd8975e7e.png",
+    "sourceAsset": "assets/ui/progress-mint.png",
+    "width": 536,
+    "height": 28,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/310bec907cff1ec90b.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 928,
+    "height": 58,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/dca7001520af995f8f.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 114,
+    "height": 163,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/d9bdf80c5e4f97b9a0.png",
+    "sourceAsset": "assets/items/item-weapon-1-twig.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/33d1d9597cbcf02c42.png",
+    "sourceAsset": "assets/items/item-weapon-2-wood-sword.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/aeba6081b920a846af.png",
+    "sourceAsset": "assets/items/item-weapon-3-fishbone-dagger.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/9b93c3890ebd6adc5c.png",
+    "sourceAsset": "assets/items/item-weapon-4-iron-sword.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/013b0bb13390c2f9de.png",
+    "sourceAsset": "assets/items/item-weapon-5-flame-sword.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/c28a8ae52e862c7b4b.png",
+    "sourceAsset": "assets/ui/panel-lavender.png",
+    "width": 114,
+    "height": 163,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/be48d5ce4dd0df996e.png",
+    "sourceAsset": "assets/items/item-weapon-6-ice-sword.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/776efc64822ece5431.png",
+    "sourceAsset": "assets/items/item-weapon-7-royal-sword.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/351e39cad5908f5de6.png",
+    "sourceAsset": "assets/items/item-weapon-8-churu-blade.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/5dd100a003b9c93f2b.png",
+    "sourceAsset": "assets/items/item-armor-1-cardboard.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/2c8bb73678181087e1.png",
+    "sourceAsset": "assets/items/item-armor-2-leather.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/13f61c1f886034b405.png",
+    "sourceAsset": "assets/items/item-armor-3-pot-lid.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/396fb10f2586dd044d.png",
+    "sourceAsset": "assets/items/item-armor-4-chainmail.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/8030aa5235a8bd2bd4.png",
+    "sourceAsset": "assets/items/item-armor-5-iron-armor.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/f0f4e83d73310638fd.png",
+    "sourceAsset": "assets/items/item-armor-6-knight-armor.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/e2a50c7cdf8d3b14fe.png",
+    "sourceAsset": "assets/items/item-armor-7-royal-armor.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/54767c27742a7a4dbe.png",
+    "sourceAsset": "assets/items/item-armor-8-cat-tower-armor.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/7b9ac80fd87ff18b79.png",
+    "sourceAsset": "assets/items/item-consumable-1-anchovy.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/e79490670a5da01dea.png",
+    "sourceAsset": "assets/items/item-consumable-2-fish.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/3b714bfe322167e883.png",
+    "sourceAsset": "assets/items/item-consumable-3-tuna-can.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/0055cae18a8ed5e397.png",
+    "sourceAsset": "assets/items/item-consumable-4-fish-fillet.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/00124f3824747601f9.png",
+    "sourceAsset": "assets/items/item-consumable-5-sashimi.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/e4a4e69fbee7a57a2f.png",
+    "sourceAsset": "assets/items/item-consumable-6-salmon-bowl.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/6f26e39874562768bb.png",
+    "sourceAsset": "assets/items/item-consumable-7-churu.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/61c91c784556baa609.png",
+    "sourceAsset": "assets/items/item-consumable-8-gold-churu.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/3e39e049d64885bd17.png",
+    "sourceAsset": "assets/items/item-special-1-fluff.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/56aa8b6dbdb6d8fc7b.png",
+    "sourceAsset": "assets/items/item-special-2-yarn.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/28df0a0e6d7b2beaaf.png",
+    "sourceAsset": "assets/items/item-special-3-fur-bomb.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/f6c94803f92417d393.png",
+    "sourceAsset": "assets/items/item-special-4-fire-fur.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/ad96c5c80dfc3fe80e.png",
+    "sourceAsset": "assets/items/item-special-5-lightning-fur.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/30c8ed9ba837ad64ad.png",
+    "sourceAsset": "assets/items/item-special-6-ice-fur.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/9ff86ab199e19a2e5f.png",
+    "sourceAsset": "assets/items/item-special-7-star-fur.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/fda5ce060698fb9589.png",
+    "sourceAsset": "assets/items/item-special-8-giant-fur.png",
+    "width": 80,
+    "height": 80,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/9ae39ab8c34c9a3734.png",
+    "sourceAsset": "assets/icons/check.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/6a68873531ce746268.png",
+    "sourceAsset": "assets/icons/cat.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/2fc933c182a13904be.png",
+    "sourceAsset": "assets/items/item-weapon-3-fishbone-dagger.png",
+    "width": 224,
+    "height": 224,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/f8c4c993b441d953a5.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 788,
+    "height": 61,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/6200344ac3d16a59e0.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 322,
+    "height": 640,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/a679420b23210f91ed.png",
+    "sourceAsset": "assets/ui/mode-solo.png",
+    "width": 272,
+    "height": 369,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/1ef6e299aeec201df8.png",
+    "sourceAsset": "assets/ui/button-yellow-normal.png",
+    "width": 264,
+    "height": 84,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/c7871409fe6d5a8970.png",
+    "sourceAsset": "assets/ui/button-yellow-pressed.png",
+    "width": 264,
+    "height": 84,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/449ee9ee2ee1b36113.png",
+    "sourceAsset": "assets/ui/button-yellow-disabled.png",
+    "width": 264,
+    "height": 84,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/89fc305e772e9903e7.png",
+    "sourceAsset": "assets/ui/button-yellow-selected.png",
+    "width": 264,
+    "height": 84,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/120e505573cac03fdf.png",
+    "sourceAsset": "assets/ui/panel-mint.png",
+    "width": 322,
+    "height": 640,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/bb7d4203a354977cfc.png",
+    "sourceAsset": "assets/ui/mode-coop.png",
+    "width": 272,
+    "height": 369,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/2c522c878274e3af8e.png",
+    "sourceAsset": "assets/ui/panel-lavender.png",
+    "width": 322,
+    "height": 640,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/15e94e1eeaa84e9c97.png",
+    "sourceAsset": "assets/ui/mode-boss.png",
+    "width": 272,
+    "height": 369,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/9714256a432bc31b22.png",
+    "sourceAsset": "assets/ui/panel-peach.png",
+    "width": 322,
+    "height": 640,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/c57e8914978ed6d123.png",
+    "sourceAsset": "assets/ui/mode-duel.png",
+    "width": 272,
+    "height": 369,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/3123f83e8da0acba82.png",
+    "sourceAsset": "assets/ui/mode-team.png",
+    "width": 272,
+    "height": 369,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/a9e336f0df6a3373cc.png",
+    "sourceAsset": "assets/ui/mode-tower.png",
+    "width": 272,
+    "height": 369,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/c8922e860fc6b2a6b3.png",
+    "sourceAsset": "assets/ui/panel-mint.png",
+    "width": 984,
+    "height": 148,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/4a87380d1072e84d35.png",
+    "sourceAsset": "assets/ui/panel-lavender.png",
+    "width": 984,
+    "height": 148,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/b8881583c4157b7502.png",
+    "sourceAsset": "assets/icons/tree.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/c846af0aaaf7a6478b.png",
+    "sourceAsset": "assets/ui/panel-peach.png",
+    "width": 984,
+    "height": 148,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/b7f187fee4593e26b0.png",
+    "sourceAsset": "assets/icons/flag.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/25d25aca1e6ac16788.png",
+    "sourceAsset": "assets/icons/gem.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/578d6220265a6ed3c9.png",
+    "sourceAsset": "assets/icons/gear.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/a1870c0a48d45e9722.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 978,
+    "height": 67,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/535f33691d7c760299.png",
+    "sourceAsset": "assets/ui/panel-mint.png",
+    "width": 220,
+    "height": 178,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/a9f17bf7a48068ffcc.png",
+    "sourceAsset": "assets/ui/victory-laurel.png",
+    "width": 360,
+    "height": 170,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/bf0e79ac5f8b4a167e.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 220,
+    "height": 178,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/22c71c19a6c2c1c24c.png",
+    "sourceAsset": "assets/icons/flag.png",
+    "width": 53,
+    "height": 53,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/983e9318468669a026.png",
+    "sourceAsset": "assets/icons/lock.png",
+    "width": 53,
+    "height": 53,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/39275b559de057d382.png",
+    "sourceAsset": "assets/icons/chest.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/2ee1c1115efd2ebfcd.png",
+    "sourceAsset": "assets/ui/panel-mint.png",
+    "width": 984,
+    "height": 360,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/19a99dbb39700dacd2.png",
+    "sourceAsset": "assets/icons/rat.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/822023bb977e95c4d0.png",
+    "sourceAsset": "assets/icons/people.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/3c43de278cf0e35088.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 984,
+    "height": 285,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/0ea31ee976aeb313d6.png",
+    "sourceAsset": "assets/ui/ground-shadow.png",
+    "width": 178,
+    "height": 31,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/2d66ec3666733ee4f4.png",
+    "sourceAsset": "assets/characters/cat-warrior.png",
+    "width": 240,
+    "height": 240,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/60277f4ca90cfeb33f.png",
+    "sourceAsset": "assets/characters/cat-tank.png",
+    "width": 240,
+    "height": 240,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/f52f9bb3142ddbb511.png",
+    "sourceAsset": "assets/ui/button-yellow-normal.png",
+    "width": 984,
+    "height": 116,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/15f6c12185e470fde9.png",
+    "sourceAsset": "assets/ui/button-yellow-pressed.png",
+    "width": 984,
+    "height": 116,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/85229d25af1a0c92ba.png",
+    "sourceAsset": "assets/ui/button-yellow-disabled.png",
+    "width": 984,
+    "height": 116,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/c88a847cf8bf24f8bf.png",
+    "sourceAsset": "assets/ui/button-yellow-selected.png",
+    "width": 984,
+    "height": 116,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/c0dd2f60beec8f95c9.png",
+    "sourceAsset": "assets/icons/sword.png",
+    "width": 56,
+    "height": 56,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/0afaccfd36c17abce8.png",
+    "sourceAsset": "assets/icons/gold.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/f8259eb6bf69703a0c.png",
+    "sourceAsset": "assets/characters/cat-wizard.png",
+    "width": 280,
+    "height": 280,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/bfdc290d6960908a18.png",
+    "sourceAsset": "assets/icons/trophy.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/56090674ff40ae1ed2.png",
+    "sourceAsset": "assets/icons/scroll.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/5628fdfe4dc1f8fb52.png",
+    "sourceAsset": "assets/ui/panel-peach.png",
+    "width": 984,
+    "height": 250,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/1bdbb853bd03e74c95.png",
+    "sourceAsset": "assets/characters/cat-archer.png",
+    "width": 280,
+    "height": 280,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/925d6177cdf566a13f.png",
+    "sourceAsset": "assets/icons/shop.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/106c7cd0f9832488af.png",
+    "sourceAsset": "assets/ui/panel-lavender.png",
+    "width": 984,
+    "height": 430,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/7a348063f5d082e2b4.png",
+    "sourceAsset": "assets/ui/button-yellow-normal.png",
+    "width": 984,
+    "height": 120,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/60b4eede3e86b2f3c6.png",
+    "sourceAsset": "assets/ui/button-yellow-pressed.png",
+    "width": 984,
+    "height": 120,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/c90d2f90e054bb29cf.png",
+    "sourceAsset": "assets/ui/button-yellow-disabled.png",
+    "width": 984,
+    "height": 120,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/f62c58bd08373d55aa.png",
+    "sourceAsset": "assets/ui/button-yellow-selected.png",
+    "width": 984,
+    "height": 120,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/19d0ba30efa08e8774.png",
+    "sourceAsset": "assets/icons/play.png",
+    "width": 56,
+    "height": 56,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/5bcfaa8fd726a56d9b.png",
+    "sourceAsset": "assets/ui/button-mint-normal.png",
+    "width": 476,
+    "height": 110,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/e725956f9ba950adf8.png",
+    "sourceAsset": "assets/ui/button-mint-pressed.png",
+    "width": 476,
+    "height": 110,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/aceffaecf02f828a2b.png",
+    "sourceAsset": "assets/ui/button-mint-disabled.png",
+    "width": 476,
+    "height": 110,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/c7b5563fb683f52f5a.png",
+    "sourceAsset": "assets/ui/button-mint-selected.png",
+    "width": 476,
+    "height": 110,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/bcb73e1c6252fd1f87.png",
+    "sourceAsset": "assets/icons/plus.png",
+    "width": 56,
+    "height": 56,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/60de8bfbe04fd903cf.png",
+    "sourceAsset": "assets/ui/button-cream-normal.png",
+    "width": 484,
+    "height": 110,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/ae03ced0f83e4fd94a.png",
+    "sourceAsset": "assets/ui/button-cream-pressed.png",
+    "width": 484,
+    "height": 110,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/6a0d4e8ec3f5780714.png",
+    "sourceAsset": "assets/ui/button-cream-disabled.png",
+    "width": 484,
+    "height": 110,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/b6f749379ad3a743fb.png",
+    "sourceAsset": "assets/ui/button-cream-selected.png",
+    "width": 484,
+    "height": 110,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/1edda7f37b7f1c5eec.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 984,
+    "height": 57,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/e0f9c49af49b4fb1d9.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 968,
+    "height": 66,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/05113379d420e8178c.png",
+    "sourceAsset": "assets/ui/panel-lavender.png",
+    "width": 984,
+    "height": 170,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/9661f88343be9e421e.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 984,
+    "height": 190,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/8bb8d51f54850b1a4a.png",
+    "sourceAsset": "assets/characters/cat-warrior.png",
+    "width": 154,
+    "height": 154,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/2b787da3be730b30b6.png",
+    "sourceAsset": "assets/characters/cat-tank.png",
+    "width": 154,
+    "height": 154,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/30c4a1996a850ad096.png",
+    "sourceAsset": "assets/characters/cat-archer.png",
+    "width": 154,
+    "height": 154,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/dc0727cfbc3138967c.png",
+    "sourceAsset": "assets/characters/cat-healer.png",
+    "width": 154,
+    "height": 154,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/1fd3e767f89a17e540.png",
+    "sourceAsset": "assets/ui/panel-lavender.png",
+    "width": 984,
+    "height": 190,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/a3a8a2e5c00159a06c.png",
+    "sourceAsset": "assets/ui/button-mint-normal.png",
+    "width": 308,
+    "height": 90,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/8468078554a286a3e9.png",
+    "sourceAsset": "assets/ui/button-mint-pressed.png",
+    "width": 308,
+    "height": 90,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/0a36ec9386702059f0.png",
+    "sourceAsset": "assets/ui/button-mint-disabled.png",
+    "width": 308,
+    "height": 90,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/6ede01fb9fa234df43.png",
+    "sourceAsset": "assets/ui/button-mint-selected.png",
+    "width": 308,
+    "height": 90,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/3c7b44458263b7a4d1.png",
+    "sourceAsset": "assets/icons/people.png",
+    "width": 224,
+    "height": 224,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/33ce5f9a3d7e5bc2b9.png",
+    "sourceAsset": "assets/ui/panel-lavender.png",
+    "width": 984,
+    "height": 390,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/8afbc353c96e9053be.png",
+    "sourceAsset": "assets/characters/boss-eel.png",
+    "width": 280,
+    "height": 280,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/ad576761d24ba7554a.png",
+    "sourceAsset": "assets/icons/crown.png",
+    "width": 120,
+    "height": 120,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/5c4cce2e53ac9543c3.png",
+    "sourceAsset": "assets/ui/panel-lavender.png",
+    "width": 984,
+    "height": 222,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/9ee8f138704de6df76.png",
+    "sourceAsset": "assets/ui/progress-track.png",
+    "width": 918,
+    "height": 28,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/f6ccbb12ed96085edb.png",
+    "sourceAsset": "assets/ui/progress-mint.png",
+    "width": 569,
+    "height": 28,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/178ce2a3ae33f04683.png",
+    "sourceAsset": "assets/ui/button-cream-normal.png",
+    "width": 476,
+    "height": 104,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/6474a671d610e8f7b4.png",
+    "sourceAsset": "assets/ui/button-cream-pressed.png",
+    "width": 476,
+    "height": 104,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/300cfaf61c9d8eaae1.png",
+    "sourceAsset": "assets/ui/button-cream-disabled.png",
+    "width": 476,
+    "height": 104,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/939cf99a9633aa332f.png",
+    "sourceAsset": "assets/ui/button-cream-selected.png",
+    "width": 476,
+    "height": 104,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/c6f6d47d2436aa32e0.png",
+    "sourceAsset": "assets/icons/chest.png",
+    "width": 56,
+    "height": 56,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/6dc5d34809332ddcc2.png",
+    "sourceAsset": "assets/ui/button-mint-normal.png",
+    "width": 484,
+    "height": 104,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/72c04adf5d256ad26a.png",
+    "sourceAsset": "assets/ui/button-mint-pressed.png",
+    "width": 484,
+    "height": 104,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/d7b8a789acfa32ead9.png",
+    "sourceAsset": "assets/ui/button-mint-disabled.png",
+    "width": 484,
+    "height": 104,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/620fc0d320ec48647b.png",
+    "sourceAsset": "assets/ui/button-mint-selected.png",
+    "width": 484,
+    "height": 104,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/fad4e0e8d51ffba423.png",
+    "sourceAsset": "assets/icons/shop.png",
+    "width": 56,
+    "height": 56,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/e2501d084a7c25818a.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 948,
+    "height": 60,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/e36c334847dae64c48.png",
+    "sourceAsset": "assets/icons/crown.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/a91e7a8ca6b8d5e20c.png",
+    "sourceAsset": "assets/ui/panel-lavender.png",
+    "width": 984,
+    "height": 415,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/aa431e870bd553d877.png",
+    "sourceAsset": "assets/ui/button-mint-normal.png",
+    "width": 482,
+    "height": 82,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/80ac0ba525e93c7ac6.png",
+    "sourceAsset": "assets/ui/button-mint-pressed.png",
+    "width": 482,
+    "height": 82,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/e51f47e151262350f7.png",
+    "sourceAsset": "assets/ui/button-mint-disabled.png",
+    "width": 482,
+    "height": 82,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/12288833f8afdaf675.png",
+    "sourceAsset": "assets/ui/button-mint-selected.png",
+    "width": 482,
+    "height": 82,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/7b23172b89651bc7b8.png",
+    "sourceAsset": "assets/ui/button-cream-normal.png",
+    "width": 482,
+    "height": 82,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/f4a651fabae1f50161.png",
+    "sourceAsset": "assets/ui/button-cream-pressed.png",
+    "width": 482,
+    "height": 82,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/87642e1b81b66501f0.png",
+    "sourceAsset": "assets/ui/button-cream-disabled.png",
+    "width": 482,
+    "height": 82,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/5722b6762288dfdc60.png",
+    "sourceAsset": "assets/ui/button-cream-selected.png",
+    "width": 482,
+    "height": 82,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/2299b27ab6f7ab3d39.png",
+    "sourceAsset": "assets/ui/button-cream-normal.png",
+    "width": 476,
+    "height": 108,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/e1a642e23b2522a87c.png",
+    "sourceAsset": "assets/ui/button-cream-pressed.png",
+    "width": 476,
+    "height": 108,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/a73ce21cb9136642bb.png",
+    "sourceAsset": "assets/ui/button-cream-disabled.png",
+    "width": 476,
+    "height": 108,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/660bc0f3a8a353dd9d.png",
+    "sourceAsset": "assets/ui/button-cream-selected.png",
+    "width": 476,
+    "height": 108,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/d71cf21c31865d22df.png",
+    "sourceAsset": "assets/icons/people.png",
+    "width": 56,
+    "height": 56,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/318b1d3f317930dabc.png",
+    "sourceAsset": "assets/ui/button-mint-normal.png",
+    "width": 484,
+    "height": 108,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/c2bb2f454839a12083.png",
+    "sourceAsset": "assets/ui/button-mint-pressed.png",
+    "width": 484,
+    "height": 108,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/48b6563049353262b1.png",
+    "sourceAsset": "assets/ui/button-mint-disabled.png",
+    "width": 484,
+    "height": 108,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/9b46703e60f9168844.png",
+    "sourceAsset": "assets/ui/button-mint-selected.png",
+    "width": 484,
+    "height": 108,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/eeae1b65948a66c0cf.png",
+    "sourceAsset": "assets/icons/trophy.png",
+    "width": 56,
+    "height": 56,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/2f2dd7eb2a069c9711.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 984,
+    "height": 52,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/adda7b6cc09f29efff.png",
+    "sourceAsset": "assets/icons/play.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/df2d2b340fc6611277.png",
+    "sourceAsset": "assets/icons/sword.png",
+    "width": 224,
+    "height": 224,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/f459f9b215820c486e.png",
+    "sourceAsset": "assets/ui/button-cream-normal.png",
+    "width": 296,
+    "height": 78,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/4bd3bf11fb13ca0a7d.png",
+    "sourceAsset": "assets/ui/button-cream-pressed.png",
+    "width": 296,
+    "height": 78,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/d1f048a116c1eaf63c.png",
+    "sourceAsset": "assets/ui/button-cream-disabled.png",
+    "width": 296,
+    "height": 78,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/90b87b0aed1a5888ae.png",
+    "sourceAsset": "assets/ui/button-cream-selected.png",
+    "width": 296,
+    "height": 78,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/58ceaa5b4f282ef83c.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 618,
+    "height": 76,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/be30390fb07e105bff.png",
+    "sourceAsset": "assets/ui/ground-shadow.png",
+    "width": 188,
+    "height": 31,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/a35030099b1e4a49a0.png",
+    "sourceAsset": "assets/characters/cat-tank.png",
+    "width": 254,
+    "height": 254,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/165dbbda7e9c803a4a.png",
+    "sourceAsset": "assets/ui/panel-lavender.png",
+    "width": 252,
+    "height": 157,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/8cab299bd017535aa5.png",
+    "sourceAsset": "assets/characters/cat-warrior.png",
+    "width": 254,
+    "height": 254,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/7ced75c3bf5b99ca7e.png",
+    "sourceAsset": "assets/ui/panel-peach.png",
+    "width": 252,
+    "height": 157,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/42e68661a303191efd.png",
+    "sourceAsset": "assets/characters/cat-archer.png",
+    "width": 254,
+    "height": 254,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/5bfd5f1ea84dccf122.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 984,
+    "height": 120,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/24d32613bc05d3bbb4.png",
+    "sourceAsset": "assets/characters/cat-warrior.png",
+    "width": 103,
+    "height": 103,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/0b2052d1573831aa6b.png",
+    "sourceAsset": "assets/characters/cat-tank.png",
+    "width": 103,
+    "height": 103,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/0bc240b719841fb688.png",
+    "sourceAsset": "assets/characters/cat-archer.png",
+    "width": 103,
+    "height": 103,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/be4945e8a4ad496a45.png",
+    "sourceAsset": "assets/characters/cat-healer.png",
+    "width": 103,
+    "height": 103,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/bcc90dce4bde1f4c65.png",
+    "sourceAsset": "assets/ui/panel-mint.png",
+    "width": 984,
+    "height": 128,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/13fdae704bc07e4965.png",
+    "sourceAsset": "assets/ui/panel-mint.png",
+    "width": 984,
+    "height": 365,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/86ef5f8034c43bdc33.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 984,
+    "height": 375,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/de53213d1f347eb5f3.png",
+    "sourceAsset": "assets/ui/ground-shadow.png",
+    "width": 211,
+    "height": 31,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/c5736b98f7b655ae1b.png",
+    "sourceAsset": "assets/characters/cat-archer.png",
+    "width": 285,
+    "height": 285,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/67c9b23fd873de0f0e.png",
+    "sourceAsset": "assets/characters/cat-healer.png",
+    "width": 285,
+    "height": 285,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/0b43a922229604e831.png",
+    "sourceAsset": "assets/ui/button-mint-normal.png",
+    "width": 984,
+    "height": 104,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/e5ca1e685b9868ce8d.png",
+    "sourceAsset": "assets/ui/button-mint-pressed.png",
+    "width": 984,
+    "height": 104,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/4e9f2c9f16005d3d9d.png",
+    "sourceAsset": "assets/ui/button-mint-disabled.png",
+    "width": 984,
+    "height": 104,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/827739ac008b6806fe.png",
+    "sourceAsset": "assets/ui/button-mint-selected.png",
+    "width": 984,
+    "height": 104,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/534bbd4e6d9b708053.png",
+    "sourceAsset": "assets/backgrounds/shop.png",
+    "width": 1080,
+    "height": 1920,
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/d834dbef1a88d655d3.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 908,
+    "height": 61,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/9c0e2faa5dffcc26b9.png",
+    "sourceAsset": "assets/ui/ground-shadow.png",
+    "width": 283,
+    "height": 31,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/9e77db37ff21a7ef6f.png",
+    "sourceAsset": "assets/characters/cat-smith.png",
+    "width": 383,
+    "height": 360,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/18a4ab2f405ee6c501.png",
+    "sourceAsset": "assets/ui/panel-peach.png",
+    "width": 990,
+    "height": 205,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/07d9443e1e2e4e3868.png",
+    "sourceAsset": "assets/icons/chest.png",
+    "width": 151,
+    "height": 151,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/9eefcb62a45125deec.png",
+    "sourceAsset": "assets/ui/button-yellow-normal.png",
+    "width": 212,
+    "height": 87,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/1dd88828ca112bc8fa.png",
+    "sourceAsset": "assets/ui/button-yellow-pressed.png",
+    "width": 212,
+    "height": 87,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/da77c13360399c814a.png",
+    "sourceAsset": "assets/ui/button-yellow-disabled.png",
+    "width": 212,
+    "height": 87,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/49bb417be688a6bfea.png",
+    "sourceAsset": "assets/ui/button-yellow-selected.png",
+    "width": 212,
+    "height": 87,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/c79aed32158a63a855.png",
+    "sourceAsset": "assets/ui/panel-lavender.png",
+    "width": 318,
+    "height": 399,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/36cb594e737f20e085.png",
+    "sourceAsset": "assets/icons/gem.png",
+    "width": 190,
+    "height": 190,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/ddf2fcf57d23f1b10a.png",
+    "sourceAsset": "assets/ui/button-yellow-normal.png",
+    "width": 270,
+    "height": 80,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/95db648577eaac48d2.png",
+    "sourceAsset": "assets/ui/button-yellow-pressed.png",
+    "width": 270,
+    "height": 80,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/f55087c370d62f0040.png",
+    "sourceAsset": "assets/ui/button-yellow-disabled.png",
+    "width": 270,
+    "height": 80,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/0010e5e76480e9d26f.png",
+    "sourceAsset": "assets/ui/button-yellow-selected.png",
+    "width": 270,
+    "height": 80,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/102f45cf4c54dd766a.png",
+    "sourceAsset": "assets/ui/panel-mint.png",
+    "width": 318,
+    "height": 399,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/62b3065ed8fd0fe428.png",
+    "sourceAsset": "assets/icons/cat.png",
+    "width": 190,
+    "height": 190,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/119e0dca179660e35e.png",
+    "sourceAsset": "assets/ui/panel-peach.png",
+    "width": 318,
+    "height": 399,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/5490d30132c7ac5f7d.png",
+    "sourceAsset": "assets/items/item-consumable-8-gold-churu.png",
+    "width": 190,
+    "height": 190,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/7e5733f4bae7ad662b.png",
+    "sourceAsset": "assets/ui/button-cream-normal.png",
+    "width": 476,
+    "height": 105,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/43db43c585f3352e65.png",
+    "sourceAsset": "assets/ui/button-cream-pressed.png",
+    "width": 476,
+    "height": 105,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/c876f2dcae3c50eb84.png",
+    "sourceAsset": "assets/ui/button-cream-disabled.png",
+    "width": 476,
+    "height": 105,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/28eba98ba3fe20f963.png",
+    "sourceAsset": "assets/ui/button-cream-selected.png",
+    "width": 476,
+    "height": 105,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/eb56516fa36d323d87.png",
+    "sourceAsset": "assets/icons/ticket.png",
+    "width": 54,
+    "height": 54,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/63ba9731f4da111bd0.png",
+    "sourceAsset": "assets/icons/shop.png",
+    "width": 54,
+    "height": 54,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/15fc72336df45e24e0.png",
+    "sourceAsset": "assets/ui/button-yellow-normal.png",
+    "width": 990,
+    "height": 116,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/33154e861176ff072f.png",
+    "sourceAsset": "assets/ui/button-yellow-pressed.png",
+    "width": 990,
+    "height": 116,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/9d21b3035bc3906723.png",
+    "sourceAsset": "assets/ui/button-yellow-disabled.png",
+    "width": 990,
+    "height": 116,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/2a19cadac27b276034.png",
+    "sourceAsset": "assets/ui/button-yellow-selected.png",
+    "width": 990,
+    "height": 116,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/2db35ff235702ae8f1.png",
+    "sourceAsset": "assets/icons/chest.png",
+    "width": 54,
+    "height": 54,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/1937ea147561f4deb6.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 958,
+    "height": 63,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/e301632a7a30fdb829.png",
+    "sourceAsset": "assets/ui/panel-lavender.png",
+    "width": 482,
+    "height": 386,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/24d08bcc3395477d5a.png",
+    "sourceAsset": "assets/icons/gem.png",
+    "width": 165,
+    "height": 165,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/c878342e3e23d01b3c.png",
+    "sourceAsset": "assets/ui/button-yellow-normal.png",
+    "width": 430,
+    "height": 86,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/62b82421f5d4ec9c6e.png",
+    "sourceAsset": "assets/ui/button-yellow-pressed.png",
+    "width": 430,
+    "height": 86,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/3908588644f26145af.png",
+    "sourceAsset": "assets/ui/button-yellow-disabled.png",
+    "width": 430,
+    "height": 86,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/46037de8181f3a4710.png",
+    "sourceAsset": "assets/ui/button-yellow-selected.png",
+    "width": 430,
+    "height": 86,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/3561bd166851703498.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 988,
+    "height": 52,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/83da3203aa5b545f16.png",
+    "sourceAsset": "assets/ui/panel-peach.png",
+    "width": 482,
+    "height": 550,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/ea6630f46e8e8201db.png",
+    "sourceAsset": "assets/ui/ground-shadow.png",
+    "width": 237,
+    "height": 31,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/136009ae8d122c5c4c.png",
+    "sourceAsset": "assets/characters/cat-warrior.png",
+    "width": 320,
+    "height": 320,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/f7b99f32a956e5569c.png",
+    "sourceAsset": "assets/ui/button-yellow-normal.png",
+    "width": 426,
+    "height": 82,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/64850e15f054796d8e.png",
+    "sourceAsset": "assets/ui/button-yellow-pressed.png",
+    "width": 426,
+    "height": 82,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/9de49df433895c7c60.png",
+    "sourceAsset": "assets/ui/button-yellow-disabled.png",
+    "width": 426,
+    "height": 82,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/686baccaae82c7a113.png",
+    "sourceAsset": "assets/ui/button-yellow-selected.png",
+    "width": 426,
+    "height": 82,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/df2d4937ea558184ce.png",
+    "sourceAsset": "assets/ui/panel-lavender.png",
+    "width": 482,
+    "height": 550,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/b51e9044c1628e1f76.png",
+    "sourceAsset": "assets/characters/cat-tank.png",
+    "width": 320,
+    "height": 320,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/538a974bc51af9c5a3.png",
+    "sourceAsset": "assets/ui/panel-mint.png",
+    "width": 482,
+    "height": 550,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/2b57028d552b31731e.png",
+    "sourceAsset": "assets/characters/cat-archer.png",
+    "width": 320,
+    "height": 320,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/799ae715028b5d4541.png",
+    "sourceAsset": "assets/characters/cat-healer.png",
+    "width": 320,
+    "height": 320,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/ba11d72c26790e41ba.png",
+    "sourceAsset": "assets/ui/button-cream-normal.png",
+    "width": 984,
+    "height": 104,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/710f888b3677af3a8d.png",
+    "sourceAsset": "assets/ui/button-cream-pressed.png",
+    "width": 984,
+    "height": 104,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/eb0232eaf3384447b0.png",
+    "sourceAsset": "assets/ui/button-cream-disabled.png",
+    "width": 984,
+    "height": 104,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/a35a6cde613b8fe449.png",
+    "sourceAsset": "assets/ui/button-cream-selected.png",
+    "width": 984,
+    "height": 104,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/4cfea85aa171ee2207.png",
+    "sourceAsset": "assets/icons/star.png",
+    "width": 56,
+    "height": 56,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/1bda2384fdfb45511b.png",
+    "sourceAsset": "assets/icons/cat.png",
+    "width": 224,
+    "height": 224,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/d94c833aad028f1f36.png",
+    "sourceAsset": "assets/ui/panel-lavender.png",
+    "width": 984,
+    "height": 555,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/e266d972441290a351.png",
+    "sourceAsset": "assets/ui/button-yellow-normal.png",
+    "width": 476,
+    "height": 116,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/0a183401b8b40403b1.png",
+    "sourceAsset": "assets/ui/button-yellow-pressed.png",
+    "width": 476,
+    "height": 116,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/21f7e15245fdd9a3d7.png",
+    "sourceAsset": "assets/ui/button-yellow-disabled.png",
+    "width": 476,
+    "height": 116,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/8097e64c47f552b9bd.png",
+    "sourceAsset": "assets/ui/button-yellow-selected.png",
+    "width": 476,
+    "height": 116,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/b1c58ea2bdf77700b8.png",
+    "sourceAsset": "assets/ui/button-mint-normal.png",
+    "width": 484,
+    "height": 116,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/1579e18beb7e15d899.png",
+    "sourceAsset": "assets/ui/button-mint-pressed.png",
+    "width": 484,
+    "height": 116,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/ebb3a07a5b1fa2977a.png",
+    "sourceAsset": "assets/ui/button-mint-disabled.png",
+    "width": 484,
+    "height": 116,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/b90269a0ce758dd536.png",
+    "sourceAsset": "assets/ui/button-mint-selected.png",
+    "width": 484,
+    "height": 116,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/091407f7b0d3f2e31a.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 978,
+    "height": 54,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/db12ea6e557da751c7.png",
+    "sourceAsset": "assets/characters/cat-healer.png",
+    "width": 280,
+    "height": 280,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/fc8ec3438dd4b0c4ba.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 984,
+    "height": 226,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/39d87715d2cc23359c.png",
+    "sourceAsset": "assets/icons/cat.png",
+    "width": 122,
+    "height": 122,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/68f7d6f9cadb9f62e0.png",
+    "sourceAsset": "assets/ui/button-yellow-normal.png",
+    "width": 258,
+    "height": 82,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/3ae5fc6e4d59c029df.png",
+    "sourceAsset": "assets/ui/button-yellow-pressed.png",
+    "width": 258,
+    "height": 82,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/de3baad64e1aacfa11.png",
+    "sourceAsset": "assets/ui/button-yellow-disabled.png",
+    "width": 258,
+    "height": 82,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/4b8cbb41193193cbb4.png",
+    "sourceAsset": "assets/ui/button-yellow-selected.png",
+    "width": 258,
+    "height": 82,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/7e7b32a18bcbbdfec0.png",
+    "sourceAsset": "assets/icons/sword.png",
+    "width": 122,
+    "height": 122,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/49ad679a89e8ea0ac6.png",
+    "sourceAsset": "assets/icons/gem.png",
+    "width": 122,
+    "height": 122,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/705031d4815f9e661e.png",
+    "sourceAsset": "assets/icons/trophy.png",
+    "width": 122,
+    "height": 122,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/15f54cbe80ecbe7692.png",
+    "sourceAsset": "assets/ui/panel-peach.png",
+    "width": 984,
+    "height": 275,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/74c7b5ca2cd586858c.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 938,
+    "height": 69,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/25064027c0e4cebcfc.png",
+    "sourceAsset": "assets/ui/progress-mint.png",
+    "width": 571,
+    "height": 28,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/f569585a68f195ba89.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 980,
+    "height": 45,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/0cd9ea5870235cdf63.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 984,
+    "height": 151,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/ef76f0ec92a3abac4a.png",
+    "sourceAsset": "assets/icons/gold.png",
+    "width": 105,
+    "height": 105,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/b8622f4ef340ed682d.png",
+    "sourceAsset": "assets/icons/gem.png",
+    "width": 105,
+    "height": 105,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/2fc1fc6ac5d1bd6d79.png",
+    "sourceAsset": "assets/icons/check.png",
+    "width": 48,
+    "height": 48,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/cd4ac9a5c6154e90be.png",
+    "sourceAsset": "assets/icons/lock.png",
+    "width": 46,
+    "height": 46,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/139d9f07e458a360ef.png",
+    "sourceAsset": "assets/icons/cat.png",
+    "width": 105,
+    "height": 105,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/e0845bd81e3ac3f36c.png",
+    "sourceAsset": "assets/ui/button-mint-normal.png",
+    "width": 360,
+    "height": 116,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/c8eb8c22db2cf040a1.png",
+    "sourceAsset": "assets/ui/button-mint-pressed.png",
+    "width": 360,
+    "height": 116,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/d3fda3a05b56572917.png",
+    "sourceAsset": "assets/ui/button-mint-disabled.png",
+    "width": 360,
+    "height": 116,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/743015831ce32cf233.png",
+    "sourceAsset": "assets/ui/button-mint-selected.png",
+    "width": 360,
+    "height": 116,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/56d0e0cee85d181f74.png",
+    "sourceAsset": "assets/ui/button-yellow-normal.png",
+    "width": 602,
+    "height": 116,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/cad1de809840d3abfe.png",
+    "sourceAsset": "assets/ui/button-yellow-pressed.png",
+    "width": 602,
+    "height": 116,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/7c415cb87829f3a11b.png",
+    "sourceAsset": "assets/ui/button-yellow-disabled.png",
+    "width": 602,
+    "height": 116,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/bb1eac12645f4bd661.png",
+    "sourceAsset": "assets/ui/button-yellow-selected.png",
+    "width": 602,
+    "height": 116,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/8df4e54e6fcd5c55e0.png",
+    "sourceAsset": "assets/ui/panel-peach.png",
+    "width": 984,
+    "height": 300,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/529859f98c6dd64b15.png",
+    "sourceAsset": "assets/ui/panel-mint.png",
+    "width": 316,
+    "height": 280,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/57a1b9c52041eb2f40.png",
+    "sourceAsset": "assets/icons/gold.png",
+    "width": 130,
+    "height": 130,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/bef0000dc98e7a1b65.png",
+    "sourceAsset": "assets/icons/check.png",
+    "width": 43,
+    "height": 43,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/b28a7fde45fcfde02c.png",
+    "sourceAsset": "assets/icons/gem.png",
+    "width": 130,
+    "height": 130,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/e98b936a8d1c1e00c7.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 316,
+    "height": 280,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/51a518ebef39ca30b8.png",
+    "sourceAsset": "assets/icons/chest.png",
+    "width": 130,
+    "height": 130,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/e116faec48c9a04da3.png",
+    "sourceAsset": "assets/ui/button-yellow-normal.png",
+    "width": 642,
+    "height": 110,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/f866dc6af9f3279c42.png",
+    "sourceAsset": "assets/ui/button-yellow-pressed.png",
+    "width": 642,
+    "height": 110,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/26e2b1367ce3bfa10e.png",
+    "sourceAsset": "assets/ui/button-yellow-disabled.png",
+    "width": 642,
+    "height": 110,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/edb6196ddd0bb6a400.png",
+    "sourceAsset": "assets/ui/button-yellow-selected.png",
+    "width": 642,
+    "height": 110,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/b66ad5bb829ed87eea.png",
+    "sourceAsset": "assets/icons/ticket.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/2a84121403a3ad0238.png",
+    "sourceAsset": "assets/icons/help.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/86294d8924556af665.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 984,
+    "height": 234,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/45c64e4b58100f9268.png",
+    "sourceAsset": "assets/ui/progress-track.png",
+    "width": 880,
+    "height": 28,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/7b862c4440db766e88.png",
+    "sourceAsset": "assets/ui/progress-mint.png",
+    "width": 616,
+    "height": 28,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/aebb5f8e273ccad6eb.png",
+    "sourceAsset": "assets/ui/progress-mint.png",
+    "width": 704,
+    "height": 28,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/7b6221793472ebf6e9.png",
+    "sourceAsset": "assets/ui/progress-mint.png",
+    "width": 572,
+    "height": 28,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/ac5435b4ab5bc4587a.png",
+    "sourceAsset": "assets/icons/mail.png",
+    "width": 72,
+    "height": 72,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/1ba3a7cff87d6ca586.png",
+    "sourceAsset": "assets/icons/ticket.png",
+    "width": 224,
+    "height": 224,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/af10fb4c4d21d2a18a.png",
+    "sourceAsset": "assets/icons/energy.png",
+    "width": 224,
+    "height": 224,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/1efa2aa0a509c74486.png",
+    "sourceAsset": "assets/icons/shop.png",
+    "width": 224,
+    "height": 224,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/aab7aaadc987d4ba9c.png",
+    "sourceAsset": "assets/icons/pause.png",
+    "width": 224,
+    "height": 224,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/528e2f386a3ccf4242.png",
+    "sourceAsset": "assets/icons/help.png",
+    "width": 224,
+    "height": 224,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/2b66c97c3e5d93237c.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 988,
+    "height": 61,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/3b578b99615c3c71e5.png",
+    "sourceAsset": "assets/ui/ground-shadow.png",
+    "width": 266,
+    "height": 31,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/df40bd0f70e2949339.png",
+    "sourceAsset": "assets/characters/cat-warrior.png",
+    "width": 360,
+    "height": 360,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/d8881cc9a187eb71d0.png",
+    "sourceAsset": "assets/characters/cat-tank.png",
+    "width": 360,
+    "height": 360,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/ff19d9061472516982.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 968,
+    "height": 111,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/9d05d915b491c9d64e.png",
+    "sourceAsset": "assets/backgrounds/battle.png",
+    "width": 1080,
+    "height": 1920,
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/d49e1415b5708dab5a.png",
+    "sourceAsset": "assets/ui/title-banner.png",
+    "width": 316,
+    "height": 104,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/956bac39c0e5afb2b2.png",
+    "sourceAsset": "assets/ui/panel-dark.png",
+    "width": 266,
+    "height": 83,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/7bff0add4a415be209.png",
+    "sourceAsset": "assets/icons/clock.png",
+    "width": 73,
+    "height": 73,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/0be7d3cca0b57f04e8.png",
+    "sourceAsset": "assets/ui/panel-dark.png",
+    "width": 217,
+    "height": 83,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/1320c9d96c1988a5cd.png",
+    "sourceAsset": "assets/ui/button-cream-normal.png",
+    "width": 89,
+    "height": 89,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/44c3f602a4b0cab596.png",
+    "sourceAsset": "assets/ui/button-cream-pressed.png",
+    "width": 89,
+    "height": 89,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/4508c2bc8335b6d41c.png",
+    "sourceAsset": "assets/ui/button-cream-disabled.png",
+    "width": 89,
+    "height": 89,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/f3e6b196d71f46993b.png",
+    "sourceAsset": "assets/ui/button-cream-selected.png",
+    "width": 89,
+    "height": 89,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/bed4183682e250fa39.png",
+    "sourceAsset": "assets/icons/pause.png",
+    "width": 54,
+    "height": 54,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/aef7f3d5001a7c49c2.png",
+    "sourceAsset": "assets/icons/paw.png",
+    "width": 59,
+    "height": 59,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/014f552c7411b360f0.png",
+    "sourceAsset": "assets/ui/progress-track.png",
+    "width": 435,
+    "height": 45,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/5bd63bc292edd505cc.png",
+    "sourceAsset": "assets/ui/progress-mint.png",
+    "width": 335,
+    "height": 31,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/fedfb24f909e33ba0f.png",
+    "sourceAsset": "assets/ui/progress-track.png",
+    "width": 491,
+    "height": 45,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/e287b627010e1fb0f7.png",
+    "sourceAsset": "assets/ui/progress-red.png",
+    "width": 394,
+    "height": 31,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/003fa76cc1b0ff3ff5.png",
+    "sourceAsset": "assets/ui/ground-shadow.png",
+    "width": 219,
+    "height": 20,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/a6c262b9bbb420425c.png",
+    "sourceAsset": "assets/characters/cat-healer.png",
+    "width": 225,
+    "height": 190,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/6fa0ae8de64397551e.png",
+    "sourceAsset": "assets/ui/ground-shadow.png",
+    "width": 248,
+    "height": 20,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/f59c964931728976e2.png",
+    "sourceAsset": "assets/characters/cat-warrior.png",
+    "width": 255,
+    "height": 209,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/405518ecc742ad4563.png",
+    "sourceAsset": "assets/characters/boss-rat.png",
+    "width": 353,
+    "height": 292,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/150a65408615c5215f.png",
+    "sourceAsset": "assets/ui/sword-arc.png",
+    "width": 240,
+    "height": 189,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/4b6070b427d17add1d.png",
+    "sourceAsset": "assets/ui/healing-aura.png",
+    "width": 283,
+    "height": 166,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/ab018bc01114c3aa21.png",
+    "sourceAsset": "assets/ui/supply-rail.png",
+    "width": 1030,
+    "height": 123,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/f7f0d018f5e3a85573.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 227,
+    "height": 89,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/5766b2748acc1fb4eb.png",
+    "sourceAsset": "assets/items/item-armor-3-pot-lid.png",
+    "width": 96,
+    "height": 93,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/a826d5d1c75a6674ef.png",
+    "sourceAsset": "assets/ui/panel-mint.png",
+    "width": 126,
+    "height": 119,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/d29b65d49164915e3b.png",
+    "sourceAsset": "assets/characters/cat-healer.png",
+    "width": 99,
+    "height": 96,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/91a32233242b05bece.png",
+    "sourceAsset": "assets/ui/panel-cream.png",
+    "width": 796,
+    "height": 1061,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/f328ab890386a91e95.png",
+    "sourceAsset": "assets/ui/board-cell.png",
+    "width": 144,
+    "height": 139,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/0ea9d0228ab51630cd.png",
+    "sourceAsset": "assets/items/item-weapon-1-twig.png",
+    "width": 110,
+    "height": 110,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/4c21595ff8c5a06dec.png",
+    "sourceAsset": "assets/items/item-consumable-2-fish.png",
+    "width": 110,
+    "height": 110,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/69600d379bf18abc96.png",
+    "sourceAsset": "assets/items/item-weapon-2-wood-sword.png",
+    "width": 110,
+    "height": 110,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/d7f2e1dec5c0a102de.png",
+    "sourceAsset": "assets/items/item-special-2-yarn.png",
+    "width": 110,
+    "height": 110,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/31ad9dc80b70123eec.png",
+    "sourceAsset": "assets/items/item-armor-2-leather.png",
+    "width": 110,
+    "height": 110,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/fcade674b54ef34224.png",
+    "sourceAsset": "assets/items/item-armor-3-pot-lid.png",
+    "width": 110,
+    "height": 110,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/1621df51807f8e81ae.png",
+    "sourceAsset": "assets/items/item-weapon-3-fishbone-dagger.png",
+    "width": 110,
+    "height": 110,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/4cc2bd2c35529ff576.png",
+    "sourceAsset": "assets/items/item-consumable-3-tuna-can.png",
+    "width": 110,
+    "height": 110,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/6adbb91acc75f8850e.png",
+    "sourceAsset": "assets/ui/merge-glow.png",
+    "width": 150,
+    "height": 145,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/935291f04b10607a04.png",
+    "sourceAsset": "assets/items/item-weapon-5-flame-sword.png",
+    "width": 110,
+    "height": 110,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/252493a19cbacad1fe.png",
+    "sourceAsset": "assets/items/item-consumable-1-anchovy.png",
+    "width": 110,
+    "height": 110,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/e4570f1fa4cf01b456.png",
+    "sourceAsset": "assets/ui/ground-shadow.png",
+    "width": 195,
+    "height": 31,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/ba6a0b55012bca4fa6.png",
+    "sourceAsset": "assets/characters/cat-smith.png",
+    "width": 240,
+    "height": 170,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/bee0560864d93678f2.png",
+    "sourceAsset": "assets/ui/button-yellow-normal.png",
+    "width": 386,
+    "height": 162,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/4f2c514b3f1d6f5650.png",
+    "sourceAsset": "assets/ui/button-yellow-pressed.png",
+    "width": 386,
+    "height": 162,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/1ba8a7e4b31dfc82e7.png",
+    "sourceAsset": "assets/ui/button-yellow-disabled.png",
+    "width": 386,
+    "height": 162,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/6c1c4853e03cee3d39.png",
+    "sourceAsset": "assets/ui/button-yellow-selected.png",
+    "width": 386,
+    "height": 162,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/0b4cc5795708778b6a.png",
+    "sourceAsset": "assets/icons/paw.png",
+    "width": 54,
+    "height": 54,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/2e793b62cec308b316.png",
+    "sourceAsset": "assets/ui/panel-dark.png",
+    "width": 307,
+    "height": 94,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/45cb47516e3a320ea1.png",
+    "sourceAsset": "assets/icons/energy.png",
+    "width": 61,
+    "height": 62,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/e29e0953de9afb88c9.png",
+    "sourceAsset": "assets/ui/progress-track.png",
+    "width": 287,
+    "height": 43,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/4199658e3dc37d79e4.png",
+    "sourceAsset": "assets/ui/progress-gold.png",
+    "width": 195,
+    "height": 29,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/bbe5f0c435bbec4c85.png",
+    "sourceAsset": "assets/characters/boss-eel.png",
+    "width": 353,
+    "height": 292,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/9243b5519132718863.png",
+    "sourceAsset": "assets/ui/ground-shadow.png",
+    "width": 255,
+    "height": 20,
+    "operation": "stretch",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/e686823b01502fdc69.png",
+    "sourceAsset": "assets/characters/cat-tank.png",
+    "width": 262,
+    "height": 224,
+    "operation": "contain-bottom",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/ba122110f192c6ce31.png",
+    "sourceAsset": "assets/ui/tutorial-hand.png",
+    "width": 100,
+    "height": 120,
+    "operation": "contain",
+    "rotation": 0,
+    "opacity": 1
+  },
+  {
+    "file": "assets/placed/6d2455af819eb59711.png",
+    "sourceAsset": "assets/ui/panel-mint.png",
+    "width": 760,
+    "height": 64,
+    "operation": "nine-slice",
+    "rotation": 0,
+    "opacity": 1
+  }
+]

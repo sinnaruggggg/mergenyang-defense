@@ -1,0 +1,162 @@
+[
+  {
+    "id": "battle",
+    "size": [
+      1080,
+      1920
+    ],
+    "cells": 35,
+    "allCellContain": true,
+    "cellSize": [
+      144,
+      139
+    ],
+    "itemsContain": true,
+    "board": {
+      "columns": 5,
+      "rows": 7,
+      "origin": {
+        "x": 164,
+        "y": 674
+      },
+      "cell": {
+        "width": 144,
+        "height": 139
+      },
+      "pitch": {
+        "x": 152,
+        "y": 146
+      },
+      "cellFit": "contain",
+      "sourceAspect": 1.0333333333333334
+    }
+  },
+  {
+    "id": "battle-coop",
+    "size": [
+      1080,
+      1920
+    ],
+    "cells": 35,
+    "allCellContain": true,
+    "cellSize": [
+      144,
+      139
+    ],
+    "itemsContain": true,
+    "board": {
+      "columns": 5,
+      "rows": 7,
+      "origin": {
+        "x": 164,
+        "y": 674
+      },
+      "cell": {
+        "width": 144,
+        "height": 139
+      },
+      "pitch": {
+        "x": 152,
+        "y": 146
+      },
+      "cellFit": "contain",
+      "sourceAspect": 1.0333333333333334
+    }
+  },
+  {
+    "id": "battle-boss",
+    "size": [
+      1080,
+      1920
+    ],
+    "cells": 35,
+    "allCellContain": true,
+    "cellSize": [
+      144,
+      139
+    ],
+    "itemsContain": true,
+    "board": {
+      "columns": 5,
+      "rows": 7,
+      "origin": {
+        "x": 164,
+        "y": 674
+      },
+      "cell": {
+        "width": 144,
+        "height": 139
+      },
+      "pitch": {
+        "x": 152,
+        "y": 146
+      },
+      "cellFit": "contain",
+      "sourceAspect": 1.0333333333333334
+    }
+  },
+  {
+    "id": "battle-pvp",
+    "size": [
+      1080,
+      1920
+    ],
+    "cells": 35,
+    "allCellContain": true,
+    "cellSize": [
+      144,
+      139
+    ],
+    "itemsContain": true,
+    "board": {
+      "columns": 5,
+      "rows": 7,
+      "origin": {
+        "x": 164,
+        "y": 674
+      },
+      "cell": {
+        "width": 144,
+        "height": 139
+      },
+      "pitch": {
+        "x": 152,
+        "y": 146
+      },
+      "cellFit": "contain",
+      "sourceAspect": 1.0333333333333334
+    }
+  },
+  {
+    "id": "tutorial",
+    "size": [
+      1080,
+      1920
+    ],
+    "cells": 35,
+    "allCellContain": true,
+    "cellSize": [
+      144,
+      139
+    ],
+    "itemsContain": true,
+    "board": {
+      "columns": 5,
+      "rows": 7,
+      "origin": {
+        "x": 164,
+        "y": 674
+      },
+      "cell": {
+        "width": 144,
+        "height": 139
+      },
+      "pitch": {
+        "x": 152,
+        "y": 146
+      },
+      "cellFit": "contain",
+      "sourceAspect": 1.0333333333333334
+    }
+  }
+]

@@ -1,0 +1,257 @@
+icons.png
+size: 2048,1280
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+forge
+  rotate: false
+  xy: 8, 8
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+cat
+  rotate: false
+  xy: 264, 8
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+sword
+  rotate: false
+  xy: 520, 8
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+shop
+  rotate: false
+  xy: 776, 8
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+trophy
+  rotate: false
+  xy: 1032, 8
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+energy
+  rotate: false
+  xy: 1288, 8
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+gold
+  rotate: false
+  xy: 1544, 8
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+gem
+  rotate: false
+  xy: 1800, 8
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+mail
+  rotate: false
+  xy: 8, 264
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+book
+  rotate: false
+  xy: 264, 264
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+chest
+  rotate: false
+  xy: 520, 264
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+clock
+  rotate: false
+  xy: 776, 264
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+lock
+  rotate: false
+  xy: 1032, 264
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+star
+  rotate: false
+  xy: 1288, 264
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+shield
+  rotate: false
+  xy: 1544, 264
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+heart
+  rotate: false
+  xy: 1800, 264
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+bow
+  rotate: false
+  xy: 8, 520
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+wand
+  rotate: false
+  xy: 264, 520
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+people
+  rotate: false
+  xy: 520, 520
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+crown
+  rotate: false
+  xy: 776, 520
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+back
+  rotate: false
+  xy: 1032, 520
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+gear
+  rotate: false
+  xy: 1288, 520
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+flag
+  rotate: false
+  xy: 1544, 520
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+plus
+  rotate: false
+  xy: 1800, 520
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+close
+  rotate: false
+  xy: 8, 776
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+check
+  rotate: false
+  xy: 264, 776
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+tree
+  rotate: false
+  xy: 520, 776
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+rat
+  rotate: false
+  xy: 776, 776
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+scroll
+  rotate: false
+  xy: 1032, 776
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+play
+  rotate: false
+  xy: 1288, 776
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+ticket
+  rotate: false
+  xy: 1544, 776
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+help
+  rotate: false
+  xy: 1800, 776
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+pause
+  rotate: false
+  xy: 8, 1032
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+paw
+  rotate: false
+  xy: 264, 1032
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+can
+  rotate: false
+  xy: 520, 1032
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1
+yarn
+  rotate: false
+  xy: 776, 1032
+  size: 240, 240
+  orig: 240, 240
+  offset: 0, 0
+  index: -1

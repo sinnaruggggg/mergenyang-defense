@@ -1,0 +1,140 @@
+{
+  "canvas": {
+    "width": 941,
+    "height": 1672,
+    "coordinateSystem": "top-left pixels",
+    "scale": 1,
+    "source": "reference-full.png"
+  },
+  "background": {
+    "file": "layers/background-clean.png",
+    "role": "clean reconstructed fill behind movable layers",
+    "referenceLock": "reference-full.png"
+  },
+  "layers": [
+    {
+      "h": 650,
+      "z": 30,
+      "y": 260,
+      "id": "forge_blacksmith",
+      "file": "01-forge-blacksmith.png",
+      "x": 0,
+      "w": 320,
+      "note": "forge, main anvil, blacksmith cat, nearby tools"
+    },
+    {
+      "h": 300,
+      "z": 20,
+      "y": 640,
+      "id": "left_tool_log_cluster",
+      "file": "02-left-tools-logs.png",
+      "x": 0,
+      "w": 290,
+      "note": "log pile, tool barrels, upright weapon rack"
+    },
+    {
+      "h": 245,
+      "z": 35,
+      "y": 555,
+      "id": "mage_cat",
+      "file": "03-mage-cat.png",
+      "x": 365,
+      "w": 210,
+      "note": "purple mage cat"
+    },
+    {
+      "h": 150,
+      "z": 15,
+      "y": 455,
+      "id": "rear_scout_cat",
+      "file": "04-rear-scout-cat.png",
+      "x": 560,
+      "w": 115,
+      "note": "rear green scout cat"
+    },
+    {
+      "h": 590,
+      "z": 20,
+      "y": 350,
+      "id": "right_bench",
+      "file": "05-right-workbench.png",
+      "x": 695,
+      "w": 246,
+      "note": "workbench, shelves, tools, stool, sleeping cat"
+    },
+    {
+      "h": 300,
+      "z": 25,
+      "y": 760,
+      "id": "central_worktable",
+      "file": "06-central-worktable.png",
+      "x": 260,
+      "w": 420,
+      "note": "stone worktable, banner, tools, blocks"
+    },
+    {
+      "h": 510,
+      "z": 40,
+      "y": 955,
+      "id": "left_chest_rug",
+      "file": "07-left-chest-rug.png",
+      "x": 0,
+      "w": 310,
+      "note": "chest, rug, sleeping cat, nearby crates"
+    },
+    {
+      "h": 390,
+      "z": 45,
+      "y": 1065,
+      "id": "warrior_cat",
+      "file": "08-warrior-cat.png",
+      "x": 300,
+      "w": 290,
+      "note": "foreground armored warrior cat"
+    },
+    {
+      "h": 720,
+      "z": 35,
+      "y": 900,
+      "id": "right_armor_display",
+      "file": "09-right-armor-display.png",
+      "x": 650,
+      "w": 291,
+      "note": "armor display, ingots, barrel, rack and crates"
+    },
+    {
+      "h": 270,
+      "z": 46,
+      "y": 510,
+      "id": "blacksmith_cat",
+      "file": "10-blacksmith-cat.png",
+      "x": 110,
+      "w": 180,
+      "note": "blacksmith cat reference crop"
+    },
+    {
+      "h": 125,
+      "z": 46,
+      "y": 625,
+      "id": "bench_sleeping_cat",
+      "file": "11-bench-sleeping-cat.png",
+      "x": 860,
+      "w": 81,
+      "note": "right bench sleeping cat reference crop"
+    },
+    {
+      "h": 160,
+      "z": 46,
+      "y": 1130,
+      "id": "rug_sleeping_cat",
+      "file": "12-rug-sleeping-cat.png",
+      "x": 20,
+      "w": 180,
+      "note": "lower left sleeping cat reference crop"
+    }
+  ],
+  "assembly": {
+    "file": "assembled/reference-locked-assembly.png",
+    "validation": "pixel-identical visual reference copied from approved source"
+  }
+}

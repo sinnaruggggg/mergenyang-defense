@@ -1,0 +1,162 @@
+[
+  {
+    "line": "weapon",
+    "tier": 9,
+    "file": "item-weapon-9.png"
+  },
+  {
+    "line": "weapon",
+    "tier": 10,
+    "file": "item-weapon-10.png"
+  },
+  {
+    "line": "weapon",
+    "tier": 11,
+    "file": "item-weapon-11.png"
+  },
+  {
+    "line": "weapon",
+    "tier": 12,
+    "file": "item-weapon-12.png"
+  },
+  {
+    "line": "weapon",
+    "tier": 13,
+    "file": "item-weapon-13.png"
+  },
+  {
+    "line": "weapon",
+    "tier": 14,
+    "file": "item-weapon-14.png"
+  },
+  {
+    "line": "weapon",
+    "tier": 15,
+    "file": "item-weapon-15.png"
+  },
+  {
+    "line": "weapon",
+    "tier": 16,
+    "file": "item-weapon-16.png"
+  },
+  {
+    "line": "armor",
+    "tier": 9,
+    "file": "item-armor-9.png"
+  },
+  {
+    "line": "armor",
+    "tier": 10,
+    "file": "item-armor-10.png"
+  },
+  {
+    "line": "armor",
+    "tier": 11,
+    "file": "item-armor-11.png"
+  },
+  {
+    "line": "armor",
+    "tier": 12,
+    "file": "item-armor-12.png"
+  },
+  {
+    "line": "armor",
+    "tier": 13,
+    "file": "item-armor-13.png"
+  },
+  {
+    "line": "armor",
+    "tier": 14,
+    "file": "item-armor-14.png"
+  },
+  {
+    "line": "armor",
+    "tier": 15,
+    "file": "item-armor-15.png"
+  },
+  {
+    "line": "armor",
+    "tier": 16,
+    "file": "item-armor-16.png"
+  },
+  {
+    "line": "consumable",
+    "tier": 9,
+    "file": "item-consumable-9.png"
+  },
+  {
+    "line": "consumable",
+    "tier": 10,
+    "file": "item-consumable-10.png"
+  },
+  {
+    "line": "consumable",
+    "tier": 11,
+    "file": "item-consumable-11.png"
+  },
+  {
+    "line": "consumable",
+    "tier": 12,
+    "file": "item-consumable-12.png"
+  },
+  {
+    "line": "consumable",
+    "tier": 13,
+    "file": "item-consumable-13.png"
+  },
+  {
+    "line": "consumable",
+    "tier": 14,
+    "file": "item-consumable-14.png"
+  },
+  {
+    "line": "consumable",
+    "tier": 15,
+    "file": "item-consumable-15.png"
+  },
+  {
+    "line": "consumable",
+    "tier": 16,
+    "file": "item-consumable-16.png"
+  },
+  {
+    "line": "special",
+    "tier": 9,
+    "file": "item-special-9.png"
+  },
+  {
+    "line": "special",
+    "tier": 10,
+    "file": "item-special-10.png"
+  },
+  {
+    "line": "special",
+    "tier": 11,
+    "file": "item-special-11.png"
+  },
+  {
+    "line": "special",
+    "tier": 12,
+    "file": "item-special-12.png"
+  },
+  {
+    "line": "special",
+    "tier": 13,
+    "file": "item-special-13.png"
+  },
+  {
+    "line": "special",
+    "tier": 14,
+    "file": "item-special-14.png"
+  },
+  {
+    "line": "special",
+    "tier": 15,
+    "file": "item-special-15.png"
+  },
+  {
+    "line": "special",
+    "tier": 16,
+    "file": "item-special-16.png"
+  }
+]

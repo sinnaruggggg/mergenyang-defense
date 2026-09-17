@@ -1,0 +1,4294 @@
+{
+  "id": "codex",
+  "title": "수집 도감",
+  "group": "고양이",
+  "width": 1080,
+  "height": 1920,
+  "coordinateSystem": "top-left",
+  "safeInsets": {
+    "top": 32,
+    "right": 36,
+    "bottom": 32,
+    "left": 36
+  },
+  "elements": [
+    {
+      "id": "background-1",
+      "type": "image",
+      "x": 0,
+      "y": 0,
+      "width": 1080,
+      "height": 1920,
+      "z": 0,
+      "visible": true,
+      "asset": "assets/placed/348bc5b287f1eee990.png",
+      "yScene2D": 0,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/backgrounds/town.png",
+      "fit": "stretch"
+    },
+    {
+      "id": "resource-bar-3",
+      "type": "image",
+      "x": 30,
+      "y": 28,
+      "width": 1020,
+      "height": 90,
+      "z": 1,
+      "visible": true,
+      "asset": "assets/placed/67b2bb1183ebc40ed1.png",
+      "fit": "stretch",
+      "yScene2D": 1802,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "title-bar-4",
+      "type": "image",
+      "x": 30,
+      "y": 128,
+      "width": 1020,
+      "height": 104,
+      "z": 2,
+      "visible": true,
+      "asset": "assets/placed/21cf35d5dcee417b8d.png",
+      "fit": "stretch",
+      "yScene2D": 1688,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-energy-5",
+      "type": "image",
+      "x": 52,
+      "y": 43,
+      "width": 54,
+      "height": 54,
+      "z": 3,
+      "visible": true,
+      "asset": "assets/placed/9fa198e8f4245dbd0f.png",
+      "fit": "stretch",
+      "yScene2D": 1823,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/icons/energy.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-6",
+      "type": "image",
+      "x": 113,
+      "y": 50,
+      "width": 195,
+      "height": 47,
+      "z": 4,
+      "visible": true,
+      "text": "40/50",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 31,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "left",
+      "yScene2D": 1823,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "40/50",
+      "asset": "assets/text/4f65a133e0ebec885a.png",
+      "semanticType": "text",
+      "fit": "stretch"
+    },
+    {
+      "id": "icon-gold-7",
+      "type": "image",
+      "x": 368,
+      "y": 43,
+      "width": 54,
+      "height": 54,
+      "z": 5,
+      "visible": true,
+      "asset": "assets/placed/0274a23a232ef47921.png",
+      "fit": "stretch",
+      "yScene2D": 1823,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/icons/gold.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-8",
+      "type": "image",
+      "x": 429,
+      "y": 50,
+      "width": 195,
+      "height": 47,
+      "z": 6,
+      "visible": true,
+      "text": "12,500",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 31,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "left",
+      "yScene2D": 1823,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "12,500",
+      "asset": "assets/text/ed149040bb71721e2c.png",
+      "semanticType": "text",
+      "fit": "stretch"
+    },
+    {
+      "id": "icon-gem-9",
+      "type": "image",
+      "x": 684,
+      "y": 43,
+      "width": 54,
+      "height": 54,
+      "z": 7,
+      "visible": true,
+      "asset": "assets/placed/e238412bd856f270d9.png",
+      "fit": "stretch",
+      "yScene2D": 1823,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/icons/gem.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-10",
+      "type": "image",
+      "x": 745,
+      "y": 50,
+      "width": 195,
+      "height": 47,
+      "z": 8,
+      "visible": true,
+      "text": "320",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 31,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "left",
+      "yScene2D": 1823,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "320",
+      "asset": "assets/text/b710de3b8f0ad3e447.png",
+      "semanticType": "text",
+      "fit": "stretch"
+    },
+    {
+      "id": "button-11",
+      "type": "image",
+      "x": 38,
+      "y": 138,
+      "width": 76,
+      "height": 76,
+      "z": 9,
+      "visible": true,
+      "asset": "assets/placed/a55e725f8d802af4a0.png",
+      "role": "button",
+      "states": {
+        "normal": "assets/placed/a55e725f8d802af4a0.png",
+        "pressed": "assets/placed/9337f64dcf26049252.png",
+        "disabled": "assets/placed/b43981713656e9642f.png",
+        "selected": "assets/placed/8bb5ada6049787c325.png"
+      },
+      "disabled": false,
+      "hitRect": {
+        "x": 10,
+        "y": 110,
+        "width": 132,
+        "height": 132
+      },
+      "action": {
+        "type": "navigate",
+        "target": "cats"
+      },
+      "fit": "stretch",
+      "yScene2D": 1706,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/button-cream-normal.png",
+      "sourceFit": "nine-slice",
+      "contentFace": {
+        "x": 46,
+        "y": 145,
+        "width": 60,
+        "height": 49,
+        "center": {
+          "x": 76,
+          "y": 169
+        },
+        "method": "bright painted face, central 24% columns; excludes dark wooden base"
+      },
+      "alignmentStateOffsets": {
+        "normal": {
+          "x": 0,
+          "y": 0
+        },
+        "pressed": {
+          "x": 0,
+          "y": 3
+        },
+        "disabled": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": {
+          "x": 0,
+          "y": 7
+        }
+      }
+    },
+    {
+      "id": "icon-back-12",
+      "type": "image",
+      "x": 48,
+      "y": 141,
+      "width": 56,
+      "height": 56,
+      "z": 10,
+      "visible": true,
+      "asset": "assets/placed/dc05be2a4b9c6fda0c.png",
+      "fit": "stretch",
+      "yScene2D": 1723,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/icons/back.png",
+      "sourceFit": "contain",
+      "alignmentOwner": "button-11"
+    },
+    {
+      "id": "text-13",
+      "type": "image",
+      "x": 138,
+      "y": 143,
+      "width": 742,
+      "height": 65,
+      "z": 11,
+      "visible": true,
+      "text": "수집 도감",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 43,
+      "fontWeight": 800,
+      "color": "#3D4554",
+      "align": "left",
+      "yScene2D": 1712,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "수집 도감",
+      "asset": "assets/text/c72dfc7b3ad9bac4a9.png",
+      "semanticType": "text",
+      "fit": "stretch"
+    },
+    {
+      "id": "button-14",
+      "type": "image",
+      "x": 958,
+      "y": 138,
+      "width": 76,
+      "height": 76,
+      "z": 12,
+      "visible": true,
+      "asset": "assets/placed/a55e725f8d802af4a0.png",
+      "role": "button",
+      "states": {
+        "normal": "assets/placed/a55e725f8d802af4a0.png",
+        "pressed": "assets/placed/9337f64dcf26049252.png",
+        "disabled": "assets/placed/b43981713656e9642f.png",
+        "selected": "assets/placed/8bb5ada6049787c325.png"
+      },
+      "disabled": false,
+      "hitRect": {
+        "x": 930,
+        "y": 110,
+        "width": 132,
+        "height": 132
+      },
+      "action": {
+        "type": "navigate",
+        "target": "settings"
+      },
+      "fit": "stretch",
+      "yScene2D": 1706,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/button-cream-normal.png",
+      "sourceFit": "nine-slice",
+      "contentFace": {
+        "x": 966,
+        "y": 145,
+        "width": 60,
+        "height": 49,
+        "center": {
+          "x": 996,
+          "y": 169
+        },
+        "method": "bright painted face, central 24% columns; excludes dark wooden base"
+      },
+      "alignmentStateOffsets": {
+        "normal": {
+          "x": 0,
+          "y": 0
+        },
+        "pressed": {
+          "x": 0,
+          "y": 3
+        },
+        "disabled": {
+          "x": 0,
+          "y": 0
+        },
+        "selected": {
+          "x": 0,
+          "y": 7
+        }
+      }
+    },
+    {
+      "id": "icon-gear-15",
+      "type": "image",
+      "x": 968,
+      "y": 141,
+      "width": 56,
+      "height": 56,
+      "z": 13,
+      "visible": true,
+      "asset": "assets/placed/71b09a6dc991d6f600.png",
+      "fit": "stretch",
+      "yScene2D": 1723,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/icons/gear.png",
+      "sourceFit": "contain",
+      "alignmentOwner": "button-14"
+    },
+    {
+      "id": "bottom-nav-16",
+      "type": "image",
+      "x": 24,
+      "y": 1734,
+      "width": 1032,
+      "height": 160,
+      "z": 14,
+      "visible": true,
+      "asset": "assets/placed/8a8204f9fa1fc6115b.png",
+      "fit": "stretch",
+      "yScene2D": 26,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "nav-hit-17",
+      "type": "hit",
+      "x": 39,
+      "y": 1743,
+      "width": 190,
+      "height": 139,
+      "z": 15,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "workshop"
+      },
+      "hitRect": {
+        "x": 39,
+        "y": 1743,
+        "width": 190,
+        "height": 139
+      },
+      "yScene2D": 38,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "icon-forge-18",
+      "type": "image",
+      "x": 105,
+      "y": 1753,
+      "width": 60,
+      "height": 60,
+      "z": 16,
+      "visible": true,
+      "asset": "assets/placed/12ef2fd983b0f617f0.png",
+      "fit": "stretch",
+      "yScene2D": 107,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/icons/forge.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-19",
+      "type": "image",
+      "x": 452,
+      "y": 1792,
+      "width": 180,
+      "height": 44,
+      "z": 17,
+      "visible": true,
+      "text": "대장간",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 29,
+      "fontWeight": 700,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 84,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "대장간",
+      "asset": "assets/text/0d36b2df9353d9a6a4.png",
+      "semanticType": "text",
+      "fit": "stretch"
+    },
+    {
+      "id": "active-tab-20",
+      "type": "image",
+      "x": 243,
+      "y": 1744,
+      "width": 190,
+      "height": 135,
+      "z": 18,
+      "visible": true,
+      "asset": "assets/placed/f669ab757bc5fc9425.png",
+      "fit": "stretch",
+      "yScene2D": 41,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-mint.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "nav-hit-21",
+      "type": "hit",
+      "x": 243,
+      "y": 1743,
+      "width": 190,
+      "height": 139,
+      "z": 19,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "cats"
+      },
+      "hitRect": {
+        "x": 243,
+        "y": 1743,
+        "width": 190,
+        "height": 139
+      },
+      "yScene2D": 38,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "icon-cat-22",
+      "type": "image",
+      "x": 308,
+      "y": 1753,
+      "width": 60,
+      "height": 60,
+      "z": 20,
+      "visible": true,
+      "asset": "assets/placed/75618a37a684a9366c.png",
+      "fit": "stretch",
+      "yScene2D": 107,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/icons/cat.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-23",
+      "type": "image",
+      "x": 249,
+      "y": 1790,
+      "width": 180,
+      "height": 44,
+      "z": 21,
+      "visible": true,
+      "text": "고양이",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 29,
+      "fontWeight": 700,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 86,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "고양이",
+      "asset": "assets/text/b2c2d20f3863ead9e4.png",
+      "semanticType": "text",
+      "fit": "stretch"
+    },
+    {
+      "id": "nav-hit-24",
+      "type": "hit",
+      "x": 447,
+      "y": 1743,
+      "width": 190,
+      "height": 139,
+      "z": 22,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "modes"
+      },
+      "hitRect": {
+        "x": 447,
+        "y": 1743,
+        "width": 190,
+        "height": 139
+      },
+      "yScene2D": 38,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "icon-sword-25",
+      "type": "image",
+      "x": 512,
+      "y": 1753,
+      "width": 60,
+      "height": 60,
+      "z": 23,
+      "visible": true,
+      "asset": "assets/placed/2f37f0487b559d4738.png",
+      "fit": "stretch",
+      "yScene2D": 107,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/icons/sword.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-26",
+      "type": "image",
+      "x": 452,
+      "y": 1792,
+      "width": 180,
+      "height": 44,
+      "z": 24,
+      "visible": true,
+      "text": "전투",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 29,
+      "fontWeight": 700,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 84,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "전투",
+      "asset": "assets/text/37a71f4045908e9a35.png",
+      "semanticType": "text",
+      "fit": "stretch"
+    },
+    {
+      "id": "nav-hit-27",
+      "type": "hit",
+      "x": 651,
+      "y": 1743,
+      "width": 190,
+      "height": 139,
+      "z": 25,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "shop"
+      },
+      "hitRect": {
+        "x": 651,
+        "y": 1743,
+        "width": 190,
+        "height": 139
+      },
+      "yScene2D": 38,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "icon-shop-28",
+      "type": "image",
+      "x": 716,
+      "y": 1753,
+      "width": 60,
+      "height": 60,
+      "z": 26,
+      "visible": true,
+      "asset": "assets/placed/48f9aabd0f0ed93c20.png",
+      "fit": "stretch",
+      "yScene2D": 107,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/icons/shop.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-29",
+      "type": "image",
+      "x": 453,
+      "y": 1792,
+      "width": 180,
+      "height": 44,
+      "z": 27,
+      "visible": true,
+      "text": "상점",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 29,
+      "fontWeight": 700,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 84,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "상점",
+      "asset": "assets/text/e93cf34436b725b2bc.png",
+      "semanticType": "text",
+      "fit": "stretch"
+    },
+    {
+      "id": "nav-hit-30",
+      "type": "hit",
+      "x": 855,
+      "y": 1743,
+      "width": 190,
+      "height": 139,
+      "z": 28,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "ranking"
+      },
+      "hitRect": {
+        "x": 855,
+        "y": 1743,
+        "width": 190,
+        "height": 139
+      },
+      "yScene2D": 38,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "icon-trophy-31",
+      "type": "image",
+      "x": 920,
+      "y": 1753,
+      "width": 60,
+      "height": 60,
+      "z": 29,
+      "visible": true,
+      "asset": "assets/placed/f021e42cfce953f174.png",
+      "fit": "stretch",
+      "yScene2D": 107,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/icons/trophy.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-32",
+      "type": "image",
+      "x": 453,
+      "y": 1792,
+      "width": 180,
+      "height": 44,
+      "z": 30,
+      "visible": true,
+      "text": "랭킹",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 29,
+      "fontWeight": 700,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 84,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "랭킹",
+      "asset": "assets/text/ae295d719fe151b0fc.png",
+      "semanticType": "text",
+      "fit": "stretch"
+    },
+    {
+      "id": "button-33",
+      "type": "image",
+      "x": 48,
+      "y": 250,
+      "width": 318,
+      "height": 82,
+      "z": 31,
+      "visible": true,
+      "asset": "assets/placed/fda2fbf8115782f1b9.png",
+      "role": "button",
+      "states": {
+        "normal": "assets/placed/fda2fbf8115782f1b9.png",
+        "pressed": "assets/placed/5af164fc5addbad6b3.png",
+        "disabled": "assets/placed/904c9c2e26a761a59e.png",
+        "selected": "assets/placed/1519ba443ee7105a7d.png"
+      },
+      "disabled": false,
+      "hitRect": {
+        "x": 48,
+        "y": 225,
+        "width": 318,
+        "height": 132
+      },
+      "action": {
+        "type": "navigate",
+        "target": "codex"
+      },
+      "fit": "stretch",
+      "yScene2D": 1588,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/button-mint-normal.png",
+      "sourceFit": "nine-slice",
+      "contentFace": {
+        "x": 56,
+        "y": 260,
+        "width": 302,
+        "height": 47,
+        "center": {
+          "x": 207,
+          "y": 283
+        },
+        "method": "bright painted face, central 24% columns; excludes dark wooden base"
+      },
+      "alignmentStateOffsets": {
+        "normal": {
+          "x": 0,
+          "y": 0
+        },
+        "pressed": {
+          "x": 0,
+          "y": 4
+        },
+        "disabled": {
+          "x": 0,
+          "y": 2
+        },
+        "selected": {
+          "x": 0,
+          "y": 8
+        }
+      }
+    },
+    {
+      "id": "text-34",
+      "type": "image",
+      "x": 65,
+      "y": 259,
+      "width": 286,
+      "height": 48,
+      "z": 32,
+      "visible": true,
+      "text": "아이템",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 32,
+      "fontWeight": 700,
+      "color": "#3D4554",
+      "align": "center",
+      "buttonOwner": "button-33",
+      "yScene2D": 1613,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "아이템",
+      "asset": "assets/text/96e4b2a37652236efb.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentOwner": "button-33"
+    },
+    {
+      "id": "button-35",
+      "type": "image",
+      "x": 376,
+      "y": 250,
+      "width": 318,
+      "height": 82,
+      "z": 33,
+      "visible": true,
+      "asset": "assets/placed/c91c38b96ae935da3e.png",
+      "role": "button",
+      "states": {
+        "normal": "assets/placed/c91c38b96ae935da3e.png",
+        "pressed": "assets/placed/f5a506b051e208c919.png",
+        "disabled": "assets/placed/878767c2ebbbdb0d1a.png",
+        "selected": "assets/placed/788d28902c650078ef.png"
+      },
+      "disabled": false,
+      "hitRect": {
+        "x": 376,
+        "y": 225,
+        "width": 318,
+        "height": 132
+      },
+      "action": {
+        "type": "navigate",
+        "target": "cats"
+      },
+      "fit": "stretch",
+      "yScene2D": 1588,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/button-cream-normal.png",
+      "sourceFit": "nine-slice",
+      "contentFace": {
+        "x": 384,
+        "y": 258,
+        "width": 302,
+        "height": 52,
+        "center": {
+          "x": 535,
+          "y": 283.5
+        },
+        "method": "bright painted face, central 24% columns; excludes dark wooden base"
+      },
+      "alignmentStateOffsets": {
+        "normal": {
+          "x": 0,
+          "y": 0
+        },
+        "pressed": {
+          "x": 0,
+          "y": 4
+        },
+        "disabled": {
+          "x": 0,
+          "y": 1
+        },
+        "selected": {
+          "x": 0,
+          "y": 8
+        }
+      }
+    },
+    {
+      "id": "text-36",
+      "type": "image",
+      "x": 393,
+      "y": 260,
+      "width": 286,
+      "height": 48,
+      "z": 34,
+      "visible": true,
+      "text": "고양이",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 32,
+      "fontWeight": 700,
+      "color": "#3D4554",
+      "align": "center",
+      "buttonOwner": "button-35",
+      "yScene2D": 1612,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "고양이",
+      "asset": "assets/text/cb80923c105731ae8f.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentOwner": "button-35"
+    },
+    {
+      "id": "button-37",
+      "type": "image",
+      "x": 704,
+      "y": 250,
+      "width": 318,
+      "height": 82,
+      "z": 35,
+      "visible": true,
+      "asset": "assets/placed/c91c38b96ae935da3e.png",
+      "role": "button",
+      "states": {
+        "normal": "assets/placed/c91c38b96ae935da3e.png",
+        "pressed": "assets/placed/f5a506b051e208c919.png",
+        "disabled": "assets/placed/878767c2ebbbdb0d1a.png",
+        "selected": "assets/placed/788d28902c650078ef.png"
+      },
+      "disabled": false,
+      "hitRect": {
+        "x": 704,
+        "y": 225,
+        "width": 318,
+        "height": 132
+      },
+      "action": {
+        "type": "navigate",
+        "target": "collection-bonus"
+      },
+      "fit": "stretch",
+      "yScene2D": 1588,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/button-cream-normal.png",
+      "sourceFit": "nine-slice",
+      "contentFace": {
+        "x": 712,
+        "y": 258,
+        "width": 302,
+        "height": 52,
+        "center": {
+          "x": 863,
+          "y": 283.5
+        },
+        "method": "bright painted face, central 24% columns; excludes dark wooden base"
+      },
+      "alignmentStateOffsets": {
+        "normal": {
+          "x": 0,
+          "y": 0
+        },
+        "pressed": {
+          "x": 0,
+          "y": 4
+        },
+        "disabled": {
+          "x": 0,
+          "y": 1
+        },
+        "selected": {
+          "x": 0,
+          "y": 8
+        }
+      }
+    },
+    {
+      "id": "text-38",
+      "type": "image",
+      "x": 720,
+      "y": 260,
+      "width": 286,
+      "height": 48,
+      "z": 36,
+      "visible": true,
+      "text": "수집 보너스",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 32,
+      "fontWeight": 700,
+      "color": "#3D4554",
+      "align": "center",
+      "buttonOwner": "button-37",
+      "yScene2D": 1612,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "수집 보너스",
+      "asset": "assets/text/7fff3de3e8e9402e3b.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentOwner": "button-37"
+    },
+    {
+      "id": "subtitle-back-text-39",
+      "type": "image",
+      "asset": "assets/placed/ec3fb3ec37edde286e.png",
+      "x": 54,
+      "y": 358,
+      "width": 928,
+      "height": 69,
+      "visible": true,
+      "fit": "stretch",
+      "z": 37,
+      "yScene2D": 1493,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "text-39",
+      "type": "image",
+      "x": 68,
+      "y": 366,
+      "width": 900,
+      "height": 56,
+      "z": 38,
+      "visible": true,
+      "text": "수집률  18 / 32",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 37,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "left",
+      "yScene2D": 1498,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "수집률  18 / 32",
+      "asset": "assets/text/a8a8b7825ce3fb8c9c.png",
+      "semanticType": "text",
+      "fit": "stretch"
+    },
+    {
+      "id": "track-40",
+      "type": "image",
+      "x": 64,
+      "y": 440,
+      "width": 952,
+      "height": 28,
+      "z": 39,
+      "visible": true,
+      "opacity": 1,
+      "asset": "assets/placed/57c0343888c9417062.png",
+      "fit": "stretch",
+      "yScene2D": 1452,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/progress-track.png",
+      "sourceFit": "stretch"
+    },
+    {
+      "id": "fill-41",
+      "type": "image",
+      "x": 64,
+      "y": 440,
+      "width": 536,
+      "height": 28,
+      "z": 40,
+      "visible": true,
+      "opacity": 1,
+      "asset": "assets/placed/2536270d7bd8975e7e.png",
+      "fit": "stretch",
+      "yScene2D": 1452,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/progress-mint.png",
+      "sourceFit": "stretch"
+    },
+    {
+      "id": "subtitle-back-text-42",
+      "type": "image",
+      "asset": "assets/placed/310bec907cff1ec90b.png",
+      "x": 50,
+      "y": 502,
+      "width": 928,
+      "height": 58,
+      "visible": true,
+      "fit": "stretch",
+      "z": 41,
+      "yScene2D": 1360,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "text-42",
+      "type": "image",
+      "x": 64,
+      "y": 510,
+      "width": 900,
+      "height": 45,
+      "z": 42,
+      "visible": true,
+      "text": "무기",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 30,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "left",
+      "yScene2D": 1365,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "무기",
+      "asset": "assets/text/17709e1595f70f4a13.png",
+      "semanticType": "text",
+      "fit": "stretch"
+    },
+    {
+      "id": "panel-43",
+      "type": "image",
+      "x": 52,
+      "y": 566,
+      "width": 114,
+      "height": 163,
+      "z": 43,
+      "visible": true,
+      "asset": "assets/placed/dca7001520af995f8f.png",
+      "fit": "stretch",
+      "yScene2D": 1191,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-sword-44",
+      "type": "image",
+      "x": 69,
+      "y": 583,
+      "width": 80,
+      "height": 80,
+      "z": 44,
+      "visible": true,
+      "asset": "assets/placed/d9bdf80c5e4f97b9a0.png",
+      "fit": "stretch",
+      "yScene2D": 1257,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-weapon-1-twig.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-45",
+      "type": "image",
+      "x": 53,
+      "y": 669,
+      "width": 114,
+      "height": 36,
+      "z": 45,
+      "visible": true,
+      "text": "T1",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 1215,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T1",
+      "asset": "assets/text/8593dacfb216279873.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 109
+    },
+    {
+      "id": "item-hit-46",
+      "type": "hit",
+      "x": 52,
+      "y": 566,
+      "width": 114,
+      "height": 163,
+      "z": 46,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 52,
+        "y": 566,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 1191,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "panel-47",
+      "type": "image",
+      "x": 175,
+      "y": 566,
+      "width": 114,
+      "height": 163,
+      "z": 47,
+      "visible": true,
+      "asset": "assets/placed/dca7001520af995f8f.png",
+      "fit": "stretch",
+      "yScene2D": 1191,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-sword-48",
+      "type": "image",
+      "x": 192,
+      "y": 583,
+      "width": 80,
+      "height": 80,
+      "z": 48,
+      "visible": true,
+      "asset": "assets/placed/33d1d9597cbcf02c42.png",
+      "fit": "stretch",
+      "yScene2D": 1257,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-weapon-2-wood-sword.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-49",
+      "type": "image",
+      "x": 176,
+      "y": 669,
+      "width": 114,
+      "height": 36,
+      "z": 49,
+      "visible": true,
+      "text": "T2",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 1215,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T2",
+      "asset": "assets/text/394446442cc56ff178.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 232
+    },
+    {
+      "id": "item-hit-50",
+      "type": "hit",
+      "x": 175,
+      "y": 566,
+      "width": 114,
+      "height": 163,
+      "z": 50,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 175,
+        "y": 566,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 1191,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "panel-51",
+      "type": "image",
+      "x": 298,
+      "y": 566,
+      "width": 114,
+      "height": 163,
+      "z": 51,
+      "visible": true,
+      "asset": "assets/placed/dca7001520af995f8f.png",
+      "fit": "stretch",
+      "yScene2D": 1191,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-sword-52",
+      "type": "image",
+      "x": 315,
+      "y": 583,
+      "width": 80,
+      "height": 80,
+      "z": 52,
+      "visible": true,
+      "asset": "assets/placed/aeba6081b920a846af.png",
+      "fit": "stretch",
+      "yScene2D": 1257,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-weapon-3-fishbone-dagger.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-53",
+      "type": "image",
+      "x": 299,
+      "y": 669,
+      "width": 114,
+      "height": 36,
+      "z": 53,
+      "visible": true,
+      "text": "T3",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 1215,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T3",
+      "asset": "assets/text/e69833a4d17ab9f53a.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 355
+    },
+    {
+      "id": "item-hit-54",
+      "type": "hit",
+      "x": 298,
+      "y": 566,
+      "width": 114,
+      "height": 163,
+      "z": 54,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 298,
+        "y": 566,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 1191,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "panel-55",
+      "type": "image",
+      "x": 421,
+      "y": 566,
+      "width": 114,
+      "height": 163,
+      "z": 55,
+      "visible": true,
+      "asset": "assets/placed/dca7001520af995f8f.png",
+      "fit": "stretch",
+      "yScene2D": 1191,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-sword-56",
+      "type": "image",
+      "x": 438,
+      "y": 583,
+      "width": 80,
+      "height": 80,
+      "z": 56,
+      "visible": true,
+      "asset": "assets/placed/9b93c3890ebd6adc5c.png",
+      "fit": "stretch",
+      "yScene2D": 1257,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-weapon-4-iron-sword.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-57",
+      "type": "image",
+      "x": 421,
+      "y": 669,
+      "width": 114,
+      "height": 36,
+      "z": 57,
+      "visible": true,
+      "text": "T4",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 1215,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T4",
+      "asset": "assets/text/3e167c314c4b1fddae.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 478
+    },
+    {
+      "id": "item-hit-58",
+      "type": "hit",
+      "x": 421,
+      "y": 566,
+      "width": 114,
+      "height": 163,
+      "z": 58,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 421,
+        "y": 566,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 1191,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "panel-59",
+      "type": "image",
+      "x": 544,
+      "y": 566,
+      "width": 114,
+      "height": 163,
+      "z": 59,
+      "visible": true,
+      "asset": "assets/placed/dca7001520af995f8f.png",
+      "fit": "stretch",
+      "yScene2D": 1191,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-sword-60",
+      "type": "image",
+      "x": 561,
+      "y": 583,
+      "width": 80,
+      "height": 80,
+      "z": 60,
+      "visible": true,
+      "asset": "assets/placed/013b0bb13390c2f9de.png",
+      "fit": "stretch",
+      "yScene2D": 1257,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-weapon-5-flame-sword.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-61",
+      "type": "image",
+      "x": 545,
+      "y": 669,
+      "width": 114,
+      "height": 36,
+      "z": 61,
+      "visible": true,
+      "text": "T5",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 1215,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T5",
+      "asset": "assets/text/31ed1c57e8adb1d716.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 601
+    },
+    {
+      "id": "item-hit-62",
+      "type": "hit",
+      "x": 544,
+      "y": 566,
+      "width": 114,
+      "height": 163,
+      "z": 62,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 544,
+        "y": 566,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 1191,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "panel-63",
+      "type": "image",
+      "x": 667,
+      "y": 566,
+      "width": 114,
+      "height": 163,
+      "z": 63,
+      "visible": true,
+      "asset": "assets/placed/c28a8ae52e862c7b4b.png",
+      "fit": "stretch",
+      "yScene2D": 1191,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-lavender.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-lock-64",
+      "type": "image",
+      "x": 684,
+      "y": 583,
+      "width": 80,
+      "height": 80,
+      "z": 64,
+      "visible": true,
+      "asset": "assets/placed/be48d5ce4dd0df996e.png",
+      "fit": "stretch",
+      "yScene2D": 1257,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-weapon-6-ice-sword.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-65",
+      "type": "image",
+      "x": 667,
+      "y": 669,
+      "width": 114,
+      "height": 36,
+      "z": 65,
+      "visible": true,
+      "text": "T6",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 1215,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T6",
+      "asset": "assets/text/72e78debd35ecd03a9.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 724
+    },
+    {
+      "id": "item-hit-66",
+      "type": "hit",
+      "x": 667,
+      "y": 566,
+      "width": 114,
+      "height": 163,
+      "z": 66,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 667,
+        "y": 566,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 1191,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "panel-67",
+      "type": "image",
+      "x": 790,
+      "y": 566,
+      "width": 114,
+      "height": 163,
+      "z": 67,
+      "visible": true,
+      "asset": "assets/placed/c28a8ae52e862c7b4b.png",
+      "fit": "stretch",
+      "yScene2D": 1191,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-lavender.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-lock-68",
+      "type": "image",
+      "x": 807,
+      "y": 583,
+      "width": 80,
+      "height": 80,
+      "z": 68,
+      "visible": true,
+      "asset": "assets/placed/776efc64822ece5431.png",
+      "fit": "stretch",
+      "yScene2D": 1257,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-weapon-7-royal-sword.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-69",
+      "type": "image",
+      "x": 791,
+      "y": 669,
+      "width": 114,
+      "height": 36,
+      "z": 69,
+      "visible": true,
+      "text": "T7",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 1215,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T7",
+      "asset": "assets/text/61ecc813390fa4436a.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 847
+    },
+    {
+      "id": "item-hit-70",
+      "type": "hit",
+      "x": 790,
+      "y": 566,
+      "width": 114,
+      "height": 163,
+      "z": 70,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 790,
+        "y": 566,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 1191,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "panel-71",
+      "type": "image",
+      "x": 913,
+      "y": 566,
+      "width": 114,
+      "height": 163,
+      "z": 71,
+      "visible": true,
+      "asset": "assets/placed/c28a8ae52e862c7b4b.png",
+      "fit": "stretch",
+      "yScene2D": 1191,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-lavender.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-lock-72",
+      "type": "image",
+      "x": 930,
+      "y": 583,
+      "width": 80,
+      "height": 80,
+      "z": 72,
+      "visible": true,
+      "asset": "assets/placed/351e39cad5908f5de6.png",
+      "fit": "stretch",
+      "yScene2D": 1257,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-weapon-8-churu-blade.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-73",
+      "type": "image",
+      "x": 914,
+      "y": 669,
+      "width": 114,
+      "height": 36,
+      "z": 73,
+      "visible": true,
+      "text": "T8",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 1215,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T8",
+      "asset": "assets/text/52eb47f19552d089fb.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 970
+    },
+    {
+      "id": "item-hit-74",
+      "type": "hit",
+      "x": 913,
+      "y": 566,
+      "width": 114,
+      "height": 163,
+      "z": 74,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 913,
+        "y": 566,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 1191,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "subtitle-back-text-75",
+      "type": "image",
+      "asset": "assets/placed/310bec907cff1ec90b.png",
+      "x": 50,
+      "y": 770,
+      "width": 928,
+      "height": 58,
+      "visible": true,
+      "fit": "stretch",
+      "z": 75,
+      "yScene2D": 1092,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "text-75",
+      "type": "image",
+      "x": 64,
+      "y": 778,
+      "width": 900,
+      "height": 45,
+      "z": 76,
+      "visible": true,
+      "text": "방어구",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 30,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "left",
+      "yScene2D": 1097,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "방어구",
+      "asset": "assets/text/04b2c1dd8308e5b30f.png",
+      "semanticType": "text",
+      "fit": "stretch"
+    },
+    {
+      "id": "panel-76",
+      "type": "image",
+      "x": 52,
+      "y": 834,
+      "width": 114,
+      "height": 163,
+      "z": 77,
+      "visible": true,
+      "asset": "assets/placed/dca7001520af995f8f.png",
+      "fit": "stretch",
+      "yScene2D": 923,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-shield-77",
+      "type": "image",
+      "x": 69,
+      "y": 851,
+      "width": 80,
+      "height": 80,
+      "z": 78,
+      "visible": true,
+      "asset": "assets/placed/5dd100a003b9c93f2b.png",
+      "fit": "stretch",
+      "yScene2D": 989,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-armor-1-cardboard.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-78",
+      "type": "image",
+      "x": 53,
+      "y": 937,
+      "width": 114,
+      "height": 36,
+      "z": 79,
+      "visible": true,
+      "text": "T1",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 947,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T1",
+      "asset": "assets/text/8593dacfb216279873.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 109
+    },
+    {
+      "id": "item-hit-79",
+      "type": "hit",
+      "x": 52,
+      "y": 834,
+      "width": 114,
+      "height": 163,
+      "z": 80,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 52,
+        "y": 834,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 923,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "panel-80",
+      "type": "image",
+      "x": 175,
+      "y": 834,
+      "width": 114,
+      "height": 163,
+      "z": 81,
+      "visible": true,
+      "asset": "assets/placed/dca7001520af995f8f.png",
+      "fit": "stretch",
+      "yScene2D": 923,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-shield-81",
+      "type": "image",
+      "x": 192,
+      "y": 851,
+      "width": 80,
+      "height": 80,
+      "z": 82,
+      "visible": true,
+      "asset": "assets/placed/2c8bb73678181087e1.png",
+      "fit": "stretch",
+      "yScene2D": 989,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-armor-2-leather.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-82",
+      "type": "image",
+      "x": 176,
+      "y": 937,
+      "width": 114,
+      "height": 36,
+      "z": 83,
+      "visible": true,
+      "text": "T2",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 947,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T2",
+      "asset": "assets/text/394446442cc56ff178.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 232
+    },
+    {
+      "id": "item-hit-83",
+      "type": "hit",
+      "x": 175,
+      "y": 834,
+      "width": 114,
+      "height": 163,
+      "z": 84,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 175,
+        "y": 834,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 923,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "panel-84",
+      "type": "image",
+      "x": 298,
+      "y": 834,
+      "width": 114,
+      "height": 163,
+      "z": 85,
+      "visible": true,
+      "asset": "assets/placed/dca7001520af995f8f.png",
+      "fit": "stretch",
+      "yScene2D": 923,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-shield-85",
+      "type": "image",
+      "x": 315,
+      "y": 851,
+      "width": 80,
+      "height": 80,
+      "z": 86,
+      "visible": true,
+      "asset": "assets/placed/13f61c1f886034b405.png",
+      "fit": "stretch",
+      "yScene2D": 989,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-armor-3-pot-lid.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-86",
+      "type": "image",
+      "x": 299,
+      "y": 937,
+      "width": 114,
+      "height": 36,
+      "z": 87,
+      "visible": true,
+      "text": "T3",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 947,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T3",
+      "asset": "assets/text/e69833a4d17ab9f53a.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 355
+    },
+    {
+      "id": "item-hit-87",
+      "type": "hit",
+      "x": 298,
+      "y": 834,
+      "width": 114,
+      "height": 163,
+      "z": 88,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 298,
+        "y": 834,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 923,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "panel-88",
+      "type": "image",
+      "x": 421,
+      "y": 834,
+      "width": 114,
+      "height": 163,
+      "z": 89,
+      "visible": true,
+      "asset": "assets/placed/dca7001520af995f8f.png",
+      "fit": "stretch",
+      "yScene2D": 923,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-shield-89",
+      "type": "image",
+      "x": 438,
+      "y": 851,
+      "width": 80,
+      "height": 80,
+      "z": 90,
+      "visible": true,
+      "asset": "assets/placed/396fb10f2586dd044d.png",
+      "fit": "stretch",
+      "yScene2D": 989,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-armor-4-chainmail.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-90",
+      "type": "image",
+      "x": 421,
+      "y": 937,
+      "width": 114,
+      "height": 36,
+      "z": 91,
+      "visible": true,
+      "text": "T4",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 947,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T4",
+      "asset": "assets/text/3e167c314c4b1fddae.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 478
+    },
+    {
+      "id": "item-hit-91",
+      "type": "hit",
+      "x": 421,
+      "y": 834,
+      "width": 114,
+      "height": 163,
+      "z": 92,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 421,
+        "y": 834,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 923,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "panel-92",
+      "type": "image",
+      "x": 544,
+      "y": 834,
+      "width": 114,
+      "height": 163,
+      "z": 93,
+      "visible": true,
+      "asset": "assets/placed/dca7001520af995f8f.png",
+      "fit": "stretch",
+      "yScene2D": 923,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-shield-93",
+      "type": "image",
+      "x": 561,
+      "y": 851,
+      "width": 80,
+      "height": 80,
+      "z": 94,
+      "visible": true,
+      "asset": "assets/placed/8030aa5235a8bd2bd4.png",
+      "fit": "stretch",
+      "yScene2D": 989,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-armor-5-iron-armor.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-94",
+      "type": "image",
+      "x": 545,
+      "y": 937,
+      "width": 114,
+      "height": 36,
+      "z": 95,
+      "visible": true,
+      "text": "T5",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 947,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T5",
+      "asset": "assets/text/31ed1c57e8adb1d716.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 601
+    },
+    {
+      "id": "item-hit-95",
+      "type": "hit",
+      "x": 544,
+      "y": 834,
+      "width": 114,
+      "height": 163,
+      "z": 96,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 544,
+        "y": 834,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 923,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "panel-96",
+      "type": "image",
+      "x": 667,
+      "y": 834,
+      "width": 114,
+      "height": 163,
+      "z": 97,
+      "visible": true,
+      "asset": "assets/placed/c28a8ae52e862c7b4b.png",
+      "fit": "stretch",
+      "yScene2D": 923,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-lavender.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-lock-97",
+      "type": "image",
+      "x": 684,
+      "y": 851,
+      "width": 80,
+      "height": 80,
+      "z": 98,
+      "visible": true,
+      "asset": "assets/placed/f0f4e83d73310638fd.png",
+      "fit": "stretch",
+      "yScene2D": 989,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-armor-6-knight-armor.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-98",
+      "type": "image",
+      "x": 667,
+      "y": 937,
+      "width": 114,
+      "height": 36,
+      "z": 99,
+      "visible": true,
+      "text": "T6",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 947,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T6",
+      "asset": "assets/text/72e78debd35ecd03a9.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 724
+    },
+    {
+      "id": "item-hit-99",
+      "type": "hit",
+      "x": 667,
+      "y": 834,
+      "width": 114,
+      "height": 163,
+      "z": 100,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 667,
+        "y": 834,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 923,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "panel-100",
+      "type": "image",
+      "x": 790,
+      "y": 834,
+      "width": 114,
+      "height": 163,
+      "z": 101,
+      "visible": true,
+      "asset": "assets/placed/c28a8ae52e862c7b4b.png",
+      "fit": "stretch",
+      "yScene2D": 923,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-lavender.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-lock-101",
+      "type": "image",
+      "x": 807,
+      "y": 851,
+      "width": 80,
+      "height": 80,
+      "z": 102,
+      "visible": true,
+      "asset": "assets/placed/e2a50c7cdf8d3b14fe.png",
+      "fit": "stretch",
+      "yScene2D": 989,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-armor-7-royal-armor.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-102",
+      "type": "image",
+      "x": 791,
+      "y": 937,
+      "width": 114,
+      "height": 36,
+      "z": 103,
+      "visible": true,
+      "text": "T7",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 947,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T7",
+      "asset": "assets/text/61ecc813390fa4436a.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 847
+    },
+    {
+      "id": "item-hit-103",
+      "type": "hit",
+      "x": 790,
+      "y": 834,
+      "width": 114,
+      "height": 163,
+      "z": 104,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 790,
+        "y": 834,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 923,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "panel-104",
+      "type": "image",
+      "x": 913,
+      "y": 834,
+      "width": 114,
+      "height": 163,
+      "z": 105,
+      "visible": true,
+      "asset": "assets/placed/c28a8ae52e862c7b4b.png",
+      "fit": "stretch",
+      "yScene2D": 923,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-lavender.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-lock-105",
+      "type": "image",
+      "x": 930,
+      "y": 851,
+      "width": 80,
+      "height": 80,
+      "z": 106,
+      "visible": true,
+      "asset": "assets/placed/54767c27742a7a4dbe.png",
+      "fit": "stretch",
+      "yScene2D": 989,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-armor-8-cat-tower-armor.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-106",
+      "type": "image",
+      "x": 914,
+      "y": 937,
+      "width": 114,
+      "height": 36,
+      "z": 107,
+      "visible": true,
+      "text": "T8",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 947,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T8",
+      "asset": "assets/text/52eb47f19552d089fb.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 970
+    },
+    {
+      "id": "item-hit-107",
+      "type": "hit",
+      "x": 913,
+      "y": 834,
+      "width": 114,
+      "height": 163,
+      "z": 108,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 913,
+        "y": 834,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 923,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "subtitle-back-text-108",
+      "type": "image",
+      "asset": "assets/placed/310bec907cff1ec90b.png",
+      "x": 50,
+      "y": 1038,
+      "width": 928,
+      "height": 58,
+      "visible": true,
+      "fit": "stretch",
+      "z": 109,
+      "yScene2D": 824,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "text-108",
+      "type": "image",
+      "x": 64,
+      "y": 1046,
+      "width": 900,
+      "height": 45,
+      "z": 110,
+      "visible": true,
+      "text": "소모품",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 30,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "left",
+      "yScene2D": 829,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "소모품",
+      "asset": "assets/text/93de2f797959b55ec8.png",
+      "semanticType": "text",
+      "fit": "stretch"
+    },
+    {
+      "id": "panel-109",
+      "type": "image",
+      "x": 52,
+      "y": 1102,
+      "width": 114,
+      "height": 163,
+      "z": 111,
+      "visible": true,
+      "asset": "assets/placed/dca7001520af995f8f.png",
+      "fit": "stretch",
+      "yScene2D": 655,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-can-110",
+      "type": "image",
+      "x": 69,
+      "y": 1119,
+      "width": 80,
+      "height": 80,
+      "z": 112,
+      "visible": true,
+      "asset": "assets/placed/7b9ac80fd87ff18b79.png",
+      "fit": "stretch",
+      "yScene2D": 721,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-consumable-1-anchovy.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-111",
+      "type": "image",
+      "x": 53,
+      "y": 1205,
+      "width": 114,
+      "height": 36,
+      "z": 113,
+      "visible": true,
+      "text": "T1",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 679,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T1",
+      "asset": "assets/text/8593dacfb216279873.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 109
+    },
+    {
+      "id": "item-hit-112",
+      "type": "hit",
+      "x": 52,
+      "y": 1102,
+      "width": 114,
+      "height": 163,
+      "z": 114,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 52,
+        "y": 1102,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 655,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "panel-113",
+      "type": "image",
+      "x": 175,
+      "y": 1102,
+      "width": 114,
+      "height": 163,
+      "z": 115,
+      "visible": true,
+      "asset": "assets/placed/dca7001520af995f8f.png",
+      "fit": "stretch",
+      "yScene2D": 655,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-can-114",
+      "type": "image",
+      "x": 192,
+      "y": 1119,
+      "width": 80,
+      "height": 80,
+      "z": 116,
+      "visible": true,
+      "asset": "assets/placed/e79490670a5da01dea.png",
+      "fit": "stretch",
+      "yScene2D": 721,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-consumable-2-fish.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-115",
+      "type": "image",
+      "x": 176,
+      "y": 1205,
+      "width": 114,
+      "height": 36,
+      "z": 117,
+      "visible": true,
+      "text": "T2",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 679,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T2",
+      "asset": "assets/text/394446442cc56ff178.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 232
+    },
+    {
+      "id": "item-hit-116",
+      "type": "hit",
+      "x": 175,
+      "y": 1102,
+      "width": 114,
+      "height": 163,
+      "z": 118,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 175,
+        "y": 1102,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 655,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "panel-117",
+      "type": "image",
+      "x": 298,
+      "y": 1102,
+      "width": 114,
+      "height": 163,
+      "z": 119,
+      "visible": true,
+      "asset": "assets/placed/dca7001520af995f8f.png",
+      "fit": "stretch",
+      "yScene2D": 655,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-can-118",
+      "type": "image",
+      "x": 315,
+      "y": 1119,
+      "width": 80,
+      "height": 80,
+      "z": 120,
+      "visible": true,
+      "asset": "assets/placed/3b714bfe322167e883.png",
+      "fit": "stretch",
+      "yScene2D": 721,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-consumable-3-tuna-can.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-119",
+      "type": "image",
+      "x": 299,
+      "y": 1205,
+      "width": 114,
+      "height": 36,
+      "z": 121,
+      "visible": true,
+      "text": "T3",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 679,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T3",
+      "asset": "assets/text/e69833a4d17ab9f53a.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 355
+    },
+    {
+      "id": "item-hit-120",
+      "type": "hit",
+      "x": 298,
+      "y": 1102,
+      "width": 114,
+      "height": 163,
+      "z": 122,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 298,
+        "y": 1102,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 655,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "panel-121",
+      "type": "image",
+      "x": 421,
+      "y": 1102,
+      "width": 114,
+      "height": 163,
+      "z": 123,
+      "visible": true,
+      "asset": "assets/placed/dca7001520af995f8f.png",
+      "fit": "stretch",
+      "yScene2D": 655,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-can-122",
+      "type": "image",
+      "x": 438,
+      "y": 1119,
+      "width": 80,
+      "height": 80,
+      "z": 124,
+      "visible": true,
+      "asset": "assets/placed/0055cae18a8ed5e397.png",
+      "fit": "stretch",
+      "yScene2D": 721,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-consumable-4-fish-fillet.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-123",
+      "type": "image",
+      "x": 421,
+      "y": 1205,
+      "width": 114,
+      "height": 36,
+      "z": 125,
+      "visible": true,
+      "text": "T4",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 679,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T4",
+      "asset": "assets/text/3e167c314c4b1fddae.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 478
+    },
+    {
+      "id": "item-hit-124",
+      "type": "hit",
+      "x": 421,
+      "y": 1102,
+      "width": 114,
+      "height": 163,
+      "z": 126,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 421,
+        "y": 1102,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 655,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "panel-125",
+      "type": "image",
+      "x": 544,
+      "y": 1102,
+      "width": 114,
+      "height": 163,
+      "z": 127,
+      "visible": true,
+      "asset": "assets/placed/dca7001520af995f8f.png",
+      "fit": "stretch",
+      "yScene2D": 655,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-can-126",
+      "type": "image",
+      "x": 561,
+      "y": 1119,
+      "width": 80,
+      "height": 80,
+      "z": 128,
+      "visible": true,
+      "asset": "assets/placed/00124f3824747601f9.png",
+      "fit": "stretch",
+      "yScene2D": 721,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-consumable-5-sashimi.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-127",
+      "type": "image",
+      "x": 545,
+      "y": 1205,
+      "width": 114,
+      "height": 36,
+      "z": 129,
+      "visible": true,
+      "text": "T5",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 679,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T5",
+      "asset": "assets/text/31ed1c57e8adb1d716.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 601
+    },
+    {
+      "id": "item-hit-128",
+      "type": "hit",
+      "x": 544,
+      "y": 1102,
+      "width": 114,
+      "height": 163,
+      "z": 130,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 544,
+        "y": 1102,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 655,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "panel-129",
+      "type": "image",
+      "x": 667,
+      "y": 1102,
+      "width": 114,
+      "height": 163,
+      "z": 131,
+      "visible": true,
+      "asset": "assets/placed/c28a8ae52e862c7b4b.png",
+      "fit": "stretch",
+      "yScene2D": 655,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-lavender.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-lock-130",
+      "type": "image",
+      "x": 684,
+      "y": 1119,
+      "width": 80,
+      "height": 80,
+      "z": 132,
+      "visible": true,
+      "asset": "assets/placed/e4a4e69fbee7a57a2f.png",
+      "fit": "stretch",
+      "yScene2D": 721,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-consumable-6-salmon-bowl.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-131",
+      "type": "image",
+      "x": 667,
+      "y": 1205,
+      "width": 114,
+      "height": 36,
+      "z": 133,
+      "visible": true,
+      "text": "T6",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 679,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T6",
+      "asset": "assets/text/72e78debd35ecd03a9.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 724
+    },
+    {
+      "id": "item-hit-132",
+      "type": "hit",
+      "x": 667,
+      "y": 1102,
+      "width": 114,
+      "height": 163,
+      "z": 134,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 667,
+        "y": 1102,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 655,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "panel-133",
+      "type": "image",
+      "x": 790,
+      "y": 1102,
+      "width": 114,
+      "height": 163,
+      "z": 135,
+      "visible": true,
+      "asset": "assets/placed/c28a8ae52e862c7b4b.png",
+      "fit": "stretch",
+      "yScene2D": 655,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-lavender.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-lock-134",
+      "type": "image",
+      "x": 807,
+      "y": 1119,
+      "width": 80,
+      "height": 80,
+      "z": 136,
+      "visible": true,
+      "asset": "assets/placed/6f26e39874562768bb.png",
+      "fit": "stretch",
+      "yScene2D": 721,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-consumable-7-churu.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-135",
+      "type": "image",
+      "x": 791,
+      "y": 1205,
+      "width": 114,
+      "height": 36,
+      "z": 137,
+      "visible": true,
+      "text": "T7",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 679,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T7",
+      "asset": "assets/text/61ecc813390fa4436a.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 847
+    },
+    {
+      "id": "item-hit-136",
+      "type": "hit",
+      "x": 790,
+      "y": 1102,
+      "width": 114,
+      "height": 163,
+      "z": 138,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 790,
+        "y": 1102,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 655,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "panel-137",
+      "type": "image",
+      "x": 913,
+      "y": 1102,
+      "width": 114,
+      "height": 163,
+      "z": 139,
+      "visible": true,
+      "asset": "assets/placed/c28a8ae52e862c7b4b.png",
+      "fit": "stretch",
+      "yScene2D": 655,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-lavender.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-lock-138",
+      "type": "image",
+      "x": 930,
+      "y": 1119,
+      "width": 80,
+      "height": 80,
+      "z": 140,
+      "visible": true,
+      "asset": "assets/placed/61c91c784556baa609.png",
+      "fit": "stretch",
+      "yScene2D": 721,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-consumable-8-gold-churu.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-139",
+      "type": "image",
+      "x": 914,
+      "y": 1205,
+      "width": 114,
+      "height": 36,
+      "z": 141,
+      "visible": true,
+      "text": "T8",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 679,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T8",
+      "asset": "assets/text/52eb47f19552d089fb.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 970
+    },
+    {
+      "id": "item-hit-140",
+      "type": "hit",
+      "x": 913,
+      "y": 1102,
+      "width": 114,
+      "height": 163,
+      "z": 142,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 913,
+        "y": 1102,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 655,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "subtitle-back-text-141",
+      "type": "image",
+      "asset": "assets/placed/310bec907cff1ec90b.png",
+      "x": 50,
+      "y": 1306,
+      "width": 928,
+      "height": 58,
+      "visible": true,
+      "fit": "stretch",
+      "z": 143,
+      "yScene2D": 556,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "text-141",
+      "type": "image",
+      "x": 64,
+      "y": 1314,
+      "width": 900,
+      "height": 45,
+      "z": 144,
+      "visible": true,
+      "text": "특수",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 30,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "left",
+      "yScene2D": 561,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "특수",
+      "asset": "assets/text/9f51fa60e8aca2ec51.png",
+      "semanticType": "text",
+      "fit": "stretch"
+    },
+    {
+      "id": "panel-142",
+      "type": "image",
+      "x": 52,
+      "y": 1370,
+      "width": 114,
+      "height": 163,
+      "z": 145,
+      "visible": true,
+      "asset": "assets/placed/dca7001520af995f8f.png",
+      "fit": "stretch",
+      "yScene2D": 387,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-yarn-143",
+      "type": "image",
+      "x": 69,
+      "y": 1387,
+      "width": 80,
+      "height": 80,
+      "z": 146,
+      "visible": true,
+      "asset": "assets/placed/3e39e049d64885bd17.png",
+      "fit": "stretch",
+      "yScene2D": 453,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-special-1-fluff.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-144",
+      "type": "image",
+      "x": 53,
+      "y": 1473,
+      "width": 114,
+      "height": 36,
+      "z": 147,
+      "visible": true,
+      "text": "T1",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 411,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T1",
+      "asset": "assets/text/8593dacfb216279873.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 109
+    },
+    {
+      "id": "item-hit-145",
+      "type": "hit",
+      "x": 52,
+      "y": 1370,
+      "width": 114,
+      "height": 163,
+      "z": 148,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 52,
+        "y": 1370,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 387,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "panel-146",
+      "type": "image",
+      "x": 175,
+      "y": 1370,
+      "width": 114,
+      "height": 163,
+      "z": 149,
+      "visible": true,
+      "asset": "assets/placed/dca7001520af995f8f.png",
+      "fit": "stretch",
+      "yScene2D": 387,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-yarn-147",
+      "type": "image",
+      "x": 192,
+      "y": 1387,
+      "width": 80,
+      "height": 80,
+      "z": 150,
+      "visible": true,
+      "asset": "assets/placed/56aa8b6dbdb6d8fc7b.png",
+      "fit": "stretch",
+      "yScene2D": 453,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-special-2-yarn.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-148",
+      "type": "image",
+      "x": 176,
+      "y": 1473,
+      "width": 114,
+      "height": 36,
+      "z": 151,
+      "visible": true,
+      "text": "T2",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 411,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T2",
+      "asset": "assets/text/394446442cc56ff178.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 232
+    },
+    {
+      "id": "item-hit-149",
+      "type": "hit",
+      "x": 175,
+      "y": 1370,
+      "width": 114,
+      "height": 163,
+      "z": 152,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 175,
+        "y": 1370,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 387,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "panel-150",
+      "type": "image",
+      "x": 298,
+      "y": 1370,
+      "width": 114,
+      "height": 163,
+      "z": 153,
+      "visible": true,
+      "asset": "assets/placed/dca7001520af995f8f.png",
+      "fit": "stretch",
+      "yScene2D": 387,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-yarn-151",
+      "type": "image",
+      "x": 315,
+      "y": 1387,
+      "width": 80,
+      "height": 80,
+      "z": 154,
+      "visible": true,
+      "asset": "assets/placed/28df0a0e6d7b2beaaf.png",
+      "fit": "stretch",
+      "yScene2D": 453,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-special-3-fur-bomb.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-152",
+      "type": "image",
+      "x": 299,
+      "y": 1473,
+      "width": 114,
+      "height": 36,
+      "z": 155,
+      "visible": true,
+      "text": "T3",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 411,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T3",
+      "asset": "assets/text/e69833a4d17ab9f53a.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 355
+    },
+    {
+      "id": "item-hit-153",
+      "type": "hit",
+      "x": 298,
+      "y": 1370,
+      "width": 114,
+      "height": 163,
+      "z": 156,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 298,
+        "y": 1370,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 387,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "panel-154",
+      "type": "image",
+      "x": 421,
+      "y": 1370,
+      "width": 114,
+      "height": 163,
+      "z": 157,
+      "visible": true,
+      "asset": "assets/placed/dca7001520af995f8f.png",
+      "fit": "stretch",
+      "yScene2D": 387,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-yarn-155",
+      "type": "image",
+      "x": 438,
+      "y": 1387,
+      "width": 80,
+      "height": 80,
+      "z": 158,
+      "visible": true,
+      "asset": "assets/placed/f6c94803f92417d393.png",
+      "fit": "stretch",
+      "yScene2D": 453,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-special-4-fire-fur.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-156",
+      "type": "image",
+      "x": 421,
+      "y": 1473,
+      "width": 114,
+      "height": 36,
+      "z": 159,
+      "visible": true,
+      "text": "T4",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 411,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T4",
+      "asset": "assets/text/3e167c314c4b1fddae.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 478
+    },
+    {
+      "id": "item-hit-157",
+      "type": "hit",
+      "x": 421,
+      "y": 1370,
+      "width": 114,
+      "height": 163,
+      "z": 160,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 421,
+        "y": 1370,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 387,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "panel-158",
+      "type": "image",
+      "x": 544,
+      "y": 1370,
+      "width": 114,
+      "height": 163,
+      "z": 161,
+      "visible": true,
+      "asset": "assets/placed/dca7001520af995f8f.png",
+      "fit": "stretch",
+      "yScene2D": 387,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-cream.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-yarn-159",
+      "type": "image",
+      "x": 561,
+      "y": 1387,
+      "width": 80,
+      "height": 80,
+      "z": 162,
+      "visible": true,
+      "asset": "assets/placed/ad96c5c80dfc3fe80e.png",
+      "fit": "stretch",
+      "yScene2D": 453,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-special-5-lightning-fur.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-160",
+      "type": "image",
+      "x": 545,
+      "y": 1473,
+      "width": 114,
+      "height": 36,
+      "z": 163,
+      "visible": true,
+      "text": "T5",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 411,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T5",
+      "asset": "assets/text/31ed1c57e8adb1d716.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 601
+    },
+    {
+      "id": "item-hit-161",
+      "type": "hit",
+      "x": 544,
+      "y": 1370,
+      "width": 114,
+      "height": 163,
+      "z": 164,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 544,
+        "y": 1370,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 387,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "panel-162",
+      "type": "image",
+      "x": 667,
+      "y": 1370,
+      "width": 114,
+      "height": 163,
+      "z": 165,
+      "visible": true,
+      "asset": "assets/placed/c28a8ae52e862c7b4b.png",
+      "fit": "stretch",
+      "yScene2D": 387,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-lavender.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-lock-163",
+      "type": "image",
+      "x": 684,
+      "y": 1387,
+      "width": 80,
+      "height": 80,
+      "z": 166,
+      "visible": true,
+      "asset": "assets/placed/30c8ed9ba837ad64ad.png",
+      "fit": "stretch",
+      "yScene2D": 453,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-special-6-ice-fur.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-164",
+      "type": "image",
+      "x": 667,
+      "y": 1473,
+      "width": 114,
+      "height": 36,
+      "z": 167,
+      "visible": true,
+      "text": "T6",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 411,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T6",
+      "asset": "assets/text/72e78debd35ecd03a9.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 724
+    },
+    {
+      "id": "item-hit-165",
+      "type": "hit",
+      "x": 667,
+      "y": 1370,
+      "width": 114,
+      "height": 163,
+      "z": 168,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 667,
+        "y": 1370,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 387,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "panel-166",
+      "type": "image",
+      "x": 790,
+      "y": 1370,
+      "width": 114,
+      "height": 163,
+      "z": 169,
+      "visible": true,
+      "asset": "assets/placed/c28a8ae52e862c7b4b.png",
+      "fit": "stretch",
+      "yScene2D": 387,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-lavender.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-lock-167",
+      "type": "image",
+      "x": 807,
+      "y": 1387,
+      "width": 80,
+      "height": 80,
+      "z": 170,
+      "visible": true,
+      "asset": "assets/placed/9ff86ab199e19a2e5f.png",
+      "fit": "stretch",
+      "yScene2D": 453,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-special-7-star-fur.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-168",
+      "type": "image",
+      "x": 791,
+      "y": 1473,
+      "width": 114,
+      "height": 36,
+      "z": 171,
+      "visible": true,
+      "text": "T7",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 411,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T7",
+      "asset": "assets/text/61ecc813390fa4436a.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 847
+    },
+    {
+      "id": "item-hit-169",
+      "type": "hit",
+      "x": 790,
+      "y": 1370,
+      "width": 114,
+      "height": 163,
+      "z": 172,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 790,
+        "y": 1370,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 387,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "panel-170",
+      "type": "image",
+      "x": 913,
+      "y": 1370,
+      "width": 114,
+      "height": 163,
+      "z": 173,
+      "visible": true,
+      "asset": "assets/placed/c28a8ae52e862c7b4b.png",
+      "fit": "stretch",
+      "yScene2D": 387,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/ui/panel-lavender.png",
+      "sourceFit": "nine-slice"
+    },
+    {
+      "id": "icon-lock-171",
+      "type": "image",
+      "x": 930,
+      "y": 1387,
+      "width": 80,
+      "height": 80,
+      "z": 174,
+      "visible": true,
+      "asset": "assets/placed/fda5ce060698fb9589.png",
+      "fit": "stretch",
+      "yScene2D": 453,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "sourceAsset": "assets/items/item-special-8-giant-fur.png",
+      "sourceFit": "contain"
+    },
+    {
+      "id": "text-172",
+      "type": "image",
+      "x": 914,
+      "y": 1473,
+      "width": 114,
+      "height": 36,
+      "z": 175,
+      "visible": true,
+      "text": "T8",
+      "fontFamily": "Noto Sans KR",
+      "fontSize": 24,
+      "fontWeight": 600,
+      "color": "#3D4554",
+      "align": "center",
+      "yScene2D": 411,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "textContent": "T8",
+      "asset": "assets/text/52eb47f19552d089fb.png",
+      "semanticType": "text",
+      "fit": "stretch",
+      "alignmentAxisX": 970
+    },
+    {
+      "id": "item-hit-173",
+      "type": "hit",
+      "x": 913,
+      "y": 1370,
+      "width": 114,
+      "height": 163,
+      "z": 176,
+      "visible": true,
+      "opacity": 0,
+      "role": "button",
+      "action": {
+        "type": "navigate",
+        "target": "item-detail"
+      },
+      "hitRect": {
+        "x": 913,
+        "y": 1370,
+        "width": 114,
+        "height": 163
+      },
+      "yScene2D": 387,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "actions": [
+    {
+      "element": "button-11",
+      "target": "cats",
+      "disabled": false
+    },
+    {
+      "element": "button-14",
+      "target": "settings",
+      "disabled": false
+    },
+    {
+      "element": "nav-hit-17",
+      "target": "workshop"
+    },
+    {
+      "element": "nav-hit-21",
+      "target": "cats"
+    },
+    {
+      "element": "nav-hit-24",
+      "target": "modes"
+    },
+    {
+      "element": "nav-hit-27",
+      "target": "shop"
+    },
+    {
+      "element": "nav-hit-30",
+      "target": "ranking"
+    },
+    {
+      "element": "button-33",
+      "target": "codex",
+      "disabled": false
+    },
+    {
+      "element": "button-35",
+      "target": "cats",
+      "disabled": false
+    },
+    {
+      "element": "button-37",
+      "target": "collection-bonus",
+      "disabled": false
+    }
+  ],
+  "status": "design",
+  "n": 173
+}

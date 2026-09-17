@@ -1,0 +1,152 @@
+[
+  {
+    "id": "cat-warrior",
+    "name": "전사냥이",
+    "action": "sword raised back then sword swung forward right; keep shield",
+    "existing": true
+  },
+  {
+    "id": "cat-tank",
+    "name": "뚱냥이",
+    "action": "shield held close then shield thrust forward right; keep sword",
+    "existing": true
+  },
+  {
+    "id": "cat-archer",
+    "name": "궁사냥이",
+    "action": "bow string drawn with arrow then string released and empty bow forward right",
+    "existing": true
+  },
+  {
+    "id": "cat-healer",
+    "name": "성직냥이",
+    "action": "staff drawn upright then staff thrust right for holy magic attack",
+    "existing": true
+  },
+  {
+    "id": "cat-wizard",
+    "name": "마법사냥이",
+    "action": "crystal staff raised then staff aimed right for magic attack",
+    "existing": true
+  },
+  {
+    "id": "cat-smith",
+    "name": "대장장이냥이",
+    "action": "hammer raised then hammer swung down forward right",
+    "existing": true
+  },
+  {
+    "id": "boss-rat",
+    "name": "쥐왕 찍찍대제",
+    "action": "mace lifted back then mace swung down toward left",
+    "existing": true
+  },
+  {
+    "id": "boss-eel",
+    "name": "고대 뱀장어 킹",
+    "action": "jaw slightly open then jaw open for electric bite toward left",
+    "existing": true
+  },
+  {
+    "id": "enemy-rat",
+    "name": "쥐 병사",
+    "action": "small gray mouse soldier with iron helmet wooden round shield short spear; spear drawn then thrust left",
+    "existing": false
+  },
+  {
+    "id": "enemy-roach",
+    "name": "바퀴벌레",
+    "action": "cute chestnut armored cockroach six legs two antennae; front legs drawn then striking left",
+    "existing": false
+  },
+  {
+    "id": "enemy-mushroom",
+    "name": "독버섯",
+    "action": "cute lilac spotted poisonous mushroom creature; little arms drawn then thrust left to cast spores",
+    "existing": false
+  },
+  {
+    "id": "enemy-crow",
+    "name": "까마귀",
+    "action": "cute charcoal lavender crow; wings lifted then wings sweeping down to peck left",
+    "existing": false
+  },
+  {
+    "id": "enemy-scorpion",
+    "name": "전갈",
+    "action": "cute sandy amber scorpion; tail cocked back then stinger thrust left",
+    "existing": false
+  },
+  {
+    "id": "enemy-mummy",
+    "name": "미라 개",
+    "action": "cute beige dog wrapped in ivory mummy bandages blue collar; paws drawn then swipe left",
+    "existing": false
+  },
+  {
+    "id": "enemy-bat",
+    "name": "얼음 박쥐",
+    "action": "cute icy blue bat with crystal ears; wings raised then wings down bite left",
+    "existing": false
+  },
+  {
+    "id": "enemy-penguin",
+    "name": "펭귄 기사",
+    "action": "cute penguin silver knight ice-blue scarf short lance; lance drawn then thrust left",
+    "existing": false
+  },
+  {
+    "id": "enemy-vacuum",
+    "name": "청소기 로봇",
+    "action": "cute round mint cream vacuum robot with face and hose; hose drawn then hose aimed left",
+    "existing": false
+  },
+  {
+    "id": "enemy-drone",
+    "name": "드론",
+    "action": "cute lavender brass hovering drone with twin propellers and small blaster; blaster recoiled then extended left",
+    "existing": false
+  },
+  {
+    "id": "boss-witch",
+    "name": "까마귀 마녀",
+    "action": "raven witch lavender wide hat sage robe with wooden staff; staff raised then pointed left",
+    "existing": false
+  },
+  {
+    "id": "boss-sphinx",
+    "name": "스핑크스 개",
+    "action": "cute huge golden dog sphinx blue gold pharaoh headdress; front paw raised then swiping left",
+    "existing": false
+  },
+  {
+    "id": "boss-crab",
+    "name": "거대 얼음 게",
+    "action": "huge cute glacier-blue crystal crab; large claw raised then clamping left",
+    "existing": false
+  },
+  {
+    "id": "boss-mech",
+    "name": "메카 진공청소기",
+    "action": "large brass mint armored vacuum machine boss with hose claw and tank treads; claw raised then strikes left",
+    "existing": false
+  },
+  {
+    "id": "boss-whale",
+    "name": "하늘 고래",
+    "action": "cute celestial sky-blue whale with cream belly gold star markings tiny winglike fins; fins raised then fins swept down and mouth open left",
+    "existing": false
+  },
+  {
+    "id": "boss-golem",
+    "name": "쓰레기산 골렘",
+    "action": "cute bulky golem assembled from pastel scrap wood tin cans and metal with glowing teal eyes; fist drawn back then punch left",
+    "existing": false
+  },
+  {
+    "id": "boss-dog",
+    "name": "암흑 개대왕",
+    "action": "huge charcoal purple dog king gold crown violet cape dark armor; armored paw drawn then claw strike left",
+    "existing": false
+  }
+]
