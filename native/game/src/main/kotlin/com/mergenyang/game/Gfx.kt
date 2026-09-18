@@ -47,8 +47,8 @@ object Gfx {
     /** 화면 맨 위·맨 아래의 논리 y */
     val top get() = -ext
     val bottom get() = H + ext
-    /** cover 배경의 확대 배율 (9:16 원화 기준) */
-    val coverK get() = (H + ext * 2f) / H
+    /** 9:21 원화 범위를 넘는 기기에서만 균등 확대한다. */
+    val coverK get() = maxOf(1f, (H + ext * 2f) / 2520f)
     fun coverX(x: Float) = W / 2f + (x - W / 2f) * coverK
     fun coverY(y: Float) = H / 2f + (y - H / 2f) * coverK
 
@@ -72,53 +72,29 @@ object Gfx {
 
     /** 확장된 화면 전체를 비율 유지로 채운다 (좌우는 잘림) */
     fun cover(key: String) {
-        val k = coverK
-        img(key, W / 2f - W * k / 2f, H / 2f - H * k / 2f, W * k, H * k)
+        background(key)
     }
 
-    private val bands = HashMap<String, Pair<TextureRegion, TextureRegion>>()
-
-    /**
-     * 배경을 기준 박스에 그대로 그리고, 긴 화면이면 위·아래 가장자리 띠를 늘려 이어 붙인다.
-     * 레이아웃이 배경과 맞물린 화면(전투·타이틀)도 어긋나지 않는다.
-     */
+    /** 긴 원화는 폭 기준으로 표시하고, 기기 높이만큼 위아래가 더 보이게 한다. */
     fun background(key: String) {
         val r = assets.region(key) ?: return
-        drawRegion(r, 0f, 0f, W, H)
-        if (ext < 1f) return
-        val (topBand, bottomBand) = bands.getOrPut(key) {
-            val strip = (r.regionHeight * 0.035f).toInt().coerceAtLeast(8)
-            // 위 띠는 원화 첫 줄이, 아래 띠는 마지막 줄이 이음새에 오도록 위아래를 뒤집는다 (거울 연장)
-            val top = TextureRegion(r, 0, 0, r.regionWidth, strip).apply { flip(false, true) }
-            val bottom = TextureRegion(r, 0, r.regionHeight - strip, r.regionWidth, strip).apply { flip(false, true) }
-            top to bottom
+        // 새 전투 원화의 돌바닥(높이 32.6%)을 캐릭터 접지선 640에 맞춘다.
+        // 배경만 균등 확대하며 보드/캐릭터/레일의 게임 좌표는 유지한다.
+        if (key == "bg/battle") {
+            val ground = 640f
+            val anchor = r.regionHeight * 0.326f
+            val s = maxOf(W / r.regionWidth, (ground + ext) / anchor,
+                (H + ext - ground) / (r.regionHeight - anchor))
+            drawRegion(r, (W - r.regionWidth * s) / 2f, ground - anchor * s,
+                r.regionWidth * s, r.regionHeight * s)
+            return
         }
-        drawRegion(topBand, 0f, -ext, W, ext + 1f)
-        drawRegion(bottomBand, 0f, H - 1f, W, ext + 1f)
-        // 바깥쪽으로 갈수록 살짝 어두워지는 음영 (늘어난 띠의 흐릿함을 감춘다)
-        val tex = shadeTexture()
-        setColor(EDGE_SHADE, 0.35f)
-        batch.draw(tex, 0f, H, W, ext, 0f, 0f, 1f, 1f)
-        batch.draw(tex, 0f, -ext, W, ext, 0f, 1f, 1f, 0f)
-        batch.setColor(Color.WHITE)
+        val scale = maxOf(W / r.regionWidth, (H + ext * 2f) / r.regionHeight)
+        val w = r.regionWidth * scale
+        val h = r.regionHeight * scale
+        drawRegion(r, (W - w) / 2f, (H - h) / 2f, w, h)
     }
 
-    private var shade: com.badlogic.gdx.graphics.Texture? = null
-
-    /** 세로 알파 그라데이션 (윗줄 투명 → 아랫줄 불투명) */
-    private fun shadeTexture(): com.badlogic.gdx.graphics.Texture = shade ?: run {
-        val pm = com.badlogic.gdx.graphics.Pixmap(1, 64, com.badlogic.gdx.graphics.Pixmap.Format.RGBA8888)
-        for (i in 0 until 64) {
-            pm.setColor(1f, 1f, 1f, (i / 63f) * (i / 63f))
-            pm.drawPixel(0, i)
-        }
-        com.badlogic.gdx.graphics.Texture(pm).also {
-            it.setFilter(com.badlogic.gdx.graphics.Texture.TextureFilter.Linear, com.badlogic.gdx.graphics.Texture.TextureFilter.Linear)
-            pm.dispose()
-            shade = it
-        }
-    }
-    private val EDGE_SHADE = Color.valueOf("2a160cff")
 
     private fun setColor(c: Color, alpha: Float) {
         batch.setColor(c.r, c.g, c.b, c.a * alpha)

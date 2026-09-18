@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>머지냥 · 긴 배경 비교</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#21170f;color:#f7e9cf;font-family:system-ui,sans-serif;padding:24px}header{max-width:1250px;margin:auto}h1{font-size:24px}p{line-height:1.6;color:#cdbda4}nav{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}button,select{font:inherit;padding:10px 16px;border:1px solid #876b46;border-radius:8px;background:#3c2c1c;color:inherit;cursor:pointer}button.active{background:#dfb765;color:#271c10}main{display:flex;gap:24px;align-items:start;max-width:1250px;margin:auto;flex-wrap:wrap}figure{margin:0;flex:1;min-width:230px;max-width:390px}figcaption{padding:12px 0}.frame{width:100%;aspect-ratio:9/21;position:relative;overflow:hidden;background:#37291c;border:1px solid #806740}.frame img{position:absolute;top:50%;left:0;width:100%;height:auto;transform:translateY(-50%)}.original{aspect-ratio:9/16}.note{font-size:13px}a{color:#f0d18b}
+</style>
+<header><h1>머지냥 디펜스 · 긴 배경 4종</h1><p>새로 그린 위아래 공간을 확인하세요. 화면 비율을 바꾸면 그림 크기는 유지하고 보이는 영역만 달라집니다.</p><nav id="menus"></nav><label>기기 비율 <select id="ratio"><option value="21">9:21</option><option value="20">9:20</option><option value="19.5">9:19.5</option><option value="16">9:16</option></select></label><p class="note">생성본은 중앙 세부가 원본과 픽셀 단위로 같지 않습니다. 전투는 전장·보드 좌표 확인 후 연결해야 합니다. 현재 게임/APK를 덮어쓰지 않은 배경 에셋 미리보기입니다.</p></header>
+<main><figure><figcaption>기존 배경 · 9:16</figcaption><div class="frame original"><img id="old"></div></figure><figure><figcaption>긴 배경 · 전체 그림</figcaption><div class="frame"><img id="full"></div></figure><figure><figcaption>기기에서 보이는 영역</figcaption><div class="frame" id="crop"><img id="new"></div><p><a id="download" download>PNG 저장</a></p></figure></main>
+<script>
+const names={workshop:'대장간 · 타이틀 · 성장',town:'고양이 · 전투 선택 · 랭킹',shop:'상점',battle:'전투'};
+function choose(n){document.getElementById('old').src='../../native/assets/backgrounds/'+n+'.png';for(const id of ['full','new'])document.getElementById(id).src=n+'.png';document.getElementById('download').href=n+'.png';document.querySelectorAll('button').forEach(b=>b.classList.toggle('active',b.dataset.name===n));}
+for(const [n,label]of Object.entries(names)){const b=document.createElement('button');b.textContent=label;b.dataset.name=n;b.onclick=()=>choose(n);document.getElementById('menus').append(b)}
+document.getElementById('ratio').onchange=e=>document.getElementById('crop').style.aspectRatio='9/'+e.target.value;choose('workshop');
+</script></html>

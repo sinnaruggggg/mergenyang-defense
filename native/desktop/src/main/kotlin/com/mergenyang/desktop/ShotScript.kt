@@ -47,9 +47,9 @@ class ShotScript(private val dir: File) : DebugHook {
     /** 좌상단 기준 논리 좌표를 탭 */
     private fun tap(x: Float, yTop: Float) {
         val vp = Screens.viewport
-        val sx = (vp.screenX + x * vp.screenWidth / Gfx.W).toInt()
-        val syUp = vp.screenY + (Gfx.H - yTop) * vp.screenHeight / Gfx.H
-        val sy = (Gdx.graphics.height - syUp).toInt()
+        val screen = vp.project(Vector2(x, Gfx.H - yTop))
+        val sx = screen.x.toInt()
+        val sy = (Gdx.graphics.height - screen.y).toInt()
         val ip = Gdx.input.inputProcessor
         ip.touchDown(sx, sy, 0, 0)
         ip.touchUp(sx, sy, 0, 0)

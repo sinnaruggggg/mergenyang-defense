@@ -106,6 +106,12 @@ fun main(args: Array<String>) {
     File(webAssets, "workshop-ui/main-background.png").copyTo(File(bgOut, "lobby-room.png"), overwrite = true)
     File(webAssets, "workshop-ui/smith-game-waist-up.png").copyTo(File(bgOut, "lobby-smith.png"), overwrite = true)
     File(webAssets, "shop-merchant.png").copyTo(File(bgOut, "shop-merchant.png"), overwrite = true)
+    // Approved tall paintings: preserve their aspect ratio at render time.
+    val tall = File(art, "backgrounds-tall-v1")
+    for (name in listOf("workshop", "town", "shop", "battle")) {
+        File(tall, "$name.png").copyTo(File(bgOut, "$name.png"), overwrite = true)
+    }
+    File(tall, "workshop.png").copyTo(File(bgOut, "lobby-room.png"), overwrite = true)
 
     work.deleteRecursively()
     makeLauncherIcons(ui, File(out.parentFile, "android/src/main/res"))

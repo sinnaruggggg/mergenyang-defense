@@ -31,7 +31,9 @@ fun main(args: Array<String>) {
     )
     val config = Lwjgl3ApplicationConfiguration().apply {
         setTitle("머지냥 디펜스 (개발용)")
-        setWindowedMode(540, 960)
+        val height = args.indexOf("--height").takeIf { it >= 0 }?.let { args[it + 1].toInt() } ?: 960
+        val width = args.indexOf("--width").takeIf { it >= 0 }?.let { args[it + 1].toInt() } ?: 540
+        setWindowedMode(width, height)
         setForegroundFPS(60)
         useVsync(true)
         setBackBufferConfig(8, 8, 8, 8, 16, 0, 4)
