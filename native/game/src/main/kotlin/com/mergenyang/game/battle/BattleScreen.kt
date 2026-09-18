@@ -44,6 +44,10 @@ class BattleScreen(private val game: MergeNyangGame) : KtxScreen {
 
     private lateinit var produceBtn: NyButton
     private lateinit var skipBtn: NyButton
+    private lateinit var speedBtn: NyButton
+
+    /** 전투 배속 (저장해서 다음 전투에도 유지) */
+    private val speed get() = game.save.battleSpeed.coerceIn(1, 2)
 
     init {
         hud.addActor(controls)
@@ -120,9 +124,23 @@ class BattleScreen(private val game: MergeNyangGame) : KtxScreen {
     private fun buildControls() {
         controls.clearChildren()
         val b = battle ?: return
-        controls.at(NyButton("", "cream", icon = "icons/pause", iconSize = 54f) { b.paused = true }, 970f, 23f, 89f, 89f)
+        // 일시정지는 상단 HUD와 함께 화면 맨 위에 붙는다
+        val topRow = com.badlogic.gdx.scenes.scene2d.Group().also { it.y = Gfx.ext - Gfx.safeTop; controls.addActor(it) }
+        topRow.at(NyButton("", "cream", icon = "icons/pause", iconSize = 54f) { b.paused = true }, 970f, 23f, 89f, 89f)
+        speedBtn = topRow.at(NyButton("", "cream", textSize = 30f) {
+            game.save.battleSpeed = if (speed >= 2) 1 else 2
+            game.persist()
+            syncSpeed()
+        }, 478f, 116f, 132f, 62f)
+        syncSpeed()
         produceBtn = controls.at(NyButton("생산", "yellow", sub = "에너지 1", icon = "icons/paw", textSize = 50f) { b.produce() }, 329f, 1726f, 386f, 162f)
         skipBtn = controls.at(NyButton("바로 시작", "yellow", textSize = 28f) { b.skipBreak() }, 430f, 308f, 220f, 66f)
+    }
+
+    private fun syncSpeed() {
+        speedBtn.label = if (speed >= 2) "2배속" else "1배속"
+        speedBtn.colorName = if (speed >= 2) "mint" else "cream"
+        speedBtn.selected = speed >= 2
     }
 
     private fun syncControls(b: Battle) {
@@ -149,8 +167,10 @@ class BattleScreen(private val game: MergeNyangGame) : KtxScreen {
     override fun render(delta: Float) {
         val b = battle ?: return
         val r = renderer ?: return
-        time += delta
-        b.update(delta)
+        // 배속은 전투 시뮬레이션과 연출 시간 모두에 적용한다 (게임 내 시간 기준 별 조건은 그대로 공정)
+        val dt = delta * speed
+        time += dt
+        b.update(dt)
         syncControls(b)
         hud.act(delta)
         top.act(delta)
@@ -200,7 +220,7 @@ class BattleScreen(private val game: MergeNyangGame) : KtxScreen {
 
     // ---------- 오버레이 (Scene2D) ----------
     private fun buildPause(b: Battle) {
-        overlay.at(DimActor(0.6f), 0f, 0f, Gfx.W, Gfx.H)
+        overlay.at(DimActor(0.6f), 0f, -Gfx.ext, Gfx.W, Gfx.H + Gfx.ext * 2)
         overlay.at(PanelActor("ui/panel-cream"), 170f, 560f, 740f, 760f)
         overlay.at(ImgActor("icons/pause"), 480f, 640f, 120f, 120f)
         overlay.at(TextActor("잠시 쉬어갈까요?", 56f), 170f, 780f, 740f, 80f)
@@ -220,7 +240,7 @@ class BattleScreen(private val game: MergeNyangGame) : KtxScreen {
         val win = r.win
         val start = time
         val t = { time - start }
-        overlay.at(DimActor(0.65f), 0f, 0f, Gfx.W, Gfx.H)
+        overlay.at(DimActor(0.65f), 0f, -Gfx.ext, Gfx.W, Gfx.H + Gfx.ext * 2)
         val panel = Group()
         overlay.addActor(panel)
         panel.at(PanelActor(if (win) "ui/panel-cream" else "ui/panel-lavender"), 110f, 380f, 860f, 1180f)
@@ -228,7 +248,7 @@ class BattleScreen(private val game: MergeNyangGame) : KtxScreen {
             panel.at(ImgActor("ui/victory-laurel"), 260f, 335f, 560f, 350f)
             val title = when (b.mode) {
                 Mode.WORLD_BOSS -> "도전 완료!"
-                Mode.TOWER -> "${r.floor}층 돌파!"
+                Mode.TOWER -> "${r.floor}층까지 돌파!"
                 Mode.STAGE -> "승리했어요!"
             }
             panel.at(TextActor(title, 76f, Color.WHITE, outline = true), 110f, 470f, 860f, 100f)
@@ -270,7 +290,8 @@ class BattleScreen(private val game: MergeNyangGame) : KtxScreen {
                 y += 290f
             }
             b.mode == Mode.TOWER -> {
-                panel.at(TextActor("최고 기록 ${game.save.towerBest}층", 48f), 110f, y + 30f, 860f, 70f)
+                panel.at(TextActor("이번 기록 ${r.floor}층", 48f), 110f, y + 10f, 860f, 70f)
+                panel.at(TextActor("최고 기록 ${game.save.towerBest}층", 34f, Gfx.MUTED), 110f, y + 80f, 860f, 50f)
                 y += 170f
             }
             else -> {
@@ -300,11 +321,8 @@ class BattleScreen(private val game: MergeNyangGame) : KtxScreen {
             } else {
                 panel.at(NyButton("다시 도전", "yellow", sub = "에너지 ${d.balance.stageEnergyCost}", pulse = true) { game.startBattle(b.spec) }, bx, y, bw, 130f)
             }
-            Mode.TOWER -> if (win) {
-                panel.at(NyButton("${b.spec.floor + 1}층 도전", "yellow", pulse = true) { game.startBattle(b.spec.copy(floor = b.spec.floor + 1), free = true) }, bx, y, bw, 130f)
-            } else {
-                panel.at(NyButton("1층부터 다시", "yellow", sub = "에너지 ${d.balance.stageEnergyCost}") { game.startBattle(b.spec.copy(floor = 1)) }, bx, y, bw, 130f)
-            }
+            // 탑은 층을 깨면 자동으로 이어지므로, 결과 화면은 도전이 끝났을 때만 나온다
+            Mode.TOWER -> panel.at(NyButton("1층부터 다시", "yellow", sub = "에너지 ${d.balance.stageEnergyCost}", pulse = true) { game.startBattle(b.spec.copy(floor = 1)) }, bx, y, bw, 130f)
             Mode.WORLD_BOSS -> panel.at(NyButton("고양이 성장하기", "yellow") { game.go<CatsScreen>() }, bx, y, bw, 130f)
         }
         panel.at(NyButton(if (b.mode == Mode.STAGE) "스테이지 선택" else "모드 선택", "mint") {

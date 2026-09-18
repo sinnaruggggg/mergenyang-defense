@@ -155,6 +155,22 @@ class ShotScript(private val dir: File) : DebugHook {
         at(90) { bot = AutoPlayer(battle()) }
         at(500) { }
         shot("19_worldboss")
+
+        // 무한의 탑: 한 층을 깨면 결과 화면 없이 다음 층으로 이어진다 (2배속)
+        at(5) {
+            bot = null
+            startBattle(BattleSpec(Mode.TOWER, floor = 1)) {
+                game.save.cats.keys.forEach { game.save.cats[it] = 15 }
+                game.save.squad = mutableListOf("warrior", "healer")
+                game.save.battleSpeed = 2
+            }
+        }
+        at(90) { bot = AutoPlayer(battle()) }
+        at(1) { waitForFloor(2) }
+        shot("21_tower_next_floor")
+        at(240) { }
+        shot("22_tower_floor2")
+        at(1) { val b = battle(); log.appendLine("tower floor=${b.floor} title=${b.title()} wave=${b.waveIdx} result=${b.result?.win} towerGold=${b.towerGold} best=${game.save.towerBest}") }
         at(5) { frameSheet() }
         at(5) {
             File(dir, "log.txt").writeText(log.toString())
@@ -201,6 +217,16 @@ class ShotScript(private val dir: File) : DebugHook {
     }
 
     private var attackWait = 0
+    private var floorWait = 0
+
+    private fun waitForFloor(target: Int) {
+        val b = battle()
+        if (b.floor < target && b.result == null) {
+            floorWait++
+            if (floorWait < 8000) index-- // 같은 단계를 반복
+        }
+        if (b.result != null) log.appendLine("tower ended early floor=${b.floor}")
+    }
 
     private fun waitForCatAttack() {
         val b = battle()

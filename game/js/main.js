@@ -13,6 +13,8 @@ const Game = {
     this.popup = null;
     FX.clear();
     this.name = name;
+    View.lobby = name === 'lobby';
+    fitCanvas();
     this.scene = name === 'battle' ? arg : this.scenes[name];
     if (this.scene.enter && name !== 'battle') this.scene.enter(arg);
     Input.handlers = this.scene;
@@ -70,14 +72,19 @@ function tick(dt) {
     ctx.save();
     sc.draw();
     ctx.restore();
+    ctx.save();
+    UI.offsetY = Game.name === 'lobby' ? View.extra / 2 : 0;
+    ctx.translate(0, UI.offsetY);
     drawPopup();
+    ctx.restore();
+    UI.offsetY = 0;
     Toast.draw && Game.name === 'battle' && Toast.draw();
   }
   if (Game.fade > 0) {
     ctx.save();
     ctx.globalAlpha = Game.fade;
     ctx.fillStyle = '#2a160c';
-    ctx.fillRect(0, 0, W, H);
+    ctx.fillRect(0, 0, W, canvas.height);
     ctx.restore();
   }
   Input.click = null;

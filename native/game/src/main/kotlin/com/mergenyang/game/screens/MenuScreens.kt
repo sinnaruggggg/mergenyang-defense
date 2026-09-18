@@ -48,7 +48,7 @@ class TitleScreen(game: MergeNyangGame) : MenuScreen(game, "workshop") {
 
     override fun build(g: Group) {
         g.at(DrawActor {
-            Gfx.rect(0f, 0f, Gfx.W, Gfx.H, DIMMER, 0.15f)
+            Gfx.fullRect(DIMMER, 0.15f)
             val s = 1f + sin(time * 2f) * 0.02f
             Gfx.nine("ui/title-banner", 540f - 440f * s, 380f - 150f * s, 880f * s, 300f * s, 110, 0.9f * s)
             Gfx.text("머지냥 디펜스", 540f, 368f, 116f * s, Gfx.color("fff4dcff"), outline = true)
@@ -72,7 +72,7 @@ class TitleScreen(game: MergeNyangGame) : MenuScreen(game, "workshop") {
             game.audio.play("meow")
             fx.flash(Color.WHITE, 0.6f)
             game.go<LobbyScreen>()
-        }, 0f, 0f, Gfx.W, Gfx.H)
+        }, 0f, -Gfx.ext, Gfx.W, Gfx.H + Gfx.ext * 2)
     }
 
     companion object { val DIMMER: Color = Gfx.color("281408ff") }
@@ -81,6 +81,7 @@ class TitleScreen(game: MergeNyangGame) : MenuScreen(game, "workshop") {
 // ======================= 로비 (새 대장간 UI) =======================
 class LobbyScreen(game: MergeNyangGame) : MenuScreen(game, "lobby-room") {
     private var lastCyc = 0f
+    override val coverBackground = true
 
     override fun onBack() = Unit
 
@@ -92,29 +93,32 @@ class LobbyScreen(game: MergeNyangGame) : MenuScreen(game, "lobby-room") {
         }
         // 화덕에서 피어오르는 불티
         if (rnd(0f, 1f) < 0.5f) fx.p {
-            x = rnd(58f, 155f); y = rnd(700f, 772f); vx = rnd(-25f, 25f); vy = rnd(-190f, -80f)
+            x = Gfx.coverX(rnd(58f, 155f)); y = Gfx.coverY(rnd(700f, 772f)); vx = rnd(-25f, 25f); vy = rnd(-190f, -80f)
             size = rnd(3f, 7f); color.set(if (rnd(0f, 1f) < 0.5f) EMBER else SPARK); life = rnd(0.8f, 1.8f); drag = 0.99f
         }
         val cyc = time % 1.6f
         if (cyc < lastCyc) {
-            fx.sparks(106f, 702f, SPARK, 8, -PI.toFloat() / 2, 1.6f)   // 화덕 불꽃
-            fx.sparks(812f, 792f, SPARK, 5, -PI.toFloat() / 2, 2.4f)   // 달궈진 망치 머리
+            fx.sparks(Gfx.coverX(106f), Gfx.coverY(702f), SPARK, 8, -PI.toFloat() / 2, 1.6f)   // 화덕 불꽃 (cover 배경 위치)
+            fx.sparks(812f, 792f + Gfx.ext, SPARK, 5, -PI.toFloat() / 2, 2.4f)   // 달궈진 망치 머리 (대장장이는 아래 묶음)
         }
         lastCyc = cyc
     }
 
     override fun build(g: Group) {
         // 대장장이 반신 그림 (아래쪽은 보상 카드 뒤로 들어간다)
-        g.at(DrawActor { Gfx.fit("bg/lobby-smith", 570f, 897f, 720f, 720f) }, 0f, 300f, Gfx.W, 900f)
+        // 긴 화면: 상단 묶음은 화면 위, 대장장이와 하단 카드는 화면 아래에 붙인다
+        val low = anchorBottom(g)
+        low.at(DrawActor { Gfx.fit("bg/lobby-smith", 570f, 897f, 720f, 720f) }, 0f, 300f, Gfx.W, 900f)
         topBar(g)
-        g.at(PanelActor("ui/title-banner", 100, 0.5f), 150f, 108f, 780f, 124f)
-        g.at(TextActor("냥이들의 대장간", 52f), 150f, 108f, 780f, 124f)
-        g.at(NyButton("", "cream", icon = "icons/gear", iconSize = 60f) { showPopup("settings") }, 946f, 118f, 110f, 100f)
-        g.at(NyButton("도감", "cream", icon = "icons/book", textSize = 30f) { showPopup("codex") }, 24f, 250f, 200f, 80f)
-        g.at(NyButton("도움말", "mint", icon = "icons/help", textSize = 30f) { showPopup("help") }, 856f, 250f, 200f, 80f)
+        val up = anchorTop(g)
+        up.at(PanelActor("ui/title-banner", 100, 0.5f), 150f, 108f, 780f, 124f)
+        up.at(TextActor("냥이들의 대장간", 52f), 150f, 108f, 780f, 124f)
+        up.at(NyButton("", "cream", icon = "icons/gear", iconSize = 60f) { showPopup("settings") }, 946f, 118f, 110f, 100f)
+        up.at(NyButton("도감", "cream", icon = "icons/book", textSize = 30f) { showPopup("codex") }, 24f, 250f, 200f, 80f)
+        up.at(NyButton("도움말", "mint", icon = "icons/help", textSize = 30f) { showPopup("help") }, 856f, 250f, 200f, 80f)
 
         // 방치 보상 카드
-        g.at(DrawActor {
+        low.at(DrawActor {
             Gfx.fit("lobby/reward", 540f, 1210f, 1000f, 157f)
             Gfx.fit("icons/chest", 120f, 1210f, 106f, 106f)
             val (gold, mins) = progress.offline(game.now)
@@ -124,14 +128,14 @@ class LobbyScreen(game: MergeNyangGame) : MenuScreen(game, "lobby-room") {
             Gfx.fit("lobby/gold", 880f, 1210f, 245f, 69f, if (gold < 1) 0.55f else 1f)
             Gfx.text("받기", 880f, 1207f, 29f, if (gold < 1) DIM_TEXT else DEEP_BROWN)
         }, 0f, 1120f, Gfx.W, 180f)
-        g.at(HitActor {
+        low.at(HitActor {
             val (gold, _) = progress.offline(game.now)
             if (gold >= 1) {
                 save.gold += gold
                 save.lastSeen = game.now
                 game.persist()
                 game.audio.play("chest")
-                fx.collect(880f, 1210f, "icons/gold", 400f, 56f, 20, true) { game.audio.play("coin") }
+                fx.collect(880f, 1210f + Gfx.ext, "icons/gold", 400f, 56f, 20, true) { game.audio.play("coin") }
                 game.toast.show("골드 ${fmt(gold)} 획득!", Gfx.GOLD)
                 rebuild()
             }
@@ -142,7 +146,7 @@ class LobbyScreen(game: MergeNyangGame) : MenuScreen(game, "lobby-room") {
         val maxLv = progress.workshopMaxLevel()
         val cap = game.rules.maxMergeTier(lvl)
         val next = game.rules.nextMergeUnlock(lvl)
-        g.at(DrawActor {
+        low.at(DrawActor {
             Gfx.fit("lobby/level", 540f, 1375f, 1000f, 147f)
             Gfx.text("공방 Lv.$lvl", 90f, 1336f, 34f, align = Align.left)
             Gfx.text("전투력 ${fmt(progress.power())}", 990f, 1337f, 28f, Gfx.MUTED, Align.right)
@@ -153,7 +157,7 @@ class LobbyScreen(game: MergeNyangGame) : MenuScreen(game, "lobby-room") {
         }, 0f, 1300f, Gfx.W, 150f)
 
         // 성장 버튼 두 개
-        g.at(DrawActor {
+        low.at(DrawActor {
             Gfx.fit("lobby/gold", 285f, 1526f, 490f, 137f)
             Gfx.fit("lobby/mint", 795f, 1526f, 490f, 137f)
             Gfx.fit("icons/forge", 140f, 1526f, 78f, 78f)
@@ -161,19 +165,19 @@ class LobbyScreen(game: MergeNyangGame) : MenuScreen(game, "lobby-room") {
             Gfx.text("대장간 성장", 335f, 1524f, 34f)
             Gfx.text("머지냥이 성장", 848f, 1524f, 32f)
         }, 0f, 1450f, Gfx.W, 145f)
-        g.at(HitActor { game.audio.play("click"); GrowthScreen.tab = "forge"; game.go<GrowthScreen>() }, 40f, 1458f, 490f, 137f)
-        g.at(HitActor { game.audio.play("click"); GrowthScreen.tab = "smith"; game.go<GrowthScreen>() }, 550f, 1458f, 490f, 137f)
+        low.at(HitActor { game.audio.play("click"); GrowthScreen.tab = "forge"; game.go<GrowthScreen>() }, 40f, 1458f, 490f, 137f)
+        low.at(HitActor { game.audio.play("click"); GrowthScreen.tab = "smith"; game.go<GrowthScreen>() }, 550f, 1458f, 490f, 137f)
 
         // 모험 떠나기
         val ch = progress.unlockedChapter()
         val st = progress.unlockedStage(ch)
-        g.at(DrawActor {
+        low.at(DrawActor {
             Gfx.fit("lobby/adventure", 540f, 1673f, 1000f, 136f)
             Gfx.fit("icons/sword", 304f, 1664f, 76f, 76f)
             Gfx.text("모험 떠나기", 595f, 1646f, 44f)
             Gfx.text("다음: ${ch + 1}-${st + 1} ${data.chapters[ch].name}", 595f, 1684f, 24f, ADVENTURE_SUB)
         }, 0f, 1600f, Gfx.W, 145f)
-        g.at(HitActor { game.audio.play("click"); game.go<ModesScreen>() }, 40f, 1605f, 1000f, 136f)
+        low.at(HitActor { game.audio.play("click"); game.go<ModesScreen>() }, 40f, 1605f, 1000f, 136f)
         tabBar(g, "lobby")
     }
 
@@ -276,7 +280,7 @@ class GrowthScreen(game: MergeNyangGame) : MenuScreen(game, "workshop") {
     companion object { var tab = "forge" }
 
     override fun build(g: Group) {
-        g.at(DrawActor { Gfx.rect(0f, 0f, Gfx.W, Gfx.H, TitleScreen.DIMMER, 0.25f) }, 0f, 0f, Gfx.W, Gfx.H)
+        g.at(DrawActor { Gfx.fullRect(TitleScreen.DIMMER, 0.25f) }, 0f, 0f, Gfx.W, Gfx.H)
         topBar(g)
         val forge = tab == "forge"
         header(g, if (forge) "대장간 성장" else "머지냥이 성장", if (forge) "생산 단계와 에너지를 키워요" else "대장장이 냥이의 솜씨를 키워요")
@@ -416,7 +420,7 @@ class StagesScreen(game: MergeNyangGame) : MenuScreen(game, "town") {
     private fun buildPrep(g: Group, s: Int) {
         val chap = data.chapters[ch]
         val boss = data.boss(chap.boss)
-        g.at(com.mergenyang.game.ui.DimActor(0.6f), 0f, 0f, Gfx.W, Gfx.H)
+        g.at(com.mergenyang.game.ui.DimActor(0.6f), 0f, -Gfx.ext, Gfx.W, Gfx.H + Gfx.ext * 2)
         g.at(PanelActor("ui/panel-cream"), 60f, 330f, 960f, 1280f)
         g.at(TextActor("${ch + 1}-${s + 1} 출전 준비", 58f), 60f, 380f, 960f, 80f)
         val isBoss = (s + 1) % 5 == 0

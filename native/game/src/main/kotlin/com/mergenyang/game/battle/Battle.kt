@@ -103,14 +103,24 @@ class Battle(val game: MergeNyangGame, val spec: BattleSpec) {
     private val random = Random.Default
 
     val mode = spec.mode
-    val g: Float = when (mode) {
+    /** 현재 층 (무한의 탑은 한 번 들어오면 지금 층에서 계속 올라간다) */
+    var floor = spec.floor
+        private set
+    var g: Float = difficulty()
+        private set
+    private var hpScale = rules.stageHp(g)
+    private var atkScale = rules.stageAtk(g)
+    var itemPower = rules.itemPower(g)
+        private set
+    /** 탑에서 층을 돌파하며 바로 받은 골드 */
+    var towerGold = 0L
+        private set
+
+    private fun difficulty(): Float = when (mode) {
         Mode.STAGE -> rules.globalStage(spec.chapter, spec.stage).toFloat()
-        Mode.TOWER -> spec.floor * 1.6f
+        Mode.TOWER -> floor * 1.6f
         Mode.WORLD_BOSS -> 6f + progress.power() / 900f
     }
-    private val hpScale = rules.stageHp(g)
-    private val atkScale = rules.stageAtk(g)
-    val itemPower = rules.itemPower(g)
     var tutorial = if (mode == Mode.STAGE && spec.chapter == 0 && spec.stage == 0 && !save.tutorialDone) 0 else -1
     private var tutProduced = 0
 
@@ -155,7 +165,8 @@ class Battle(val game: MergeNyangGame, val spec: BattleSpec) {
     var legend: LegendShow? = null
     private var produced = 0
 
-    val waves: List<Wave> = Waves.build(data, spec, random, game.now)
+    var waves: List<Wave> = Waves.build(data, spec, random, game.now)
+        private set
     var phase = Phase.INTRO
     var phaseT = 0f
     var breakDur = data.balance.breakSeconds
@@ -202,7 +213,7 @@ class Battle(val game: MergeNyangGame, val spec: BattleSpec) {
         board.cells.forEach { it.item?.pop = 0.35f }
     }
 
-    fun title() = spec.title(data)
+    fun title() = if (mode == Mode.TOWER) spec.copy(floor = floor).title(data) else spec.title(data)
     fun dispose() = world.dispose()
 
     private fun banner(text: String, color: Color, sub: String = "") { banner = Banner(text, color, sub) }
@@ -1308,7 +1319,8 @@ class Battle(val game: MergeNyangGame, val spec: BattleSpec) {
                 val alive = foes.any { !it.dead }
                 if (!alive && spawnQ.isEmpty() && waveIdx >= 0) {
                     if (waveIdx >= waves.size - 1) {
-                        if (result == null) result = BattleResult(win = true, lost = false)
+                        if (mode == Mode.TOWER) nextFloor()
+                        else if (result == null) result = BattleResult(win = true, lost = false)
                     } else {
                         phase = Phase.BREAK
                         phaseT = 0f
@@ -1318,6 +1330,33 @@ class Battle(val game: MergeNyangGame, val spec: BattleSpec) {
                 }
             }
         }
+    }
+
+    /** 탑 한 층 돌파: 보상을 바로 주고, 보드·장비·체력·에너지는 그대로 둔 채 다음 층을 시작한다 */
+    private fun nextFloor() {
+        val cleared = floor
+        val reward = 50L + cleared * 20L
+        towerGold += reward
+        save.gold += reward
+        if (cleared > save.towerBest) save.towerBest = cleared
+        game.persist()
+        floor = cleared + 1
+        g = difficulty()
+        hpScale = rules.stageHp(g)
+        atkScale = rules.stageAtk(g)
+        itemPower = rules.itemPower(g)
+        // 새 층 공격력이 올라갔으니 착용 장비 수치도 다시 계산
+        cats.filter { !it.isDown }.forEach { recalcHp(it) }
+        waves = Waves.build(data, spec.copy(floor = floor), random, game.now)
+        waveIdx = -1
+        boss = null
+        hpBarFoe = null
+        phase = Phase.BREAK
+        phaseT = 0f
+        breakDur = data.balance.breakSeconds
+        banner("${cleared}층 돌파!", Gfx.GOLD, "골드 +$reward · ${floor}층으로 올라가요")
+        audio.play("win")
+        fx.flash(LEGEND_FLASH, 0.35f)
     }
 
     private fun checkEnd(rawDt: Float) {
@@ -1362,12 +1401,8 @@ class Battle(val game: MergeNyangGame, val spec: BattleSpec) {
                 } else gold /= 2
             }
             Mode.TOWER -> {
-                r.floor = spec.floor
-                r.win = !r.lost
-                if (r.win) {
-                    gold += 50 + spec.floor * 20
-                    if (spec.floor > save.towerBest) save.towerBest = spec.floor
-                }
+                r.floor = floor - 1
+                r.win = r.floor > 0
             }
             Mode.WORLD_BOSS -> {
                 r.damage = totalDamage.roundToLong()
@@ -1378,7 +1413,7 @@ class Battle(val game: MergeNyangGame, val spec: BattleSpec) {
                 r.win = true
             }
         }
-        r.gold = gold
+        r.gold = gold + towerGold
         r.gems = gems
         save.gold += gold
         save.gems += gems

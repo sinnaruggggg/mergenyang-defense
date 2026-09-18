@@ -61,6 +61,20 @@ abstract class MenuScreen(val game: MergeNyangGame, private val background: Stri
     protected open fun onBack() = game.go<LobbyScreen>()
     protected open fun music() = "lobby"
     protected open fun update(delta: Float) = Unit
+    /** true면 배경을 긴 화면 전체에 cover로 채운다 (로비). 아니면 기준 박스 + 가장자리 연장 */
+    protected open val coverBackground = false
+
+    /** 화면 맨 위에 붙는 묶음 (상단 재화 바·제목). 긴 화면에서 기준 박스보다 위로 올라간다 */
+    protected fun anchorTop(g: Group): Group = Group().also {
+        it.y = Gfx.ext - Gfx.safeTop
+        g.addActor(it)
+    }
+
+    /** 화면 맨 아래에 붙는 묶음 (하단 탭 등) */
+    protected fun anchorBottom(g: Group): Group = Group().also {
+        it.y = -Gfx.ext
+        g.addActor(it)
+    }
 
     override fun show() {
         Gdx.input.inputProcessor = InputMultiplexer(stage, backKey)
@@ -81,7 +95,7 @@ abstract class MenuScreen(val game: MergeNyangGame, private val background: Stri
         fx.update(delta)
         stage.act(delta)
         game.beginHud()
-        Gfx.img("bg/$background", 0f, 0f, Gfx.W, Gfx.H)
+        if (coverBackground) Gfx.cover("bg/$background") else Gfx.background("bg/$background")
         game.batch.end()
         stage.draw()
         game.beginHud()
@@ -95,7 +109,8 @@ abstract class MenuScreen(val game: MergeNyangGame, private val background: Stri
     override fun dispose() = stage.dispose()
 
     // ---------- 공통 영역 ----------
-    protected fun topBar(g: Group) {
+    protected fun topBar(parent: Group) {
+        val g = anchorTop(parent)
         progress.tickEnergy(game.now)
         val slots = listOf(
             Triple("icons/energy", { "${save.energy}/${data.balance.lobbyEnergyMax}" }, { showPopup("energy") }),
@@ -117,7 +132,8 @@ abstract class MenuScreen(val game: MergeNyangGame, private val background: Stri
         }, 22f, Color.WHITE, outline = true), 100f, 96f, 160f, 24f)
     }
 
-    protected fun header(g: Group, title: String, sub: String?, back: () -> Unit = { game.go<LobbyScreen>() }) {
+    protected fun header(parent: Group, title: String, sub: String?, back: () -> Unit = { game.go<LobbyScreen>() }) {
+        val g = anchorTop(parent)
         g.at(NyButton("", "cream", icon = "icons/back", iconSize = 60f, onClick = back), 24f, 118f, 110f, 100f)
         g.at(PanelActor("ui/title-banner", 100, 0.5f), 150f, 108f, 780f, 124f)
         g.at(TextActor(title, 50f), 170f, 108f, 740f, 124f)
@@ -128,7 +144,8 @@ abstract class MenuScreen(val game: MergeNyangGame, private val background: Stri
         }
     }
 
-    protected fun tabBar(g: Group, active: String) {
+    protected fun tabBar(parent: Group, active: String) {
+        val g = anchorBottom(parent)
         g.at(PanelActor("ui/panel-cream"), 10f, 1745f, 1060f, 170f)
         val tabs = listOf(
             Triple("lobby", "대장간", "icons/forge"),
@@ -172,7 +189,7 @@ abstract class MenuScreen(val game: MergeNyangGame, private val background: Stri
         val p = Group()
         popupLayer.addActor(p)
         val close = { closePopup() }
-        p.at(DimActor(0.6f, if (kind == "codex") close else null), 0f, 0f, Gfx.W, Gfx.H)
+        p.at(DimActor(0.6f, if (kind == "codex") close else null), 0f, -Gfx.ext, Gfx.W, Gfx.H + Gfx.ext * 2)
         when (kind) {
             "settings" -> {
                 p.at(PanelActor("ui/panel-cream"), 140f, 500f, 800f, 900f)

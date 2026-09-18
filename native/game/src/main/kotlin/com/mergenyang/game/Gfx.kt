@@ -39,6 +39,87 @@ object Gfx {
 
     fun color(hex: String): Color = Color.valueOf(hex)
 
+    // ---------- 긴 화면 ----------
+    /** 세로가 9:16보다 긴 기기에서 기준 1920 위·아래로 더 보이는 높이 (한쪽 몫, 논리 px) */
+    var ext = 0f
+    /** 노치 등 상단 안전영역 (논리 px) */
+    var safeTop = 0f
+    /** 화면 맨 위·맨 아래의 논리 y */
+    val top get() = -ext
+    val bottom get() = H + ext
+    /** cover 배경의 확대 배율 (9:16 원화 기준) */
+    val coverK get() = (H + ext * 2f) / H
+    fun coverX(x: Float) = W / 2f + (x - W / 2f) * coverK
+    fun coverY(y: Float) = H / 2f + (y - H / 2f) * coverK
+
+    private val shiftMat = com.badlogic.gdx.math.Matrix4()
+    private val savedMat = com.badlogic.gdx.math.Matrix4()
+
+    /** 그리기를 세로로 dy만큼 옮긴다 (좌상단 기준, 음수면 위로). 상단 HUD를 화면 맨 위에 붙일 때 쓴다 */
+    fun shifted(dy: Float, block: () -> Unit) {
+        if (dy == 0f) return block()
+        savedMat.set(batch.transformMatrix)
+        batch.transformMatrix = shiftMat.set(savedMat).translate(0f, -dy, 0f)
+        try {
+            block()
+        } finally {
+            batch.transformMatrix = savedMat
+        }
+    }
+
+    /** 보이는 화면 전체를 덮는 사각형 (암전·팝업 막) */
+    fun fullRect(c: Color, alpha: Float = 1f) = rect(0f, -ext, W, H + ext * 2f, c, alpha)
+
+    /** 확장된 화면 전체를 비율 유지로 채운다 (좌우는 잘림) */
+    fun cover(key: String) {
+        val k = coverK
+        img(key, W / 2f - W * k / 2f, H / 2f - H * k / 2f, W * k, H * k)
+    }
+
+    private val bands = HashMap<String, Pair<TextureRegion, TextureRegion>>()
+
+    /**
+     * 배경을 기준 박스에 그대로 그리고, 긴 화면이면 위·아래 가장자리 띠를 늘려 이어 붙인다.
+     * 레이아웃이 배경과 맞물린 화면(전투·타이틀)도 어긋나지 않는다.
+     */
+    fun background(key: String) {
+        val r = assets.region(key) ?: return
+        drawRegion(r, 0f, 0f, W, H)
+        if (ext < 1f) return
+        val (topBand, bottomBand) = bands.getOrPut(key) {
+            val strip = (r.regionHeight * 0.035f).toInt().coerceAtLeast(8)
+            // 위 띠는 원화 첫 줄이, 아래 띠는 마지막 줄이 이음새에 오도록 위아래를 뒤집는다 (거울 연장)
+            val top = TextureRegion(r, 0, 0, r.regionWidth, strip).apply { flip(false, true) }
+            val bottom = TextureRegion(r, 0, r.regionHeight - strip, r.regionWidth, strip).apply { flip(false, true) }
+            top to bottom
+        }
+        drawRegion(topBand, 0f, -ext, W, ext + 1f)
+        drawRegion(bottomBand, 0f, H - 1f, W, ext + 1f)
+        // 바깥쪽으로 갈수록 살짝 어두워지는 음영 (늘어난 띠의 흐릿함을 감춘다)
+        val tex = shadeTexture()
+        setColor(EDGE_SHADE, 0.35f)
+        batch.draw(tex, 0f, H, W, ext, 0f, 0f, 1f, 1f)
+        batch.draw(tex, 0f, -ext, W, ext, 0f, 1f, 1f, 0f)
+        batch.setColor(Color.WHITE)
+    }
+
+    private var shade: com.badlogic.gdx.graphics.Texture? = null
+
+    /** 세로 알파 그라데이션 (윗줄 투명 → 아랫줄 불투명) */
+    private fun shadeTexture(): com.badlogic.gdx.graphics.Texture = shade ?: run {
+        val pm = com.badlogic.gdx.graphics.Pixmap(1, 64, com.badlogic.gdx.graphics.Pixmap.Format.RGBA8888)
+        for (i in 0 until 64) {
+            pm.setColor(1f, 1f, 1f, (i / 63f) * (i / 63f))
+            pm.drawPixel(0, i)
+        }
+        com.badlogic.gdx.graphics.Texture(pm).also {
+            it.setFilter(com.badlogic.gdx.graphics.Texture.TextureFilter.Linear, com.badlogic.gdx.graphics.Texture.TextureFilter.Linear)
+            pm.dispose()
+            shade = it
+        }
+    }
+    private val EDGE_SHADE = Color.valueOf("2a160cff")
+
     private fun setColor(c: Color, alpha: Float) {
         batch.setColor(c.r, c.g, c.b, c.a * alpha)
     }

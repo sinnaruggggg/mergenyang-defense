@@ -33,3 +33,4 @@ native/.kotlin/
 
 # 에이전트가 받은 첨부 이미지 (작업용)
 .codex-remote-attachments/
+tmp/

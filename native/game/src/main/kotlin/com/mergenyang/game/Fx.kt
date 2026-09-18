@@ -290,7 +290,7 @@ class Fx {
     }
 
     fun drawOverlay() {
-        if (flashA > 0f) Gfx.rect(0f, 0f, Gfx.W, Gfx.H, flashColor, flashA)
+        if (flashA > 0f) Gfx.fullRect(flashColor, flashA)
     }
 
     /** 흔들림·줌을 카메라 오프셋으로 */

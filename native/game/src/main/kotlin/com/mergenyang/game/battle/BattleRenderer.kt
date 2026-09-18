@@ -21,9 +21,9 @@ class BattleRenderer(private val b: Battle) {
     private val fx get() = b.fx
 
     fun drawWorld(t: Float) {
-        Gfx.img("bg/battle", 0f, 0f, Gfx.W, Gfx.H)
+        Gfx.background("bg/battle")
         val boss = b.boss
-        if (boss != null && !boss.dead && !boss.world) Gfx.rect(0f, 0f, Gfx.W, 690f, BOSS_TINT, 0.18f)
+        if (boss != null && !boss.dead && !boss.world) Gfx.rect(0f, Gfx.top, Gfx.W, 690f - Gfx.top, BOSS_TINT, 0.18f)
         for (c in b.cats) Chars.shadow(c.x, c.y, 220f)
         for (e in b.foes) if (!e.fly) Chars.shadow(e.x, Layout.GROUND, 300f * e.scale, if (e.dead) 0.3f else 0.7f)
         for (e in b.foes.sortedByDescending { it.x }) drawFoe(e, t)
@@ -249,7 +249,10 @@ class BattleRenderer(private val b: Battle) {
         if (b.autoEvery > 0f) Gfx.text("자동 생산 ${kotlin.math.ceil(b.autoEvery - b.autoT).toInt()}초", 897f, 1872f, 26f, Color.WHITE, outline = true)
     }
 
-    fun drawHud() {
+    /** 상단 HUD는 긴 화면에서 화면 맨 위에 붙는다 */
+    fun drawHud() = Gfx.shifted(Gfx.safeTop - Gfx.ext) { drawHudBody() }
+
+    private fun drawHudBody() {
         Gfx.nine("ui/title-banner", 22f, 18f, 316f, 104f, 100, 0.45f)
         Gfx.text(b.title(), 180f, 68f, 32f, maxW = 260f)
         Gfx.panel(358f, 25f, 266f, 83f, "dark")
@@ -308,10 +311,10 @@ class BattleRenderer(private val b: Battle) {
         Gfx.additive {
             for (i in 0 until 8) {
                 val k = i / 8f
-                Gfx.rect(0f, k * 60f, Gfx.W, 8f, FEVER_EDGE, a * (1 - k) * 0.5f)
-                Gfx.rect(0f, Gfx.H - k * 60f - 8f, Gfx.W, 8f, FEVER_EDGE, a * (1 - k) * 0.5f)
-                Gfx.rect(k * 60f, 0f, 8f, Gfx.H, FEVER_EDGE, a * (1 - k) * 0.5f)
-                Gfx.rect(Gfx.W - k * 60f - 8f, 0f, 8f, Gfx.H, FEVER_EDGE, a * (1 - k) * 0.5f)
+                Gfx.rect(0f, Gfx.top + k * 60f, Gfx.W, 8f, FEVER_EDGE, a * (1 - k) * 0.5f)
+                Gfx.rect(0f, Gfx.bottom - k * 60f - 8f, Gfx.W, 8f, FEVER_EDGE, a * (1 - k) * 0.5f)
+                Gfx.rect(k * 60f, Gfx.top, 8f, Gfx.bottom - Gfx.top, FEVER_EDGE, a * (1 - k) * 0.5f)
+                Gfx.rect(Gfx.W - k * 60f - 8f, Gfx.top, 8f, Gfx.bottom - Gfx.top, FEVER_EDGE, a * (1 - k) * 0.5f)
             }
         }
         val s = 1f + sin(t * 8f) * 0.05f
@@ -394,7 +397,7 @@ class BattleRenderer(private val b: Battle) {
     fun drawLegend() {
         val l = b.legend ?: return
         val k = min(1f, l.t / 0.4f)
-        Gfx.rect(0f, 0f, Gfx.W, Gfx.H, LEGEND_BG, 0.75f * k)
+        Gfx.fullRect(LEGEND_BG, 0.75f * k)
         Gfx.additive {
             for (i in 0 until 16) {
                 val ang = i * 22.5f + l.t * 10f

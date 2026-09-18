@@ -157,19 +157,28 @@ const LobbyScene = {
   draw() {
     const S = Save.data, t = this.t;
     const room = IMG['lobby.ui.main-background'];
+    const lowerY = View.extra - View.bottom;
     if (room) {
-      const scale = Math.max(W / room.width, H / room.height);
-      img('lobby.ui.main-background', (W - room.width * scale) / 2, (H - room.height * scale) / 2, room.width * scale, room.height * scale);
+      const scale = Math.max(W / room.width, View.height / room.height);
+      img('lobby.ui.main-background', (W - room.width * scale) / 2, (View.height - room.height * scale) / 2, room.width * scale, room.height * scale);
     }
     // Large waist-up portrait, bottom tucked behind the reward card.
-    imgFit('lobby.ui.smith', 570, 897, 720, 720);
+    imgFit('lobby.ui.smith', 570, 897 + lowerY, 720, 720);
+    ctx.save();
+    ctx.translate(0, View.top);
+    UI.offsetY = View.top;
     topBar();
     nine('ui.title-banner', 150, 108, 780, 124, 100, 0.5);
     text('냥이들의 대장간', W / 2, 170, { size: 52 });
     if (UI.button(946, 118, 110, 100, '', { color: 'cream', icon: 'icon.gear', iconSize: 60 })) Game.popup = 'settings';
     if (UI.button(24, 250, 200, 80, '도감', { color: 'cream', icon: 'icon.book', size: 30 })) Game.popup = 'codex';
     if (UI.button(856, 250, 200, 80, '도움말', { color: 'mint', icon: 'icon.help', size: 30 })) Game.popup = 'help';
+    ctx.restore();
+    UI.offsetY = 0;
     ctx.save(); FX.drawWorld(); ctx.restore();
+    ctx.save();
+    ctx.translate(0, lowerY);
+    UI.offsetY = lowerY;
     // 방치 보상
     const off = this.offlineGold();
     imgFit('lobby.ui.reward',540,1210,1000,157);
@@ -181,7 +190,7 @@ const LobbyScene = {
     text('받기',880,1207,{size:29,color:off.gold<1?'#8e795e':'#65441c'});
     if (off.gold>0 && UI.hit(758,1175,245,69)) {
       S.gold += off.gold; S.lastSeen = Date.now(); Save.save();
-      FX.collect(880, 1210, 'icon.gold', { x: 400, y: 56 }, 20, () => Audio2.sfx('coin'));
+      FX.collect(880, 1210 + lowerY, 'icon.gold', { x: 400, y: 56 + View.top }, 20, () => Audio2.sfx('coin'));
       Toast.show(`골드 ${fmt(off.gold)} 획득!`, '#ffe27a');
     }
     // 공방 레벨
@@ -208,6 +217,8 @@ const LobbyScene = {
     text(`다음: ${ch+1}-${st+1} ${CHAPTERS[ch].name}`,595,1693,{size:24,color:'#86612f'});
     if (UI.hit(40,1605,1000,136)) Game.go('modes');
     tabBar('lobby');
+    ctx.restore();
+    UI.offsetY = 0;
     Toast.draw();
     FX.drawParts(true);
   },
@@ -553,7 +564,7 @@ function drawPopup() {
   if (!p) return;
   UI.layer = 2;
   const S = Save.data;
-  ctx.save(); ctx.fillStyle = 'rgba(30,15,10,0.6)'; ctx.fillRect(0, 0, W, H); ctx.restore();
+  ctx.save(); ctx.fillStyle = 'rgba(30,15,10,0.6)'; ctx.fillRect(0, -UI.offsetY, W, canvas.height); ctx.restore();
   const close = () => { Game.popup = null; };
   if (p === 'settings') {
     UI.panel(140, 500, 800, 900, 'cream');

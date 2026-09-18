@@ -165,10 +165,8 @@ class Battle {
       return;
     }
     if (this.mode === 'tower') {
-      const pool = CHAPTERS[Math.min(4, Math.floor((this.floor - 1) / 3))].enemies.concat(CHAPTERS[(this.floor) % 5].enemies);
-      for (let w = 0; w < 3; w++) this.waves.push({ list: Array.from({ length: 3 + w + Math.floor(this.floor / 2) }, () => pick(pool)) });
-      if (this.floor % 5 === 0) this.waves.push({ boss: CHAPTERS[(this.floor / 5 - 1) % 5].boss, mid: true, minions: [pick(pool), pick(pool)] });
-      else this.waves.push({ elite: pick(pool), minions: [pick(pool), pick(pool), pick(pool)] });
+      this.towerGold = 0;
+      this.waves = this.towerWaves();
       return;
     }
     const chap = CHAPTERS[this.ch];
@@ -182,6 +180,37 @@ class Battle {
     if (s === STAGES_PER_CHAPTER) this.waves.push({ boss: chap.boss, minions: [chap.enemies[0], chap.enemies[1]] });
     else if (s % 5 === 0) this.waves.push({ boss: chap.boss, mid: true, minions: [chap.enemies[0]] });
     else this.waves.push({ elite: pick(chap.enemies), minions: [chap.enemies[0], chap.enemies[0]] });
+  }
+
+  towerWaves() {
+    const waves = [];
+    const pool = CHAPTERS[Math.min(4, Math.floor((this.floor - 1) / 3))].enemies.concat(CHAPTERS[(this.floor) % 5].enemies);
+    for (let w = 0; w < 3; w++) waves.push({ list: Array.from({ length: 3 + w + Math.floor(this.floor / 2) }, () => pick(pool)) });
+    if (this.floor % 5 === 0) waves.push({ boss: CHAPTERS[(this.floor / 5 - 1) % 5].boss, mid: true, minions: [pick(pool), pick(pool)] });
+    else waves.push({ elite: pick(pool), minions: [pick(pool), pick(pool), pick(pool)] });
+    return waves;
+  }
+
+  // 탑 한 층 돌파: 보상을 바로 주고 보드·장비·체력·에너지는 그대로 둔 채 다음 층으로
+  nextFloor() {
+    const S = Save.data, cleared = this.floor, reward = 50 + cleared * 20;
+    this.towerGold += reward;
+    S.gold += reward;
+    if (cleared > S.towerBest) S.towerBest = cleared;
+    Save.save();
+    this.floor = cleared + 1;
+    this.g = this.floor * 1.6;
+    this.scale = stageScale(this.g);
+    this.itemPower = 1 + this.g * 0.07;
+    this.waves = this.towerWaves();
+    this.waveIdx = -1;
+    this.boss = null;
+    this.state = 'break';
+    this.stateT = 0;
+    this.breakDur = 8;
+    this.showBanner(`${cleared}층 돌파!`, '#ffe27a', `골드 +${reward} · ${this.floor}층으로 올라가요`);
+    Audio2.sfx('win');
+    FX.flash('#fff7c8', 0.35);
   }
 
   stageName() {
@@ -815,6 +844,7 @@ class Battle {
   // ---------- 업데이트 ----------
   update(rawDt) {
     if (this.paused || this.result && this.result.shown) { FX.update(rawDt); return; }
+    rawDt *= Save.data.battleSpeed === 2 ? 2 : 1;
     if (this.legendShow) {
       this.legendShow.t += rawDt;
       FX.update(rawDt);
@@ -890,7 +920,8 @@ class Battle {
     const alive = this.enemies.some(e => !e.dead);
     if (!alive && !this.spawnQ.length && this.waveIdx >= 0) {
       if (this.waveIdx >= this.waves.length - 1) {
-        if (!this.result) this.result = { win: true, t: 0 };
+        if (this.mode === 'tower') this.nextFloor();
+        else if (!this.result) this.result = { win: true, t: 0 };
       } else {
         this.state = 'break';
         this.stateT = 0;
@@ -1180,12 +1211,8 @@ class Battle {
         S.tutorialDone = true;
       } else gold = Math.round(gold * 0.5);
     } else if (this.mode === 'tower') {
-      r.floor = this.floor;
-      if (!r.lost) {
-        gold += 50 + this.floor * 20;
-        if (this.floor > S.towerBest) S.towerBest = this.floor;
-      }
-      r.win = !r.lost;
+      r.floor = this.floor - 1;
+      r.win = r.floor > 0;
     } else {
       r.damage = Math.round(this.totalDamage);
       gold += Math.round(r.damage / 50);
@@ -1194,7 +1221,7 @@ class Battle {
       S.bossTotal = (S.bossTotal || 0) + r.damage;
       r.win = true;
     }
-    r.gold = gold; r.gems = gems;
+    r.gold = gold + (this.towerGold || 0); r.gems = gems;
     S.gold += gold; S.gems += gems;
     S.plays++;
     Save.save();
@@ -1497,6 +1524,8 @@ class Battle {
     const tm = this.mode === 'boss' ? Math.max(0, this.timeLimit - this.time) : this.time;
     text(`${String(Math.floor(tm / 60)).padStart(2, '0')}:${String(Math.floor(tm % 60)).padStart(2, '0')}`, 842, 67, { size: 46, color: this.mode === 'boss' && tm < 15 ? '#ff7a6a' : '#fff' });
     if (UI.button(970, 23, 89, 89, '', { color: 'cream', icon: 'icon.pause', iconSize: 54 })) this.paused = true;
+    const x2 = Save.data.battleSpeed === 2;
+    if (UI.button(478, 116, 132, 62, x2 ? '2배속' : '1배속', { color: x2 ? 'mint' : 'cream', size: 30 })) { Save.data.battleSpeed = x2 ? 1 : 2; Save.save(); }
     // 골드
     UI.panel(620, 120, 200, 60, 'dark');
     imgFit('icon.gold', 650, 150, 44, 44);
@@ -1655,7 +1684,7 @@ class Battle {
     UI.panel(110, y0, 860, 1180, win ? 'cream' : 'lavender');
     if (win) {
       imgFit('ui.victory-laurel', W / 2, y0 + 130, 560, 350);
-      const title = this.mode === 'boss' ? '도전 완료!' : this.mode === 'tower' ? (r.lost ? `${r.floor - 1}층 돌파!` : `${r.floor}층 돌파!`) : '승리했어요!';
+      const title = this.mode === 'boss' ? '도전 완료!' : this.mode === 'tower' ? `${r.floor}층까지 돌파!` : '승리했어요!';
       text(title, W / 2, y0 + 140, { size: 76, color: '#fff', stroke: '#8a4a10', weight: 900 });
     } else {
       imgFit('char.cat-healer', W / 2, y0 + 150, 300, 260);
@@ -1688,7 +1717,8 @@ class Battle {
       text(`최고 기록 ${fmt(Save.data.bossBest)}`, W / 2, y + 190, { size: 32, color: '#8a6a4a' });
       y += 290;
     } else if (this.mode === 'tower') {
-      text(`최고 기록 ${Save.data.towerBest}층`, W / 2, y + 60, { size: 48 });
+      text(`이번 기록 ${r.floor}층`, W / 2, y + 45, { size: 48 });
+      text(`최고 기록 ${Save.data.towerBest}층`, W / 2, y + 105, { size: 34, color: '#8a6a4a' });
       y += 170;
     } else {
       text('고양이를 성장시키거나 합성을 더 빠르게!', W / 2, y + 30, { size: 34, color: '#4a2a5a' });
@@ -1713,8 +1743,7 @@ class Battle {
         }
       } else if (UI.button(bx, y, bw, 130, '다시 도전', { color: 'yellow', sub: '에너지 5', pulse: true })) Game.startBattle(this.restartOpts());
     } else if (this.mode === 'tower') {
-      if (!r.lost) { if (UI.button(bx, y, bw, 130, `${this.floor + 1}층 도전`, { color: 'yellow', pulse: true })) Game.startBattle({ mode: 'tower', floor: this.floor + 1, free: true }); }
-      else if (UI.button(bx, y, bw, 130, '1층부터 다시', { color: 'yellow', sub: '에너지 5' })) Game.startBattle({ mode: 'tower', floor: 1 });
+      if (UI.button(bx, y, bw, 130, '1층부터 다시', { color: 'yellow', sub: '에너지 5', pulse: true })) Game.startBattle({ mode: 'tower', floor: 1 });
     } else if (UI.button(bx, y, bw, 130, '고양이 성장하기', { color: 'yellow' })) Game.go('cats');
     if (UI.button(bx, y + 150, bw, 110, this.mode === 'stage' ? '스테이지 선택' : '모드 선택', { color: 'mint' })) Game.go(this.mode === 'stage' ? 'stages' : 'modes');
     if (UI.button(bx, y + 270, bw, 100, '로비로', { color: 'cream' })) Game.go('lobby');

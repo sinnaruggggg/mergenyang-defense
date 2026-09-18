@@ -4,11 +4,18 @@ const W = 1080, H = 1920;
 const canvas = document.getElementById('game');
 const ctx = canvas.getContext('2d');
 canvas.width = W; canvas.height = H;
+const View = { lobby: false, height: H, extra: 0, top: 0, bottom: 0 };
 
 function fitCanvas() {
   const s = Math.min(innerWidth / W, innerHeight / H);
+  View.height = View.lobby ? Math.max(H, Math.round(innerHeight / s)) : H;
+  View.extra = View.height - H;
+  const css = getComputedStyle(document.documentElement);
+  View.top = View.lobby ? (parseFloat(css.getPropertyValue('--safe-top')) || 0) / s : 0;
+  View.bottom = View.lobby ? (parseFloat(css.getPropertyValue('--safe-bottom')) || 0) / s : 0;
+  if (canvas.height !== View.height) canvas.height = View.height;
   canvas.style.width = Math.floor(W * s) + 'px';
-  canvas.style.height = Math.floor(H * s) + 'px';
+  canvas.style.height = Math.round(View.height * s) + 'px';
 }
 addEventListener('resize', fitCanvas);
 fitCanvas();
@@ -115,7 +122,7 @@ function bar(x, y, w, h, ratio, fillKey) {
 const Input = { x: 0, y: 0, down: false, click: null, clicks: [], downPos: null, handlers: null };
 function toLogical(e) {
   const r = canvas.getBoundingClientRect();
-  return { x: (e.clientX - r.left) * W / r.width, y: (e.clientY - r.top) * H / r.height };
+  return { x: (e.clientX - r.left) * W / r.width, y: (e.clientY - r.top) * canvas.height / r.height };
 }
 canvas.addEventListener('pointerdown', e => {
   try { canvas.setPointerCapture(e.pointerId); } catch (err) { /* 합성 이벤트 등 */ }
@@ -144,9 +151,10 @@ canvas.addEventListener('pointercancel', e => { Input.down = false; });
 const UI = {
   layer: 0, // 모달 레이어: 현재 활성 레이어의 버튼만 반응
   active: 0,
+  offsetY: 0,
   hit(x, y, w, h) {
     if (this.layer !== this.active) return false;
-    const r = { x, y, w, h };
+    const r = { x, y: y + this.offsetY, w, h };
     if (Input.click && inRect(Input.click, r) && inRect(Input.click.down || Input.click, r)) {
       Input.click = null;
       return true;
@@ -154,6 +162,7 @@ const UI = {
     return false;
   },
   pressed(x, y, w, h) {
+    y += this.offsetY;
     return this.layer === this.active && Input.down && inRect(Input, { x, y, w, h }) && Input.downPos && inRect(Input.downPos, { x, y, w, h });
   },
   button(x, y, w, h, label, o = {}) {

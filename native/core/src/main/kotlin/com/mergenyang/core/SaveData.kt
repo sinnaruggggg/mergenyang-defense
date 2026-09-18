@@ -29,6 +29,8 @@ data class SaveData(
     var bgm: Boolean = true,
     var sfx: Boolean = true,
     var plays: Int = 0,
+    /** 전투 배속 (1 또는 2) */
+    var battleSpeed: Int = 1,
 ) {
     fun toJson(): String = GameData.json.encodeToString(serializer(), this)
 

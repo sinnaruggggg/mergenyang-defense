@@ -5,7 +5,7 @@ import com.badlogic.gdx.Input
 import com.badlogic.gdx.graphics.Color
 import com.badlogic.gdx.graphics.GL20
 import com.badlogic.gdx.graphics.g2d.SpriteBatch
-import com.badlogic.gdx.utils.viewport.FitViewport
+import com.badlogic.gdx.utils.viewport.ExtendViewport
 import com.badlogic.gdx.utils.viewport.Viewport
 import com.mergenyang.core.BattleSpec
 import com.mergenyang.core.GameData
@@ -60,7 +60,8 @@ class MergeNyangGame(val platform: Platform) : KtxGame<KtxScreen>(clearScreen = 
     val today: String get() = LocalDate.now().toString()
 
     override fun create() {
-        Screens.viewport = FitViewport(Gfx.W, Gfx.H)
+        // 가로는 1080 고정, 세로가 긴 기기는 위·아래로 넓혀 여백 없이 채운다
+        Screens.viewport = ExtendViewport(Gfx.W, Gfx.H, Gfx.W, 0f)
         batch = SpriteBatch(2000)
         Gfx.batch = batch
         Gfx.assets = assets
@@ -119,7 +120,7 @@ class MergeNyangGame(val platform: Platform) : KtxGame<KtxScreen>(clearScreen = 
         toast.update(delta)
         beginHud()
         toast.draw()
-        if (fade > 0f) Gfx.rect(0f, 0f, Gfx.W, Gfx.H, FADE, fade)
+        if (fade > 0f) Gfx.fullRect(FADE, fade)
         batch.end()
         platform.debugHook?.afterRender(this, delta)
     }
@@ -134,7 +135,7 @@ class MergeNyangGame(val platform: Platform) : KtxGame<KtxScreen>(clearScreen = 
 
     private fun drawLoading(p: Float) {
         beginHud()
-        Gfx.rect(0f, 0f, Gfx.W, Gfx.H, LOADING_BG)
+        Gfx.fullRect(LOADING_BG)
         Gfx.text("머지냥 디펜스", Gfx.W / 2, 820f, 96f, Gfx.color("7a3a16ff"))
         Gfx.rect(190f, 960f, 700f, 40f, LOADING_TRACK)
         Gfx.rect(190f, 960f, 700f * p, 40f, LOADING_FILL)
@@ -201,7 +202,12 @@ class MergeNyangGame(val platform: Platform) : KtxGame<KtxScreen>(clearScreen = 
     }
 
     override fun resize(width: Int, height: Int) {
-        Screens.viewport.update(width, height, true)
+        val vp = Screens.viewport
+        vp.update(width, height, false)
+        Gfx.ext = ((vp.worldHeight - Gfx.H) / 2f).coerceAtLeast(0f)
+        Gfx.safeTop = if (vp.screenHeight > 0) Gdx.graphics.safeInsetTop * vp.worldHeight / vp.screenHeight else 0f
+        vp.camera.position.set(Gfx.W / 2, Gfx.H / 2, 0f)
+        vp.camera.update()
         super.resize(width, height)
     }
 
