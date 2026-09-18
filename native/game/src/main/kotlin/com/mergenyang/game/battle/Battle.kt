@@ -151,7 +151,7 @@ class Battle(val game: MergeNyangGame, val spec: BattleSpec) {
     var feverGauge = 0f
     var feverT = 0f
     var feverCount = 0
-    var smithT = 0f
+    val smithMotion = com.mergenyang.core.SmithMotion()
     var boardShake = 0f
     var time = 0f
     var killGold = 0L
@@ -288,6 +288,11 @@ class Battle(val game: MergeNyangGame, val spec: BattleSpec) {
     // ================= 보드 =================
     fun canUse(i: Int) = board.canUse(i)
 
+    private fun smithImpact() {
+        audio.play("produce")
+        fx.sparks(250f, 1820f, SPARK, 14, -PI.toFloat() / 2, 1.6f)
+    }
+
     fun produce(free: Boolean = false) {
         if (result != null || tutorial == 0 || tutorial == 1) return
         if (!free && energy < 1) {
@@ -305,9 +310,7 @@ class Battle(val game: MergeNyangGame, val spec: BattleSpec) {
             return
         }
         if (!free) energy -= 1
-        smithT = 0.36f
-        audio.play("produce")
-        fx.sparks(210f, 1840f, SPARK, 14, -PI.toFloat() / 2, 1.6f)
+        if (smithMotion.request()) smithImpact()
         val count = if (random.nextFloat() < doubleChance) 2 else 1
         for (k in 0 until count) {
             if (empty.isEmpty()) break
@@ -1245,7 +1248,7 @@ class Battle(val game: MergeNyangGame, val spec: BattleSpec) {
         banner?.let { it.t -= rawDt; if (it.t <= 0f) banner = null }
         bossCut?.let { it.t += rawDt; if (it.t > 2.4f) bossCut = null }
         if (comboT > 0f) comboT -= rawDt
-        if (smithT > 0f) smithT -= rawDt
+        if (smithMotion.update(rawDt)) smithImpact()
         if (boardShake > 0f) boardShake -= rawDt
         if (delayed.isNotEmpty()) {
             val due = ArrayList<() -> Unit>()

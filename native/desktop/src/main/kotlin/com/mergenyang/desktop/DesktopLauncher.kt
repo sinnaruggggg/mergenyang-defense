@@ -27,7 +27,7 @@ fun main(args: Array<String>) {
     if (shotsDir != null) saveFile.delete()
     val platform = Platform(
         saveStore = FileSaveStore(saveFile),
-        debugHook = shotsDir?.let { ShotScript(it) },
+        debugHook = shotsDir?.let { ShotScript(it, "--smith-only" in args) },
     )
     val config = Lwjgl3ApplicationConfiguration().apply {
         setTitle("머지냥 디펜스 (개발용)")

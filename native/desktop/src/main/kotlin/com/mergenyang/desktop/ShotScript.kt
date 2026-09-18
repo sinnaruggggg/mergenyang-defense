@@ -25,7 +25,7 @@ import com.mergenyang.game.screens.StagesScreen
 import java.io.File
 
 /** 자동 시나리오: 메뉴를 돌고 전투를 자동 진행하며 장면마다 PNG를 저장한다 */
-class ShotScript(private val dir: File) : DebugHook {
+class ShotScript(private val dir: File, private val smithOnly: Boolean = false) : DebugHook {
     private lateinit var game: MergeNyangGame
     private val steps = ArrayList<Pair<Int, () -> Unit>>()
     private var index = 0
@@ -62,6 +62,21 @@ class ShotScript(private val dir: File) : DebugHook {
     }
 
     private fun script() {
+        if (smithOnly) {
+            at(30) { startBattle(BattleSpec(Mode.STAGE, 0, 0)) { game.save.tutorialDone = true } }
+            at(120) { }
+            shot("smith_00_ready")
+            at(1) { battle().produce() }
+            shot("smith_01_contact")
+            repeat(24) { i ->
+                at(2) {
+                    capture("smith_%02d".format(i + 2))
+                    if (i % 4 == 0) battle().produce()
+                }
+            }
+            at(60) { capture("smith_26_ready"); File(dir, "log.txt").writeText(log.toString()); Gdx.app.exit() }
+            return
+        }
         at(60) { }
         shot("01_title")
         at(5) { tap(540f, 1680f) }

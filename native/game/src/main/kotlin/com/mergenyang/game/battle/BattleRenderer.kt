@@ -231,11 +231,11 @@ class BattleRenderer(private val b: Battle) {
     }
 
     fun drawBottom(t: Float) {
-        Chars.shadow(160f, 1895f, 233f)
-        // 모루를 먼저 깔고 그 위로 망치질하는 대장장이를 그린다
-        Gfx.fit("icons/anvil", 220f, 1876f, 168f, 124f)
-        if (b.smithT > 0f) Chars.catAttack("smith", if (b.smithT > 0.18f) 0 else 1, 160f, 1905f, 0.58f)
-        else Chars.idle("smith", 160f, 1905f, 0.58f, t)
+        Chars.shadow(168f, 1880f, 210f)
+        // Both 887px cells have the same baseline/scale. Hammer contact is (250,1820).
+        Gfx.img(if (b.smithMotion.striking) "bg/smith-strike" else "bg/smith-raised",
+            36f, 1616f, 270f, 270f)
+        Gfx.img("icons/anvil", 170f, 1811f, 168f, 95.32f)
         Gfx.panel(744f, 1686f, 307f, 94f, "dark")
         Gfx.fit("icons/energy", 790f, 1733f, 60f, 60f)
         Gfx.text("${b.energy} / ${b.energyMax}", 915f, 1733f, 44f, Color.WHITE)

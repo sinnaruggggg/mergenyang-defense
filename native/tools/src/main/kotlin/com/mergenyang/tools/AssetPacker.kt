@@ -112,6 +112,9 @@ fun main(args: Array<String>) {
         File(tall, "$name.png").copyTo(File(bgOut, "$name.png"), overwrite = true)
     }
     File(tall, "workshop.png").copyTo(File(bgOut, "lobby-room.png"), overwrite = true)
+    for (pose in listOf("raised", "strike")) {
+        File(art, "smith-anvil-v4/$pose.png").copyTo(File(bgOut, "smith-$pose.png"), overwrite = true)
+    }
 
     work.deleteRecursively()
     makeLauncherIcons(ui, File(out.parentFile, "android/src/main/res"))

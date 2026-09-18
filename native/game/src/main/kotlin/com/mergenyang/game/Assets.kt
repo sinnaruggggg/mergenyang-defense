@@ -25,7 +25,7 @@ class Assets : Disposable {
         private set
 
     private val atlasNames = listOf("ui", "icons", "items", "portraits", "chars", "lobby")
-    private val backgrounds = listOf("battle", "shop", "town", "workshop", "lobby-room", "lobby-smith", "shop-merchant")
+    private val backgrounds = listOf("battle", "shop", "town", "workshop", "lobby-room", "lobby-smith", "shop-merchant", "smith-raised", "smith-strike")
     val sfxNames = listOf(
         "click", "pick", "drop", "merge", "chain", "produce", "pop", "supply", "equip", "heal", "hit", "slash", "crit",
         "arrow", "fire", "boom", "bigboom", "zap", "enemyhit", "die", "coin", "meow", "roar", "warn", "fever", "wave",
